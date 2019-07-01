@@ -1,0 +1,128 @@
+/*
+SCSS and styling utilities
+variables, mixins, font specs
+*/
+
+
+// variables
+$fa-font-path: "/assets/fontawesome";
+$font-path: "/assets/font";
+
+$bg-blue: #233e81;
+$bg-grey: #f3f4f6;
+$cta-blue: #1d7bd7;
+
+$font-size: 18px;
+$grid-val: 30px;
+
+$content-bp: $grid-val*28; // 840px, content becomes 1-col
+$header-bp: $grid-val*34; // 1020px, header changes
+
+// mixins
+@mixin hide-el {
+  display: none;
+  position: absolute;
+  left: -99999px;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  opacity: 0.0;
+}
+
+.hide-el { // for easy reference use outside of SCSS
+  @include hide-el;
+}
+
+@mixin nav-link {
+  margin: 0 10px;
+  text-decoration: none;
+  color: lighten(black, 45%);
+  &:hover {
+    color: $bg-blue;
+  }
+  &:active {
+    color: black;
+  }
+}
+
+@mixin nav-menu {
+  ul {
+    margin: 0;
+    & > li {
+      display: inline-block;
+    }
+    & a {
+      @include nav-link;
+      &.current {
+        text-decoration: underline;
+        color: $bg-blue;
+      }
+    }
+  }
+}
+
+@mixin cta-button {
+  padding: 9px 15px;
+  border-width: 0;
+  border-radius: 4.5px;
+  background-color: $cta-blue;
+  color: white;
+  font-size: $font-size;
+}
+
+// font imports
+@font-face {
+  font-family: 'sharetech';
+  src: url('#{$font-path}/sharetech-regular.woff2') format('woff2'),
+        url('#{$font-path}/sharetech-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'titillium_bold';
+  src: url('#{$font-path}/titilliumweb-bold.woff2') format('woff2'),
+        url('#{$font-path}/titilliumweb-bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'titillium_bold_italic';
+  src: url('#{$font-path}/titilliumweb-bolditalic.woff2') format('woff2'),
+        url('#{$font-path}/titilliumweb-bolditalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'titillium_italic';
+  src: url('#{$font-path}/titilliumweb-italic.woff2') format('woff2'),
+        url('#{$font-path}/titilliumweb-italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'titillium';
+  src: url('#{$font-path}/titilliumweb-regular.woff2') format('woff2'),
+        url('#{$font-path}/titilliumweb-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ubuntu_medium';
+  src: url('#{$font-path}/ubuntu-medium.woff2') format('woff2'),
+        url('#{$font-path}/ubuntu-medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'ubuntu';
+    src: url('#{$font-path}/ubuntu-regular.woff2') format('woff2'),
+            url('#{$font-path}/ubuntu-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

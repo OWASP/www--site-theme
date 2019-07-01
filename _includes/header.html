@@ -1,0 +1,50 @@
+<header>
+  {% include banner.html %}
+
+  <div id="has-announcement" class="header-wrapper">
+    <nav class="alt-nav">
+      <a href="#" class="menu-toggler" onclick="toggleMenu()">
+        <i class="fa fa-bars" id="menu-icon"></i>
+      </a>
+      <a href="#" class="alt-logo">
+          <img src="/assets/image/logo.png" alt="">
+      </a>
+      <div id="overlay" class="hide-el"></div>
+      <ul class="mobile-menu hide-el" id="menu-toggle">
+        <li>
+          <a href="#" onclick="toggleMenu()">
+              <i class="fa fa-times" id="menu-icon"></i>
+          </a>
+        </li>
+        <li>
+          <input type="text" class="site-search" placeholder="Search OWASP.org">
+        </li>
+        <li><a href="#">PROJECTS</a></li>
+        <li><a href="#">CHAPTERS</a></li>
+        <li><a href="#">EVENTS</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">PRIVACY</a></li>
+        <li><a href="#">SITEMAP</a></li>
+        <li><a href="#">CONTACT</a></li>
+        <li>
+          {% include nav-button.html %}
+        </li>
+      </ul>
+    </nav>
+    
+    <nav class="top-nav">
+      <a href="#" class="desktop-logo">
+        <img src="/assets/image/logo.png" alt="">
+      </a>
+      <ul>
+        <li><a href="#">PROJECTS</a></li>
+        <li><a href="#">CHAPTERS</a></li>
+        <li><a href="#">EVENTS</a></li>
+        <li><a href="#">ABOUT</a></li>
+      </ul>
+      <input class="site-search" type="text" placeholder="Search OWASP.org">
+      {% include nav-button.html %}
+    </nav>
+
+  </div>
+</header>

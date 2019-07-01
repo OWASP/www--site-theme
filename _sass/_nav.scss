@@ -1,0 +1,150 @@
+/*
+navigation related styling
+header, footer, mobile navigation menu
+*/
+
+// desktop nav
+.header-wrapper {
+  height: 120px;
+}
+
+.desktop-logo {
+  display: inline-block;
+  img {
+    width: 100%;
+    max-width: $grid-val*5; // 150px
+  }
+}
+
+.site-search {
+  width: 100%;
+  max-width: $grid-val * 7; // 210px
+  border: 2px solid #dddddd;
+  padding: 6px;
+  border-radius: 0;
+  &:focus {
+    border-color: $cta-blue;
+  }
+  &::placeholder {
+    color: grey;
+  }
+}
+
+.top-nav,
+.bot-nav {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include nav-menu;
+}
+
+.top-nav {
+  button {
+    @include cta-button;
+  }
+}
+
+.bot-nav {
+  max-height: 50px;
+  a:first-child {
+    margin-left: 0;
+  }
+}
+
+.footer-wrapper {
+  .disclaimer {
+    margin-top: $grid-val/2;
+  }
+}
+
+
+@media screen and (min-width: $header-bp) {
+  .alt-nav {
+    @include hide-el;
+  }
+}
+
+// mobile nav 
+.menu-toggler {
+  position: fixed;
+  font-size: $grid-val;
+  color: #222222;
+}
+
+// mobile menu drawer, displays when toggled on
+.mobile-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 75%;
+  height: 100%;
+  margin: 0;
+  z-index: 3;
+  overflow: scroll;
+  background-color: $bg-blue;
+  box-shadow: 2px 0 6px #555555;
+  li {
+    padding: 12px 15px;
+    &:first-child {
+      margin-bottom: $grid-val/2;
+      font-size: $grid-val;
+    }
+    &:not(:nth-child(-n+2)) {
+      border-top: 1px solid lighten($bg-blue, 5%);
+    }
+  }
+  input[type='text'] {
+    width: 100%;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  button {
+    @include cta-button;
+    &:not(:first-child) {
+      margin-left: 12px;
+    }
+  }
+}
+
+#overlay {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+}
+
+.alt-logo {
+  display: block;
+  margin: $grid-val/2 auto;
+  max-width: $grid-val * 5; // 210px
+  img {
+    width: 100%;
+  }
+}
+
+// replace desktop nav with mobile nav
+@media screen and (max-width: $header-bp - 1) { // 1019px
+  .top-nav,
+  .bot-nav {
+    @include hide-el;
+  }
+  .header-wrapper {
+    position: fixed;
+    max-height: $grid-val * 2.5; // 75px
+    margin-bottom: $grid-val/2;
+    background-color: whitesmoke;
+    box-shadow: 0 1px 2px #cccccc;
+  }
+  #banner {
+    position: fixed;
+  }
+}

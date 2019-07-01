@@ -1,0 +1,98 @@
+/*
+7:3 two column layout specific styling
+*/
+
+.col-sidebar { // default layout on desktop
+  .main-wrapper { // grid for main content area
+    display: grid;
+    margin: $grid-val auto;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 7fr 3fr;
+    grid-template-areas: 
+            "menu  github"
+            "intro side"
+            "body  side";
+  }
+}
+
+.sub-nav {
+  grid-area: menu;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include nav-menu;
+  ul {
+    & > li {
+      margin-bottom: $grid-val/3;
+    }
+    & a:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.page-intro {
+  grid-area: intro;
+}
+
+.page-body {
+  grid-area: body;
+}
+
+.github-buttons {
+  grid-area: github;
+  display: flex;
+  justify-content: center;
+  & > * {
+
+  }
+}
+
+.sidebar {
+  grid-area: side;
+  padding: 0 $grid-val/2;
+  background-color: grey;
+  & > * {
+    margin: $grid-val/2 0;
+  }
+  & > * + * { // targets anything that has a neighbor element
+    margin: $grid-val 0;
+  }
+}
+
+.video-container { // TBD, placeholder for testing Youtube embeds
+  position: relative;
+  max-width: 100%;
+  padding-bottom: 56.25%;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+  }
+}
+
+@media screen and (max-width: $content-bp) { // 1-column on mobile
+  .col-sidebar { 
+    .main-wrapper {
+      display: grid;
+      grid-template-rows: auto;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+              "intro"
+              "github"
+              "menu"
+              "body"
+              "side";
+    }
+    .sub-nav {
+      ul {
+        margin: $grid-val 0;
+      }
+    }
+  }
+}

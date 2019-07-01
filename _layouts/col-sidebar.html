@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+  {% include head.html %}
+</head>
+<body class="base-grid col-sidebar">
+  {% include noscript.html %}
+  {% include header.html %}
+
+  <main>
+    <div class="main-wrapper">
+        {{ content }}
+        {% include sidebar.html %}
+    </div>
+  </main>
+
+  {% include footer.html %}
+</body>

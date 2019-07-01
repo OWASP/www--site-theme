@@ -1,0 +1,108 @@
+/*
+general styling for general items
+use titillium for content display, ubuntu for UI elements
+*/
+
+
+// base font styling
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'titillium_bold', sans-serif;
+}
+
+body,
+input[type='text'] {
+  font-family: 'titillium', sans-serif;
+  font-size: $font-size; // 18px; use multiples of 1.5 for font tweaks
+}
+
+em {
+  font-family: 'titillium_italic', sans-serif;
+}
+
+nav {
+  font-family: 'ubuntu', sans-serif;
+}
+
+code,
+.callout-mono {
+  font-family: 'sharetech', monospace;
+}
+
+.callout-link {
+  display: block;
+  padding: $grid-val 0;
+  font-family: 'ubuntu_medium', sans-serif;
+}
+
+// basic layout spec
+.header-wrapper,
+.main-wrapper,
+.member-wrapper,
+.footer-wrapper {
+  max-width: $grid-val * 43; // 30 * 43 = 1290px
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 $grid-val;
+  & > * {
+    margin: 0 $grid-val/2;
+  }
+}
+
+main {
+  img {
+    width: 100%;
+  }
+}
+
+.base-grid { // default to mobile grid of 1 column
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+              "header"
+              "noscript"
+              "body"
+              "footer";
+}
+
+noscript {
+  grid-area: noscript;
+  display: block;
+  width: 100%;
+  padding: 15px;
+  color: white;
+  text-align: center;
+  background-color: lighten(red, 15%);
+  a {
+    color: white;
+  }
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: body;
+}
+
+footer {
+  grid-area: footer;
+  padding: $grid-val 0; // 15px
+}
+
+@media screen and (max-width: $header-bp) {
+  .base-grid {
+    grid-template-rows: $grid-val*3 auto auto;
+  }
+}
+
+@media screen and (max-width: $content-bp) {
+  .header-wrapper,
+  .main-wrapper,
+  .member-wrapper,
+  .footer-wrapper {
+    & > * {
+      margin: 0 0;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+<section class="member">
+  <div class="member-wrapper">
+    <section class="member-list">
+      <h2>Corporate Members</h2>
+      <div>
+        {% for image in site.static_files %}
+          {% if image.path contains 'image/member-logo' %}
+            <a href="#" class="member-logo">
+              <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+      <a href="" class="callout-link">See all members</a>
+    </section>
+    <section class="member-spotlight">
+      <h2>Spolight: Company name</h2>
+      <a href=""><img src="/assets/image/member-logo/accenture.png" alt=""></a>
+      <p>Qui ut et qui culpa. Corporis aut non quae ea eum ad non. Qui mollitia aliquam veritatis. Reprehenderit voluptas assumenda rem et neque ullam. Iure sequi quisquam iure voluptatibus.</p>
+    </section>
+    <section class="member-cta">
+      <button>Become a OWASP Member Today</button>
+      <a href="#" class="callout-link">Why should you become a OWASP Foundation member?</a>
+    </section>
+  </div>
+</section>

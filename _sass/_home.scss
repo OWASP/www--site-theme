@@ -1,0 +1,62 @@
+/*
+home layout specific styling
+currently only used for homepage
+*/
+
+
+@media screen and (min-width: $content-bp) {
+  .home {
+    .main-wrapper { // grid for main content area
+      display: grid;
+      margin: $grid-val auto;
+      grid-template-columns: repeat(2, 1fr);
+
+    }
+    .member-wrapper { // grid for member section
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+    }
+  }
+}
+
+.member {
+  padding: $grid-val 0;
+  background-color: whitesmoke;
+}
+
+.member-list {
+  div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.member-logo {
+  display: flex;
+  align-items: center;
+  max-width: $grid-val*3;
+  height: $grid-val*3;
+  margin: $grid-val/3 $grid-val/1.5;
+  img {
+    max-width: 100%;
+  }
+}
+
+.member-spotlight {
+  img {
+    max-width: 200px;
+    margin: $grid-val auto;
+  }
+}
+
+.member-cta {
+  grid-column: 1/3;
+  text-align: center;
+  button {
+    @include cta-button;
+  }
+  a {
+    display: block;
+  }
+}
