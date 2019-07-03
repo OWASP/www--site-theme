@@ -3,8 +3,8 @@
     <section class="member-list">
       <h2>Corporate Members</h2>
       <div>
-        {% assign prefix = site.corp_members %}
-        <div>Corp 1: {{ site.corp_members[0].image }} and Corp 2: {{ site.corp_members[1].image }}</div>
+        {% assign prefix = site.data.corp_members | sample: 2 %}
+        <div>DataCorp 1: {{ prefix[0].image }} and DataCorp 2: {{ prefix[1].image }}</div>
         {% for member in site.data.corp_members limit:6 %}
             <a href="#" class="member-logo">
               <img src="{{ site.baseurl }}{{ member.image }}" alt="image" />
