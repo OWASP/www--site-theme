@@ -3,11 +3,14 @@
     <section class="member-list">
       <h2>Corporate Members</h2>
       <div>
-        {% assign prefix = site.data.corp_members | sample: 2 %}
-        <div>DataCorp 1: {{ prefix[0].image }} and DataCorp 2: {{ prefix[1].image }}</div>
         {% for member in site.data.corp_members limit:6 %}
+            {% assign min = 0 %}
+            {% assign max = 7 %}
+            {% assign diff = max | minus: min %}
+            {% assign randomNumber = "now" | date: "%N" | modulo: diff | plus: min %}
+          
             <a href="#" class="member-logo">
-              <img src="{{ site.baseurl }}{{ member.image }}" alt="image" />
+              <img src="{{ site.baseurl }}{{ site.data.corp_members[randomNumber].image }}" alt="image" />
             </a>
         {% endfor %}
       </div>
