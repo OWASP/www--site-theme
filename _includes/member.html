@@ -4,6 +4,7 @@
       <h2>Corporate Members</h2>
       <div>
         {% for member in site.data.corp_members limit:6 %}
+            <div>{{ member.id }}</div>
             <a href="#" class="member-logo">
               <img src="{{ site.baseurl }}{{ member.image }}" alt="image" />
             </a>
