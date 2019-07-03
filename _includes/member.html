@@ -3,13 +3,10 @@
     <section class="member-list">
       <h2>Corporate Members</h2>
       <div>
-        {% for image in site.static_files limit:6 %}
-        <div>This is an image</div>
-          {% if image.path contains 'image/member-logo' %}
+        {% for member in site.data.corp_members limit:6 %}
             <a href="#" class="member-logo">
-              <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+              <img src="{{ site.baseurl }}assets/images/{{ member.image }}" alt="image" />
             </a>
-          {% endif %}
         {% endfor %}
       </div>
       <a href="" class="callout-link">See all members</a>
