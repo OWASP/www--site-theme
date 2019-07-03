@@ -4,6 +4,7 @@
       <h2>Corporate Members</h2>
       <div>
         {% for image in site.static_files limit:6 %}
+        <div>This is an image</div>
           {% if image.path contains 'image/member-logo' %}
             <a href="#" class="member-logo">
               <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
