@@ -2,9 +2,6 @@
   <div class="member-wrapper">
     <section class="member-list">
       <h2>Corporate Members</h2>
-      <script>
-        var i = Math.floor(Math.random() * 9); 
-      </script>
       <div>
         {% for member in site.data.corp_members limit:6 %}
             <a href="#" class="member-logo">
