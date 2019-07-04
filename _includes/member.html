@@ -20,6 +20,7 @@
                 if (randomIndexUsed.indexOf(randomIndex) == "-1")
                 {
                     img = images[randomIndex];
+                    /* Could change href to use the img url using another js array */
                     document.write('<a href="#" class="member-logo"><img src="' + img + '" alt="image" /></a>');
                     
                     randomIndexUsed.push(randomIndex);
