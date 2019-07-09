@@ -16,9 +16,9 @@ header, footer, mobile navigation menu
   }
 }
 
-.site-search {
+.search-bar {
   width: 100%;
-  max-width: $grid-val * 7; // 210px
+  max-width: $grid-val * 6; // 180px
   border: 2px solid #dddddd;
   padding: 6px;
   border-radius: 0;
@@ -27,6 +27,22 @@ header, footer, mobile navigation menu
   }
   &::placeholder {
     color: grey;
+  }
+}
+
+.site-search {
+  display: flex;
+  align-items: center;
+  & > span {
+    margin-right: $grid-val/3;
+    cursor: pointer;
+    color: $cta-blue;
+    &:hover {
+      color: lighten($cta-blue, 10%);
+    }
+  }
+  & > .search-bar {
+    display: none;
   }
 }
 
@@ -40,13 +56,51 @@ header, footer, mobile navigation menu
 }
 
 .top-nav {
-  button {
+  .nav-button > a {
     @include cta-button;
+  }
+  .nav-button > * + * {
+    margin-left: $grid-val/3;
+  }
+}
+
+.dropdown-menu {
+  position: absolute;
+  padding: 0;
+  li {
+    padding: 15px 20px;
+    background-color: $bg-blue;
+    color: white;
+    &:first-child {
+      margin-top: 10px;
+    }
+    &:hover {
+      background-color: lighten($bg-blue, 10%);
+    }
+    &:active {
+      background-color: darken($bg-blue, 5%);
+    }
+
+  }
+  &:after {
+    position: absolute;
+    left: 15%;
+    margin-left: -20px;
+    top: 0px;
+    width: 0;
+    height: 0;
+    content:'';
+    z-index: -1;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid $bg-blue;
   }
 }
 
 .bot-nav {
-  max-height: 50px;
+  li {
+    margin-bottom: $grid-val/3;
+  }
   a:first-child {
     margin-left: 0;
   }
@@ -61,13 +115,19 @@ header, footer, mobile navigation menu
 
 @media screen and (min-width: $header-bp) {
   .alt-nav {
-    @include hide-el;
+    @include remove-el;
   }
 }
 
 // mobile nav 
+.alt-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .menu-toggler {
-  position: fixed;
+  // display: block;
   font-size: $grid-val;
   color: #222222;
 }
@@ -77,13 +137,13 @@ header, footer, mobile navigation menu
   position: fixed;
   left: 0;
   top: 0;
-  width: 75%;
+  width: 100%;
   height: 100%;
   margin: 0;
   z-index: 3;
   overflow: scroll;
   background-color: $bg-blue;
-  box-shadow: 2px 0 6px #555555;
+  box-shadow: 2px 0 10px #000000;
   li {
     padding: 12px 15px;
     &:first-child {
@@ -101,10 +161,11 @@ header, footer, mobile navigation menu
     color: white;
     text-decoration: none;
   }
-  button {
-    @include cta-button;
-    &:not(:first-child) {
-      margin-left: 12px;
+  .nav-button {
+    margin-top: $grid-val/3;
+    & > a {
+      @include cta-button;
+      margin-right: $grid-val/3;
     }
   }
 }
@@ -131,20 +192,69 @@ header, footer, mobile navigation menu
   }
 }
 
-// replace desktop nav with mobile nav
+// banner styling
+#banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: $grid-val $grid-val*1.5;
+  & > *,
+  & > * > * {
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  a#close-banner {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: $grid-val;
+    color: currentColor;
+    opacity: 0.2;
+    line-height: 0;
+    &:hover,
+    &:active {
+      opacity: 0.5;
+    }
+  }
+  &.notice {
+    background-color: $bg-blue;
+  }
+  &.warning {
+    background-color: #892727;
+  }
+}
+
 @media screen and (max-width: $header-bp - 1) { // 1019px
-  .top-nav,
-  .bot-nav {
-    @include hide-el;
+  // replace desktop nav with mobile nav
+  .top-nav {
+    @include remove-el;
   }
   .header-wrapper {
-    position: fixed;
     max-height: $grid-val * 2.5; // 75px
     margin-bottom: $grid-val/2;
     background-color: whitesmoke;
     box-shadow: 0 1px 2px #cccccc;
   }
-  #banner {
-    position: fixed;
+}
+
+@media screen and (min-width: $content-bp) { // 840px
+  .bot-nav {
+    // hide first 5 footer links on desktop 
+    ul > li:nth-child(-n+5) {
+      @include remove-el;
+    }
+  }
+}
+
+@media screen and (max-width: $content-bp - 1) {
+  // restyling for ease of use on mobile
+  .bot-nav {
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+    }
   }
 }

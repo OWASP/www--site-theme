@@ -5,8 +5,8 @@ variables, mixins, font specs
 
 
 // variables
-$fa-font-path: "/assets/fontawesome";
-$font-path: "/assets/font";
+$fa-font-path: "//scorchingoyster.github.io/owasp-layout/assets/fontawesome";
+$font-path: "//scorchingoyster.github.io/owasp-layout/assets/font";
 
 $bg-blue: #233e81;
 $bg-grey: #f3f4f6;
@@ -19,18 +19,31 @@ $content-bp: $grid-val*28; // 840px, content becomes 1-col
 $header-bp: $grid-val*34; // 1020px, header changes
 
 // mixins
-@mixin hide-el {
-  display: none;
-  position: absolute;
-  left: -99999px;
-  width: 0;
-  height: 0;
-  visibility: hidden;
-  opacity: 0.0;
+@mixin hide-el { // hide element (accessible)
+  position: absolute !important;
+  left: -99999px !important;
+  top: auto !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
 }
 
-.hide-el { // for easy reference use outside of SCSS
+.hide-el { // for easy class reference
   @include hide-el;
+}
+
+@mixin remove-el { // hide element (inaccessible)
+  display: none !important;
+  position: absolute !important;
+  left: -99999px !important;
+  width: 0 !important;
+  height: 0 !important;
+  visibility: hidden !important;
+  opacity: 0.0 !important;
+}
+
+.remove-el {
+  @include remove-el;
 }
 
 @mixin nav-link {
@@ -46,7 +59,7 @@ $header-bp: $grid-val*34; // 1020px, header changes
 }
 
 @mixin nav-menu {
-  ul {
+  & > ul {
     margin: 0;
     & > li {
       display: inline-block;
@@ -58,6 +71,9 @@ $header-bp: $grid-val*34; // 1020px, header changes
         color: $bg-blue;
       }
     }
+    & a:first-child {
+      margin-left: 0;
+    }
   }
 }
 
@@ -66,8 +82,26 @@ $header-bp: $grid-val*34; // 1020px, header changes
   border-width: 0;
   border-radius: 4.5px;
   background-color: $cta-blue;
-  color: white;
   font-size: $font-size;
+  color: white;
+  text-decoration: none;
+  &:hover {
+    background-color: lighten($cta-blue, 5%);
+  }
+  &:active {
+    background-color: darken($cta-blue, 5%);
+  }
+
+}
+
+.cta-button {
+  @include cta-button;
+}
+
+@mixin no-bullet-list {
+  margin: $grid-val/3 0;
+  padding: 0;
+  list-style: none;
 }
 
 // font imports

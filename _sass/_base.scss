@@ -56,25 +56,9 @@ main {
 
 .base-grid { // default to mobile grid of 1 column
   display: grid;
+  grid-template-rows: repeat(3, auto);
   grid-template-columns: 1fr;
-  grid-template-areas: 
-              "header"
-              "noscript"
-              "body"
-              "footer";
-}
-
-noscript {
-  grid-area: noscript;
-  display: block;
-  width: 100%;
-  padding: 15px;
-  color: white;
-  text-align: center;
-  background-color: lighten(red, 15%);
-  a {
-    color: white;
-  }
+  grid-template-areas: "header" "body" "footer";
 }
 
 header {
@@ -90,14 +74,53 @@ footer {
   padding: $grid-val 0; // 15px
 }
 
-@media screen and (max-width: $header-bp) {
-  .base-grid {
-    grid-template-rows: $grid-val*3 auto auto;
+// member partial styling
+
+.member {
+  padding: $grid-val 0;
+  background-color: whitesmoke;
+}
+
+.member-list {
+  div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.member-logo {
+  display: flex;
+  align-items: center;
+  max-width: $grid-val*3;
+  height: $grid-val*3;
+  margin: $grid-val/3 $grid-val/1.5;
+  img {
+    max-width: 100%;
+  }
+}
+
+.member-spotlight {
+  img {
+    max-width: 200px;
+    margin: $grid-val auto;
+  }
+}
+
+.member-cta {
+  grid-column: 1/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: $content-bp) {
+  .member-wrapper { // grid for member section
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 @media screen and (max-width: $content-bp) {
-  .header-wrapper,
   .main-wrapper,
   .member-wrapper,
   .footer-wrapper {

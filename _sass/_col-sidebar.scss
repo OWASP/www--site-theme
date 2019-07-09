@@ -6,7 +6,7 @@
   .main-wrapper { // grid for main content area
     display: grid;
     margin: $grid-val auto;
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: auto auto 1fr;
     grid-template-columns: 7fr 3fr;
     grid-template-areas: 
             "menu  github"
@@ -22,14 +22,7 @@
   justify-content: space-between;
   align-items: center;
   @include nav-menu;
-  ul {
-    & > li {
-      margin-bottom: $grid-val/3;
-    }
-    & a:first-child {
-      margin-left: 0;
-    }
-  }
+
 }
 
 .page-intro {
@@ -52,12 +45,24 @@
 .sidebar {
   grid-area: side;
   padding: 0 $grid-val/2;
-  background-color: grey;
+  background-color: whitesmoke;
   & > * {
     margin: $grid-val/2 0;
   }
-  & > * + * { // targets anything that has a neighbor element
+  & > * + * { // targets any direct descendant that has a neighbor element
     margin: $grid-val 0;
+  }
+  ul {
+    @include no-bullet-list;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -76,7 +81,13 @@
   }
 }
 
-@media screen and (max-width: $content-bp) { // 1-column on mobile
+.sub-nav {
+  li {
+    margin-bottom: $grid-val/3;
+  }
+}
+
+@media screen and (max-width: $content-bp - 1) { // 1-column on mobile
   .col-sidebar { 
     .main-wrapper {
       display: grid;

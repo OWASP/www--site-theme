@@ -1,56 +1,52 @@
-domReady(function(event) {
+$(document).ready(function() {
 
-  // element hiding CSS utility class
-  var el = "hide-el";
+  // introduce an element that blocks for 0.01s when page loads
+  // fix for a bug when user's mouse triggers JS events too early
+  setTimeout(function(){
+       $('#blocker').remove();
+  }, 10);
 
-  // fix to dynamically specify announcement banner height
-  function sizeBanner() {
-    var h = document.getElementById("has-announcement");
-    var b = document.getElementById("banner").offsetHeight;
-    h.style.top = b + "px";
-  }
-  window.onload = sizeBanner;
-  window.onresize = sizeBanner;
+  // element hiding CSS utility classes
+  // use hideEl for hiding elements from only the SIGHTED USERS
+  // use removeEl for hiding elements from EVERYONE
+  var hideEl = "hide-el";
+  var removeEl = "remove-el";
 
-  // toggle mobile menu through toggling the class above
-  function toggleMenu() {
-    var x = document.getElementById("menu-toggle");
-    var y = document.getElementById("overlay");
-    if (x.classList.contains(el)) {
-      x.classList.remove(el);
-      y.classList.remove(el);
-    } else {
-      x.classList.add(el);
-      y.classList.add(el);
-    }
-  }
-
-  // tab switcher
-  function switchTab(event, tabName) {
-    event.preventDefault();
-
-    var i, tab, tab_link;
-
-    // hide all tab content by default
-    tab = document.getElementsByClassName("tab");
-    for (i = 0; i < tab.length; i++) {
-      tab[i].classList.add(el);
-    }
-
-    tab_link = document.getElementsByClassName("tab_link");
-    for (i = 0; i < tab_link.length; i++) {
-      tab_link[i].classList.remove("current");
-    }
-
-    document.getElementById(tabName).classList.remove(el);
-    event.currentTarget.classList.add("current");
-
-  }
-
-  // simulate click behavior to show first tab by default
-  document.addEventListener("DOMContentLoaded", function(){
-    document.getElementById("tab_default").click();
+  // close announcement banner
+  $("#close-banner").click(function() {
+    $(this).closest("#banner").remove();
   });
+
+  // show and focus on search bar
+  $("#search-icon").click(function() {
+    $(".search-bar").animate({
+      width: 'show'
+    }, 300);
+    $(".search-bar").focus();
+  });
+
+  // toggle mobile menu display
+  $(".menu-toggler").click(function() {
+    $(".mobile-menu").toggleClass(hideEl);
+    $("#overlay").toggleClass(removeEl);
+  });
+
+  // load and select sub-menu navigation
+  $(".sub-nav li:first-child>a").addClass("current");
+
+  $(".tab-link").click(function(e) {
+    e.preventDefault();
+    $(".tab-link").removeClass("current");
+    $("#"+this.id).addClass("current");
+    $(".sub-nav").siblings(".tab").addClass(removeEl);
+    $("section#" + (this.id.replace("-link",""))).toggleClass(removeEl);
+  });
+
+  // show dropdown
+  $(".top-nav > ul li").hover(function() {
+    $(this).children(".dropdown-menu").toggleClass(hideEl);
+  });
+
 
   // browser version checker and notifier
   // source: https://browser-update.org
@@ -64,4 +60,3 @@ domReady(function(event) {
   catch(e){window.attachEvent("onload", $buo_f)}
 
 });
-

@@ -1,25 +1,26 @@
 <header>
   {% include banner.html %}
+  <div class="header-wrapper">
 
-  <div id="has-announcement" class="header-wrapper">
     <nav class="alt-nav">
-      <a href="#" class="menu-toggler" onclick="toggleMenu()">
+      <a href="#" class="menu-toggler">
         <i class="fa fa-bars" id="menu-icon"></i>
       </a>
-      <a href="#" class="alt-logo">
-          <img src="https://owasp.github.io/www--site-theme/assets/image/logo.png" alt="">
+      <a href="{{ site.github.url }}/" class="alt-logo">
+          <img src="{{ site.github.url }}/assets/image/logo.png" alt="">
       </a>
-      <div id="overlay" class="hide-el"></div>
-      <ul class="mobile-menu hide-el" id="menu-toggle">
+      <div id="overlay" class="remove-el"></div>
+
+      <ul class="mobile-menu hide-el">
         <li>
-          <a href="#" onclick="toggleMenu()">
+          <a href="#" class="menu-toggler">
               <i class="fa fa-times" id="menu-icon"></i>
           </a>
         </li>
         <li>
-          <input type="text" class="site-search" placeholder="Search OWASP.org">
+          <input type="text" class="search-bar" placeholder="Search OWASP.org">
         </li>
-        <li><a href="#">PROJECTS</a></li>
+        <li><a href="{{ site.github.url }}/projects">PROJECTS</a></li>
         <li><a href="#">CHAPTERS</a></li>
         <li><a href="#">EVENTS</a></li>
         <li><a href="#">ABOUT</a></li>
@@ -27,23 +28,44 @@
         <li><a href="#">SITEMAP</a></li>
         <li><a href="#">CONTACT</a></li>
         <li>
-          {% include nav-button.html %}
+          <div class="nav-button">
+            <a href="#">Donate</a>
+            <a href="#">Join</a>
+          </div>
         </li>
       </ul>
     </nav>
     
     <nav class="top-nav">
-      <a href="#" class="desktop-logo">
-        <img src="https://owasp.github.io/www--site-theme/assets/image/logo.png" alt="">
+      <a href="{{ site.github.url }}/" class="desktop-logo">
+        <img src="{{ site.github.url }}/assets/image/logo.png" alt="">
       </a>
       <ul>
-        <li><a href="#">PROJECTS</a></li>
-        <li><a href="#">CHAPTERS</a></li>
-        <li><a href="#">EVENTS</a></li>
-        <li><a href="#">ABOUT</a></li>
+        <li>
+          <a href="{{ site.github.url }}/projects" id="projects">PROJECTS</a>
+          {% include dropdown-menu.html %}
+        </li>
+        <li>
+          <a href="#" >CHAPTERS</a>
+          {% include dropdown-menu.html %}
+        </li>
+        <li>
+          <a href="#">EVENTS</a>
+          {% include dropdown-menu.html %}
+        </li>
+        <li>
+          <a href="#">ABOUT</a>
+          {% include dropdown-menu.html %}
+        </li>
       </ul>
-      <input class="site-search" type="text" placeholder="Search OWASP.org">
-      {% include nav-button.html %}
+      <div class="site-search">
+        <span id="search-icon"><i class="fa fa-search"></i></span>
+        <input class="search-bar" type="text" placeholder="Search OWASP.org">
+      </div>
+      <div class="nav-button">
+        <a href="#">Donate</a>
+        <a href="#">Join</a>
+      </div>
     </nav>
 
   </div>
