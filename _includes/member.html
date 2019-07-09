@@ -1,5 +1,5 @@
 <section class="member">
-  {% if site.data.corp_members.size > 0 %}
+  {% if site.data and site.data.corp_members and site.data.corp_members.size > 0 %}
   <script type="text/javascript">
     var images = [{% for img in site.data.corp_members%}"{{ site.baseurl }}{{ img.image }}"{% unless forloop.last %},{% endunless %}{% endfor %}];
   </script>
