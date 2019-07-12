@@ -1,24 +1,24 @@
-<header>
+<header role="banner">
   {% include banner.html %}
-  <div class="header-wrapper">
+  <div class="header-wrapper" aria-label="main navigation">
 
     <nav class="alt-nav">
-      <a href="#" class="menu-toggler">
-        <i class="fa fa-bars" id="menu-icon"></i>
+      <a href="#" class="menu-toggler" aria-hidden="true">
+        <i class="fa fa-bars"></i>
       </a>
-      <a href="{{ site.github.url }}/" class="alt-logo">
-          <img src="{{ site.github.url }}/assets/image/logo.png" alt="">
+      <a href="{{ site.github.url }}/" class="alt-logo" aria-label="go to homepage">
+          <img src="https://owasp.github.io/www--site-theme/assets/image/logo.png" alt="OWASP logo">
       </a>
       <div id="overlay" class="remove-el"></div>
 
-      <ul class="mobile-menu hide-el">
+      <ul class="mobile-menu hide-el" role="navigation" aria-label="mobile primary navigation">
         <li>
-          <a href="#" class="menu-toggler">
-              <i class="fa fa-times" id="menu-icon"></i>
+          <a href="#" class="menu-toggler" aria-hidden="true">
+              <i class="fa fa-times"></i>
           </a>
         </li>
         <li>
-          <input type="text" class="search-bar" placeholder="Search OWASP.org">
+          <input type="text" class="search-bar" placeholder="Search OWASP.org" role="search" aria-label="search OWASP.org">
         </li>
         <li><a href="{{ site.github.url }}/projects">PROJECTS</a></li>
         <li><a href="#">CHAPTERS</a></li>
@@ -27,7 +27,7 @@
         <li><a href="#">PRIVACY</a></li>
         <li><a href="#">SITEMAP</a></li>
         <li><a href="#">CONTACT</a></li>
-        <li>
+        <li aria-label="donate to or join OWASP">
           <div class="nav-button">
             <a href="#">Donate</a>
             <a href="#">Join</a>
@@ -36,11 +36,11 @@
       </ul>
     </nav>
     
-    <nav class="top-nav">
-      <a href="{{ site.github.url }}/" class="desktop-logo">
-        <img src="{{ site.github.url }}/assets/image/logo.png" alt="">
+    <nav class="top-nav" role="navigation" aria-label="primary navigation">
+      <a href="{{ site.github.url }}/" class="desktop-logo" aria-label="go to homepage">
+        <img src="https://owasp.github.io/www--site-theme/assets/image/logo.png" alt="">
       </a>
-      <ul>
+      <ul aria-label="header menu">
         <li>
           <a href="{{ site.github.url }}/projects" id="projects">PROJECTS</a>
           {% include dropdown-menu.html %}
@@ -59,10 +59,10 @@
         </li>
       </ul>
       <div class="site-search">
-        <span id="search-icon"><i class="fa fa-search"></i></span>
-        <input class="search-bar" type="text" placeholder="Search OWASP.org">
+        <span id="search-icon" aria-label="show search bar"><i class="fa fa-search"></i></span>
+        <input class="search-bar" type="text" placeholder="Search OWASP.org" role="search">
       </div>
-      <div class="nav-button">
+      <div class="nav-button" aria-label="donate to or join OWASP">
         <a href="#">Donate</a>
         <a href="#">Join</a>
       </div>
