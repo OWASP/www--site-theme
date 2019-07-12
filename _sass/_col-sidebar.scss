@@ -9,37 +9,43 @@
     grid-template-rows: auto auto 1fr;
     grid-template-columns: 7fr 3fr;
     grid-template-areas: 
-            "menu  github"
-            "intro side"
+            "title  github"
+            "menu side"
             "body  side";
   }
 }
 
 .sub-nav {
   grid-area: menu;
+  padding: $grid-val/2 0;
   height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   @include nav-menu;
-
+  & li {
+    margin-bottom: $grid-val/3;
+  }
 }
 
-.page-intro {
-  grid-area: intro;
+.tab {
+}
+
+.page-title {
+  grid-area: title;
 }
 
 .page-body {
   grid-area: body;
+  & > *:first-child {
+    margin-top: 0;
+  }
 }
 
 .github-buttons {
   grid-area: github;
   display: flex;
-  justify-content: center;
-  & > * {
-
-  }
+  align-items: center;
 }
 
 .sidebar {
@@ -82,9 +88,6 @@
 }
 
 .sub-nav {
-  li {
-    margin-bottom: $grid-val/3;
-  }
 }
 
 @media screen and (max-width: $content-bp - 1) { // 1-column on mobile
@@ -94,16 +97,15 @@
       grid-template-rows: auto;
       grid-template-columns: 1fr;
       grid-template-areas:
-              "intro"
+              "title"
               "github"
               "menu"
               "body"
               "side";
     }
-    .sub-nav {
-      ul {
-        margin: $grid-val 0;
-      }
+    .sub-nav,
+    .github-buttons {
+      padding: $grid-val/2 0;
     }
   }
 }

@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<head>
-  {% include head.html %}
-</head>
-<body class="base-grid full-width">
+<html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+  <body class="base-grid full-width">
 
-  <div id="blocker"></div>
+    <div id="blocker"></div>
 
-  {% include noscript.html %}
-  {% include header.html %}
+    {% include noscript.html %}
+    {% include header.html %}
 
-  <main>
-    <div class="main-wrapper">
-        {{ content }}
-    </div>
+    <main role="main">
+      <div class="main-wrapper">
+          {{ content }}
+      </div>
+      
+    </main>
+
+    {% include footer.html %}
     
-  </main>
-
-  {% include footer.html %}
-  
-</body>
+  </body>
+</html>
