@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+  <body class="base-grid col-generic">
+
+    <div id="blocker"></div>
+
+    {% include noscript.html %}
+    {% include header.html %}
+
+    <main role="main">
+      <div class="main-wrapper">
+          {{ content }}
+          {% include sidebar-generic.html %}
+      </div>
+    </main>
+
+    {% include footer.html %}
+    
+  </body>
+</html>

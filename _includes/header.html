@@ -23,7 +23,7 @@
         <li><a href="{{ site.github.url }}/projects">PROJECTS</a></li>
         <li><a href="#">CHAPTERS</a></li>
         <li><a href="#">EVENTS</a></li>
-        <li><a href="#">ABOUT</a></li>
+        <li><a href="{{ site.github.url }}/corporate">ABOUT</a></li>
         <li><a href="#">PRIVACY</a></li>
         <li><a href="#">SITEMAP</a></li>
         <li><a href="#">CONTACT</a></li>
@@ -35,13 +35,14 @@
         </li>
       </ul>
     </nav>
-    <nav class="top-nav">
-      <a href="{{ site.github.url }}/" class="desktop-logo">
+    
+    <nav class="top-nav" role="navigation" aria-label="primary navigation">
+      <a href="{{ site.github.url }}/" class="desktop-logo" aria-label="go to homepage">
         <img src="https://owasp.github.io/www--site-theme/assets/image/logo.png" alt="">
       </a>
       <ul aria-label="header menu">
         <li>
-          <a href="{{ site.github.url }}/projects" id="projects">PROJECTS</a>
+          <a href="{{ site.github.url }}/projects">PROJECTS</a>
           {% include dropdown-menu.html %}
         </li>
         <li>
@@ -53,17 +54,19 @@
           {% include dropdown-menu.html %}
         </li>
         <li>
-          <a href="#">ABOUT</a>
+          <a href="{{ site.github.url }}/corporate">ABOUT</a>
           {% include dropdown-menu.html %}
         </li>
       </ul>
-      <div class="site-search">
-        <span id="search-icon" aria-label="show search bar"><i class="fa fa-search"></i></span>
-        <input class="search-bar" type="text" placeholder="Search OWASP.org" role="search">
-      </div>
-      <div class="nav-button" aria-label="donate to or join OWASP">
-        <a href="#">Donate</a>
-        <a href="#">Join</a>
+      <div class="interactive-wrapper">
+        <div class="site-search">
+          <span id="search-icon" aria-label="show search bar"><i class="fa fa-search"></i></span>
+          <input class="search-bar" type="text" placeholder="Search OWASP.org" role="search">
+        </div>
+        <div class="nav-button" aria-label="donate to or join OWASP">
+          <a href="#">Donate</a>
+          <a href="#">Join</a>
+        </div>
       </div>
     </nav>
 

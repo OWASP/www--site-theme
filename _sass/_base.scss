@@ -5,7 +5,7 @@ use titillium for content display, ubuntu for UI elements
 
 
 // base font styling
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, strong {
   font-family: 'titillium_bold', sans-serif;
 }
 
@@ -15,7 +15,7 @@ input[type='text'] {
   font-size: $font-size; // 18px; use multiples of 1.5 for font tweaks
 }
 
-em {
+em, q {
   font-family: 'titillium_italic', sans-serif;
 }
 
@@ -23,15 +23,8 @@ nav {
   font-family: 'ubuntu', sans-serif;
 }
 
-code,
-.callout-mono {
+code {
   font-family: 'sharetech', monospace;
-}
-
-.callout-link {
-  display: block;
-  margin: $grid-val 0;
-  font-family: 'ubuntu_medium', sans-serif;
 }
 
 // basic layout spec
@@ -44,7 +37,8 @@ code,
   margin: 0 auto;
   padding: 0 $grid-val;
   & > * {
-    margin: 0 $grid-val/2;
+    margin-left: $grid-val/2;
+    margin-right: $grid-val/2;
   }
 }
 
@@ -72,3 +66,4 @@ main {
 footer {
   grid-area: footer;
 }
+

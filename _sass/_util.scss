@@ -84,6 +84,7 @@ $header-bp: $grid-val*34; // 1020px, header changes
   background-color: $cta-blue;
   font-size: $font-size;
   color: white;
+  font-family: 'ubuntu', sans-serif;
   text-decoration: none;
   &:hover {
     background-color: lighten($cta-blue, 5%);
