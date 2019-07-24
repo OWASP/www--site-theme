@@ -1,11 +1,11 @@
-- title: Projects
+- title: PROJECTS
   url  : https://owasp.github.io/www--site/projects
   items:
     - title: Zed Attack Proxy
       url  : https://owasp.github.io/www--site/projects   
-- title: Chapters
+- title: CHAPTERS
   url  : #
-- title: Events
+- title: EVENTS
   url  : #
-- title: About
+- title: ABOUT
   url  : https://owasp.github.io/www--site/corporate
