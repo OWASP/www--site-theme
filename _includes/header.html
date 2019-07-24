@@ -18,8 +18,9 @@
           </a>
         </li>
         <li>
-          <input type="search" class="search-bar" placeholder="Search OWASP.org" role="search">
+          <input type="search" class="search-bar" placeholder="Search OWASP.org" required="true">
         </li>
+        <!-- Need to include the code to create these like below; saved for later - HB -->
         <li><a href="https://owasp.github.io/www--site/projects">PROJECTS</a></li>
         <li><a href="#">CHAPTERS</a></li>
         <li><a href="#">EVENTS</a></li>
@@ -41,7 +42,41 @@
         <img src="https://owasp.github.io/www--site-theme/assets/image/logo.png" alt="">
       </a>
       <ul aria-label="header menu">
-        <li>
+          {% for menu in site.data.menus %}
+            <!--  SAVE THIS CASE FOR LATER
+            {% if menu.items %}
+            <li class="dropdown">
+                {% if menu.url %}
+                  {% if menu.url contains '://' %}
+                    {% assign topurl = {{menu.url}} %}
+                  {% else %}
+                    {% assign topurl = {{baseUrl}}{{menu.url}} %}
+                  {% endif %}
+                {% else %}
+                  {% assign topurl = "#" %}
+                {% endif %}
+              <a href="{{topurl}}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{menu.title}}</a>
+                <ul class="dropdown-menu">
+                {% for item in menu.items %}
+                    {% if item.url contains '://' %}
+                        <li><a href="{{item.url}}">{{item.title}}</a></li>
+                    {% else %}
+                                    <li><a href="{{baseUrl}}{{item.url}}">{{item.title}}</a></li>
+                    {% endif %}
+                {% endfor %}
+                </ul>
+            </li>
+          {% else %}-->
+          <li>
+              {% if menu.url contains '://' %}
+                <a href="{{menu.url}}">{{menu.title}}</a>
+              {% else %}
+                <a href="/{{menu.url}}">{{menu.title}}</a>
+              {% endif %}
+            </li>
+          <!--{% endif %}-->
+        {% endfor %}
+        <!-- HONG Menus <li>
           <a href="https://owasp.github.io/www--site/projects">PROJECTS</a>
           {% include dropdown-menu.html %}
         </li>
@@ -56,7 +91,7 @@
         <li>
           <a href="https://owasp.github.io/www--site/corporate">ABOUT</a>
           {% include dropdown-menu.html %}
-        </li>
+        </li> -->
       </ul>
       <div class="interactive-wrapper">
         <label class="site-search" title="show search bar">
