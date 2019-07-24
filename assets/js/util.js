@@ -10,8 +10,8 @@ $(document).ready(function() {
   // element hiding CSS utility classes
   // use hideEl for hiding elements from only the SIGHTED USERS
   // use removeEl for hiding elements from EVERYONE
-  var hideEl = "hide-el";
-  var removeEl = "remove-el";
+  var hideEl = "hide-el",
+      removeEl = "remove-el";
 
   // close announcement banner
   $("#close-banner").click(function() {
@@ -22,8 +22,14 @@ $(document).ready(function() {
   $("#search-icon").click(function() {
     $(".search-bar").animate({
       width: 'show'
-    }, 300);
+    }, 200);
     $(".search-bar").focus();
+  });
+
+  $(".search-bar").focusout(function() {
+    $(".search-bar").animate({
+      width: 'hide'
+    }, 200);
   });
 
   // toggle mobile menu display
@@ -32,22 +38,40 @@ $(document).ready(function() {
     $("#overlay").toggleClass(removeEl);
   });
 
-  // load and select sub-menu navigation
+  // give first tab in sub-menu a current class by default
   $(".sub-nav li:first-child>a").addClass("current");
 
+  // detect hash ID and load corresponding tab
+  if (window.location.hash != "") {
+    var pageTab = window.location.hash;
+    $(".tab-link").removeClass("current");
+    $(pageTab+"-link").addClass("current");
+    $(".sub-nav").siblings(".tab").addClass(removeEl);
+    $(pageTab).toggleClass(removeEl);
+    $(window).one('scroll', function() {
+        window.scrollTo(0, 0);
+    })
+  }
+
+  // show and hide tabs based on sub-menu item clicked
   $(".tab-link").click(function(e) {
     e.preventDefault();
+    var x = window.pageXOffset,
+        y = window.pageYOffset;
     $(".tab-link").removeClass("current");
     $("#"+this.id).addClass("current");
     $(".sub-nav").siblings(".tab").addClass(removeEl);
-    $("section#" + (this.id.replace("-link",""))).toggleClass(removeEl);
+    $("#" + (this.id.replace("-link",""))).toggleClass(removeEl);
+    window.location.hash = $(this).attr("id").replace("-link","");
+    $(window).one('scroll', function() {
+        window.scrollTo(x, y);
+    })
   });
 
   // show dropdown
   $(".top-nav > ul li").hover(function() {
     $(this).children(".dropdown-menu").toggleClass(hideEl);
   });
-
 
 });
 

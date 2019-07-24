@@ -5,18 +5,23 @@ variables, mixins, font specs
 
 
 // variables
-$fa-font-path: "https://owasp.github.io/www--site-theme/assets/fontawesome";
-$font-path: "https://owasp.github.io/www--site-theme/assets/font";
+$fa-font-path: "//scorchingoyster.github.io/owasp-layout/assets/fontawesome";
+$font-path:    "//scorchingoyster.github.io/owasp-layout/assets/font";
 
-$bg-blue: #233e81;
-$bg-grey: #f3f4f6;
+$bg-blue:  #233e81;
+$bg-grey:  #f3f4f6;
 $cta-blue: #1d7bd7;
 
+$success: #369505;
+$warning: #892727;
+$dark:    #444444;
+$grey:    #e6e6e6;
+
 $font-size: 18px;
-$grid-val: 30px;
+$grid-val:  30px;
 
 $content-bp: $grid-val*28; // 840px, content becomes 1-col
-$header-bp: $grid-val*34; // 1020px, header changes
+$header-bp:  $grid-val*34; // 1020px, header changes
 
 // mixins
 @mixin hide-el { // hide element (accessible)
@@ -49,7 +54,7 @@ $header-bp: $grid-val*34; // 1020px, header changes
 @mixin nav-link {
   margin: 0 10px;
   text-decoration: none;
-  color: lighten(black, 45%);
+  color: lighten(black, 40%);
   &:hover {
     color: $bg-blue;
   }
@@ -77,30 +82,8 @@ $header-bp: $grid-val*34; // 1020px, header changes
   }
 }
 
-@mixin cta-button {
-  padding: 9px 15px;
-  border-width: 0;
-  border-radius: 4.5px;
-  background-color: $cta-blue;
-  font-size: $font-size;
-  color: white;
-  font-family: 'ubuntu', sans-serif;
-  text-decoration: none;
-  &:hover {
-    background-color: lighten($cta-blue, 5%);
-  }
-  &:active {
-    background-color: darken($cta-blue, 5%);
-  }
-
-}
-
-.cta-button {
-  @include cta-button;
-}
-
 @mixin no-bullet-list {
-  margin: $grid-val/3 0;
+  margin: 10px 0;
   padding: 0;
   list-style: none;
 }

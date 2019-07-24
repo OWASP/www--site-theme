@@ -1,7 +1,5 @@
 <header role="banner">
-
   {% include banner.html %}
-  
   <div class="header-wrapper" aria-label="main navigation">
 
     <nav class="alt-nav">
@@ -20,19 +18,19 @@
           </a>
         </li>
         <li>
-          <input type="text" class="search-bar" placeholder="Search OWASP.org" role="search" aria-label="search OWASP.org">
+          <input type="search" class="search-bar" placeholder="Search OWASP.org" role="search">
         </li>
         <li><a href="{{ site.github.url }}/projects">PROJECTS</a></li>
         <li><a href="#">CHAPTERS</a></li>
         <li><a href="#">EVENTS</a></li>
-        <li><a href="{{ site.github.url }}/about">ABOUT</a></li>
+        <li><a href="{{ site.github.url }}/corporate">ABOUT</a></li>
         <li><a href="#">PRIVACY</a></li>
         <li><a href="#">SITEMAP</a></li>
         <li><a href="#">CONTACT</a></li>
         <li aria-label="donate to or join OWASP">
           <div class="nav-button">
-            <a href="#">Donate</a>
-            <a href="#">Join</a>
+            <a href="#" class="cta-button">Donate</a>
+            <a href="#" class="cta-button">Join</a>
           </div>
         </li>
       </ul>
@@ -56,20 +54,21 @@
           {% include dropdown-menu.html %}
         </li>
         <li>
-          <a href="{{ site.github.url }}/about">ABOUT</a>
+          <a href="{{ site.github.url }}/corporate">ABOUT</a>
           {% include dropdown-menu.html %}
         </li>
       </ul>
       <div class="interactive-wrapper">
-        <div class="site-search">
-          <span id="search-icon" aria-label="show search bar"><i class="fa fa-search"></i></span>
-          <input class="search-bar" type="text" placeholder="Search OWASP.org" role="search">
-        </div>
+        <label class="site-search" title="show search bar">
+          <span id="search-icon" tabindex="0"><i class="fa fa-search"></i></span>
+          <input class="search-bar" type="search" placeholder="Search OWASP.org" required="true">
+        </label>
         <div class="nav-button" aria-label="donate to or join OWASP">
-          <a href="#">Donate</a>
-          <a href="#">Join</a>
+          <a href="#" class="cta-button">Donate</a>
+          <a href="#" class="cta-button">Join</a>
         </div>
       </div>
     </nav>
+
   </div>
 </header>

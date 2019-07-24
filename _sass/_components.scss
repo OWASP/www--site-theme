@@ -4,9 +4,9 @@ site-wide reusable components styling
 
 // member section by the footer
 .member {
-  margin: $grid-val 0;
-  padding: $grid-val/2 0;
-  background-color: whitesmoke;
+  margin: 30px 0;
+  padding: 15px 0;
+  background-color: $bg-grey;
 }
 
 .member-list {
@@ -25,9 +25,9 @@ site-wide reusable components styling
 .member-logo {
   display: flex;
   align-items: center;
-  max-width: $grid-val*5;
-  height: $grid-val*4;
-  margin: 0 $grid-val/5;
+  max-width: 150px;
+  height: 120px;
+  margin: 0 15px;
   text-align: center;
   img {
     max-width: 70%;
@@ -38,7 +38,7 @@ site-wide reusable components styling
 .member-spotlight {
   img {
     max-width: 200px;
-    margin: $grid-val auto;
+    margin: 30px auto;
   }
 }
 
@@ -47,10 +47,10 @@ site-wide reusable components styling
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: $grid-val;  
+  padding-top: 30px;  
 }
 
-@media screen and (min-width: $content-bp) {
+@media screen and (min-width: $content-bp) { // 840px
   .member-wrapper { // grid for member section
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -63,11 +63,11 @@ site-wide reusable components styling
     padding: 0;
     list-style: none;
     & > * + * {
-      margin-top: $grid-val/2;
+      margin-top: 15px;
     }
   }
   li {
-    padding-left: $grid-val/3;
+    padding-left: 10px;
     border-left: 5px solid lighten($cta-blue, 40%);
     &:hover {
       border-color: $cta-blue;
@@ -94,40 +94,41 @@ site-wide reusable components styling
 // standalone link block that takes up a whole line
 .callout-link {
   display: block;
-  margin: $grid-val 0;
+  margin: 30px 0;
   font-family: 'ubuntu_medium', sans-serif;
   color: $cta-blue;
   text-decoration: none;
   &:hover {
     color: lighten($cta-blue, 5%);
+    text-decoration: underline;
   }
   &:active {
     color: darken($cta-blue, 10%);
   }
 }
 
-// quote styling, can be used with or without blockquote tag
+// quote styling, can be used with or without blockquote
 .callout-mono {
-  margin: $grid-val*1.5 0;
+  margin: 45px 0;
   font-family: 'sharetech', monospace;
   font-size: $font-size*2;
   line-height: 1.3;
   color: lighten(black, 50%);
   &.right {
     text-align: right;
-    padding-right: $grid-val*1.5;
+    padding-right: 45px;
     border-right: 10px solid lighten(grey, 40%);
-    border-radius: $grid-val/2;
+    border-radius: 15px;
   }
   &.left {
     text-align: left;
-    padding-left: $grid-val*1.5;
+    padding-left: 45px;
     border-left: 10px solid lighten(grey, 40%);
-    border-radius: $grid-val/2;
+    border-radius: 15px;
   }
 }
 
-//
+// full-width profile photo + copy component
 .profile-copy {
   display: inline-block;
   width: 100%;
@@ -135,28 +136,76 @@ site-wide reusable components styling
   &.right {
     img {
       float: right;
-      margin: 0 0 $grid-val/5 $grid-val;
+      margin: 0 0 6px 3px;
     }
   }
   &.left {
     img {
       float: left;
-      margin: 0 $grid-val $grid-val/5 0;
+      margin: 0 30px 6px 0;
     }
   }
   img {
-    max-width: $grid-val*6; // 180px
+    max-width: 180px;
     border: 2px solid whitesmoke;
   }
   .name {
-    margin: 0 0 $grid-val/2 0;
+    margin: 0 0 15px 0;
     font-weight: 700;
-    font-size: $font-size*1.5;
+    font-size: $font-size*1.5; // 27px
   }
   .title {
-    margin: 0 0 $grid-val/2 0;
+    margin: 0 0 15px 0;
     font-weight: 700;
-    font-size: $font-size*1.25;
+    font-size: $font-size*1.25; // 22.5px
+  }
+}
+
+// call-to-action buttons
+.cta-button {
+  padding: 9px 15px;
+  border-width: 0;
+  border-radius: 4.5px;
+  font-size: $font-size;
+  color: white;
+  background-color: $cta-blue;
+  font-family: 'ubuntu', sans-serif;
+  text-decoration: none !important;
+  &:hover {
+    color: white;
+    background-color: lighten($cta-blue, 5%);
+  }
+  &:active {
+    color: white;
+    background-color: darken($cta-blue, 5%);
+  }
+  &.dark {
+    background-color: $dark;
+    &:hover {
+      background-color: lighten($dark, 5%);
+    }
+    &:active {
+      background-color: darken($dark, 5%);
+    }
+  }
+  &.green {
+    background-color: $success;
+    &:hover {
+      background-color: lighten($success, 2.5%);
+    }
+    &:active {
+      background-color: darken($success, 5%);
+    }
+  }
+  &.grey {
+    background-color: $grey;
+    color: $dark;
+    &:hover {
+      background-color: lighten($grey, 2.5%);
+    }
+    &:active {
+      background-color: darken($grey, 5%);
+    }
   }
 }
 
@@ -166,12 +215,51 @@ site-wide reusable components styling
     font-weight: 700;
   }
   * {
-    padding: $grid-val/2;
+    padding: 15px;
     border: 2px solid lighten(grey, 30%);
   }
   tbody {
     tr:nth-child(odd) {
-      background-color: whitesmoke;
+      background-color: $bg-grey;
     }
+  }
+}
+
+// site-wide announcement banner styling
+#banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 45px;
+  & > *,
+  & > * > * {
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  a {
+    text-decoration: underline;
+  }
+  a#close-banner {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: $font-size*1.5; // 27px
+    color: currentColor;
+    opacity: 0.2;
+    line-height: 0;
+    &:hover,
+    &:active {
+      opacity: 0.5;
+    }
+  }
+  &.notice {
+    background-color: $bg-blue;
+  }
+  &.warning {
+    background-color: $warning;
+  }
+  &.success {
+    background-color: $success;
   }
 }

@@ -12,7 +12,7 @@ header, footer, mobile navigation menu
   display: inline-block;
   img {
     width: 100%;
-    max-width: $grid-val*5; // 150px
+    max-width: 150px;
   }
 }
 
@@ -23,25 +23,25 @@ header, footer, mobile navigation menu
 
 .search-bar {
   width: 100%;
-  max-width: $grid-val * 6; // 180px
+  max-width: 180px;
   border: 2px solid #dddddd;
   padding: 6px;
   border-radius: 0;
   &:focus {
     border-color: $cta-blue;
   }
-  &::placeholder {
-    color: grey;
+  &:placeholder {
+    color: $bg-grey;
   }
 }
 
 .site-search {
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
   align-items: center;
-  min-width: $grid-val * 7;
+  min-width: 200px;
   & > span {
-    margin-right: $grid-val/3;
+    margin-right: 10px;
     cursor: pointer;
     color: $cta-blue;
     &:hover {
@@ -64,19 +64,16 @@ header, footer, mobile navigation menu
 
 .top-nav {
   .nav-button {
-    margin-left: $grid-val/2;
-  }
-  .nav-button > a {
-    @include cta-button;
+    margin-left: 15px;
   }
   .nav-button > * + * {
-    margin-left: $grid-val/3;
+    margin-left: 10px;
   }
 }
 
 .dropdown-menu {
   position: absolute;
-  min-width: $grid-val * 7;
+  min-width: 200px;
   padding: 0;
   li {
     padding: 10px 20px;
@@ -93,9 +90,10 @@ header, footer, mobile navigation menu
     }
 
   }
+  // pseudo class for triangle shape tip
   &:after {
     position: absolute;
-    left: $grid-val;
+    left: 30px;
     margin-left: -20px;
     top: 0px;
     width: 0;
@@ -110,7 +108,7 @@ header, footer, mobile navigation menu
 
 .bot-nav {
   li {
-    margin-bottom: $grid-val/3;
+    margin-bottom: 10px;
   }
   a:first-child {
     margin-left: 0;
@@ -118,14 +116,14 @@ header, footer, mobile navigation menu
 }
 
 .footer-wrapper {
-  margin: $grid-val 0;
+  margin: 30px 0;
   .disclaimer {
-    margin-top: $grid-val/2;
+    margin-top: 15px;
   }
 }
 
 
-@media screen and (min-width: $header-bp) {
+@media screen and (min-width: $header-bp) { // 1020px
   .alt-nav {
     @include remove-el;
   }
@@ -139,9 +137,8 @@ header, footer, mobile navigation menu
 }
 
 .menu-toggler {
-  // display: block;
-  font-size: $grid-val;
-  color: #222222;
+  font-size: 30px;
+  color: lighten(black, 30%);
 }
 
 // mobile menu drawer, displays when toggled on
@@ -159,8 +156,8 @@ header, footer, mobile navigation menu
   li {
     padding: 12px 15px;
     &:first-child {
-      margin-bottom: $grid-val/2;
-      font-size: $grid-val;
+      margin-bottom: 15px;
+      font-size: 30px;
     }
     &:not(:nth-child(-n+2)) {
       border-top: 1px solid lighten($bg-blue, 5%);
@@ -174,66 +171,34 @@ header, footer, mobile navigation menu
     text-decoration: none;
   }
   .nav-button {
-    margin-top: $grid-val/3;
+    margin-top: 10px;
     & > a {
-      @include cta-button;
-      margin-right: $grid-val/3;
+      margin-right: 10px;
     }
   }
 }
 
-#overlay {
-  position: fixed;
-  display: block;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.5);
-  z-index: 2;
-}
+// TBD, likely not to be used
+// #overlay {
+//   position: fixed;
+//   display: block;
+//   width: 100%;
+//   height: 100%;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   background-color: $bg-grey;
+//   opacity: 0.8;
+//   z-index: 2;
+// }
 
 .alt-logo {
   display: block;
-  margin: $grid-val/2 auto;
-  max-width: $grid-val * 5; // 210px
+  margin: 15px auto;
+  max-width: 150px;
   img {
     width: 100%;
-  }
-}
-
-// banner styling
-#banner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: $grid-val $grid-val*1.5;
-  & > *,
-  & > * > * {
-    margin: 0;
-    padding: 0;
-    color: white;
-  }
-  a#close-banner {
-    position: absolute;
-    right: 15px;
-    top: 10px;
-    font-size: $grid-val;
-    color: currentColor;
-    opacity: 0.2;
-    line-height: 0;
-    &:hover,
-    &:active {
-      opacity: 0.5;
-    }
-  }
-  &.notice {
-    background-color: $bg-blue;
-  }
-  &.warning {
-    background-color: #892727;
   }
 }
 
@@ -243,9 +208,9 @@ header, footer, mobile navigation menu
     @include remove-el;
   }
   .header-wrapper {
-    max-height: $grid-val * 2.5; // 75px
-    margin-bottom: $grid-val/2;
-    background-color: whitesmoke;
+    max-height: 75px; 
+    margin-bottom: 15px;
+    background-color: $bg-grey;
     box-shadow: 0 1px 2px #cccccc;
   }
 }
@@ -259,7 +224,7 @@ header, footer, mobile navigation menu
   }
 }
 
-@media screen and (max-width: $content-bp - 1) {
+@media screen and (max-width: $content-bp - 1) { // 839px
   // restyling for ease of use on mobile
   .bot-nav {
     ul {
@@ -273,6 +238,7 @@ header, footer, mobile navigation menu
 
 @media screen and (max-width: $content-bp) {
   .main-wrapper,
+  .header-wrapper,
   .member-wrapper,
   .footer-wrapper {
     & > * {

@@ -17,18 +17,22 @@
 
 .sub-nav {
   grid-area: menu;
-  padding: $grid-val/2 0;
+  padding: 15px 0;
   height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   @include nav-menu;
   & li {
-    margin-bottom: $grid-val/3;
+    margin-bottom: 10px;
   }
 }
 
 .tab {
+  // noted for potential accessibility change
+  &:focus {
+    outline: 0;
+  }
 }
 
 .page-title {
@@ -50,25 +54,19 @@
 
 .sidebar {
   grid-area: side;
-  padding: 0 $grid-val/2;
-  background-color: whitesmoke;
+  padding: 0 15px;
+  background-color: lighten($bg-blue, 65%);
   & > * {
-    margin: $grid-val/2 0;
+    margin: 15px 0;
   }
   & > * + * { // targets any direct descendant that has a neighbor element
-    margin: $grid-val 0;
+    margin: 30px 0;
   }
   ul {
     @include no-bullet-list;
   }
   h1, h2, h3, h4, h5, h6 {
     margin: 0;
-  }
-  a {
-    text-decoration: none;
-    &:hover {
-      text-decoration: underline;
-    }
   }
 }
 
@@ -87,11 +85,10 @@
   }
 }
 
-.sub-nav {
-}
 
-@media screen and (max-width: $content-bp - 1) { // 1-column on mobile
+@media screen and (max-width: $content-bp - 1) { // 839px
   .col-sidebar { 
+    // 1-column on mobile
     .main-wrapper {
       display: grid;
       grid-template-rows: auto;
@@ -105,7 +102,7 @@
     }
     .sub-nav,
     .github-buttons {
-      padding: $grid-val/2 0;
+      padding: 15px 0;
     }
   }
 }

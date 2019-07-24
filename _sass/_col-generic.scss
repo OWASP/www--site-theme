@@ -1,5 +1,6 @@
 /*
 7:3 two column generic layout specific styling
+some styling is specified in col-sidebar
 */
 
 .col-generic { // default layout on desktop
@@ -14,43 +15,14 @@
   }
 }
 
-.page-body {
-  grid-area: body;
-  & > *:first-child {
-    margin-top: 0;
-  }
-}
-
 .news-events-wrapper {
   grid-area: list;
 }
 
-.sidebar {
-  grid-area: side;
-  padding: 0 $grid-val/2;
-  background-color: whitesmoke;
-  & > * {
-    margin: $grid-val/2 0;
-  }
-}
 
-.video-container { // TBD, placeholder for testing Youtube embeds
-  position: relative;
-  max-width: 100%;
-  padding-bottom: 56.25%;
-  iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-
-  }
-}
-
-@media screen and (max-width: $content-bp - 1) { // 1-column on mobile
+@media screen and (max-width: $content-bp - 1) { // 839px
   .col-generic { 
+    // 1-column on mobile
     .main-wrapper {
       display: grid;
       grid-template-rows: auto;

@@ -11,7 +11,45 @@ currently only used for homepage
       margin: 0 auto $grid-val auto;
       grid-template-rows: auto auto 1fr;
       grid-template-columns: repeat(2, 1fr);
-      grid-row-gap: $grid-val*1.5;
+      grid-row-gap: $grid-val*1.5; // 45px
     }
+  }
+}
+
+.homepage-promo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homepage-blog {
+  .author {
+    padding-left: 10px;
+    border-left: 5px solid lighten($cta-blue, 40%);
+    &:hover {
+      border-color: $cta-blue;
+    }
+    &:active {
+      border-color: darken($cta-blue, 10%);
+    }
+    & > a {
+      color: $cta-blue;
+      text-decoration: none;
+      &:hover {
+        color: lighten($cta-blue, 5%);
+      }
+      &:active {
+        color: darken($cta-blue, 10%);
+      }
+      &:visited {
+        color: darken($cta-blue, 25%);
+      }
+    }
+  }
+  img {
+    float: right;
+    max-width: 90px;
+    margin: 3px 10px; 
+    border: 1px solid whitesmoke;
   }
 }
