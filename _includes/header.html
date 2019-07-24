@@ -50,6 +50,19 @@
               {% else %}
                 <a href="/{{menu.url}}">{{menu.title}}</a>
               {% endif %}
+              {% if menu.items %}
+              <ul class="dropdown-menu hide-el">
+                {% for item in menu.items %}
+                  <li>
+                    {% if item.url contains '://' %}
+                      <a href="{{item.url}}">{{item.title}}</a>
+                    {% else %}
+                      <a href="/{{item.url}}">{{item.title}}</a>
+                    {% endif %}
+                  </li>
+                {% endfor %}
+              </ul>
+              {% endif %}
           </li>
         {% endfor %}
         <!-- HONG Menus <li>
