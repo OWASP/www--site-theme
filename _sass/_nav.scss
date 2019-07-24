@@ -89,6 +89,9 @@ header, footer, mobile navigation menu
       background-color: darken($bg-blue, 5%);
     }
 
+    a:visited {
+      color:white;
+    }
   }
   // pseudo class for triangle shape tip
   &:after {
