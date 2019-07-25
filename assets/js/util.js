@@ -1,5 +1,4 @@
-$(document).ready(function() {
-
+$(function() {
   // introduce an element that blocks for 0.01s when page loads
   // fix for a bug when user's mouse triggers JS events too early
   setTimeout(function(){
@@ -70,6 +69,7 @@ $(document).ready(function() {
 
   // show dropdown
   $(".top-nav > ul li").hover(function() {
+    alert("hello");
     $(this).children(".dropdown-menu").toggleClass(hideEl);
   });
 

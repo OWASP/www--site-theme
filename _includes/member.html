@@ -6,7 +6,7 @@
         {% for image in site.static_files %}
           {% if image.path contains 'image/member-logo-grey' %}
             <a href="#" class="member-logo">
-              <img src="{{ site.github.url }}{{ image.path }}" alt="image" />
+              <img src="{{ site.url }}{{ image.path }}" alt="image" />
             </a>
           {% endif %}
         {% endfor %}
@@ -15,7 +15,7 @@
     </section>
     <section class="member-spotlight">
       <h2>Spolight: Company name</h2>
-      <a href=""><img src="{{ site.github.url }}/assets/image/member-logo/accenture.png" alt=""></a>
+      <a href=""><img src="{{ site.url }}/assets/image/member-logo/accenture.png" alt=""></a>
       <p>Qui ut et qui culpa. Corporis aut non quae ea eum ad non. Qui mollitia aliquam veritatis. Reprehenderit voluptas assumenda rem et neque ullam. Iure sequi quisquam iure voluptatibus.</p>
     </section>
     <section class="member-cta">
