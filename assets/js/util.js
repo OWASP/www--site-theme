@@ -69,7 +69,6 @@ $(function() {
 
   // show dropdown
   $(".top-nav > ul li").hover(function() {
-    alert("hello");
     $(this).children(".dropdown-menu").toggleClass(hideEl);
   });
 
