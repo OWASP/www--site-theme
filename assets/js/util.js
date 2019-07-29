@@ -14,10 +14,7 @@ $(function() {
 
   if( Cookies.get('banner-seen') == 'true')
   {
-    // this works... 
-    // alert("Cookie set");
-    // but this doesn't...probably because it isn't in the DOM yet?  Surely not...
-      ("#banner").hide();
+      $("#banner").hide();
   }
   
   // close announcement banner
