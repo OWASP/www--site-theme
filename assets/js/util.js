@@ -14,7 +14,12 @@ $(function() {
 
   if( Cookies.get('banner-seen') == 'true')
   {
+    alert("Cookie set");
     $(this).closest("#banner").remove();
+  }
+  else
+  {
+    alert(Cookies.get('banner-seen'));
   }
   // close announcement banner
   $("#close-banner").click(function() {
