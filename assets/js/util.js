@@ -17,7 +17,7 @@ $(function() {
     // this works... 
     // alert("Cookie set");
     // but this doesn't...probably because it isn't in the DOM yet?  Surely not...
-    $(this).closest("#banner").hide();
+      ("#banner").hide();
   }
   
   // close announcement banner
