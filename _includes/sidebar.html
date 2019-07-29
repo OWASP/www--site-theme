@@ -10,7 +10,7 @@
   {% if project_info %}
   {% capture my_include %}{% include_relative /info.md %}{% endcapture %}
   {{ my_include | markdownify }}
-  {% elif site.github.url contains 'www--site-theme' %}
+  {% elsif site.github.url contains 'www--site-theme' %}
   <div>
    <h3>Project Information</h3>	
    <ul>	
@@ -38,7 +38,7 @@
   {% if leaders %}
   {% capture linclude %}{% include_relative /leaders.md %}{% endcapture %}
   {{ linclude | markdownify }}
-  {% elif site.github.url contains 'www--site-theme' %}
+  {% elsif site.github.url contains 'www--site-theme' %}
   <div>
     <h3>Leaders</h3>	
     <ul>	
