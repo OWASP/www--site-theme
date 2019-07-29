@@ -14,13 +14,12 @@ $(function() {
 
   if( Cookies.get('banner-seen') == 'true')
   {
-    alert("Cookie set");
-    $(this).closest("#banner").remove();
+    // this works... 
+    // alert("Cookie set");
+    // but this doesn't...probably because it isn't in the DOM yet?  Surely not...
+    $(this).closest("#banner").hide();
   }
-  else
-  {
-    alert(Cookies.get('banner-seen'));
-  }
+  
   // close announcement banner
   $("#close-banner").click(function() {
     $(this).closest("#banner").remove();
