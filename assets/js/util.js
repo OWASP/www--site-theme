@@ -12,9 +12,14 @@ $(function() {
   var hideEl = "hide-el",
       removeEl = "remove-el";
 
+  if( Cookies.get('banner-seen') == 'true')
+  {
+    $(this).closest("#banner").remove();
+  }
   // close announcement banner
   $("#close-banner").click(function() {
     $(this).closest("#banner").remove();
+    Cookies.set('banner-seen', 'true', { expires: 7 });
   });
 
   // show and focus on search bar
