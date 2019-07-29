@@ -12,7 +12,6 @@
     <li>breaker</li>	
   </ul>	
 </div>
-  {% endif %}
   <div>
     <h3>Downloads</h3>
     <ul>
@@ -28,6 +27,7 @@
       <li><a href="#">zap-extensions</a></li>
     </ul>
   </div>
+  {% endif %}
   {% if page.site_side %}
   {% capture linclude %}{% include_relative /leaders.md %}{% endcapture %}
   {{ linclude | markdownify }}
