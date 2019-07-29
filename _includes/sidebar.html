@@ -1,6 +1,6 @@
 <div class="sidebar" role="complementary">
 {% for static_file in site.static_files %}
-  {% if static_file.path contains 'project_info.md' %}
+  {% if static_file.path contains 'info.md' %}
     {% assign project_info = true %}
   {% elsif static_file.path.contains 'leaders.md' %}
     {% assign leaders = true %}
@@ -8,9 +8,9 @@
 {% endfor %}
   <p><strong>The OWASP Foundation</strong> came online on December 1st, 2001 it was established as a not-for-profit charitable organization in the United States on April 21, 2004, to ensure the ongoing availability and support for our work at Open Web Application Security Project.</p>
   {% if project_info %}
-  {% capture my_include %}{% include_relative /project_info.md %}{% endcapture %}
+  {% capture my_include %}{% include_relative /info.md %}{% endcapture %}
   {{ my_include | markdownify }}
-  {% else %}
+  {% elif site.github.url contains 'www--site-theme' %}
   <div>
    <h3>Project Information</h3>	
    <ul>	
@@ -38,7 +38,7 @@
   {% if leaders %}
   {% capture linclude %}{% include_relative /leaders.md %}{% endcapture %}
   {{ linclude | markdownify }}
-  {% else %}
+  {% elif site.github.url contains 'www--site-theme' %}
   <div>
     <h3>Leaders</h3>	
     <ul>	
@@ -48,10 +48,5 @@
     </ul>	
   </div>
   {% endif %}
-    <h3>Follow</h3>
-    <ul>
-      <li><a href="#">Join Mailing List</a></li>
-      <li><a href="#">@owaspzap</a></li>
-    </ul>
   </div>
 </div>
