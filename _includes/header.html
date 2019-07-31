@@ -39,7 +39,7 @@
     </nav>
     
     <nav class="top-nav" role="navigation" aria-label="primary navigation">
-      <a href="{{ site.url }}" class="desktop-logo" aria-label="go to homepage">
+      <a href="{{ site.github.url }}" class="desktop-logo" aria-label="go to homepage">
         <img src="assets/image/logo.png" alt="">
       </a>
       <!-- jekyll menu stuff -->
@@ -62,7 +62,7 @@
 <script type="text/javascript">
   $(function(){
     // this works to get data from a json file NOT in data
-      $.getJSON("https://www2.owasp.org/www--site-theme/assets/sitedata/menus.json", function(data) {
+      $.getJSON("{{ site.github.url }}/assets/sitedata/menus.json", function(data) {
          var listr = "<ul aria-label='header menu'>";
           $.each(data.menus, function (ndx, menu){
               listr += "<li><a href='" + menu.url + "'>" + menu.title + "</a>";
