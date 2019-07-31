@@ -1,11 +1,11 @@
 {
 	"menus": [{
 			"title": "PROJECTS",
-			"url": "https://owasp.github.io/www--site/projects",
+			"url": "projects/",
 			"items": [
 				{
 					"title": "Zed Attack Proxy",
-					"url": "https://owasp.github.io/www-project-zap/"
+					"url": "www-project-zap/"
 				}
 			]
 		},
@@ -19,7 +19,7 @@
 		},
 		{
 			"title": "ABOUT",
-			"url": "https://owasp.github.io/www--site/corporate"
+			"url": "corporate/"
 		}
 	]
 }
