@@ -1,11 +1,11 @@
 {
 	"menus": [{
 			"title": "PROJECTS",
-			"url": "projects/",
+			"url": "projects",
 			"items": [
 				{
 					"title": "Zed Attack Proxy",
-					"url": "www-project-zap/"
+					"url": "www-project-zap"
 				}
 			]
 		},
@@ -19,7 +19,7 @@
 		},
 		{
 			"title": "ABOUT",
-			"url": "corporate/"
+			"url": "corporate"
 		}
 	]
 }
