@@ -59,7 +59,7 @@
 <script type="text/javascript">
   $(function(){
     // this works to get data from a json file NOT in data
-      $.getJSON("https://owasp.github.io/www--site-theme/assets/sitedata/menus.json", function(data) {
+      $.getJSON("https://www2.owasp.org/www--site-theme/assets/sitedata/menus.json", function(data) {
          var listr = "<ul aria-label='header menu'>";
           $.each(data.menus, function (ndx, menu){
               listr += "<li><a href='" + menu.url + "'>" + menu.title + "</a>";
