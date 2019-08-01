@@ -75,6 +75,7 @@ header, footer, mobile navigation menu
   position: absolute;
   min-width: 200px;
   padding: 0;
+  z-index: 99;
   li {
     padding: 10px 20px;
     background-color: $bg-blue;
@@ -91,6 +92,10 @@ header, footer, mobile navigation menu
 
     a:visited {
       color:white;
+    }
+    a {
+      color: white;
+      text-decoration: none;
     }
   }
   // pseudo class for triangle shape tip
@@ -152,7 +157,7 @@ header, footer, mobile navigation menu
   width: 100%;
   height: 100%;
   margin: 0;
-  z-index: 3;
+  z-index: 99;
   overflow: scroll;
   background-color: $bg-blue;
   box-shadow: 2px 0 10px #000000;
