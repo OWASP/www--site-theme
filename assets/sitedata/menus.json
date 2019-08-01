@@ -2,24 +2,133 @@
 	"menus": [{
 			"title": "PROJECTS",
 			"url": "projects",
-			"items": [
-				{
-					"title": "Zed Attack Proxy",
-					"url": "www-project-zap"
-				}
-			]
+			"items": [{
+				"title": "OWASP Top Ten",
+				"url": "#"
+			}, {
+				"title": "Cross-site Scripting (XSS)",
+				"url": "#"
+			}, {
+				"title": "Zed Attack Proxy",
+				"url": "www-project-zap"
+			}, {
+				"title": "Password Special Characters",
+				"url": "#"
+			}, {
+				"title": "Cross-Site Request Forgery (CSRF)",
+				"url": "#"
+			}, {
+				"title": "OWASP Testing Guide",
+				"url": "#"
+			}, {
+				"title": "Cheat Sheet: Cross Site Scripting Filter Evasion",
+				"url": "#"
+			}, {
+				"title": "Cheat Sheet: Cross Site Scripting Prevention",
+				"url": "#"
+			}, {
+				"title": "Cheat Sheet: Cross-Site Request Forgery (CSRF) Prevention",
+				"url": "#"
+			}, {
+				"title": "Cheat Sheet: SQL Injection Prevention",
+				"url": "#"
+			}, {
+				"title": "Cheat Sheet: REST Security",
+				"url": "#"
+			}, {
+				"title": "Browse all Projects...",
+				"url": "#"
+			}]
 		},
 		{
 			"title": "CHAPTERS",
-			"url": "#"
+			"url": "chapters",
+			"items": [{
+				"title": "Find a Local Chapter...",
+				"url": "https://www.meetup.com/pro/owasp"
+			}, {
+				"title": "Africa",
+				"url": "#"
+			}, {
+				"title": "Asia",
+				"url": "#"
+			}, {
+				"title": "Australia & Oceania",
+				"url": "#"
+			}, {
+				"title": "Europe",
+				"url": "#"
+			}, {
+				"title": "North America",
+				"url": "#"
+			}, {
+				"title": "South America",
+				"url": "#"
+			}, {
+				"title": "Start a Local Chapter...",
+				"url": "https://owasporg.atlassian.net/servicedesk/customer/portal/7/create/73?src=-1419759666"
+			}]
 		},
 		{
 			"title": "EVENTS",
-			"url": "#"
+			"url": "#",
+			"items": [{
+				"title": "Global AppSec - DC, September 8-13th",
+				"url": "https://dc.globalappsec.org"
+			}, {
+				"title": "Global AppSec - Amsterdam, September 23-28th",
+				"url": "https://ams.globalappsec.org"
+			}, {
+				"title": "LASCON AppSec Day Austin",
+				"url": "#"
+			}, {
+				"title": "AppSec Day Melbourne",
+				"url": "#"
+			}, {
+				"title": "AppSec California",
+				"url": "#"
+			}, {
+				"title": "Browse All Events...",
+				"url": "#"
+			}, {
+				"title": "Asia",
+				"url": "#"
+			}]
 		},
 		{
 			"title": "ABOUT",
-			"url": "corporate"
+			"url": "corporate",
+			"items": [{
+				"title": "Board & Staff",
+				"url": "#"
+			}, {
+				"title": "Careers",
+				"url": "#"
+			}, {
+				"title": "Donate",
+				"url": "#"
+			}, {
+				"title": "Finance",
+				"url": "#"
+			}, {
+				"title": "Governance",
+				"url": "#"
+			}, {
+				"title": "Membership",
+				"url": "#"
+			}, {
+				"title": "Opinions & News",
+				"url": "#"
+			}, {
+				"title": "Policies & Procedures",
+				"url": "#"
+			}, {
+				"title": "Supporters",
+				"url": "#"
+			}, {
+				"title": "Video",
+				"url": "https://www.youtube.com/user/OWASPGLOBAL/videos"
+			}]
 		}
 	]
 }
