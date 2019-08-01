@@ -37,6 +37,10 @@ a {
   &:active {
     color: darken($cta-blue, 10%);
   }
+  &:visited {
+    color: $cta-blue;
+    text-decoration: none;
+  }
 }
 
 // basic layout spec
