@@ -10,6 +10,7 @@
           <img src="assets/image/logo.png" alt="OWASP logo">
       </a>
       <div id="overlay" class="remove-el"></div>
+      <!-- jekyll menu stuff -->
     </nav>
     
     <nav class="top-nav" role="navigation" aria-label="primary navigation">
@@ -53,9 +54,9 @@
           });
           listr += "</ul>";
           mlistr += "</ul>";
-          
+
           $('.desktop-logo').after(listr);
-          $('.overlay').after(mlistr);
+          $('#overlay').after(mlistr);
 
           $(".top-nav > ul li").hover(function() {
             $(this).children(".dropdown-menu").toggleClass('hide-el');
