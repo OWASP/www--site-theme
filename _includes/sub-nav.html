@@ -30,6 +30,11 @@
   $(function(){
     $('.tab-link').click(function() {
       var page = "projects.md";
+      if(!/main/i.test($(this).id.toLowerCase()))
+      {
+        page = $(this).id.toLowerCase().replace('-link','')  + '.md';
+        alert(page);
+      }
       $(this).closest('.page-body').load(page);
       //alert($('.page-body').html());
     });
