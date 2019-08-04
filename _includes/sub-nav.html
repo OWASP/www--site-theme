@@ -37,9 +37,13 @@
       if($(this).attr('id').toLowerCase().indexOf('main') == -1)
       {
         page = page_path + 'tab_' + $(this).attr('id').toLowerCase().replace('-link','');
+        $('.page-body').load(page);
+      }
+      else
+      {
+        window.location.href = page;
       }
       
-      $('.page-body').load(page);
     });
   });
 </script>
