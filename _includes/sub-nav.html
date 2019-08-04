@@ -20,11 +20,17 @@
 <script type="text/javascript">
   $(function(){
     $('.tab-link').click(function() {
-      var page = "tab_info";
+      var page_path = '{{ page.path }}';
+      if(path_path.endsWith('/'))
+        page_path = "";
+      else
+        page_path = page_path.substring(0, page_path.lastIndexOf('/') + 1);
+      
+      var page = page_path + "tab_info";
       
       if($(this).attr('id').toLowerCase().indexOf('main') == -1)
       {
-        page = 'tab_' + $(this).attr('id').toLowerCase().replace('-link','');
+        page = page_path + 'tab_' + $(this).attr('id').toLowerCase().replace('-link','');
       }
       $('.page-body').load(page);
     });
