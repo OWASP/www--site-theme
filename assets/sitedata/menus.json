@@ -1,7 +1,7 @@
 {
 	"menus": [{
 			"title": "PROJECTS",
-			"url": "projects",
+			"url": "/projects",
 			"items": [{
 				"title": "OWASP Top Ten",
 				"url": "#"
