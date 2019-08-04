@@ -34,9 +34,10 @@
       if(!$(this).attr('id').toLowerCase().indexOf('main'))
       {
         page = $(this).attr('id').toLowerCase().replace('-link','')  + '.md';
+        alert(page);
       }
       $(this).closest('.page-body').load(page);
-      alert($('.page-body').html());
+      //alert($('.page-body').html());
     });
   });
 </script>
