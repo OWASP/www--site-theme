@@ -33,11 +33,14 @@
       
       if($(this).attr('id').toLowerCase().indexOf('main') == -1)
       {
-        alert($(this).attr('id'));
         page = $(this).attr('id').toLowerCase().replace('-link','')  + '.md';
       }
-      $('.page-body').load(page);
-      //alert($('.page-body').html());
+      $('.page-body').load(page, function( response, status, xhr ) {
+          if ( status == "error" ) {
+            var msg = "Sorry but there was an error: ";
+            $( "#error" ).html( msg + xhr.status + " " + xhr.statusText );
+          }
+        });
     });
   });
 </script>
