@@ -32,7 +32,7 @@
       else
         page_path = page_path.substring(0, page_path.lastIndexOf('/') + 1);
       
-      var page = '{{ page.url }}'; // for main, reload the page
+      var page = '{{ page.path }}'; // for main, reload the page
       
       if($(this).attr('id').toLowerCase().indexOf('main') == -1)
       {
