@@ -29,18 +29,13 @@
 <script type="text/javascript">
   $(function(){
     $('.tab-link').click(function() {
-      var page = "pages/projects";
+      var page = "projects";
       
       if($(this).attr('id').toLowerCase().indexOf('main') == -1)
       {
         page = 'pages/' + $(this).attr('id').toLowerCase().replace('-link','');
       }
-      $('.page-body').load(page, function( response, status, xhr ) {
-          if ( status == "error" ) {
-            var msg = "Sorry but there was an error: ";
-            alert( msg + xhr.status + " " + xhr.statusText );
-          }
-        });
+      $('.page-body').load(page);
     });
   });
 </script>
