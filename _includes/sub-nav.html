@@ -1,5 +1,12 @@
 <nav class="sub-nav" role="navigation" aria-label="navigate page tabs">
   <ul role="tablist">
+    {% for file in site.static_files %}
+      {% if file contains "tab_" %}
+        <li>
+            <a href="#" id="{{ file }}-link" class="tab-link" role="tab" aria-selected="true" aria-controls="main" tabindex="0">{{ file }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
     <li>
         <a href="#" id="main-link" class="tab-link" role="tab" aria-selected="true" aria-controls="main" tabindex="0">Main</a>
     </li>
