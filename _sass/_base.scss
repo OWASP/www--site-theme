@@ -38,7 +38,7 @@ a {
     color: darken($cta-blue, 10%);
   }
   &:visited {
-    color: white;
+    color: $cta-blue;
     text-decoration: none;
   }
 }
