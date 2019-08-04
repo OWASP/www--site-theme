@@ -26,17 +26,17 @@
     </li>
   </ul>
 </nav>
-<!--<script type="text/javascript">
+<script type="text/javascript">
   $(function(){
     $('.tab-link').click(function() {
       var page = "projects.md";
-      alert($(this).id);
-      if(!$(this).id.toLowerCase().indexOf('main'))
+      alert($(this).attr('id'));
+      if(!$(this).attr('id').toLowerCase().indexOf('main'))
       {
-        page = $(this).id.toLowerCase().replace('-link','')  + '.md';
+        page = $(this).attr('id').toLowerCase().replace('-link','')  + '.md';
       }
       $(this).closest('.page-body').load(page);
       //alert($('.page-body').html());
     });
   });
-</script>-->
+</script>
