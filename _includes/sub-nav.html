@@ -36,11 +36,11 @@
 <script type="text/javascript">
   $(function(){
     $('.tab-link').click(function() {
-      var page = "pages/project_info";
+      var page = "pages/tab_project_info";
       
       if($(this).attr('id').toLowerCase().indexOf('main') == -1)
       {
-        page = 'pages/' + $(this).attr('id').toLowerCase().replace('-link','');
+        page = 'pages/tab_' + $(this).attr('id').toLowerCase().replace('-link','');
       }
       $('.page-body').load(page);
     });
