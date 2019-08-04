@@ -180,6 +180,9 @@ site-wide reusable components styling
     color: white;
     background-color: darken($cta-blue, 5%);
   }
+  &:visited {
+    color: white;
+  }
   &.dark {
     background-color: $dark;
     &:hover {
