@@ -1,7 +1,7 @@
 ---
 
 layout: null
-title: Project Example Title
+title: Main
 
 ---
 
