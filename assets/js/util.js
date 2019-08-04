@@ -47,7 +47,7 @@ $(function() {
   $(".sub-nav li:first-child>a").addClass("current");
 
   // detect hash ID and load corresponding tab
-  if (window.location.hash != "") {
+  /*if (window.location.hash != "") {
     var pageTab = window.location.hash;
     $(".tab-link").removeClass("current");
     $(pageTab+"-link").addClass("current");
@@ -59,7 +59,7 @@ $(function() {
   }
 
   // show and hide tabs based on sub-menu item clicked
-  $(".tab-link").click(function(e) {
+    $(".tab-link").click(function(e) {
     e.preventDefault();
     var x = window.pageXOffset,
         y = window.pageYOffset;
@@ -71,7 +71,7 @@ $(function() {
     $(window).one('scroll', function() {
         window.scrollTo(x, y);
     })
-  });
+  });*/
 
   // show dropdown
   $(".top-nav > ul li").hover(function() {
