@@ -1,6 +1,6 @@
 ---
 
-title: Project Screenshots
+title: Screenshots
 layout: null
 
 ---
