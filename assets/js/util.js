@@ -51,8 +51,8 @@ $(function() {
     var pageTab = window.location.hash;
     $(".tab-link").removeClass("current");
     $(pageTab+"-link").addClass("current");
-    $(".sub-nav").siblings(".tab").addClass(removeEl);
-    $(pageTab).toggleClass(removeEl);
+    //$(".sub-nav").siblings(".tab").addClass(removeEl);
+    //$(pageTab).toggleClass(removeEl);
     //$(window).one('scroll', function() {
     //    window.scrollTo(0, 0);
     //})
@@ -65,8 +65,8 @@ $(function() {
         y = window.pageYOffset;
     $(".tab-link").removeClass("current");
     $("#"+this.id).addClass("current");
-    $(".sub-nav").siblings(".tab").addClass(removeEl);
-    $("#" + (this.id.replace("-link",""))).toggleClass(removeEl);
+    //$(".sub-nav").siblings(".tab").addClass(removeEl);
+    //$("#" + (this.id.replace("-link",""))).toggleClass(removeEl);
     window.location.hash = $(this).attr("id").replace("-link","");
     //$(window).one('scroll', function() {
     //    window.scrollTo(x, y);
