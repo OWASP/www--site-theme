@@ -35,7 +35,7 @@
       {
         page = '/pages/' + $(this).attr('id').toLowerCase().replace('-link','')  + '.md';
       }
-      $(this).closest('.page-body').load(page);
+      $('.page-body').load(page);
       //alert($('.page-body').html());
     });
   });
