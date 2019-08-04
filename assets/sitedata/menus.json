@@ -42,7 +42,7 @@
 		},
 		{
 			"title": "CHAPTERS",
-			"url": "chapters",
+			"url": "/chapters",
 			"items": [{
 				"title": "Find a Local Chapter...",
 				"url": "https://www.meetup.com/pro/owasp"
@@ -97,7 +97,7 @@
 		},
 		{
 			"title": "ABOUT",
-			"url": "corporate",
+			"url": "/corporate",
 			"items": [{
 				"title": "Board & Staff",
 				"url": "/corporate"
