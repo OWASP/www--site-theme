@@ -1,7 +1,7 @@
 <nav class="sub-nav" role="navigation" aria-label="navigate page tabs">
   <ul role="tablist">
     {% for file in site.pages %}
-      {% if file.name contains "tab_project_info" %}
+      {% if file.name contains "tab_info" %}
         <li>
             <a href="#" id="{{ file.title | downcase }}-link" class="tab-link" role="tab" aria-selected="true" aria-controls="{{ file.title | downcase }}" tabindex="0">{{ file.title }}</a>
         </li>
@@ -16,7 +16,7 @@
 <script type="text/javascript">
   $(function(){
     $('.tab-link').click(function() {
-      var page = "pages/tab_project_info";
+      var page = "pages/tab_info";
       
       if($(this).attr('id').toLowerCase().indexOf('main') == -1)
       {
