@@ -1,36 +1,16 @@
 <nav class="sub-nav" role="navigation" aria-label="navigate page tabs">
   <ul role="tablist">
     {% for file in site.pages %}
-      {% if file.name contains "tab_" %}
+      {% if file.name contains "tab_project_info" %}
         <li>
-            <a href="#" id="{{ file.title }}-link" class="tab-link" role="tab" aria-selected="true" aria-controls="main" tabindex="0">{{ file.title }}</a>
+            <a href="#" id="{{ file.title | downcase }}-link" class="tab-link" role="tab" aria-selected="true" aria-controls="{{ file.title | downcase }}" tabindex="0">{{ file.title }}</a>
+        </li>
+      {% elsif file.name contains "tab" %}
+        <li>
+            <a href="#" id="{{ file.title | downcase }}-link" class="tab-link" role="tab" aria-selected="false" aria-controls="{{ file.title | downcase }}" tabindex="0">{{ file.title }}</a>
         </li>
       {% endif %}
     {% endfor %}
-    <li>
-        <a href="#" id="main-link" class="tab-link" role="tab" aria-selected="true" aria-controls="main" tabindex="0">Main</a>
-    </li>
-    <li>
-        <a href="#" id="screenshots-link" class="tab-link" role="tab" aria-selected="false" aria-controls="screenshots" tabindex="0">Screenshots</a>
-    </li>
-    <li>
-        <a href="#" id="features-link" class="tab-link" role="tab" aria-selected="false" aria-controls="features" tabindex="0">Features</a>
-    </li>
-    <li>
-        <a href="#" id="talk-link" class="tab-link" role="tab" aria-selected="false">Talk</a>
-    </li>
-    <li>
-        <a href="#" id="news-link" class="tab-link" role="tab" aria-selected="false">News</a>
-    </li>
-    <li>
-        <a href="#" id="gear-link" class="tab-link" role="tab" aria-selected="false">Gear</a>
-    </li>
-    <li>
-        <a href="#" id="supporters-link" class="tab-link" role="tab" aria-selected="false">Supporters</a>
-    </li>
-    <li>
-        <a href="#" id="languages-link" class="tab-link" role="tab" aria-selected="false">Languages</a>
-    </li>
   </ul>
 </nav>
 <script type="text/javascript">
