@@ -17,11 +17,11 @@
 <script type="text/javascript">
   $(function(){
     $('.tab-link').click(function() {
-      var page = {{ page.basepath }} + "tab_info";
+      var page = "tab_info";
       
       if($(this).attr('id').toLowerCase().indexOf('main') == -1)
       {
-        page = {{ page.basepath }} + 'tab_' + $(this).attr('id').toLowerCase().replace('-link','');
+        page = 'tab_' + $(this).attr('id').toLowerCase().replace('-link','');
       }
       $('.page-body').load(page);
     });
