@@ -1,6 +1,6 @@
 <nav class="sub-nav" role="navigation" aria-label="navigate page tabs">
   <ul role="tablist">
-    {% assign sorted_pages = site.pages | where_exp:"item", "item.name contains 'tab_'" | sort:"order" %}
+    {% assign sorted_pages = site.pages | where:'tab' | sort:"order" %}
     {% for file in sorted_pages %}
       {% if file.name contains "tab_info" %}
         <li>
