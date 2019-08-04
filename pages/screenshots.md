@@ -1,7 +1,6 @@
 ---
 
-layout: col-sidebar
-title: Project Example Title
+title: Project Screenshots
 id: screenshots
 
 ---
