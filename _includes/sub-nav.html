@@ -29,11 +29,11 @@
 <script type="text/javascript">
   $(function(){
     $('.tab-link').click(function() {
-      var page = "pages/projects.md";
+      var page = "pages/projects";
       
       if($(this).attr('id').toLowerCase().indexOf('main') == -1)
       {
-        page = 'pages/' + $(this).attr('id').toLowerCase().replace('-link','')  + '.md';
+        page = 'pages/' + $(this).attr('id').toLowerCase().replace('-link','');
       }
       $('.page-body').load(page, function( response, status, xhr ) {
           if ( status == "error" ) {
