@@ -21,7 +21,8 @@
   $(function(){
     $('.tab-link').click(function() {
       var page_path = '{{ page.path }}';
-      if(path_path.endsWith('/'))
+      
+      if(page_path.endsWith('/'))
         page_path = "";
       else
         page_path = page_path.substring(0, page_path.lastIndexOf('/') + 1);
