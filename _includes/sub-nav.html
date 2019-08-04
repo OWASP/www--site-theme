@@ -33,6 +33,7 @@
       
       if($(this).attr('id').toLowerCase().indexOf('main') == -1)
       {
+        alert($(this).attr('id'));
         page = $(this).attr('id').toLowerCase().replace('-link','')  + '.md';
       }
       $('.page-body').load(page);
