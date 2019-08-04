@@ -3,7 +3,7 @@
     {% for file in site.pages %}
       {% if file.name contains "tab_" %}
         <li>
-            <a href="#" id="{{ file.id }}-link" class="tab-link" role="tab" aria-selected="true" aria-controls="main" tabindex="0">{{ file.id }}</a>
+            <a href="#" id="{{ file.title }}-link" class="tab-link" role="tab" aria-selected="true" aria-controls="main" tabindex="0">{{ file.title }}</a>
         </li>
       {% endif %}
     {% endfor %}
