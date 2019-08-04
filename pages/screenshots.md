@@ -1,5 +1,8 @@
 ---
+
 title: Project Screenshots
-layout: none
+layout: null
+
 ---
+
 # Screenshots!
