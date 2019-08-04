@@ -26,3 +26,11 @@
     </li>
   </ul>
 </nav>
+<script type="text/javascript">
+  $(function(){
+    $('.tab-link').click(function() {
+      var page = "projects.md";
+      $(this).closest('page-body').load(page);
+    });
+  });
+</script>
