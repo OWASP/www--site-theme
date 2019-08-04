@@ -30,13 +30,13 @@
   $(function(){
     $('.tab-link').click(function() {
       var page = "projects.md";
-      alert($(this).attr('id'));
+      
       if(!$(this).attr('id').toLowerCase().indexOf('main'))
       {
         page = $(this).attr('id').toLowerCase().replace('-link','')  + '.md';
       }
       $(this).closest('.page-body').load(page);
-      //alert($('.page-body').html());
+      alert($('.page-body').html());
     });
   });
 </script>
