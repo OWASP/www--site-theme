@@ -31,7 +31,7 @@
     $('.tab-link').click(function() {
       var page = "projects.md";
       
-      if(!$(this).attr('id').toLowerCase().indexOf('main'))
+      if($(this).attr('id').toLowerCase().indexOf('main') == -1)
       {
         page = $(this).attr('id').toLowerCase().replace('-link','')  + '.md';
         alert(page);
