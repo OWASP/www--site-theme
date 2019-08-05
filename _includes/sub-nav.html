@@ -41,7 +41,7 @@
         if(page_path.endsWith('/'))
            page = '{{ site.url }}' + '{{site.baseurl}}';
         
-        //alert("page_path: " + page_path + ", page: " + page + ", site:" + '{{site.url}}' + ", baseurl:" + '{{site.baseurl}}' + ", githuburl:" + '{{site.github.url}}');
+        alert("page_path: " + page_path + ", page: " + page + ", site:" + '{{site.url}}' + ", baseurl:" + '{{site.baseurl}}' + ", githuburl:" + '{{site.github.url}}');
         window.location.href = page;
       }
       
