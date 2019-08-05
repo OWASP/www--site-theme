@@ -40,7 +40,7 @@
       else
       {
         if(page_path.endsWith('/'))
-          page = page_path.substring(0, page_path.lastIndexOf('/') + 1);
+          page = page_path.substring(0, page_path.lastIndexOf('/') + 1) + page;
         
         alert(page);
         window.location.href = page;
