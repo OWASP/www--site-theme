@@ -1,7 +1,24 @@
-<section class="homepage-blog">
-<h2><a href="#">{{ page.title }}</a></h2>
-<a><img src="{{ page.author_image }}" alt="image"></a>
-<p class="author"><a>{{ page.author }}</a></p>
-<p>{{ content }}</p>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+  <body class="base-grid home">
+
+    <div id="blocker"></div>
+
+    {% include noscript.html %}
+    {% include header.html %}
+    
+    <section class="homepage-blog">
+      <h2><a href="#">{{ page.title }}</a></h2>
+      <a><img src="{{ page.author_image }}" alt="image"></a>
+      <p class="author"><a>{{ page.author }}</a></p>
+      <p>{{ content }}</p>
+    </section>
+    
+    {% include footer.html %}
+
+  </body>
+</html>
 
