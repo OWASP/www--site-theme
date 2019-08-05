@@ -37,8 +37,9 @@
       }
       else
       {
-        // need to fix this for zap 
-        if(page_path.endsWith('/'))
+        // need to fix this for zap
+        var baseurl = '{{site.baseurl}}';
+        if(baseurl)
            page = '{{ site.url }}' + '{{site.baseurl}}';
         
         alert("page_path: " + page_path + ", page: " + page + ", site:" + '{{site.url}}' + ", baseurl:" + '{{site.baseurl}}' + ", githuburl:" + '{{site.github.url}}');
