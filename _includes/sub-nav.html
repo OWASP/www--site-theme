@@ -27,10 +27,7 @@
     $('.tab-link').click(function() {
       var page_path = '{{ page.path }}';
       
-      if(page_path.endsWith('/'))
-        page_path = "";
-      else
-        page_path = page_path.substring(0, page_path.lastIndexOf('/') + 1);
+      page_path = page_path.substring(0, page_path.lastIndexOf('/') + 1);
       
       // the problem is that page.url is correct for main site but page_path works for subsites...
       var page = '{{ page.url }}'; // for main, reload the page
@@ -42,6 +39,9 @@
       }
       else
       {
+        if(page_path.endsWith('/'))
+          page = page_path.substring(0, page_path.lastIndexOf('/') + 1);
+        
         alert(page);
         window.location.href = page;
       }
