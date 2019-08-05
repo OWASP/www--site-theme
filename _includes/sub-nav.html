@@ -32,7 +32,8 @@
       else
         page_path = page_path.substring(0, page_path.lastIndexOf('/') + 1);
       
-      var page = page_path + '{{ page.url }}'; // for main, reload the page
+      // the problem is that page.url is correct for main site but page_path works for subsites...
+      var page = '{{ page.url }}'; // for main, reload the page
       
       if($(this).attr('id').toLowerCase().indexOf('main') == -1)
       {
@@ -41,6 +42,7 @@
       }
       else
       {
+        alert(page);
         window.location.href = page;
       }
       
