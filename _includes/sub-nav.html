@@ -20,10 +20,6 @@
             <a href="#" id="{{ file.title | downcase }}-link" class="tab-link" role="tab" aria-selected="false" aria-controls="{{ file.title | downcase }}">{{ file.title }}</a>
         </li>
       {% endif %}
-      <p>File Path {{ file.path }}</p>
-<p>File URL {{ file.url }}</p>
-<p>File Dir {{ file.dir }} </p>
-<p>File Tags {{ file.tags }} </p>
     {% endfor %}
   </ul>
 </nav>
