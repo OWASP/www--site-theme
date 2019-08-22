@@ -3,7 +3,6 @@
 
 <nav class="sub-nav" role="navigation" aria-label="navigate page tabs">
   <ul role="tablist">
-    {% assign subpath = page.url | split: '/' %}
     {% assign sorted_pages = site.pages | where: "tab", "true" | sort:"order" %}
 
     {% if sorted_pages %}
@@ -16,7 +15,7 @@
         <li>
             <a href="#" id="{{ file.title | downcase }}-link" class="tab-link" role="tab" aria-selected="true" aria-controls="{{ file.title | downcase }}">{{ file.title }}</a>
         </li>
-      {% elsif file.tags contains subpath[1] %}
+      {% elsif page.tags contains file.tags %}
         <li>
             <a href="#" id="{{ file.title | downcase }}-link" class="tab-link" role="tab" aria-selected="false" aria-controls="{{ file.title | downcase }}">{{ file.title }}</a>
         </li>
