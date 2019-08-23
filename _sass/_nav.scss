@@ -6,6 +6,8 @@ header, footer, mobile navigation menu
 // desktop nav
 .header-wrapper {
   height: 120px;
+  background-color: $bg-grey;
+  box-shadow: 0 2px 3px #e7e7e7;
 }
 
 .desktop-logo {
@@ -89,7 +91,9 @@ header, footer, mobile navigation menu
     &:active {
       background-color: darken($bg-blue, 5%);
     }
-
+    &.separator {
+      border-top: 3px solid lighten($bg-blue, 15%);
+    }
     a:visited {
       color:white;
     }
@@ -218,8 +222,6 @@ header, footer, mobile navigation menu
   .header-wrapper {
     max-height: 75px; 
     margin-bottom: 15px;
-    background-color: $bg-grey;
-    box-shadow: 0 1px 2px #cccccc;
   }
 }
 
