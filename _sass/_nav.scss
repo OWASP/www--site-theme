@@ -78,8 +78,9 @@ header, footer, mobile navigation menu
   min-width: 200px;
   padding: 0;
   z-index: 99;
+  font-size: $font-size*0.9;
   li {
-    padding: 10px 20px;
+    padding: 5px 20px;
     background-color: $bg-blue;
     color: white;
     &:first-child {
