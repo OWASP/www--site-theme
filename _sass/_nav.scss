@@ -4,10 +4,15 @@ header, footer, mobile navigation menu
 */
 
 // desktop nav
-.header-wrapper {
-  height: 120px;
+
+header {
+  margin-bottom: 30px;
   background-color: $bg-grey;
   box-shadow: 0 2px 3px #e7e7e7;
+}
+
+.header-wrapper {
+  height: 120px;
 }
 
 .desktop-logo {
@@ -41,7 +46,7 @@ header, footer, mobile navigation menu
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  min-width: 200px;
+  min-width: 210px;
   & > span {
     margin-right: 10px;
     cursor: pointer;
@@ -77,8 +82,9 @@ header, footer, mobile navigation menu
   position: absolute;
   min-width: 200px;
   padding: 0;
-  z-index: 99;
   font-size: $font-size*0.9;
+  z-index: 99;
+
   li {
     padding: 5px 20px;
     background-color: $bg-blue;
@@ -95,11 +101,8 @@ header, footer, mobile navigation menu
     &.separator {
       border-top: 3px solid lighten($bg-blue, 15%);
     }
-    a:visited {
+    a, a:active, a:focus, a:hover, a:visited {
       color:white;
-    }
-    a {
-      color: white;
       text-decoration: none;
     }
   }
@@ -222,7 +225,6 @@ header, footer, mobile navigation menu
   }
   .header-wrapper {
     max-height: 75px; 
-    margin-bottom: 15px;
   }
 }
 

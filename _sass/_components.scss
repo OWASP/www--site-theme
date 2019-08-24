@@ -279,3 +279,26 @@ site-wide reusable components styling
     background-color: $success;
   }
 }
+
+// sitemap 
+
+@media screen and (min-width: $content-bp) {
+  .sitemap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: $grid-val;
+  }
+}
+
+.sitemap {
+  h2 {
+    color: $dark;
+    margin-bottom: 10px;
+  }
+  ul {
+    @include no-bullet-list;
+    &:not(:last-child) {
+      // margin-right: 80px;
+    }
+  }
+}
