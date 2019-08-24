@@ -35,3 +35,56 @@ some styling is specified in col-sidebar
     }
   }
 }
+
+// search results page
+
+.search-results {
+  margin-bottom: 30px;
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    input[type='text'] {
+      width: 100%;
+      max-width: 240px;
+      border: 2px solid #dddddd;
+      margin-right: 5px;
+      padding: 6px;
+      border-radius: 0;
+      &:focus {
+        border-color: $cta-blue;
+      }
+      &:placeholder {
+        color: $bg-grey;
+      }
+    }
+    select {
+      margin-left: auto;
+    }
+  }
+  ul {
+    @include no-bullet-list;
+    margin-bottom: 30px;
+    li:first-child {
+      font-size: $font-size * 1.25;
+    }
+    li:nth-child(2) a {
+      margin: 5px 0;
+      color: green;
+      font-size: $font-size * 0.8;
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .search-results {
+    form {
+      select {
+        margin-left: 0;
+        margin-top: 10px;
+        height: 30px;
+        width: 200px;
+      }
+    }
+  }
+}

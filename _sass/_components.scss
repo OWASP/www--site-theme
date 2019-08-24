@@ -297,8 +297,5 @@ site-wide reusable components styling
   }
   ul {
     @include no-bullet-list;
-    &:not(:last-child) {
-      // margin-right: 80px;
-    }
   }
 }
