@@ -69,8 +69,8 @@ some styling is specified in col-sidebar
       font-size: $font-size * 1.25;
     }
     li:nth-child(2) a {
-      margin: 5px 0;
       color: green;
+      line-height: 1;
       font-size: $font-size * 0.8;
     }
   }
