@@ -37,7 +37,8 @@
 				"url": "#"
 			}, {
 				"title": "Browse all Projects...",
-				"url": "#"
+				"url": "#",
+				"separator": "true"
 			}]
 		},
 		{

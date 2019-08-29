@@ -44,7 +44,12 @@
               if(menu.items){
                   listr += "<ul class='dropdown-menu hide-el'>";
                 $.each(menu.items, function(ndx, item){
-                  listr += "<li><a href='" + item.url + "'>" + item.title + "</a></li>";
+                
+                  if(item.separator)
+                      listr += "<li class='separator'>";
+                  else
+                      listr += "<li>";
+                  listr += "<a href='" + item.url + "'>" + item.title + "</a></li>";
                 });
                 listr += "</ul>";
               }
