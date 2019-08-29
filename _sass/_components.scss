@@ -51,7 +51,7 @@ site-wide reusable components styling
 .member-cta {
   display: flex;
   flex-direction: row;
-  align-items: space-between;
+  justify-content:space-between;
 }
 
 @media screen and (min-width: $content-bp) { // 840px
