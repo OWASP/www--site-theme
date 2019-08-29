@@ -4,6 +4,13 @@ header, footer, mobile navigation menu
 */
 
 // desktop nav
+
+header {
+  margin-bottom: 30px;
+  background-color: $bg-grey;
+  box-shadow: 0 2px 3px #e7e7e7;
+}
+
 .header-wrapper {
   height: 120px;
 }
@@ -39,7 +46,7 @@ header, footer, mobile navigation menu
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  min-width: 200px;
+  min-width: 210px;
   & > span {
     margin-right: 10px;
     cursor: pointer;
@@ -75,9 +82,11 @@ header, footer, mobile navigation menu
   position: absolute;
   min-width: 200px;
   padding: 0;
+  font-size: $font-size*0.9;
   z-index: 99;
+
   li {
-    padding: 10px 20px;
+    padding: 5px 20px;
     background-color: $bg-blue;
     color: white;
     &:first-child {
@@ -89,12 +98,11 @@ header, footer, mobile navigation menu
     &:active {
       background-color: darken($bg-blue, 5%);
     }
-
-    a:visited {
-      color:white;
+    &.separator {
+      border-top: 3px solid lighten($bg-blue, 15%);
     }
-    a {
-      color: white;
+    a, a:active, a:focus, a:hover, a:visited {
+      color:white;
       text-decoration: none;
     }
   }
@@ -217,9 +225,6 @@ header, footer, mobile navigation menu
   }
   .header-wrapper {
     max-height: 75px; 
-    margin-bottom: 15px;
-    background-color: $bg-grey;
-    box-shadow: 0 1px 2px #cccccc;
   }
 }
 
