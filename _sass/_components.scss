@@ -33,6 +33,11 @@ site-wide reusable components styling
   img {
     max-width: 70%;
     margin: 0 auto;
+   
+  }
+
+  &:hover {
+      filter: none;
   }
 }
 
