@@ -46,7 +46,8 @@
 			"url": "/chapters",
 			"items": [{
 				"title": "Find a Local Chapter...",
-				"url": "https://www.meetup.com/pro/owasp"
+				"url": "https://www.meetup.com/pro/owasp",
+				"separator": "true"
 			}, {
 				"title": "Africa",
 				"url": "#"
@@ -67,17 +68,18 @@
 				"url": "#"
 			}, {
 				"title": "Start a Local Chapter...",
-				"url": "https://owasporg.atlassian.net/servicedesk/customer/portal/7/create/73?src=-1419759666"
+				"url": "https://owasporg.atlassian.net/servicedesk/customer/portal/7/create/73?src=-1419759666",
+				"separator": "true"
 			}]
 		},
 		{
 			"title": "EVENTS",
 			"url": "#",
 			"items": [{
-				"title": "Global AppSec - DC, September 8-13th",
+				"title": "Global AppSec - DC, September 9-13th",
 				"url": "https://dc.globalappsec.org"
 			}, {
-				"title": "Global AppSec - Amsterdam, September 23-28th",
+				"title": "Global AppSec - Amsterdam, September 23rd-28th",
 				"url": "https://ams.globalappsec.org"
 			}, {
 				"title": "LASCON AppSec Day Austin",
@@ -90,11 +92,10 @@
 				"url": "#"
 			}, {
 				"title": "Browse All Events...",
-				"url": "#"
-			}, {
-				"title": "Asia",
-				"url": "#"
-			}]
+				"url": "#",
+				"separator": "true"
+			}
+			]
 		},
 		{
 			"title": "ABOUT",
