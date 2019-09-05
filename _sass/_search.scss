@@ -1,0 +1,72 @@
+.gs-title, .gs-snippet {
+    font-family: 'titillium', sans-serif !important;
+}
+
+.gs-title {
+    font-size: 22.5px !important;
+    text-decoration:none !important;
+}
+
+.gs-snippet {
+    font-size: 18px !important;
+}
+
+/* Add a border between individual search results */
+.gs-webResult {
+    border: 0px;
+    padding: 1em;
+}
+
+/* Do no display the count of search results */    
+.gsc-result-info {
+    display: none;
+}
+
+/* Hide the Google branding in search results */
+.gcsc-branding {
+    display: none; 
+}
+
+/* Hide the thumbnail images in search results */
+.gsc-thumbnail {
+    display: none;
+}
+
+
+/* Change the font size of the title of search results */
+.gs-title a { 
+    font-size: 16px;
+    color: $cta-blue !important;
+    text-decoration: none !important;  
+}
+
+/* Change the font size of snippets inside search results */
+.gs-snippet {
+    font-size: 14px;
+}
+
+/* Google Custom Search highlights matching words in bold, toggle that */
+.gs-title b, .gs-snippet b {
+    font-weight: bold;
+    color: $cta-blue !important;
+    text-decoration: none !important; 
+}
+
+.gs-title b {
+    font-size: 22.5px !important;
+}
+
+.gs-snippet b {
+    font-size: 18px !important;
+}
+/* Do no display the URL of web pages in search results */
+.gsc-url-top, .gsc-url-bottom {
+    display: none;
+}
+
+/* Highlight the pagination buttons at the bottom of search results */
+.gsc-cursor-page {
+    font-size: 1.5em;
+    padding: 4px 8px;
+    border: 2px solid #ccc;
+}
