@@ -24,18 +24,18 @@ $(function() {
   });
 
   // show and focus on search bar
-  $("#search-icon").click(function() {
-    $(".search-bar").animate({
-      width: 'show'
-    }, 200);
-    $(".search-bar").focus();
-  });
+  // $("#search-icon").click(function() {
+  //   $(".search-bar").animate({
+  //     width: 'show'
+  //   }, 200);
+  //   $(".search-bar").focus();
+  // });
 
-  $(".search-bar").focusout(function() {
-    $(".search-bar").animate({
-      width: 'hide'
-    }, 200);
-  });
+  // $(".search-bar").focusout(function() {
+  //   $(".search-bar").animate({
+  //     width: 'hide'
+  //   }, 200);
+  // });
 
   // toggle mobile menu display
   $(".menu-toggler").click(function() {

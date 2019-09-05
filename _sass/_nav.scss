@@ -42,6 +42,18 @@ header {
   }
 }
 
+#search-button {
+  border:none;
+  background:transparent;
+  color: $cta-blue;
+  font-size:1em;
+  padding-right:16px;
+  padding-left:0px;
+  &:hover {
+    color: lighten($cta-blue, 10%);
+  }
+}
+
 .site-search {
   display: flex;
   justify-content: flex-end;
@@ -54,9 +66,6 @@ header {
     &:hover {
       color: lighten($cta-blue, 10%);
     }
-  }
-  & > .search-bar {
-    display: none;
   }
 }
 
