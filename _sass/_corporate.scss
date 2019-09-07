@@ -1,0 +1,37 @@
+.corporate {
+    .member-container {
+        min-height:250px;
+    }    
+
+    .member-img-container{
+        float:left;
+        min-width:185px;
+
+        .member-img {
+            align-content:top;
+            min-height:200px;
+            max-height:200px;
+            min-width:150px;
+            max-width:150px;
+            background-size:cover;
+            background-repeat:no-repeat;
+            background-color:#fff;
+            background-position:center;
+        }
+
+        .member-caption {
+            font-weight:bold;
+            line-height: 0em;
+        }
+
+        .member-info {
+            text-align:justify;
+        }
+
+        .member-location{
+            font-weight:normal;
+        }
+    }
+
+
+}
