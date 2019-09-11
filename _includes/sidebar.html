@@ -3,7 +3,7 @@
   {% if static_file.path contains 'info.md' %}
     {% assign project_info = true %}
   {% elsif static_file.path.contains 'leaders.md' %}
-    {% assign leaders = true %}
+    {% assign has_leaders = true %}
   {% endif %}
 {% endfor %}
    <p><strong>The OWASP Foundation</strong> works to improve the security of software through its community-led open source software projects, over 260 local chapters worldwide, tens of thousands of members, and by hosting local and global conferences.</p>
@@ -36,7 +36,7 @@
   </div>
   {% endif %}
   
-  {% if leaders %}
+  {% if has_leaders %}
   {% capture linclude %}{% include_relative /leaders.md %}{% endcapture %}
   {{ linclude | markdownify }}
   {% elsif site.github.url contains 'www--site-theme' %}
