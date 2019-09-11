@@ -37,8 +37,8 @@
   {% endif %}
   
   {% if has_leaders %}
-  {% capture linclude %}{% include_relative /leaders.md %}{% endcapture %}
-  {{ linclude | markdownify }}
+  {% capture lead_include %}{% include_relative /leaders.md %}{% endcapture %}
+  {{ lead_include | markdownify }}
   {% elsif site.github.url contains 'www--site-theme' %}
   <div>
     <h3>Leaders</h3>	
