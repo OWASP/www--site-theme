@@ -1,6 +1,5 @@
 <div class="sidebar" role="complementary">
 {% for static_file in site.static_files %}
-   <div>{{ static_file.path }}</div>
   {% if static_file.path contains 'info.md' %}
     {% assign project_info = true %}
   {% elsif static_file.path.contains 'leaders.md' %}
@@ -36,6 +35,7 @@
     </ul>
   </div>
   {% endif %}
+  
   {% if leaders %}
   {% capture linclude %}{% include_relative /leaders.md %}{% endcapture %}
   {{ linclude | markdownify }}
@@ -51,5 +51,4 @@
   {% else %}
   <div>No Leaders - nonsense</div>
   {% endif %}
-  </div>
 </div>
