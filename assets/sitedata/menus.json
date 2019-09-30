@@ -6,17 +6,14 @@
 				"title": "OWASP Top Ten",
 				"url": "#"
 			}, {
-				"title": "Cross-site Scripting (XSS)",
-				"url": "#"
-			}, {
 				"title": "Zed Attack Proxy",
 				"url": "/www-project-zap"
 			}, {
-				"title": "Password Special Characters",
-				"url": "#"
+				"title": "OWASP Mobile Security",
+				"url": "/www-project-mobile-security"
 			}, {
-				"title": "Cross-Site Request Forgery (CSRF)",
-				"url": "#"
+				"title": "OWASP Juice Shop",
+				"url": "/www-project-juice-shop"
 			}, {
 				"title": "OWASP Testing Guide",
 				"url": "#"
