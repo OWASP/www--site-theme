@@ -2,7 +2,7 @@
 {% for static_file in site.static_files %}
   {% if static_file.path contains 'info.md' %}
     {% assign project_info = true %}
-  {% elsif static_file.path.contains 'leaders.md' %}
+  {% elsif static_file.path contains 'leaders' %}
     {% assign has_leaders = true %}
   {% endif %}
 {% endfor %}
@@ -48,7 +48,5 @@
       <li><a href="#">Jill Ridgers-Smith</a></li>	
     </ul>	
   </div>
-  {% else %}
-  <div>No Leaders - nonsense</div>
   {% endif %}
 </div>
