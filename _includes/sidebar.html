@@ -2,7 +2,8 @@
 {% for static_file in site.static_files %}
   {% if static_file.path contains 'info.md' %}
     {% assign project_info = true %}
-  {% elsif static_file.path.contains 'leaders.md' %}
+  {% endif %}
+  {% if static_file.path.contains 'leaders.md' %}
     {% assign has_leaders = true %}
   {% endif %}
 {% endfor %}
