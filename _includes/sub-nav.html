@@ -14,7 +14,7 @@
         </li>
       {% elsif page.tags contains file.tags %}
         <li>
-            <a href="#" id="{{ file.title | downcase }}-link" class="tab-link" role="tab" aria-selected="false" aria-controls="{{ file.title | downcase }}">{{ file.title }}</a>
+            <a href="#" id="{{ file.title | downcase }}-link" class="tab-link" role="tab" aria-selected="false" aria-controls="{{ file.title | downcase }}">{% if file.displaytext %}{{ file.displaytext }}{% else %}{{ file.title }}{% endif %}</a>
         </li>
       {% endif %}
     {% endfor %}
