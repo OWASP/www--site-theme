@@ -1,0 +1,85 @@
+<header role="banner">
+    {% include banner.html %}
+    <div class="header-wrapper" aria-label="main navigation">
+  
+      <nav class="alt-nav">
+        <a href="#" class="menu-toggler" aria-hidden="true">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="https://www2.owasp.org/" class="alt-logo" aria-label="go to homepage">
+            <img src="https://www2.owasp.org/assets/image/logo.png" alt="OWASP logo">
+        </a>
+        <div id="overlay" class="remove-el"></div>
+        <!-- jekyll menu stuff -->
+        <ul aria-label='header menu'>
+        {% for item in site.data.evntmenu %}
+            {% if item.url %}
+            <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+            {% else %}
+            <li>{{ item.title }}</li>
+            {% endif %}
+        {% endfor %}
+        </ul>
+      </nav>
+      
+      <nav class="top-nav" role="navigation" aria-label="primary navigation">
+        <a href="https://www2.owasp.org/" class="desktop-logo" aria-label="go to homepage">
+          <img src="https://www2.owasp.org/assets/image/logo.png" alt="">
+        </a>
+        <!-- jekyll menu stuff -->
+        
+        <div class="interactive-wrapper">
+          <form role="search" method="get" action="https://www2.owasp.org/search">   
+            <input id="searchString" name="searchString" class="search-bar" type="search" placeholder="Search OWASP.org" required="true">
+            <button id="search-button" type="submit" class="fa fa-search">
+                <!--<span id="search-icon" tabindex="0"><i class="fa fa-search"></i></span>-->
+            </button>  
+          </form>
+          <div class="nav-button" aria-label="donate to or join OWASP">
+            <a href="https://www2.owasp.org/donate" class="cta-button green">Donate</a>
+            <a href="#" class="cta-button">Join</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  <script type="text/javascript">
+    $(function(){
+      // this works to get data from a json file NOT in data
+        $.getJSON("https://www2.owasp.org/www--site-theme/assets/sitedata/event_menus.json", function(data) {
+           var listr = "<ul aria-label='header menu'>";
+           var mlistr = "<ul class='mobile-menu hide-el' role='navigation' aria-label='mobile primary navigation'>";
+           mlistr += "<li><a href='#' class='menu-toggler' aria-hidden='true'><i class='fa fa-times'></i></a></li><li><input type='search' class='search-bar' placeholder='Search OWASP.org' required='true'></li>"
+            $.each(data.menus, function (ndx, menu){
+                listr += "<li><a href='" + menu.url + "'>" + menu.title + "</a>";
+                mlistr += "<li><a href='" + menu.url + "'>" + menu.title + "</a>";
+                if(menu.items){
+                    listr += "<ul class='dropdown-menu hide-el'>";
+                  $.each(menu.items, function(ndx, item){
+                  
+                    if(item.separator)
+                        listr += "<li class='separator'>";
+                    else
+                        listr += "<li>";
+                    listr += "<a href='" + item.url + "'>" + item.title + "</a></li>";
+                  });
+                  listr += "</ul>";
+                }
+                
+                listr += "</li>";
+                mlistr += "</li>";
+            });
+            listr += "</ul>";
+            mlistr += "</ul>";
+  
+            $('.desktop-logo').after(listr);
+            $('#overlay').after(mlistr);
+  
+            $(".top-nav > ul li").hover(function() {
+              $(this).children(".dropdown-menu").toggleClass('hide-el');
+            });
+        });
+  
+      });
+    </script>
+  </header>
+  

@@ -2,6 +2,13 @@
 <html lang="en">
   <head>
     {% include head.html %}
+    <script type="text/javascript">
+      $(function(){
+        var baseurl = "{{ site.github.repository_url }}/blob/master/";
+        var path = "{{ page.path }}";
+        $('.repo').html('<a href=' + baseurl + path + '>Edit on Github</a>');
+      });
+    </script>
   </head>
   <body class="base-grid col-sidebar">
 
@@ -19,6 +26,8 @@
         <div id="main" class="page-body tab" role="tabpanel" aria-labelledby="main-link" tabindex="0">
          {{ content }}
        </div>
+       <div class="repo">
+       </div>
 
         <div class="github-buttons">
          <iframe src="https://ghbtns.com/github-btn.html?user=twbs&repo=bootstrap&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
@@ -30,3 +39,5 @@
     {% include footer.html %}
   </body>
 </html>
+
+
