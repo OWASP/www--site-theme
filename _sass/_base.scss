@@ -6,7 +6,8 @@ use titillium for content display, ubuntu for UI elements
 
 // base font styling
 h1, h2, h3, h4, h5, h6, strong {
-  font-family: 'titillium_bold', sans-serif;
+  font-family: 'titillium', sans-serif;
+  font-weight: bold;
 }
 
 body,
