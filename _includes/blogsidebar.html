@@ -4,7 +4,7 @@
   <div>
   <h3>Previous Entries</h3>
   <ul>
-  {% for post in site.posts | offset: 1 | limit: 5 %}
+  {% for post in site.posts | offset: 1 | limit: 20 %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>	
   {% endfor %}	
   </ul>	
