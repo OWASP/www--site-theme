@@ -23,7 +23,7 @@
               if (randomIndexUsed.indexOf(randomIndex) == "-1")
               {
                   counter++;
-                  htmlstring += '<a href="'+ members[randomIndex]["url"] + '" class="member-logo"><img src="' + members[randomIndex]["image"] + '" alt="image"/></a>';
+                  htmlstring += '<a href="'+ members[randomIndex]["url"] + '" class="member-logo" rel="sponsored"><img src="' + members[randomIndex]["image"] + '" alt="image"/></a>';
                   
                   randomIndexUsed.push(randomIndex);
               }
@@ -33,7 +33,7 @@
          
           var randi = Math.floor(Math.random() * members.length);
           htmlstring = '<h2>Spotlight: ' + members[randi]["name"] + '</h2>';
-          htmlstring += '<a href="'+ members[randi]["url"] + '"><img src="' + members[randi]["image"] + '" alt="image" /></a></h2>';
+          htmlstring += '<a href="'+ members[randi]["url"] + ' rel="sponsored"><img src="' + members[randi]["image"] + '" alt="image" /></a></h2>';
           htmlstring += '<p>' + members[randi]["description"] + '</p>';
           $(".member-spotlight").html(htmlstring);
         }
