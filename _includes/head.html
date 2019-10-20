@@ -2,6 +2,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="The main website for The OWASP Foundation.">
 <link rel="stylesheet" href="https://owasp.github.io/www--site-theme/assets/css/styles.css">
+{% if page.custom_css %}
+    {% for stylesheet in page.custom_css %}
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ stylesheet }}.css">
+    {% endfor %}
+  {% endif %}
 <link rel="shortcut icon" type="images/x-icon" href="https://www2.owasp.org/www--site-theme/favicon.ico">
 <script src="https://owasp.github.io/www--site-theme/assets/js/jquery-3.4.1.min.js"></script>
 <script src="https://owasp.github.io/www--site-theme/assets/js/util.js"></script>
