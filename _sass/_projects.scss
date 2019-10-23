@@ -1,19 +1,12 @@
-.project-list-active {
-    display: block;
-  }
-
-.project-list-inactive {
-    display: none;
-  }
-
 div.projects-list{ 
-    a {
+    a.inactive {
         text-decoration: underline;
         color: $cta-blue;
+        cursor: pointer;
     }
     a.active {
         text-decoration: none;
         color: #000;
-        cursor: grab;
+        cursor: pointer;
     }
 }
