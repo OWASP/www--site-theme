@@ -17,3 +17,6 @@ You can find the source code for Jekyll at GitHub:
 
 
 [jekyll-organization]: https://github.com/jekyll
+
+
+<p><i class="fa fa-camera-retro fa-lg"></i> fa-camera-retro</p>
