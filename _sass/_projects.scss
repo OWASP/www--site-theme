@@ -1,0 +1,19 @@
+.project-list-active {
+    display: block;
+  }
+
+.project-list-inactive {
+    display: none;
+  }
+
+div.projects-list{ 
+    a {
+        text-decoration: underline;
+        color: $cta-blue;
+    }
+    a.active {
+        text-decoration: none;
+        color: #000;
+        cursor: grab;
+    }
+}
