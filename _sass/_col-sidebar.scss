@@ -50,11 +50,13 @@
   grid-area: github;
   display: flex;
   align-items: center;
+
+  div.widget {
+    margin-right: 12px;
+  }
 }
 
-.github-button {
-  margin-right: 12px;
-}
+
 
 .sidebar {
   grid-area: side;
