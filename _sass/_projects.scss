@@ -11,7 +11,7 @@ div.projects-list{
     }
 }
 
-.milestones div{
+.milestones li div{
     float: left;
     padding-right: 24px;
 }
@@ -21,4 +21,11 @@ div.projects-list{
 
 .milestone_project {
     color:blue;
+}
+
+.milestone_members {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
 }
