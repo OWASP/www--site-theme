@@ -10,3 +10,15 @@ div.projects-list{
         cursor: pointer;
     }
 }
+
+.milestones div{
+    float: left;
+    padding-right: 24px;
+}
+.milestone_header {
+    font-weight: bold;
+}
+
+.milestone_project {
+    color:blue;
+}
