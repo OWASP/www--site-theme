@@ -38,7 +38,7 @@ div.projects-list{
     flex-grow: 1;
 }
 
-@media screen and (min-width: 840px) { // 840px
+@media screen and (max-width: 840px) { // 840px
     .milestones nav ul {
         flex-direction: column;
     }
