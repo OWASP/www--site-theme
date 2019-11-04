@@ -11,26 +11,35 @@ div.projects-list{
     }
 }
 
-.milestone_members li {
-    display: inline;
-    margin-right: 24px;
+.milestones .on-time {
+    color: black;
+    font-weight: normal;
 }
 
-.milestones li div{
-    float: left;
-    padding-right: 24px;
-}
-.milestone_header {
+.milestones .overdue {
+    color: red;
     font-weight: bold;
 }
 
-.milestone_project {
-    color:blue;
+.milestones .future {
+    color: darkgray;
+    font-weight: normal;
 }
 
-.milestone_members {
+.milestones {
+    display: block;
+}
+
+.milestones nav ul {
     display: flex;
-    flex-direction: row;
-    align-items: left;
-    margin: 0 auto;
+    justify-content: space-between;
+}
+.milestones nav ul li {
+    flex-grow: 1;
+}
+
+@media screen and (min-width: 840px) { // 840px
+    .milestones nav ul {
+        flex-direction: column;
+    }
 }
