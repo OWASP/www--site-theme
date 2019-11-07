@@ -37,7 +37,7 @@
 				"url": "https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html"
 			}, {
 				"title": "Browse all Projects...",
-				"url": "/projects",
+				"url": "/projects#all-projects",
 				"separator": "true"
 			}]
 		},
