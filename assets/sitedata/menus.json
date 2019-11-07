@@ -4,7 +4,7 @@
 			"url": "/projects",
 			"items": [{
 				"title": "OWASP Top Ten",
-				"url": "#"
+				"url": "/www-project-top-ten"
 			}, {
 				"title": "Cross-site Scripting (XSS)",
 				"url": "#"
@@ -13,31 +13,31 @@
 				"url": "/www-project-zap"
 			}, {
 				"title": "Password Special Characters",
-				"url": "#"
+				"url": "/www-community/password-special-characters"
 			}, {
 				"title": "Cross-Site Request Forgery (CSRF)",
 				"url": "#"
 			}, {
 				"title": "OWASP Testing Guide",
-				"url": "#"
+				"url": "/www-project-testing"
 			}, {
 				"title": "Cheat Sheet: Cross Site Scripting Filter Evasion",
 				"url": "#"
 			}, {
 				"title": "Cheat Sheet: Cross Site Scripting Prevention",
-				"url": "#"
+				"url": "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html"
 			}, {
 				"title": "Cheat Sheet: Cross-Site Request Forgery (CSRF) Prevention",
-				"url": "#"
+				"url": "https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html"
 			}, {
 				"title": "Cheat Sheet: SQL Injection Prevention",
-				"url": "#"
+				"url": "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html"
 			}, {
 				"title": "Cheat Sheet: REST Security",
-				"url": "#"
+				"url": "https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html"
 			}, {
 				"title": "Browse all Projects...",
-				"url": "#",
+				"url": "/projects",
 				"separator": "true"
 			}]
 		},
