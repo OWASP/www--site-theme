@@ -8,7 +8,7 @@
   {% endfor %}
 {% endcapture %}
 {% for static_file in site.static_files %}
-  {% if checkpath %}
+  {% if checkpath.strip.size > 0 %}
     {% if static_file.path contains checkpath and static_file.path contains 'info.md' %}
       {% assign project_info = true %}
     {% elsif static_file.path contains checkpath and static_file.path contains 'leaders' %}
