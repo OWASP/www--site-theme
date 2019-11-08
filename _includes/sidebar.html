@@ -10,9 +10,9 @@
 {% assign infopath = checkpath | append: 'info.md' %}
 {% assign lpath = checkpath | append: 'leaders.md' %}
 {% for static_file in site.static_files %}
-  {% if static_file.path contains infopath %}
+  {% if static_file.path contains 'info.md' %}
     {% assign project_info = true %}
-  {% elsif static_file.path contains lpath %}
+  {% elsif static_file.path contains 'leaders' %}
     {% assign has_leaders = true %}
   {% endif %}
 {% endfor %}
