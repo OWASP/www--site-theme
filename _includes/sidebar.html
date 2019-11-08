@@ -1,8 +1,16 @@
 <div class="sidebar" role="complementary">
+{% assign pathparts = page.path | split: '/' %}
+{% capture checkpath %}
+  {% for parts in pathparts %}
+    {% if forloop.last == false %}
+      {{ parts }}/
+    {% endif %}
+  {% endfor %}
+{% endcapture %}
 {% for static_file in site.static_files %}
-  {% if static_file.path contains 'info.md' %}
+  {% if static_file.path contains checkpath and static_file.path contains 'info.md' %}
     {% assign project_info = true %}
-  {% elsif static_file.path contains 'leaders' %}
+  {% elsif static_file.path contains checkpath and static_file.path contains 'leaders' %}
     {% assign has_leaders = true %}
   {% endif %}
 {% endfor %}
