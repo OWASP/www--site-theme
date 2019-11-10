@@ -2,7 +2,7 @@
   <ul role="tablist">
     {% assign sorted_pages = site.pages | where: "tab", "true" | sort:"order" %}
 
-    {% if sorted_pages and sorted_pages.count > 0 %}
+    {% if sorted_pages and sorted_pages.size > 0 %}
       <li>
           <a href="{{ page.url }}" id="main-link" class="tab-link" role="tab" aria-selected="true" aria-controls="main">Main</a>
      </li>
