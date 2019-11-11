@@ -20,7 +20,7 @@
     {% endfor %}
   </ul>
 </nav>
-
+<!--
 <script type="text/javascript">
   $(function(){
     $('.tab-link').click(function() {
@@ -46,3 +46,16 @@
     });
   });
 </script>
+-->
+<script type='text/javascript'>
+  $('.tab-link').click(function () {
+    $('.tab-link').each(function () {
+      divid = '#div-' + $(this).attr('id').toLowerCase().replace('-link', '');
+      $(divid).addClass('tab-hidden'); 
+    });
+
+     divid = '#div-' + $(this).attr('id').toLowerCase().replace('-link', '');
+     $(divid).removeClass('tab-hidden');
+  });
+</script>
+</div>
