@@ -43,7 +43,8 @@
           {% if file.path contains cleanpath %}
           <div id='div-{{ file.title | downcase }}' class='page-body tab-hidden'>
             {% capture tab_include %}{% include_relative /tab_{{file.title | downcase}}.md %}{% endcapture %}
-            {{ tab_include | markdownify }}
+            {% assign tabparts = tab_include | split: '---' %}
+            {{ tabparts[2] | markdownify }}
           </div>
           {% endif %}
           {% endfor %}
