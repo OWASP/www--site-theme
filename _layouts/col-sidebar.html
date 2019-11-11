@@ -25,7 +25,26 @@
         <h1 class="page-title">{{ page.title }}</h1>
 
         <div id="main" class="page-body tab" role="tabpanel" aria-labelledby="main-link" tabindex="0">
-         {{ content }}
+          {{ content }}
+          {% assign pathparts = page.path | split: '/' %}
+
+          {% capture checkpath %}
+            {% for parts in pathparts %}
+              {% if parts.size == 1 or forloop.last == false %}
+                {{ parts }}/
+              {% endif %}
+            {% endfor %}
+          {% endcapture %} 
+          {% assign cleanpath = checkpath | strip %}
+          {% assign sorted_pages = site.pages | where: "tab", "true" | sort:"order" %}
+          {% for file in sorted_pages %}
+          {{ file.path }}
+          {% if file.path contains cleanpath %}
+          <div id='div-{{ file.title | downcase }}' class='tab-hidden'>
+            {% include_relative /tab_{{file.title | downcase}}.md %}
+          </div>
+          {% endif %}
+          {% endfor %}
        </div>
        <hr>
        <div class="repo">
