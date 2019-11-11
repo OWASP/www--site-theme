@@ -25,9 +25,9 @@
         <h1 class="page-title">{{ page.title }}</h1>
 
         <div id="main" class="page-body tab" role="tabpanel" aria-labelledby="main-link" tabindex="0">
-          <div id='div-main' class='page-body tab tab-link'>
+          
           {{ content }}
-          </div>
+          
           {% assign pathparts = page.path | split: '/' %}
 
           {% capture checkpath %}
