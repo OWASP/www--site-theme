@@ -40,7 +40,8 @@
           {% for file in sorted_pages %}
           {% if file.path contains cleanpath %}
           <div id='div-{{ file.title | downcase }}' class='tab-hidden'>
-            {% include_relative /tab_{{file.title | downcase}}.md %}
+            {% capture tab_include %}{% include_relative /tab_{{file.title | downcase}}.md %}{% endcapture %}
+            {{ tab_include | markdownify }}
           </div>
           {% endif %}
           {% endfor %}
