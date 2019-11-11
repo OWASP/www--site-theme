@@ -38,7 +38,6 @@
           {% assign cleanpath = checkpath | strip %}
           {% assign sorted_pages = site.pages | where: "tab", "true" | sort:"order" %}
           {% for file in sorted_pages %}
-          {{ file.path }}
           {% if file.path contains cleanpath %}
           <div id='div-{{ file.title | downcase }}' class='tab-hidden'>
             {% include_relative /tab_{{file.title | downcase}}.md %}
