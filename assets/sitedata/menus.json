@@ -7,7 +7,7 @@
 				"url": "/www-project-top-ten"
 			}, {
 				"title": "Cross-site Scripting (XSS)",
-				"url": "#"
+				"url": "/www-community/xss"
 			}, {
 				"title": "Zed Attack Proxy",
 				"url": "/www-project-zap"
@@ -21,8 +21,8 @@
 				"title": "OWASP Testing Guide",
 				"url": "/www-project-testing"
 			}, {
-				"title": "Cheat Sheet: Cross Site Scripting Filter Evasion",
-				"url": "#"
+				"title": "Cheat Sheet: XSS Filter Evasion",
+				"url": "/www-community/xss-filter-evasion-cheatsheet"
 			}, {
 				"title": "Cheat Sheet: Cross Site Scripting Prevention",
 				"url": "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html"
