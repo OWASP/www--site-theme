@@ -1,8 +1,22 @@
 <nav class="sub-nav" role="navigation" aria-label="navigate page tabs">
   <ul role="tablist">
+    {% assign pathparts = page.path | split: '/' %}
+        {% capture checkpath %}
+          {% for parts in pathparts %}
+            {% if parts.size == 1 or forloop.last == false %}
+              {{ parts }}/
+            {% endif %}
+          {% endfor %}
+        {% endcapture %}    
+    {% assign cleanpath = checkpath | strip %}
+    
     {% assign sorted_pages = site.pages | where: "tab", "true" | sort:"order" %}
-
-    {% if sorted_pages and sorted_pages.size > 0 %}
+    {% for page in sorted_pages %}
+       {% if page.path contains cleanpath %}
+       {% assign has_tabs = true %}
+       {% endif %}
+    {% endfor %}
+    {% if has_tabs == true %}
       <li>
           <a href="{{ page.url }}" id="main-link" class="tab-link" role="tab" aria-selected="true" aria-controls="main">Main</a>
      </li>

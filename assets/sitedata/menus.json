@@ -16,7 +16,7 @@
 				"url": "/www-community/password-special-characters"
 			}, {
 				"title": "Cross-Site Request Forgery (CSRF)",
-				"url": "#"
+				"url": "/www-community/crsf"
 			}, {
 				"title": "OWASP Testing Guide",
 				"url": "/www-project-testing"
