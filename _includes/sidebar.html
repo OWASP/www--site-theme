@@ -1,15 +1,13 @@
 <div class="sidebar" role="complementary">
     {% assign pathparts = page.path | split: '/' %}
 
-    {% capture checkpath %}
-      {% for parts in pathparts %}
-        {% if parts.size == 1 or forloop.last == false %}
-          {{ parts }}/
-        {% endif %}
-      {% endfor %}
-    {% endcapture %}    
-{% assign infopath = checkpath | strip | append: 'info.md' %}
-{% assign lpath = checkpath | strip | append: 'leaders.md' %}
+    {% assign cleanpath = '' %}
+    {% for parts in pathparts %}
+        {% if parts.size == 1 or forloop.last == false %}{% assign cleanpath = cleanpath | append: parts | append: '/' %}{% endif %}
+    {% endfor %}
+    {% assign cleanpath = cleanpath | strip %}   
+{% assign infopath = cleanpath | append: 'info.md' %}
+{% assign lpath = cleanpath | append: 'leaders.md' %}
 {% for static_file in site.static_files %}
   {% if static_file.path contains infopath %}
     {% assign project_info = true %}
