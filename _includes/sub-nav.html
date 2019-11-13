@@ -8,10 +8,15 @@
     {% assign cleanpath = cleanpath | strip %}
     
     {% assign sorted_pages = site.pages | where: "tab", "true" | sort:"order" %}
+    {% assign pagespath = '' %}
     {% for page in sorted_pages %}
-       {% if page.path contains cleanpath %}
-       {% assign has_tabs = true %}
-       {% endif %}
+      {% assign spageparts = page.path | split: '/' %}
+      {% for parts in spageparts %}
+        {% if parts.size == 1 or forloop.last == false %}{% assign pagespath = pagespath | append: parts | append: '/' %}{% endif %}
+      {% endfor %}
+      {% if pagespath == cleanpath %}
+        {% assign has_tabs = true %}
+      {% endif %}
     {% endfor %}
     {% if has_tabs == true %}
       <li>
