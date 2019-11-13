@@ -1,14 +1,11 @@
 <nav class="sub-nav" role="navigation" aria-label="navigate page tabs">
   <ul role="tablist">
     {% assign pathparts = page.path | split: '/' %}
-        {% capture checkpath %}
-          {% for parts in pathparts %}
-            {% if parts.size == 1 or forloop.last == false %}
-              {{ parts }}/
-            {% endif %}
-          {% endfor %}
-        {% endcapture %}    
-    {% assign cleanpath = checkpath | strip %}
+    {% assign cleanpath = '' %}
+    {% for parts in pathparts %}
+        {% if parts.size == 1 or forloop.last == false %}{% assign cleanpath = cleanpath | append: parts | append: '/' %}{% endif %}
+    {% endfor %}
+    {% assign cleanpath = cleanpath | strip %}
     
     {% assign sorted_pages = site.pages | where: "tab", "true" | sort:"order" %}
     {% for page in sorted_pages %}
