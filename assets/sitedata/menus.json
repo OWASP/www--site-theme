@@ -3,9 +3,9 @@
 			"title": "PROJECTS",
 			"url": "/projects",
 			"items": [{
-					"title": "Browse All Projects...",
-					"url": "/projects#all-projects"
-				}, {
+				"title": "Browse All Projects...",
+				"url": "/projects#all-projects"
+			}, {
 				"title": "OWASP Top Ten",
 				"url": "/www-project-top-ten",
 				"separator": "true"
