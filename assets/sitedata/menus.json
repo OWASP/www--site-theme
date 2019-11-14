@@ -36,8 +36,8 @@
 				"title": "Cheat Sheet: REST Security",
 				"url": "https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html"
 			}, {
-				"title": "Browse all Projects...",
-				"url": "/projects#all-projects",
+				"title": "Start a New Project...",
+				"url": "https://owasporg.atlassian.net/servicedesk/customer/portal/7/create/70?src=-1419759666",
 				"separator": "true"
 			}]
 		},
