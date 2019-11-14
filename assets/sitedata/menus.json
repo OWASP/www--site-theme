@@ -3,8 +3,12 @@
 			"title": "PROJECTS",
 			"url": "/projects",
 			"items": [{
+					"title": "Browse All Projects...",
+					"url": "/projects#all-projects",
+				}, {
 				"title": "OWASP Top Ten",
-				"url": "/www-project-top-ten"
+				"url": "/www-project-top-ten",
+				"separator": "true"
 			}, {
 				"title": "Cross-site Scripting (XSS)",
 				"url": "/www-community/xss"
@@ -46,11 +50,11 @@
 			"url": "/chapters",
 			"items": [{
 				"title": "Find a Local Chapter...",
-				"url": "https://www.meetup.com/pro/owasp",
-				"separator": "true"
+				"url": "https://www.meetup.com/pro/owasp"
 			}, {
 				"title": "East Asia & Pacific",
-				"url": "#"
+				"url": "#",
+				"separator": "true"
 			}, {
 				"title": "Europe & Central Asia",
 				"url": "#"
