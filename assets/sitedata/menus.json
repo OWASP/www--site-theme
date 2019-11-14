@@ -49,22 +49,25 @@
 				"url": "https://www.meetup.com/pro/owasp",
 				"separator": "true"
 			}, {
-				"title": "Africa",
+				"title": "East Asia & Pacific",
 				"url": "#"
 			}, {
-				"title": "Asia",
+				"title": "Europe & Central Asia",
 				"url": "#"
 			}, {
-				"title": "Australia & Oceania",
+				"title": "Latin America & Caribbean",
 				"url": "#"
 			}, {
-				"title": "Europe",
+				"title": "Middle East & North Africa",
 				"url": "#"
 			}, {
 				"title": "North America",
 				"url": "#"
 			}, {
-				"title": "South America",
+				"title": "South Asia",
+				"url": "#"
+			}, {
+				"title": "Sub-Saharan Africa",
 				"url": "#"
 			}, {
 				"title": "Start a Local Chapter...",
