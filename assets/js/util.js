@@ -38,10 +38,10 @@ $(function() {
   // });
 
   // toggle mobile menu display
-  $(".menu-toggler").click(function() {
-    $(".mobile-menu").toggleClass(hideEl);
-    $("#overlay").toggleClass(removeEl);
-  });
+  // $(".menu-toggler").click(function() {
+  //   $(".mobile-menu").toggleClass(hideEl);
+  //   $("#overlay").toggleClass(removeEl);
+  // });
 
   // give first tab in sub-menu a current class by default
   $(".sub-nav li:first-child>a").addClass("current");
