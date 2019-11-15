@@ -38,7 +38,7 @@ $header-bp:  $grid-val*34; // 1020px, header changes
 }
 
 @mixin remove-el { // hide element (inaccessible)
-  display: none !important;
+  //display: none !important;
   position: absolute !important;
   left: -99999px !important;
   width: 0 !important;
