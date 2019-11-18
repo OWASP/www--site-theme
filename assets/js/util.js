@@ -60,7 +60,7 @@ $(function() {
 
   // show and hide tabs based on sub-menu item clicked
     $(".tab-link").click(function(e) {
-    e.preventDefault();
+    
     var x = window.pageXOffset,
         y = window.pageYOffset;
     $(".tab-link").removeClass("current");
