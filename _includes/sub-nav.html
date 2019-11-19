@@ -20,7 +20,12 @@
     {% endfor %}
     {% if has_tabs == true %}
       <li>
-          <a href="{{ page.url }}" id="main-link" class="tab-link" role="tab" aria-selected="true" aria-controls="main">Main</a>
+          {% assign baseurl = site.baseurl %}
+          {% assign pageurl = page.url %}
+          {% if baseurl %}
+             {% assign pageurl = site.url | append: site.baseurl %}
+          {% endif %}
+          <a href="{{ pageurl }}" id="main-link" class="tab-link" role="tab" aria-selected="true" aria-controls="main">Main</a>
      </li>
     {% endif %}
     {% for file in sorted_pages %}
