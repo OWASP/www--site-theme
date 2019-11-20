@@ -41,7 +41,14 @@
           <div id='div-{{ file.title | downcase }}' class='page-body tab-hidden'>
             {% capture tab_include %}{% include_relative /tab_{{file.title | downcase}}.md %}{% endcapture %}
             {% assign tabparts = tab_include | split: '---' %}
-            {{ tabparts[2] | markdownify }}
+            {% for parts in tabparts %}
+              {% if forloop.index > 1 %}
+                {{ tabparts[forloop.index] | markdownify }}
+                {% if forloop.last == false %}
+----
+                {% endif %}
+              {% endif %}
+            {% endfor %}
           </div>
           {% endif %}
           {% endfor %}
