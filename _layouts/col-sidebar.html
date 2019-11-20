@@ -46,9 +46,9 @@
               {% assign tp = tabparts[forloop.index] | remove: '-' %}
                 {% if tp.size > 0 %}
                   {{ tp | markdownify }}
-                {% endif %}
-                {% if forloop.last == false %}
-                  <hr>
+                  {% if forloop.last == false %}
+                    <hr>
+                  {% endif %}
                 {% endif %}
               {% endif %}
             {% endfor %}
