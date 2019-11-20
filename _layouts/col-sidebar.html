@@ -45,7 +45,7 @@
               {% if forloop.index > 1 %}
                 {{ tabparts[forloop.index] | markdownify }}
                 {% if forloop.last == false %}
-----
+                  <hr>
                 {% endif %}
               {% endif %}
             {% endfor %}
