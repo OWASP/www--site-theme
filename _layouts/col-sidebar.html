@@ -43,7 +43,10 @@
             {% assign tabparts = tab_include | split: '---' %}
             {% for parts in tabparts %}
               {% if forloop.index > 1 %}
-                {{ tabparts[forloop.index] | markdownify }}
+              {% assign tp = tabparts[forloop.index] | strip: '-' %}
+                {% if tp.size > 0 %}
+                  {{ tp | markdownify }}
+                {% endif %}
                 {% if forloop.last == false %}
                   <hr>
                 {% endif %}
