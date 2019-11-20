@@ -43,7 +43,7 @@
             {% assign tabparts = tab_include | split: '---' %}
             {% for parts in tabparts %}
               {% if forloop.index > 1 %}
-              {% assign tp = tabparts[forloop.index] | strip: '-' %}
+              {% assign tp = tabparts[forloop.index] | remove: '-' %}
                 {% if tp.size > 0 %}
                   {{ tp | markdownify }}
                 {% endif %}
