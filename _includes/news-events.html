@@ -1,10 +1,10 @@
 <section class="news-events" aria-label="news and events section">
   <h3>Recent News & Opinions</h3>
   <ul>
-    <li><a href="#">OWASP Announces $50,000 in Grants for Diversity in AppSec</a></li>
-    <li><a href="#">Join OWASP at BlackHat and DEFCON in August</a></li>
-    <li><a href="#">ZAP Releases V2.8.0 With the Heads Up Display</a></li>
-  </ul>
+  {% for post in site.posts | offset: 1 | limit: 5 %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>	
+  {% endfor %}	
+  </ul>	
   <h3>Upcoming events</h3>
   <ul>
     <li><a href="#">BlackHat & DEFCON</a></li>
