@@ -80,21 +80,19 @@
 			"title": "EVENTS",
 			"url": "#",
 			"items": [{
-				"title": "Global AppSec - DC, September 9-13th",
-				"url": "https://dc.globalappsec.org"
+				"title": "Global AppSec - Dublin, June 15-19, 2020",
+				"url": "https://dublin.globalappsec.org/?utm_source=owasp-web&utm_medium=main-menu&utm_campaign=none"
 			}, {
-				"title": "Global AppSec - Amsterdam, September 23rd-28th",
-				"url": "https://ams.globalappsec.org"
-			}, {
-				"title": "LASCON AppSec Day Austin",
-				"url": "#"
-			}, {
-				"title": "AppSec Day Melbourne",
-				"url": "#"
-			}, {
-				"title": "AppSec California",
-				"url": "#"
-			}, {
+				"title": "Global AppSec - San Francisco, October 19-23, 2020",
+				"url": "https://sf.globalappsec.org/?utm_source=owasp-web&utm_medium=main-menu&utm_campaign=none"
+			},{
+				"title": "AppSec California, January 21-24, 2020",
+				"url": "https://2020.appseccalifornia.org/?utm_source=owasp-web&utm_medium=main-menu&utm_campaign=none"
+				"separator": "true"
+			},{
+				"title": "OWASP SnowFROC",
+				"url": "https://www.snowfroc.com/?utm_source=owasp-web&utm_medium=main-menu&utm_campaign=none"
+			},{
 				"title": "Browse All Events...",
 				"url": "#",
 				"separator": "true"
@@ -112,7 +110,7 @@
 				"url": "#"
 			}, {
 				"title": "Donate",
-				"url": "#"
+				"url": "/donate"
 			}, {
 				"title": "Finance",
 				"url": "#"
@@ -121,7 +119,7 @@
 				"url": "#"
 			}, {
 				"title": "Membership",
-				"url": "#"
+				"url": "/membership"
 			}, {
 				"title": "Opinions & News",
 				"url": "#"
