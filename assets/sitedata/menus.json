@@ -10,36 +10,33 @@
 				"url": "/www-project-top-ten",
 				"separator": "true"
 			}, {
-				"title": "Cross-site Scripting (XSS)",
-				"url": "/www-community/xss"
+				"title": "Cheat Sheets",
+				"url": "/www-project-cheet-sheets"
+			},  {
+				"title": "Dependency Track",
+				"url": "/www-project-dependency-track/s"
+			}, {
+				"title": "Juice Shop)",
+				"url": "/www-project-juice-shop/"
+			}, {
+				"title": "Mobile Security Testing Guidee",
+				"url": "/www-project-mobile-security-testing-guide/"
+			}, {
+				"title": "ModSecurity Core Rule Set",
+				"url": "/www-project-modsecurity-core-rule-set/"
+			}, {
+				"title": "Software Assurance Maturity Model (SAMM)",
+				"url": "/www-project-samm/"
+			}, {
+				"title": "Security Knowledge Framework",
+				"url": "/www-project-security-knowledge-framework/"
+			}, {
+				"title": "Web Security Testing Guide",
+				"url": "/www-project-testing/"
 			}, {
 				"title": "Zed Attack Proxy",
 				"url": "/www-project-zap"
-			}, {
-				"title": "Password Special Characters",
-				"url": "/www-community/password-special-characters"
-			}, {
-				"title": "Cross-Site Request Forgery (CSRF)",
-				"url": "/www-community/crsf"
-			}, {
-				"title": "OWASP Testing Guide",
-				"url": "/www-project-testing"
-			}, {
-				"title": "Cheat Sheet: XSS Filter Evasion",
-				"url": "/www-community/xss-filter-evasion-cheatsheet"
-			}, {
-				"title": "Cheat Sheet: Cross Site Scripting Prevention",
-				"url": "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html"
-			}, {
-				"title": "Cheat Sheet: Cross-Site Request Forgery (CSRF) Prevention",
-				"url": "https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html"
-			}, {
-				"title": "Cheat Sheet: SQL Injection Prevention",
-				"url": "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html"
-			}, {
-				"title": "Cheat Sheet: REST Security",
-				"url": "https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html"
-			}, {
+			},{
 				"title": "Start a New Project...",
 				"url": "https://owasporg.atlassian.net/servicedesk/customer/portal/7/create/70?src=-1419759666",
 				"separator": "true"
