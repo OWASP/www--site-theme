@@ -53,7 +53,11 @@
                       listr += "<li class='separator'>";
                   else
                       listr += "<li>";
-                  listr += "<a href='" + item.url + "'>" + item.title + "</a></li>";
+                  listr += "<a href='" + item.url + "'"
+                  if(item.opentab)
+                    liststr += " target='_blank' rel='noopener'"
+
+                  liststr += ">" + item.title + "</a></li>";
                 });
                 listr += "</ul>";
               }
