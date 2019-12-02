@@ -40,23 +40,18 @@
           {% if file.path contains cleanpath %}
           <div id='div-{{ file.title | downcase }}' class='page-body tab-hidden'>
             {% capture tab_include %}{% include_relative /tab_{{file.title | downcase}}.md %}{% endcapture %}
-            {% assign tabparts = tab_include | split: '---' %}
-            {% for parts in tabparts %}
-              {% if forloop.index > 1 %}
-              {% assign fc = tabparts[forloop.index] | slice: 0 %}
-              {% if fc == '-' %}
-                {% assign tp = tabparts[forloop.index] | remove_first: '-' %}
-              {% else %}
-                {% assign tp = tabparts[forloop.index] %}
-              {%endif %}
-                {% if tp.size > 0 %}
-                  {{ tp | markdownify }}
-                  {% if forloop.last == false %}
-                    <hr>
-                  {% endif %}
+            {% assign lines = tab_include | newline_to_br | split: "<br />" %}
+            {% assign newContent = "" %}
+            {% assign end_of_front_matter = 0 %}
+            {% for l in lines %}
+                {% if l == '---' %}
+                  {% assign end_of_front_matter = end_of_front_matter | plus: 1 %}
                 {% endif %}
-              {% endif %}
+                {% if end_of_front_matter >= 2 %}
+                    {% assign newContent  = newContent | append: l %}
+                {% endif %}
             {% endfor %}
+            {{ newContent | markdownify }}
           </div>
           {% endif %}
           {% endfor %}
