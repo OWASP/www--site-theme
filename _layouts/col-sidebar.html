@@ -44,7 +44,7 @@
             {% assign newContent = "" %}
             {% assign end_of_front_matter = 0 %}
             {% for l in lines %}
-                {% if l == '---' %}
+                {% if l contains '---' %}
                   {% assign end_of_front_matter = end_of_front_matter | plus: 1 %}
                 {% endif %}
                 {% if end_of_front_matter >= 2 %}
