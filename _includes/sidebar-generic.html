@@ -2,11 +2,12 @@
    <p><strong>The OWASP Foundation</strong> works to improve the security of software through its community-led open source software projects, over 260 local chapters worldwide, tens of thousands of members, and by hosting local and global conferences.</p>
   <div>
 </aside>
-<div>
+<div class="news-events-wrapper">
   <h3>Recent News & Opinions</h3>
   <ul>
   {% for post in site.posts | offset: 1 | limit: 20 %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>	
   {% endfor %}	
-  </ul>	
-  </div>
+  </ul>
+</div>
+<div>	
