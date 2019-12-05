@@ -19,15 +19,10 @@
 
     <main role="main">
       <div class="main-wrapper">
-        {% include sub-nav.html %}
-
         <h1 class="page-title">{{ page.title }}</h1>
-
-        <div id="main" class="page-body tab" role="tabpanel" aria-labelledby="main-link" tabindex="0">
-          <div id='div-main' class='page-body tab-link'>
+        <div id="main" class="page-body" aria-labelledby="main-link" tabindex="0">
           {{ content }}
-          </div>
-       </div>
+        </div>
        <hr>
        <div class="repo">
        </div>
