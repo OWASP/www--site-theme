@@ -19,11 +19,23 @@
 
     <main role="main">
       <div class="main-wrapper">
+        {% include sub-nav.html %}
+
+        <h1 class="page-title">{{ page.title }}</h1>
+
+        <div id="main" class="page-body tab" role="tabpanel" aria-labelledby="main-link" tabindex="0">
+          <div id='div-main' class='page-body tab-link'>
           {{ content }}
+          </div>
+       </div>
+       <hr>
+       <div class="repo">
+       </div>
+
+          {% include github-buttons.html %}
+
+          {% include sidebar-generic.html %}
       </div>
-      <hr>
-      <div class="repo"></div>
-      {% include sidebar-generic.html %}
     </main>
 
     {% include footer.html %}
