@@ -164,7 +164,8 @@
 				"url": "/supporters"
 			}, {
 				"title": "Video",
-				"url": "https://www.youtube.com/user/OWASPGLOBAL/videos"
+				"url": "https://www.youtube.com/user/OWASPGLOBAL/videos",
+				"opentab": "true"
 			}]
 		}
 	]
