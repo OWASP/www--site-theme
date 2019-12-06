@@ -25,17 +25,17 @@
           {% if baseurl %}
              {% assign pageurl = site.url | append: site.baseurl %}
           {% endif %}
-          <a href="{{ pageurl }}" id="main-link" class="tab-link" role="tab" aria-selected="true" aria-controls="main">Main</a>
+          <a href="#div-main" id="main-link" class="tab-link" role="tab" aria-selected="true" aria-controls="main">Main</a>
      </li>
     {% endif %}
     {% for file in sorted_pages %}
       {% if file.name contains "tab_info" %}
         <li>
-            <a href="#" id="{{ file.title | downcase }}-link" class="tab-link" role="tab" aria-selected="true" aria-controls="{{ file.title | downcase }}">{{ file.title }}</a>
+            <a href="#div-{{ file.title | downcase }}" id="{{ file.title | downcase }}-link" class="tab-link" role="tab" aria-selected="true" aria-controls="{{ file.title | downcase }}">{{ file.title }}</a>
         </li>
       {% elsif page.tags contains file.tags %}
         <li>
-            <a href="#" id="{{ file.title | downcase }}-link" class="tab-link" role="tab" aria-selected="false" aria-controls="{{ file.title | downcase }}">{% if file.displaytext %}{{ file.displaytext }}{% else %}{{ file.title }}{% endif %}</a>
+            <a href="#div-{{ file.title | downcase }}" id="{{ file.title | downcase }}-link" class="tab-link" role="tab" aria-selected="false" aria-controls="{{ file.title | downcase }}">{% if file.displaytext %}{{ file.displaytext }}{% else %}{{ file.title }}{% endif %}</a>
         </li>
       {% endif %}
     {% endfor %}
@@ -70,6 +70,19 @@
 -->
 
 <script type='text/javascript'>
+  $(function() {
+     if(window.location.href.indexOf('#') != -1)
+     {
+        $('.tab-link').each(function () {
+          divid = '#div-' + $(this).attr('id').toLowerCase().replace('-link', '');
+          $(divid).addClass('tab-hidden'); 
+        });
+
+        divid = window.location.href.substring(window.location.href.indexOf('#'))
+        $(divid).removeClass('tab-hidden');
+     }
+  });
+
   $('.tab-link').click(function () {
     $('.tab-link').each(function () {
       divid = '#div-' + $(this).attr('id').toLowerCase().replace('-link', '');

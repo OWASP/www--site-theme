@@ -5,7 +5,7 @@ title: Project Example Title
 permalink: /projects
 id: main
 basepath: /pages/projects/
-tags: projects owasp main
+tags: projects owasp main, example-tag
 
 ---
 
