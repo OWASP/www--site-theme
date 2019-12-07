@@ -29,8 +29,12 @@
           </div>  
         </form>
         <div class="nav-button" aria-label="donate to or join OWASP">
-        {% assign pagetitle = page.title | url_encode %}
-          <a href="https://www2.owasp.org/donate?reponame={{ site.github.repository_name }}&title={{ pagetitle }}" class="cta-button green">Donate</a>
+        {% if page.url contains 'project-' or page.url contains 'chapter-' or page.url contains 'committee-' %}
+        {% assign pagetitle = '&title=' | append: page.title | url_encode %}
+        {% else %}
+        {% assign pagetitle = '' %}
+        {% endif %}
+          <a href="https://www2.owasp.org/donate?reponame={{ site.github.repository_name }}{{ pagetitle }}" class="cta-button green">Donate</a>
           <a href="#" class="cta-button">Join</a>
         </div>
       </div>
