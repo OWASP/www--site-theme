@@ -25,6 +25,11 @@
         <h1 class="page-title">{{ page.title }}</h1>
 
         <div id="main" class="page-body tab" role="tabpanel" aria-labelledby="main-link" tabindex="0">
+            {% if page.auto-migrated == 1 %}
+              <p class='warning'>
+              THIS PAGE WAS AUTO-MIGRATED FROM WIKI CONTENT
+              </p>
+            {% endif %}
          {{ content }}
        </div>
        <hr>

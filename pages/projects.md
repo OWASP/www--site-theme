@@ -6,6 +6,7 @@ permalink: /projects
 id: main
 basepath: /pages/projects/
 tags: projects owasp main, example-tag
+auto-migrated: 1
 
 ---
 
