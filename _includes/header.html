@@ -29,7 +29,7 @@
           </div>  
         </form>
         <div class="nav-button" aria-label="donate to or join OWASP">
-        {% if page.url contains 'project-' or page.url contains 'chapter-' or page.url contains 'committee-' %}
+        {% if site.github.repository_name contains 'project-' or site.github.repository_name contains 'chapter-' or site.github.repository_name contains 'committee-' %}
         {% assign pagetitle = '&title=' | append: page.title | url_encode %}
         {% else %}
         {% assign pagetitle = '' %}
