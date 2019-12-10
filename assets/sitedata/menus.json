@@ -117,7 +117,7 @@
 				"opentab": "true"
 			},{
 				"title": "Browse All Events...",
-				"url": "#",
+				"url": "/events",
 				"separator": "true"
 			}
 			]
