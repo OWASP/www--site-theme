@@ -48,30 +48,23 @@
 			"url": "/chapters",
 			"items": [{
 				"title": "Find a Local Chapter...",
-				"url": "https://www.meetup.com/pro/owasp",
-				"opentab": "true"
+				"url": "/chapters"
 			}, {
-				"title": "East Asia & Pacific",
-				"url": "#",
+				"title": "Asia/Pacific",
+				"url": "/chapters#Asia/Pacific",
 				"separator": "true"
 			}, {
-				"title": "Europe & Central Asia",
-				"url": "#"
+				"title": "Europe",
+				"url": "/chapters#Europe"
 			}, {
-				"title": "Latin America & Caribbean",
-				"url": "#"
+				"title": "Latin America",
+				"url": "/chapters#LatinAmerica"
 			}, {
-				"title": "Middle East & North Africa",
-				"url": "#"
+				"title": "Middle East",
+				"url": "/chapters#MiddleEast"
 			}, {
-				"title": "North America",
-				"url": "#"
-			}, {
-				"title": "South Asia",
-				"url": "#"
-			}, {
-				"title": "Sub-Saharan Africa",
-				"url": "#"
+				"title": "United States",
+				"url": "/chapters#UnitedStates"
 			}, {
 				"title": "Start a Local Chapter...",
 				"url": "https://owasporg.atlassian.net/servicedesk/customer/portal/7/create/73?src=-1419759666",
@@ -81,7 +74,7 @@
 		},
 		{
 			"title": "EVENTS",
-			"url": "#",
+			"url": "/events",
 			"items": [{
 				"title": "Global AppSec - Dublin, June 15-19, 2020",
 				"url": "https://dublin.globalappsec.org/?utm_source=owasp-web&utm_medium=main-menu&utm_campaign=none",
@@ -124,7 +117,7 @@
 				"opentab": "true"
 			},{
 				"title": "Browse All Events...",
-				"url": "#",
+				"url": "/events",
 				"separator": "true"
 			}
 			]
@@ -133,6 +126,9 @@
 			"title": "ABOUT",
 			"url": "/about",
 			"items": [{
+				"title": "About OWASP",
+				"url": "/about"
+			}, {
 				"title": "Board & Staff",
 				"url": "/corporate"
 			}, {
@@ -143,7 +139,7 @@
 				"url": "/donate"
 			}, {
 				"title": "Finance",
-				"url": "#"
+				"url": "/finance"
 			}, {
 				"title": "Governance",
 				"url": "#"
