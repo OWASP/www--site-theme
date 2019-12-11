@@ -6,7 +6,7 @@ permalink: /event-example
 registration_url: https://www2.owasp.org
 training: January 1, 2, 3
 conference: January 4, 5
-location: Wayne Foundation Event Center, Gotham
+location: OWASP Foundation Event Center, Montpelier, VT
 
 ---
 
