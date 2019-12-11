@@ -23,22 +23,22 @@
         {% include sub-nav.html %}
 
         
-        {% assign spages = site.pages | where_exp: "page", "page.tags contains page.document" %}
-          {% assign getnext = false %}
-          {% assign getprevious = true %}
-          {% for cs in spages %}
-              {% if getnext %}
-                  {% assign next = cs %}
-                  {% break %}
-              {% endif %}
-              {% if cs == page %}
-                  {% assign getnext = true %}
-                  {% assign getprevious = false %}
-              {% endif %}
-              {% if getprevious %}
-                  {% assign previous = cs %}
-              {% endif %}
-          {% endfor %}
+{% assign spages = site.pages | where_exp: "page", "page.tags contains page.document" %}
+{% assign getnext = false %}
+{% assign getprevious = true %}
+{% for cs in spages %}
+    {% if getnext %}
+        {% assign next = cs %}
+        {% break %}
+    {% endif %}
+    {% if cs.url == page.url %}
+        {% assign getnext = true %}
+        {% assign getprevious = false %}
+    {% endif %}
+    {% if getprevious %}
+        {% assign previous = cs %}
+    {% endif %}
+{% endfor %}
         
         <div id="main" class="page-body tab" role="tabpanel" aria-labelledby="main-link" tabindex="0">
           <h1 class="page-title">{{ page.title }}</h1>
