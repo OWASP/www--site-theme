@@ -27,6 +27,9 @@
 {% assign getnext = false %}
 {% assign getprevious = true %}
 {% for cs in spages %}
+    {% if cs.path contains 'index.md' %}
+    {% continue %}
+    {% endif %}
     {% if getnext %}
         {% assign next = cs %}
         {% break %}
