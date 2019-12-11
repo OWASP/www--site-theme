@@ -4,14 +4,14 @@
         ol {
             list-style-type: none;
             
-            .page {
+            .page .previous .next {
                 display: inline-block;
             }
 
             .previous a::before {
                 display: inline-block;
                 color: #000;
-                content: '>';
+                content: '<';
                 font-size: 80%;
                 font-weight: bold;
                 padding: 0 3px;
