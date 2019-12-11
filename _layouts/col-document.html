@@ -39,19 +39,19 @@
                   {% assign previous = cs %}
               {% endif %}
           {% endfor %}
-        <nav role="navigation" aria-label="navigate page">
-          <ol>
-            <li class='page previous'><a href="#">Test Nav</a></li>
-          {% if previous %}
-            <li class='page previous'><a href="{{ previous.url }}">Previous ({{ previous.title }})</a></li>
-          {% endif %}
-          {% if next %}
-            <li class='page next'><a href="{{ next.url }}">Next ({{ next.title }})</a></li>
-          {% endif %}
-          </ol>
-        </nav>
         <div id="main" class="page-body tab" role="tabpanel" aria-labelledby="main-link" tabindex="0">
           <section id='div-main' class='page-body'>
+              <nav role="navigation" aria-label="navigate page">
+                  <ol>
+                    <li class='page previous'><a href="#">Test Nav</a></li>
+                  {% if previous %}
+                    <li class='page previous'><a href="{{ previous.url }}">Previous ({{ previous.title }})</a></li>
+                  {% endif %}
+                  {% if next %}
+                    <li class='page next'><a href="{{ next.url }}">Next ({{ next.title }})</a></li>
+                  {% endif %}
+                  </ol>
+                </nav>
           {{ content }}
           </section>
           {% assign pathparts = page.path | split: '/' %}
