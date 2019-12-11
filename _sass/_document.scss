@@ -4,25 +4,8 @@
         ol {
             list-style-type: none;
             
-            .page .previous .next {
+            .page {
                 display: inline-block;
-            }
-
-            .previous a::before {
-                display: inline-block;
-                color: #000;
-                content: '<';
-                font-size: 80%;
-                font-weight: bold;
-                padding: 0 3px;
-            }
-            .next a::after {
-                display: inline-block;
-                color: #000;
-                content: '>';
-                font-size: 80%;
-                font-weight: bold;
-                padding: 0 3px;
             }
         }
     }

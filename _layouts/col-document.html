@@ -23,10 +23,10 @@
         {% include sub-nav.html %}
 
         <h1 class="page-title">{{ page.title }}</h1>
-        {% assign cheatsheets = site.pages | where_exp: "page", "page.tags contains page.document" %}
+        {% assign spages = site.pages | where_exp: "page", "page.tags contains page.document" %}
           {% assign getnext = false %}
           {% assign getprevious = true %}
-          {% for cs in cheatsheets %}
+          {% for cs in spages %}
               {% if getnext %}
                   {% assign next = cs %}
                   {% break %}
@@ -39,7 +39,7 @@
                   {% assign previous = cs %}
               {% endif %}
           {% endfor %}
-        <nav class='nav'>
+        <nav>
           <ol>
           {% if previous %}
             <li class='page previous'><a href="{{ previous.url }}">Previous ({{ previous.title }})</a></li>
