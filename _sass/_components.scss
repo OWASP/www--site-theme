@@ -235,7 +235,7 @@ site-wide reusable components styling
   thead {
     font-weight: 700;
   }
-  * {
+  td, tr {
     padding: 15px;
     border: 2px solid lighten(grey, 30%);
   }
@@ -251,7 +251,7 @@ table {
   thead {
     font-weight: 700;
   }
-  * {
+  td, tr {
     padding: 15px;
     border: 2px solid lighten(grey, 30%);
   }
