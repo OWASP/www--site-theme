@@ -128,3 +128,10 @@ footer {
   padding: 10px;
   padding-left: 15px;
 }
+
+@media screen and (max-width: $header-bp - 1) { // 1019px
+  // replace desktop nav with mobile nav
+  code {
+    max-width:88%;
+  }
+}
