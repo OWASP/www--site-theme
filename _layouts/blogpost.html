@@ -22,7 +22,7 @@
          <section class="homepage-blog">
             <a><img src="{{ page.author_image }}" alt="image"></a>
             <p class="author"><a>{{ page.author }}</a></p>
-            <p>{{ content }}</p>
+            <p>{{ post.date | date: "%A, %B %e, %Y" }} {{ content }}</p>
           </section>
        </div>
 
