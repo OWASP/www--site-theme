@@ -1,0 +1,52 @@
+/* Applies to all code blocks */
+pre {
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: $bg-grey;
+    border-radius: 3px;
+}
+
+code {
+    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+    background-color: $bg-grey;
+    white-space:pre-wrap;
+    // not language specific...
+    .kd {
+        color: cornflowerblue;
+    }
+    .kt .nc {
+        color: seagreen;
+    }
+    .nf {
+        color: khaki;
+    }
+    .n {
+        color: skyblue;
+    }
+
+    .k {
+        color: plum;
+    }
+}
+
+// java
+.language-java{ 
+    .kd {
+        color: cornflowerblue;
+    }
+    .kt .nc {
+        color: seagreen;
+    }
+    .nf {
+        color: khaki;
+    }
+    .n {
+        color: skyblue;
+    }
+
+    .k {
+        color: plum;
+    }
+}
