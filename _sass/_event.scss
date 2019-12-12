@@ -13,11 +13,14 @@
 	background-position: center center;
 	background-repeat: repeat-y, no-repeat;
 	background-size: cover, cover;
-	max-width: 33%;
-	padding: 2em 4em 1em 4em;
+	padding: 16em 16em 4em 16em;
 	justify-content: space-around;
+	max-width: 45%;
+	height: 100%;
+	background-color:gray;
 	float:right;
-}
+	margin-right:2%;
+  }
 
 @media (max-width: 500px) {
 
