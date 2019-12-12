@@ -1,0 +1,78 @@
+- member: true	
+  sponsor: 	
+  name: Accenture	
+  image: /assets/images/corp-member-logo/accenture.PNG	
+  url: https://www.accenture.com	
+  description: Accenture Security helps businesses prepare, protect, detect, respond and recover along all points of the security lifecycle with over 5,000 exceptionally-skilled security professionals worldwide.  Cybersecurity challenges are different for every business in every industry. Leveraging our global resources and next-generation technologies, we create integrated, practical solutions that are tailored to each organization’s specific business goals and industry solutions that clients can put in place immediately. Whether defending against known threats, quickly detecting and responding to the unknown or running an entire security operations center, we help harden organizations and make it extremely difficult for even the most sophisticated cyber adversaries to succeed.	
+- member: true	
+  sponsor: 	
+  name: Adobe	
+  image: /assets/images/corp-member-logo/adobe.png	
+  url: https://www.adobe.com	
+  description: Adobe is the global leader in digital marketing and digital media solutions. Our tools and services allow our customers to create groundbreaking digital content, deploy it across media and devices, measure and optimize it over time, and achieve greater business success. We help our customers make, manage, measure, and monetize their content across every channel and screen.	
+- member: true	
+  sponsor: 	
+  name: Allstate	
+  image: /assets/images/corp-member-logo/allstate.png	
+  url: https://www.allstate.com	
+  description: Allstate Corporation is the largest publicly held personal lines property and casualty insurer in America, serving more than 16 million households nationwide. Founded in 1931, Allstate has been dedicated to protecting our customers from life’s uncertainties and preparing them for the future for more than 85 years. As the needs of our customers evolve, so does our technology and security practices to ensure our customers remain in good hands.	
+- member: true	
+  sponsor: 4	
+  name: Altitude Networks	
+  image: /assets/images/corp-member-logo/altitude-networks.png	
+  url: https://www.altitudenetworks.com	
+  description: Altitude Networks tackles data security in the cloud to protect enterprises against unauthorized data access, accidental or malicious sharing to unintended individuals, and data theft.	
+- member: true  
+  sponsor: 4	
+  name: Avatao	
+  image: /assets/images/corp-member-logo/avatao.png	
+  url: https://www.avatao.com	
+  description: Avatao is an online training platform for building secure software. It offers a rich library of hands-on IT security exercises for software engineers to teach secure programming from design to deployment in a fun and intuitive way. Educating for secure software can significantly improve software quality, increase trust in a company’s brand, reduce development costs and reduce the risks of suffering significant losses from cyber-attacks. In today’s world, secure software development practices are a basic requirement and we believe the solution should be integrated into the ground roots of software development teams. The platform can be used to provide security awareness to software engineers, to enrich existing IT security training, meetups or allow self-directed learning for continuous professional development. Avatao hackathons are also an excellent method to discover talented developers and engage and build brand awareness in the community. Avatao is a creation out of CrySyS Lab, world-renowned experts in IT security. Learning communities like business teams use Avatao for an improved and efficient learning experience. Mid-size and large software and financial companies use Avatao’s gamified online training to organize security hackathons, onboard new hires or upskill software developers to build secure software. The Avatao platform was publicly launched in 2016 for end-users and business customers. Initial customers include LogMeIn (US), Prezi (HU), Microsec (HU), Emarsys (HU), Photobox (UK), and many other companies are piloting the platform including Fortune 100 companies. Avatao currently has 5000+ users and 500+ exercises.	
+- member: true	
+  sponsor:	
+  name: Avi Networks	
+  image: /assets/images/corp-member-logo/avi-network.png	
+  url: https://www.avinetworks.com	
+  description: Avi Networks completes enterprises’ digital transformation with its software load balancer, intelligent Web Application Firewall, and modern application services. The Avi Vantage Platform is deployed across data centers and clouds, delivering better elasticity, intelligence, and cost savings by providing granular per-tenant and per-app services. Customers enjoy 5X faster application rollouts, actionable analytics, and 70% lower costs.	
+- member: true	
+  sponsor: 	
+  name: Brinqa	
+  image: /assets/images/corp-member-logo/brinqa.png	
+  url: https://www.brinqa.com	
+  description: Brinqa is a leading provider of unified risk management – enabling stakeholders, governance organizations, and infrastructure and security teams to effectively manage technology risk at the speed of business. Brinqa software and cloud services leverage an organization’s existing investment in systems, security, and governance programs to identify, measure, manage and monitor risk. With Brinqa, organizations are reducing response time to emerging threats, impact to the business, and technology risk and compliance costs by over 50% through real-time risk analytics, automated risk assessments, prioritized remediation, actionable insights, and improved communication. Founded in 2008 by industry leaders in risk management with a proven track record in delivering cutting edge, innovative and cost-effective solutions. Brinqa’s award-winning software and cloud services are trusted by fortune 500 companies across risk disciplines such as information technology risk, vendor risk, and regulatory compliance risk. Brinqa is headquartered in Austin, Texas and has a global presence.	
+- member: true	
+  sponsor:
+  name: Bugcrowd	
+  image: /assets/images/corp-member-logo/bugcrowd.png	
+  url: https://www.bugcrowd.com	
+  description: Bugcrowd is the world’s number one crowdsourced security company. Our award-winning platform combines actionable, contextual intelligence with the skill and experience of the world’s most trusted, skilled hackers to help leading organizations solve security challenges, protect customers, and make the digitally-connected world a safer place.	
+- member: true	
+  sponsor: 4	
+  name: CA, Inc.	
+  image: /assets/images/corp-member-logo/ca-technologies.png  	
+  url: https://www.catechnologies.com	
+  description: CA Technologies helps customers succeed in a future where every business—from apparel to energy—is being rewritten by software. From planning to development to management to security, at CA we create software that fuels transformation for companies in the application economy.	
+- member: false	
+  sponsor: 1	
+  name: Cequence Security	
+  image: /assets/images/corp-member-logo/cequence.png	
+  url: https://www.cequence.com	
+  description: Cequence Security is a venture-backed cybersecurity software company founded in 2015 and based in Sunnyvale, CA. Its mission is to transform application security by consolidating multiple innovative security functions within an open, AI-powered software platform that protects customers web, mobile, and API-based applications – and supports today’s cloud-native, container-based application architectures. The company is led by industry veterans that previously held leadership positions at Palo Alto Networks and Symantec. Customers include F500 organizations across multiple vertical markets, and the solution has earned multiple industry accolades.	
+- member: true	
+  sponsor: 4	
+  name: Checkmarx	
+  image: /assets/images/corp-member-logo/checkmarx.png	
+  url: https://www.checkmarx.com	
+  description: Checkmarx is an Application Security software company, whose mission is to provide enterprise organizations with application security testing products and services that empower developers to deliver secure applications. Amongst the company's 1,000 customers are 5 of the world's top 10 software vendors and many Fortune 500 and government organizations. Checkmarx CxSAST is a highly accurate and flexible Source Code Analysis product that allows organizations to automatically scan a un-compiled/un-built code and identify hundreds of security vulnerabilities in the most prevalent coding languages.	
+- member: false	
+  sponsor: 4	
+  name: CodeDX	
+  image: /assets/images/corp-member-logo/code-dx.png	
+  url: https://www.codedx.com	
+  description: Code Dx is committed to reducing barriers to effective application security. Our automated application vulnerability correlation and management tools help find and fix insecure code faster, with less effort and a smaller team. Focus your precious resources on developing valuable new features, and ship secure code faster and more often.	
+- member: true	
+  sponsor: 1	
+  name: Contrast Security	
+  image: /assets/images/corp-member-logo/contrast-security.png	
+  url: https://www.contrastsecurity.com	
+  description: Contrast Security delivers the world’s fastest application security software that eliminates the single greatest security risk to enterprises today. Industry research shows that application security flaws are the leading source of data breaches. Contrast can be deployed, automatically discover applications and identify vulnerabilities within seven minutes. Relying on sensors instead of expensive security experts, Contrast runs continuously and is 10 times more accurate than the competition. Unlike tedious, painful and slow legacy approaches, Contrast analyzes a complete portfolio of running applications simultaneously in real-time at any scale. As a result, organizations can act faster against threats and immediately reduce risk. 	

@@ -33,7 +33,7 @@
          
           var randi = Math.floor(Math.random() * members.length);
           htmlstring = '<h2>Spotlight: ' + members[randi]["name"] + '</h2>';
-          htmlstring += '<a href="'+ members[randi]["url"] + '" rel="sponsored"><img src="' + members[randi]["image"] + '" alt="image" /></a></h2>';
+          htmlstring += '<a href="'+ members[randi]["url"] + '" rel="sponsored"><img src="' + members[randi]["image"] + '" alt="image" /></a>';
           htmlstring += '<p>' + members[randi]["description"] + '</p>';
           $(".member-spotlight").html(htmlstring);
         }

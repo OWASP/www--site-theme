@@ -9,6 +9,16 @@
  	justify-content: space-around;
 }
 
+.event-image {
+	background-position: center center;
+	background-repeat: repeat-y, no-repeat;
+	background-size: cover, cover;
+	max-width: 33%;
+	padding: 2em 4em 1em 4em;
+	justify-content: space-around;
+	float:right;
+}
+
 @media (max-width: 500px) {
 
 
