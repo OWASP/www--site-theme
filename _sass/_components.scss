@@ -246,6 +246,22 @@ site-wide reusable components styling
   }
 }
 
+// same for default tables
+table {
+  thead {
+    font-weight: 700;
+  }
+  * {
+    padding: 15px;
+    border: 2px solid lighten(grey, 30%);
+  }
+  tbody {
+    tr:nth-child(odd) {
+      background-color: $bg-grey;
+    }
+  }
+}
+
 // site-wide announcement banner styling
 #banner {
   display: flex;
