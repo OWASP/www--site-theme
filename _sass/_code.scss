@@ -14,39 +14,46 @@ code {
     white-space:pre-wrap;
     // not language specific...
     .kd {
-        color: cornflowerblue;
+        color: mediumslateblue;
     }
-    .kt .nc {
+    .kt {
+        font-weight: bold;
+    }
+    .kt, .nc {
         color: seagreen;
     }
     .nf {
-        color: khaki;
+        color: darkkhaki;
     }
     .n {
-        color: skyblue;
+        color: deepskyblue;
     }
 
     .k {
-        color: plum;
+        color: crimson;
     }
 }
 
 // java
 .language-java{ 
     .kd {
-        color: cornflowerblue;
+        color: mediumslateblue;
     }
-    .kt .nc {
+    .kt {
+        font-weight: bold;
+    }
+
+    .kt, .nc {
         color: seagreen;
     }
     .nf {
-        color: khaki;
+        color: darkkhaki;
     }
     .n {
-        color: skyblue;
+        color: deepskyblue;
     }
 
     .k {
-        color: plum;
+        color: crimson;
     }
 }
