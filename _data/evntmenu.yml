@@ -1,16 +1,24 @@
-- title: Speakers and Trainers
-  url: https://www2.owasp.org
+- title: PROGRAM
+  items:
+    - title: Registration
+      url: https://www2.owasp.org/www--site-theme/event-example
+- title: SUBMIT
   items:
     - title: Call for Papers
-      url : https://www2.owasp.org
+      url : https://www2.owasp.org/www--site-theme/event-example
     - title: Call For Training
-      url : https://www2.owasp.org
-- title: Volunteer
-  url  : https://www2.owasp.org/
-- title: About
-  url: https://www2.owasp.org
+      url : https://www2.owasp.org/www--site-theme/event-example
+- title: SPONSOR
   items:
-  - title: Team
-    url  : https://wwww2.owasp.org/
-  - title: Code of Conduct
-    url  : https://wwww2.owasp.org/
+    - title: Opportunities
+      url  : https://www2.owasp.org/www--site-theme/event-example
+- title: VENUE
+  items:
+    - title: About
+      url  : https://www2.owasp.org/www--site-theme/event-example
+- title: ABOUT
+  items:
+    - title: Team
+      url  : https://www2.owasp.org/www--site-theme/event-example
+    - title: Code of Conduct
+      url  : https://www2.owasp.org/www--site-theme/event-example
