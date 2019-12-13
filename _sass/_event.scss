@@ -19,7 +19,7 @@
 	height: 100%;
 	background-color:gray;
 	float:right;
-	margin-right:2%;
+	margin-right: 13%;
   }
 
 @media (max-width: 500px) {
@@ -29,5 +29,7 @@
 		padding: 1em 1em 1em 1em;
 		font-size: 80%;
 		}
-	
+	.event-image {
+		margin-right: 0%;
+	}
 }
