@@ -23,7 +23,7 @@
         {% include sub-nav.html %}
 
         
-{% assign spages = site.pages | where_exp: "page", "page.tags contains page.document" %}
+{% assign spages = site.pages | where_exp: "page", "page.tags contains page.document" | sort: "order" %}
 {% assign getnext = false %}
 {% assign getprevious = true %}
 {% for cs in spages %}
