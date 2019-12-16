@@ -14,6 +14,12 @@
 
         }
     }
+
+    .doc-title {
+        text-align: right;
+        width: 100%;
+        text-transform: capitalize;
+    }
 }
 
 @media screen and (max-width: $header-bp - 1) { // 1019px
