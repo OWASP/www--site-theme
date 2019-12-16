@@ -142,7 +142,7 @@
 				"url": "/finance"
 			}, {
 				"title": "Governance",
-				"url": "#"
+				"url": "/governance"
 			}, {
 				"title": "Membership",
 				"url": "/membership"
@@ -151,7 +151,7 @@
 				"url": "/news"
 			}, {
 				"title": "Policies & Procedures",
-				"url": "#"
+				"url": "/www-policy"
 			}, {
 				"title": "Staff Projects",
 				"url": "/www-staff"
