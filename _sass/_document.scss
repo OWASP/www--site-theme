@@ -36,4 +36,23 @@
                 }
             }
         }
-    }
+
+        .col-document { 
+            // 1-column on mobile
+            .main-wrapper {
+              display: grid;
+              grid-template-rows: auto;
+              grid-template-columns: 1fr;
+              grid-template-areas:
+                      "title"
+                      "github"
+                      "menu"
+                      "body"
+                      "side";
+            }
+            .sub-nav,
+            .github-buttons {
+              padding: 15px 0;
+            }
+          }
+}
