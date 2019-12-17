@@ -103,6 +103,9 @@ footer {
 
 .repo {
   margin-left: 20px;
+  grid-area: github;
+  display: flex;
+  align-items: center;
 }
 
 .warning {
