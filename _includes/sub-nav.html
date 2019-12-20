@@ -31,11 +31,11 @@
     {% for file in sorted_pages %}
       {% if file.name contains "tab_info" %}
         <li>
-            <a href="#div-{{ file.title | downcase }}" id="{{ file.title | downcase }}-link" class="tab-link" role="tab" aria-selected="true" aria-controls="{{ file.title | downcase }}">{{ file.title }}</a>
+            <a href="#" id="{{ file.title | downcase }}-link" class="tab-link" role="tab" aria-selected="true" aria-controls="{{ file.title | downcase }}">{{ file.title }}</a>
         </li>
       {% elsif page.tags contains file.tags %}
         <li>
-            <a href="#div-{{ file.title | downcase }}" id="{{ file.title | downcase }}-link" class="tab-link" role="tab" aria-selected="false" aria-controls="{{ file.title | downcase }}">{% if file.displaytext %}{{ file.displaytext }}{% else %}{{ file.title }}{% endif %}</a>
+            <a href="#" id="{{ file.title | downcase }}-link" class="tab-link" role="tab" aria-selected="false" aria-controls="{{ file.title | downcase }}">{% if file.displaytext %}{{ file.displaytext }}{% else %}{{ file.title }}{% endif %}</a>
         </li>
       {% endif %}
     {% endfor %}
@@ -57,14 +57,12 @@
 
   $('.tab-link').click(function () {
     $('.tab-link').each(function () {
-      $(this).removeClass('active');
       divid = '#div-' + $(this).attr('id').toLowerCase().replace('-link', '');
       $(divid).addClass('tab-hidden'); 
     });
 
      divid = '#div-' + $(this).attr('id').toLowerCase().replace('-link', '');
      $(divid).removeClass('tab-hidden');
-     $(this).addClass('active');
   });
 </script>
 {% endif %}
