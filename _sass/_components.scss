@@ -228,6 +228,16 @@ site-wide reusable components styling
       background-color: darken($grey, 5%);
     }
   }
+  &.black {
+    background-color: black;
+    color: white;
+    &:hover {
+      background-color: lighten(black, 2.5%);
+    }
+    &:active {
+      background-color: darken(black, 5%);
+    }
+  }
 }
 
 // table component styling
