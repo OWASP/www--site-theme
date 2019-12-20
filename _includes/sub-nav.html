@@ -26,7 +26,7 @@
           {% if baseurl %}
              {% assign pageurl = site.url | append: site.baseurl %}
           {% endif %}
-          <a href="#div-main" id="main-link" class="tab-link" role="tab" aria-selected="true" aria-controls="main">Main</a>
+          <a href="#" id="main-link" class="tab-link" role="tab" aria-selected="true" aria-controls="main">Main</a>
      </li>
     {% for file in sorted_pages %}
       {% if file.name contains "tab_info" %}
