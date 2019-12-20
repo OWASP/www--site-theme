@@ -48,10 +48,12 @@
         $('.tab-link').each(function () {
           divid = '#div-' + $(this).attr('id').toLowerCase().replace('-link', '');
           $(divid).addClass('tab-hidden'); 
+          $(this).removeClass('current');
         });
 
         divid = window.location.href.substring(window.location.href.indexOf('#'))
         $(divid).removeClass('tab-hidden');
+        $(this).addClass('current');
      }
   });
 
