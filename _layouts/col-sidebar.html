@@ -37,7 +37,7 @@
          
          <p hidden>This is an example of a Project or Chapter Page.</p>
           {% endif %}
-          <section id='div-main' class='page-body'>
+          <section id='sec-main' class='page-body'>
           {{ content }}
           </section>
           {% assign pathparts = page.path | split: '/' %}
@@ -50,7 +50,7 @@
           {% assign sorted_pages = site.pages | where: "tab", "true" | sort:"order" %}
           {% for file in sorted_pages %}
           {% if file.path contains cleanpath %}
-          <section id='div-{{ file.title | downcase }}' class='page-body tab-hidden'>
+          <section id='sec-{{ file.title | downcase }}' class='page-body tab-hidden'>
             {% capture tab_include %}{% include_relative /tab_{{file.title | downcase}}.md %}{% endcapture %}
             {% assign lines = tab_include | newline_to_br | split: "<br />" %}
             {% assign newContent = "" %}
