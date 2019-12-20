@@ -21,8 +21,7 @@
     <main role="main">
       <div class="main-wrapper document">
         {% include sub-nav.html %}
-
-        
+                
 {% assign spages = site.pages | where_exp: "page", "page.tags contains page.document" | sort: "order" %}
 {% assign getnext = false %}
 {% assign getprevious = true %}

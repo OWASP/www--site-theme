@@ -1,24 +1,25 @@
+{% assign pathparts = page.path | split: '/' %}
+  {% assign cleanpath = '' %}
+  {% for parts in pathparts %}
+      {% if parts.size == 1 or forloop.last == false %}{% assign cleanpath = cleanpath | append: parts | append: '/' %}{% endif %}
+  {% endfor %}
+  {% assign cleanpath = cleanpath | strip %}
+  
+  {% assign sorted_pages = site.pages | where: "tab", "true" | sort:"order" %}
+  {% assign pagespath = '' %}
+  {% for page in sorted_pages %}
+    {% assign spageparts = page.path | split: '/' %}
+    {% for parts in spageparts %}
+      {% if parts.size == 1 or forloop.last == false %}{% assign pagespath = pagespath | append: parts | append: '/' %}{% endif %}
+    {% endfor %}
+    {% if pagespath == cleanpath %}
+      {% assign has_tabs = true %}
+    {% endif %}
+  {% endfor %}
+
+{% if has_tabs == true %}
 <nav class="sub-nav" role="navigation" aria-label="navigate page tabs">
   <ul role="tablist">
-    {% assign pathparts = page.path | split: '/' %}
-    {% assign cleanpath = '' %}
-    {% for parts in pathparts %}
-        {% if parts.size == 1 or forloop.last == false %}{% assign cleanpath = cleanpath | append: parts | append: '/' %}{% endif %}
-    {% endfor %}
-    {% assign cleanpath = cleanpath | strip %}
-    
-    {% assign sorted_pages = site.pages | where: "tab", "true" | sort:"order" %}
-    {% assign pagespath = '' %}
-    {% for page in sorted_pages %}
-      {% assign spageparts = page.path | split: '/' %}
-      {% for parts in spageparts %}
-        {% if parts.size == 1 or forloop.last == false %}{% assign pagespath = pagespath | append: parts | append: '/' %}{% endif %}
-      {% endfor %}
-      {% if pagespath == cleanpath %}
-        {% assign has_tabs = true %}
-      {% endif %}
-    {% endfor %}
-    {% if has_tabs == true %}
       <li>
           {% assign baseurl = site.baseurl %}
           {% assign pageurl = page.url %}
@@ -27,7 +28,6 @@
           {% endif %}
           <a href="#div-main" id="main-link" class="tab-link" role="tab" aria-selected="true" aria-controls="main">Main</a>
      </li>
-    {% endif %}
     {% for file in sorted_pages %}
       {% if file.name contains "tab_info" %}
         <li>
@@ -41,34 +41,6 @@
     {% endfor %}
   </ul>
 </nav>
-<!--
-<script type="text/javascript">
-  $(function(){
-    $('.tab-link').click(function() {
-      var page_path = '{{ page.path }}';
-      // the problem is that page.url is correct for main site but page_path works for subsites...
-      var page = '{{ page.url }}'; // for main, reload the page
-      
-      if($(this).attr('id').toLowerCase().indexOf('main') == -1)
-      {
-        page_path = page_path.substring(0, page_path.lastIndexOf('/') + 1);
-        page = page_path + 'tab_' + $(this).attr('id').toLowerCase().replace('-link','');
-        $('.page-body').load(page);
-      }
-      else
-      {
-        var baseurl = '{{site.baseurl}}';
-        if(baseurl)
-           page = '{{ site.url }}' + '{{site.baseurl}}';
-        
-        window.location.href = page;
-      }
-      
-    });
-  });
-</script>
--->
-
 <script type='text/javascript'>
   $(function() {
      if(window.location.href.indexOf('#') != -1)
@@ -93,4 +65,5 @@
      $(divid).removeClass('tab-hidden');
   });
 </script>
+{% endif %}
 
