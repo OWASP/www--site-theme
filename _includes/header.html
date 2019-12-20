@@ -7,20 +7,20 @@
         <i class="fa fa-bars"></i>
       </a>
       <a href="/" class="alt-logo" aria-label="go to homepage">
-          <img src="https://www2.owasp.org/assets/images/logo.png" alt="OWASP logo">
+          <img src="/assets/images/logo.png" alt="OWASP logo">
       </a>
       <div id="overlay" class="remove-el"></div>
       <!-- jekyll menu stuff -->
     </nav>
     
     <nav class="top-nav" role="navigation" aria-label="primary navigation">
-      <a href="https://www2.owasp.org/" class="desktop-logo" aria-label="go to homepage">
-        <img src="https://www2.owasp.org/assets/images/logo.png" alt="">
+      <a href="/" class="desktop-logo" aria-label="go to homepage">
+        <img src="/assets/images/logo.png" alt="">
       </a>
       <!-- jekyll menu stuff -->
       
       <div class="interactive-wrapper">
-        <form role="search" method="get" action="https://www2.owasp.org/search">   
+        <form role="search" method="get" action="/search">   
           <div class='search-div'>
             <input id="searchString" name="searchString" class="search-bar" type="search" placeholder="Search OWASP.org" required="true">
             <button id="search-button" type="submit" class="fa fa-search">
@@ -35,16 +35,24 @@
         {% else %}
         {% assign pagetitle = '' %}
         {% endif %}
-          <a href="https://www2.owasp.org/donate?reponame={{ site.github.repository_name }}{{ pagetitle }}" class="cta-button green">Donate</a>
+          <a href="/donate?reponame={{ site.github.repository_name }}{{ pagetitle }}" class="cta-button green">Donate</a>
           <a href="/membership" class="cta-button">Join</a>
         </div>
       </div>
     </nav>
   </div>
+
+{% assign dev_file = site.static_files | where: "name", "devsite.txt" %}
+{% if dev_file.size > 0 %}
+{% assign site_base_url = '/' %}
+{% else %}
+{% assign site_base_url = '/www-site-theme/' %}
+{% endif %}
+
 <script type="text/javascript">
   $(function(){
     // this works to get data from a json file NOT in data
-      $.getJSON("https://www2.owasp.org/www--site-theme/assets/sitedata/menus.json", function(data) {
+      $.getJSON("{{site_base_url}}assets/sitedata/menus.json", function(data) {
          var listr = "<ul aria-label='header menu'>";
          var mlistr = "<ul class='mobile-menu hide-el' role='navigation' aria-label='mobile primary navigation'>";
          mlistr += "<li><a href='#' class='menu-toggler' aria-hidden='true'><i class='fa fa-times'></i></a></li><li><input type='search' class='search-bar' placeholder='Search OWASP.org' required='true'></li>"

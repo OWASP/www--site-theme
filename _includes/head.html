@@ -1,11 +1,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {% assign default_desc = page.title | append: ' on the main website for The OWASP Foundation.' %}
+{% assign dev_file = site.static_files | where: "name", "devsite.txt" %}
+{% if dev_file.size > 0 %}
+{% assign site_base_url = '/' %}
+{% else %}
+{% assign site_base_url = '/www-site-theme/' %}
+{% endif %}
 <meta name="description" content="{{ page.pitch | default: default_desc }}">
-<link rel="stylesheet" href="https://www2.owasp.org/www--site-theme/assets/css/styles.css">
-<link rel="shortcut icon" type="images/x-icon" href="https://www2.owasp.org/www--site-theme/favicon.ico">
-<script src="https://www2.owasp.org/www--site-theme/assets/js/jquery-3.4.1.min.js"></script>
-<script src="https://www2.owasp.org/www--site-theme/assets/js/util.js"></script>
-<script src="https://www2.owasp.org/www--site-theme/assets/js/js.cookie.js"></script>
-<script src="https://www2.owasp.org/www--site-theme/assets/js/yaml.min.js"></script>
+<link rel="stylesheet" href="{{site_base_url}}assets/css/styles.css">
+<link rel="shortcut icon" type="images/x-icon" href="{{site_base_url}}favicon.ico">
+<script src="{{site_base_url}}assets/js/jquery-3.4.1.min.js"></script>
+<script src="{{site_base_url}}assets/js/util.js"></script>
+<script src="{{site_base_url}}assets/js/js.cookie.js"></script>
+<script src="{{site_base_url}}assets/js/yaml.min.js"></script>
 <title>{{ page.title }}</title>

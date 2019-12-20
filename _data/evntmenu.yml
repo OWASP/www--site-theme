@@ -1,24 +1,24 @@
 - title: PROGRAM
   items:
     - title: Registration
-      url: https://www2.owasp.org/www--site-theme/event-example
+      url: /www--site-theme/event-example
 - title: SUBMIT
   items:
     - title: Call for Papers
-      url : https://www2.owasp.org/www--site-theme/event-example
+      url : /www--site-theme/event-example
     - title: Call For Training
-      url : https://www2.owasp.org/www--site-theme/event-example
+      url : /www--site-theme/event-example
 - title: SPONSOR
   items:
     - title: Opportunities
-      url  : https://www2.owasp.org/www--site-theme/event-example
+      url  : /www--site-theme/event-example
 - title: VENUE
   items:
     - title: About
-      url  : https://www2.owasp.org/www--site-theme/event-example
+      url  : /www--site-theme/event-example
 - title: ABOUT
   items:
     - title: Team
-      url  : https://www2.owasp.org/www--site-theme/event-example
+      url  : /www--site-theme/event-example
     - title: Code of Conduct
-      url  : https://www2.owasp.org/www--site-theme/event-example
+      url  : /www--site-theme/event-example

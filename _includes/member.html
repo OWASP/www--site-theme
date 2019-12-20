@@ -1,9 +1,15 @@
 <section class="member">
+  {% assign dev_file = site.static_files | where: "name", "devsite.txt" %}
+  {% if dev_file.size > 0 %}
+  {% assign site_base_url = '/' %}
+  {% else %}
+  {% assign site_base_url = '/www-site-theme/' %}
+  {% endif %}
   <script type="text/javascript">
     var members = [];
     $(function() {
       //corp_members = YAML.load('/assets/sitedata/corp_members.yml');
-      corp_members = YAML.load('https://www2.owasp.org/assets/sitedata/corp_members.yml');
+      corp_members = YAML.load('{{site_base_url}}assets/sitedata/corp_members.yml');
       $.each(corp_members, function (index) {
         members.push(this);
         });
