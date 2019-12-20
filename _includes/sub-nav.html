@@ -60,7 +60,9 @@
      }
   });
 
-  $('.tab-link').click(function () {
+  $('.tab-link').click(function (e) {
+    e.preventDefault();
+    
     $('.tab-link').each(function () {
       $(this).removeClass('current');
       divid = '#sec-' + $(this).attr('id').toLowerCase().replace('-link', '');
@@ -70,6 +72,7 @@
      divid = '#sec-' + $(this).attr('id').toLowerCase().replace('-link', '');
      $(this).addClass('current');
      $(divid).removeClass('tab-hidden');
+     return false;
   });
 </script>
 {% endif %}

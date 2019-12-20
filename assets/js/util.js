@@ -47,6 +47,7 @@ $(function() {
   $(".sub-nav li:first-child>a").addClass("current");
 
   // detect hash ID and load corresponding tab
+  /*
   if (window.location.hash != "") {
     var pageTab = window.location.hash;
     $(".tab-link").removeClass("current");
@@ -57,8 +58,10 @@ $(function() {
     //    window.scrollTo(0, 0);
     //})
   }
-
+  */
+ 
   // show and hide tabs based on sub-menu item clicked
+  /*
     $(".tab-link").click(function(e) {
     
     var x = window.pageXOffset,
@@ -72,7 +75,7 @@ $(function() {
     //    window.scrollTo(x, y);
     //})
   });
-
+  */
   // show dropdown
   $(".top-nav > ul li").hover(function() {
     $(this).children(".dropdown-menu").toggleClass(hideEl);
