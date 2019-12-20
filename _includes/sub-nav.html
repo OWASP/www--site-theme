@@ -26,7 +26,7 @@
           {% if baseurl %}
              {% assign pageurl = site.url | append: site.baseurl %}
           {% endif %}
-          <a href="#" id="main-link" class="tab-link" role="tab" aria-selected="true" aria-controls="main">Main</a>
+          <a href="#" id="main-link" class="tab-link current" role="tab" aria-selected="true" aria-controls="main">Main</a>
      </li>
     {% for file in sorted_pages %}
       {% if file.name contains "tab_info" %}
@@ -57,11 +57,13 @@
 
   $('.tab-link').click(function () {
     $('.tab-link').each(function () {
+      $(this).removeClass('current');
       divid = '#div-' + $(this).attr('id').toLowerCase().replace('-link', '');
       $(divid).addClass('tab-hidden'); 
     });
 
      divid = '#div-' + $(this).attr('id').toLowerCase().replace('-link', '');
+     $(this).addClass('current');
      $(divid).removeClass('tab-hidden');
   });
 </script>
