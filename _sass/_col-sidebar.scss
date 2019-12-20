@@ -46,10 +46,18 @@
 .tab-link {
   background-color: #ddd;
     padding: 8px;
-    border-radius: 8px 0px;
+    border-radius: 8px 8px 0 0;
     border-top-color: darkgray;
     border-top-width: 3px;
+    border-left-width: 1px;
+    border-right-width: 1px;
     border-top-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    
+    &.active {
+      background-color: white;
+    }
 }
 
 .page-title {

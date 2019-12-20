@@ -57,12 +57,14 @@
 
   $('.tab-link').click(function () {
     $('.tab-link').each(function () {
+      $(this).removeClass('active');
       divid = '#div-' + $(this).attr('id').toLowerCase().replace('-link', '');
       $(divid).addClass('tab-hidden'); 
     });
 
      divid = '#div-' + $(this).attr('id').toLowerCase().replace('-link', '');
      $(divid).removeClass('tab-hidden');
+     $(this).addClass('active');
   });
 </script>
 {% endif %}
