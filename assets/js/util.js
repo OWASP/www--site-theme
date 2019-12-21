@@ -80,7 +80,6 @@ $(function() {
   $(".top-nav > ul li").hover(function() {
     $(this).children(".dropdown-menu").toggleClass(hideEl);
   });
-
 });
 
 // browser version checker and notifier

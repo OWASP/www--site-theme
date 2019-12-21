@@ -54,26 +54,49 @@
     // this works to get data from a json file NOT in data
       $.getJSON("{{site_base_url}}assets/sitedata/menus.json", function(data) {
          var listr = "<ul aria-label='header menu'>";
+         
          var mlistr = "<ul class='mobile-menu hide-el' role='navigation' aria-label='mobile primary navigation'>";
-         mlistr += "<li><a href='#' class='menu-toggler' aria-hidden='true'><i class='fa fa-times'></i></a></li><li><input type='search' class='search-bar' placeholder='Search OWASP.org' required='true'></li>"
+
+          mlistr += "<li><a href='#' class='menu-toggler' aria-hidden='true'><i class='fa fa-times'></i></a></li><li><input type='search' class='search-bar' placeholder='Search OWASP.org' required='true'></li>"
           $.each(data.menus, function (ndx, menu){
               listr += "<li><a href='" + menu.url + "'>" + menu.title + "</a>";
-              mlistr += "<li><a href='" + menu.url + "'>" + menu.title + "</a>";
+
+              if(!menu.items)
+              {
+                  mlistr += "<li><a href='" + menu.url + "'>" + menu.title + "</a>";
+              }
+              
               if(menu.items){
                   listr += "<ul class='dropdown-menu hide-el'>";
+                  mlistr += "<button class='accordion'>" + menu.title + "</button>";
+                  mlistr += "<div class='panel'>";
+                  mlistr += "<ul>";
                 $.each(menu.items, function(ndx, item){
                 
                   if(item.separator)
+                  {
                       listr += "<li class='separator'>";
+                      mlistr += "<li class='separator'>";
+                  }
                   else
+                  {
                       listr += "<li>";
+                      mlistr += "<li>";
+                  }
                   listr += "<a href='" + item.url + "'";
+                  mlistr += "<a href='" + item.url + "'";
                   if(item.opentab)
-                    listr += " target='_blank' rel='noopener'"
+                  {
+                    listr += " target='_blank' rel='noopener'";
+                    mlistr += " target='_blank' rel='noopener'";
+                  }
 
                   listr += ">" + item.title + "</a></li>";
+                  mlistr += ">" + item.title + "</a></li>";
                 });
                 listr += "</ul>";
+                mlistr += "</ul>";
+                mlistr += "</div>"
               }
               
               listr += "</li>";
@@ -81,7 +104,7 @@
           });
           listr += "</ul>";
           mlistr += "</ul>";
-
+          
           $('.desktop-logo').after(listr);
           $('#overlay').after(mlistr);
 
@@ -93,8 +116,17 @@
               $(".mobile-menu").toggleClass('hide-el');
               $("#overlay").toggleClass('remove-el');
             });
-      });
 
+            $(".accordion").click(function () {
+              $(this).toggleClass("active");
+              if($(this).next('.panel').css('display') == 'block'){
+                $(this).next('.panel').css('display', 'none');
+              }
+              else {
+                $(this).next('.panel').css('display', 'block');
+              }
+            });
+      });
     });
   </script>
 </header>

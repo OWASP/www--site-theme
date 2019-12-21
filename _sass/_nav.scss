@@ -184,12 +184,9 @@ header {
   box-shadow: 2px 0 10px #000000;
   li {
     padding: 12px 15px;
-    &:first-child {
-      margin-bottom: 15px;
-      font-size: 30px;
-    }
-    &:not(:nth-child(-n+2)) {
-      border-top: 1px solid lighten($bg-blue, 5%);
+    font-size: 14px;
+    &.separator {
+      border-top: 3px solid lighten($bg-blue, 15%);
     }
   }
   input[type='text'] {
@@ -229,6 +226,32 @@ header {
   img {
     width: 100%;
   }
+}
+
+/* mobile menu with accordion buttons */
+.accordion {
+  background-color: $bg-blue;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: lighten($bg-blue, 5%);
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: $bg-blue;
+  display: none;
+  overflow: hidden;
 }
 
 @media screen and (max-width: $header-bp - 1) { // 1019px

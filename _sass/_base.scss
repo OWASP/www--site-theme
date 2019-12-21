@@ -26,8 +26,8 @@ em, q {
   font-family: $site-font-italic, sans-serif;
 }
 
-nav, select {
-  font-family: 'ubuntu', sans-serif;
+nav, select, button {
+  font-family: $site-font, sans-serif;
 }
 
 
