@@ -1,9 +1,15 @@
 <section class="member">
+{% assign dev_file = site.static_files | where: "name", "devsite.txt" %}
+{% if dev_file.size > 0 %}
+{% assign site_base_url = 'https://www2.owasp.org' %}
+{% else %}
+{% assign site_base_url = '' %}
+{% endif %}
   <script type="text/javascript">
     var members = [];
     $(function() {
       
-      corp_members = YAML.load('/assets/sitedata/corp_members.yml');
+      corp_members = YAML.load('{{site_base_url}}/assets/sitedata/corp_members.yml');
       $.each(corp_members, function (index) {
         members.push(this);
         });
@@ -23,7 +29,7 @@
               if (randomIndexUsed.indexOf(randomIndex) == "-1")
               {
                   counter++;
-                  htmlstring += '<a href="'+ members[randomIndex]["url"] + '" class="member-logo" rel="sponsored"><img src="' + members[randomIndex]["image"] + '" alt="image"/></a>';
+                  htmlstring += '<a href="'+ members[randomIndex]["url"] + '" class="member-logo" rel="sponsored"><img src="{{site_base_url}}' + members[randomIndex]["image"] + '" alt="image"/></a>';
                   
                   randomIndexUsed.push(randomIndex);
               }
@@ -33,7 +39,7 @@
          
           var randi = Math.floor(Math.random() * members.length);
           htmlstring = '<h2>Spotlight: ' + members[randi]["name"] + '</h2>';
-          htmlstring += '<a href="'+ members[randi]["url"] + '" rel="sponsored"><img src="' + members[randi]["image"] + '" alt="image" /></a>';
+          htmlstring += '<a href="'+ members[randi]["url"] + '" rel="sponsored"><img src="{{site_base_url}}' + members[randi]["image"] + '" alt="image" /></a>';
           htmlstring += '<p>' + members[randi]["description"] + '</p>';
           $(".member-spotlight").html(htmlstring);
         }
