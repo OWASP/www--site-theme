@@ -50,21 +50,24 @@
 				"title": "Find a Local Chapter...",
 				"url": "/chapters"
 			}, {
-				"title": "Asia/Pacific",
-				"url": "/chapters#Asia/Pacific",
+				"title": "Africa",
+				"url": "/chapters#Africa",
 				"separator": "true"
+			}, {
+				"title": "Asia",
+				"url": "/chapters#Asia"
+			}, {
+				"title": "Oceania",
+				"url": "/chapters#Oceania"
 			}, {
 				"title": "Europe",
 				"url": "/chapters#Europe"
 			}, {
-				"title": "Latin America",
-				"url": "/chapters#LatinAmerica"
+				"title": "North America",
+				"url": "/chapters#North%20America"
 			}, {
-				"title": "Middle East",
-				"url": "/chapters#MiddleEast"
-			}, {
-				"title": "United States",
-				"url": "/chapters#UnitedStates"
+				"title": "South America",
+				"url": "/chapters#South%20America"
 			}, {
 				"title": "Start a Local Chapter...",
 				"url": "https://owasporg.atlassian.net/servicedesk/customer/portal/7/create/73?src=-1419759666",
