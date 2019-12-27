@@ -119,6 +119,10 @@
 				"url": "https://defcon.org/?utm_source=owasp-web&utm_medium=main-menu&utm_campaign=none",
 				"opentab": "true"
 			},{
+				"title": "LASCON 2020, October 28-29, 2020",
+				"url": "https://lascon.org/?utm_source=owasp-web&utm_medium=main-menu&utm_campaign=none",
+				"opentab": "true"
+			},{
 				"title": "Browse All Events...",
 				"url": "/events",
 				"separator": "true"
