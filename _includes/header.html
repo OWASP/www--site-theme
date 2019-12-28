@@ -9,7 +9,9 @@
       <a href="/" class="alt-logo" aria-label="go to homepage">
           <img src="/assets/images/logo.png" alt="OWASP logo">
       </a>
-      <div id="overlay" class="remove-el"></div>
+      <div id="overlay" class="remove-el">
+
+      </div>
       <!-- jekyll menu stuff -->
     </nav>
     
@@ -121,12 +123,7 @@
             $(this).children(".dropdown-menu").toggleClass('hide-el');
           });
 
-           $(".menu-toggler").click(function() {
-              $(".mobile-menu").toggleClass('hide-el');
-              $("#overlay").toggleClass('remove-el');
-            });
-
-            $(".accordion").click(function () {
+          $(".accordion").click(function () {
               $(this).toggleClass("active");
               if($(this).next('.panel').css('display') == 'block'){
                 $(this).next('.panel').css('display', 'none');
@@ -134,6 +131,9 @@
               else {
                 $(this).next('.panel').css('display', 'block');
               }
+            });
+            $(".menu-toggler").click(function() {
+              $(".mobile-menu").toggleClass('hide-el');
             });
       });
     });
