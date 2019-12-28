@@ -23,7 +23,7 @@
               if (randomIndexUsed.indexOf(randomIndex) == "-1")
               {
                   counter++;
-                  htmlstring += '<a href="'+ members[randomIndex]["url"] + '" class="member-logo" rel="sponsored"><img src="' + members[randomIndex]["image"] + '" alt="image" target="_blank"/></a>';
+                  htmlstring += '<a href="'+ members[randomIndex]["url"] + '" class="member-logo" rel="sponsored" target="_blank"><img src="' + members[randomIndex]["image"] + '" alt="image"/></a>';
                   
                   randomIndexUsed.push(randomIndex);
               }
