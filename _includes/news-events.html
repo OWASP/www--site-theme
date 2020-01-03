@@ -14,7 +14,7 @@
     
   {% assign eventlist = site.data.events | where_exp: "event" | sort: 'start-date' | limit: 4 %}
   {% for event in eventlist %}
-  <li><a href='{{ event.url | append: '/?utm_source=owasp-web&utm_medium=event-list&utm_campaign=none' }}' target='_blank'>{{ event.name }}</a><span style="color:#7C7C7C">,, {{ event.dates }}</span></li>
+  <li><a href='{{ event.url }}' target='_blank'>{{ event.name }}</a><span style="color:#7C7C7C">,, {{ event.dates }}</span></li>
   {% endfor %}
     
  </ul>
