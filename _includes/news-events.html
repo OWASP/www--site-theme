@@ -5,7 +5,7 @@
     <li><a href="{{ post.url }}">{{ post.title }}</a><span style="color:#7C7C7C">, {{ post.date | date: "%B %e, %Y" }}</span></li>	
   {% endfor %}	
   </ul>	
-  <h3>Upcoming Events</h3>
+  <h3>Upcoming Conferences</h3>
   <ul>
   {% assign eventlistlower = site.data.events | sort: 'start-date' | limit: 4 %}
   {% for event in eventlistlower %}
