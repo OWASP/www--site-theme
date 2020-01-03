@@ -2,7 +2,7 @@
   <h3>Recent OWASP News & Opinions</h3>
   <ul>
   {% for post in site.posts | offset: 1 | limit: 5 %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a><span style="color:#7C7C7C">, {{ post.date | date: "%b %d, %Y" }}</span></li>	
+    <li><a href="{{ post.url }}">{{ post.title }}</a><span style="color:#7C7C7C">, {{ post.date | date: "%B %d, %Y" }}</span></li>	
   {% endfor %}	
   </ul>	
   <h3>Upcoming Events</h3>
@@ -10,5 +10,12 @@
     <li><a href="https://2020.appseccalifornia.org/?utm_source=owasp-web&utm_medium=event-list&utm_campaign=none" target="_blank">AppSec California, January 21-24, 2020</a></li>
     <li><a href="https://dublin.globalappsec.org/?utm_source=owasp-web&utm_medium=event-list&utm_campaign=none" target="_blank">Global AppSec - Dublin, June 15-19, 2020</a></li>
      <li><a href="https://sf.globalappsec.org/?utm_source=owasp-web&utm_medium=event-list&utm_campaign=none" target="_blank">Global AppSec - San Francisco, October 19-23, 2020</a></li>
+    
+    
+  {% assign eventlist = site.data.events | where_exp: "event" | sort: 'start-date' | limit: 4 %}
+  {% for event in eventlist %}
+  <li><a href='{{ event.url | append: '/?utm_source=owasp-web&utm_medium=event-list&utm_campaign=none' }}' target='_blank'>{{ event.name }}</a>, {{ event.dates }}.</li>
+  {% endfor %}
+    
  </ul>
 </section>
