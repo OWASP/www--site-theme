@@ -1,7 +1,5 @@
-- title: PROGRAM
-  items:
-    - title: Registration
-      url: /www--site-theme/event-example
+- title: HOME
+  url: /
 - title: SUBMIT
   items:
     - title: Call for Papers

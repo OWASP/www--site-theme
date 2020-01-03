@@ -1,6 +1,6 @@
 ---
 
-title: Example Event
+title: OWASP Example Event
 layout: event
 permalink: /event-example
 registration_url: https://www2.owasp.org
@@ -14,10 +14,22 @@ pitch: "Global AppSec - Example is coming January 1-5, 2055 to the OWASP Foundat
 
 ---
 
-# Welcome to OWASP {{ page.title }}  
+# {{ page.title }}  
 ## Training Dates: {{ page.training }}<br>Conference Dates: {{ page.conference }}
 
 **{{ page.location }}**
 
 {{ page.pitch }}
 
+### Conference Pricing
+
+<ul>
+{% for price in site.data.evntpricing %}
+<li class='evnt-price-title'>{{ price.title }}</li><li class='evnt-price'>{{ price.price }}</li>
+{% for subitem in price.items %}
+{% if forloop.first %}<ul>{% endif %}
+<li class='evnt-price-title'>{{ subitem.title }}</li><li class='evnt-price'>{{ subitem.price }}</li>
+{% if forloop.last %}</ul>{% endif %}
+{% endfor %}
+{% endfor %}
+</ul>

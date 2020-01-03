@@ -1,0 +1,11 @@
+- title: Full Conference
+  price: $850.00
+  items: 
+    - title: Early Bird
+      price: $650.00
+- title: Member Conference
+  price: $700.00
+  items:
+    - title: Member Early Bird
+      price: $550.00
+          
