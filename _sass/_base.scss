@@ -8,8 +8,8 @@ use roboto for content display, ubuntu for UI elements
 h1, h2, h3, h4, h5, h6, strong {
   font-family: $site-font, sans-serif;
   font-weight: bold;
-  margin-block-start: .15em;
-  margin-block-end: .45em;
+  margin-block-start: .45em;
+  margin-block-end: .15em;
 }
 
 p {
