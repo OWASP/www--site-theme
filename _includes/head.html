@@ -8,6 +8,8 @@
 {% assign site_base_url = 'https://www2.owasp.org/www--site-theme/' %}
 {% endif %}
 <meta name="description" content="{{ page.pitch | default: default_desc }}">
+<meta property="og:description" content="{{ page.pitch | default: default_desc }}">
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-4531126-1"></script>
 <script>
