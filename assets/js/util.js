@@ -2,9 +2,9 @@ $(function() {
 
   // introduce an element that blocks for 0.01s when page loads
   // fix for a bug when user's mouse triggers JS events too early
-  setTimeout(function(){
+  /*setTimeout(function(){
        $('#blocker').remove();
-  }, 10);
+  }, 10);*/
 
 
   // element hiding CSS utility classes
@@ -45,7 +45,7 @@ $(function() {
   // });
 
   // give first tab in sub-menu a current class by default
-  $(".sub-nav li:first-child>a").addClass("current");
+  //$(".sub-nav li:first-child>a").addClass("current");
 
   // detect hash ID and load corresponding tab
   /*
@@ -78,10 +78,10 @@ $(function() {
   });
   */
   // show dropdown
-  $(".top-nav > ul li").hover(function() {
+  /*$(".top-nav > ul li").hover(function() {
   
     $(this).children(".dropdown-menu").toggleClass(hideEl);
-  });
+  });*/
   
 });
 

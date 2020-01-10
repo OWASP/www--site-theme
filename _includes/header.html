@@ -75,7 +75,7 @@
               }
               
               if(menu.items){
-                  listr += "<ul class='dropdown-menu hide-el'>";
+                  listr += "<ul class='dropdown-menu'>";
                   mlistr += "<button class='accordion'>" + menu.title + "</button>";
                   mlistr += "<div class='panel'>";
                   mlistr += "<ul>";
@@ -118,10 +118,6 @@
           
           $('.desktop-logo').after(listr);
           $('#overlay').after(mlistr);
-
-          $(".top-nav > ul li").hover(function() {
-            $(this).children(".dropdown-menu").toggleClass('hide-el');
-          });
 
           $(".accordion").click(function () {
               $(this).toggleClass("active");
