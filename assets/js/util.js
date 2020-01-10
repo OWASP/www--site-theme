@@ -1,4 +1,5 @@
 $(function() {
+
   // introduce an element that blocks for 0.01s when page loads
   // fix for a bug when user's mouse triggers JS events too early
   setTimeout(function(){
@@ -78,8 +79,10 @@ $(function() {
   */
   // show dropdown
   $(".top-nav > ul li").hover(function() {
+  
     $(this).children(".dropdown-menu").toggleClass(hideEl);
   });
+  
 });
 
 // browser version checker and notifier

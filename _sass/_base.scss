@@ -106,7 +106,9 @@ footer {
   right: 0;
   bottom: 0;
   z-index: 9999;
+  display:none;
 }
+
 
 .repo {
   margin-left: 20px;
@@ -126,6 +128,7 @@ footer {
   padding: 10px;
   padding-left: 15px;
 }
+
 
 @media screen and (max-width: $header-bp - 1) { // 1019px
   // replace desktop nav with mobile nav
