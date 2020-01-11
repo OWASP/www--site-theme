@@ -17,5 +17,7 @@ For more videos see the links on the wiki videos page.
   <iframe src="//www.youtube.com/embed/ztfgip-UhWw?" allowfullscreen="true" width="640" height="360" frameborder="0"></iframe>
 </div>
 
+![Flagship Project](/assets/images/common/owasp_level_flagship_2.svg){:width='45px' }
+
 Interested in a ZAP talk or training event? See the talks tab. Not one near you? Contact a Zap Evangelist to arrange one! 
 
