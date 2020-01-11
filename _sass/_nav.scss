@@ -135,6 +135,17 @@ header {
   }
 }
 
+/* Hide Dropdowns by Default */
+
+.top-nav ul ul {
+  display: none;
+}
+	
+/* Display Dropdowns on Hover */
+.top-nav ul li:hover > ul {
+	display: block;
+}
+
 .bot-nav {
   li {
     margin-bottom: 10px;
