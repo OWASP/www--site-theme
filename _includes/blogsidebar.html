@@ -1,12 +1,13 @@
 <div class="sidebar" role="complementary">
 
-   <p><strong>The OWASP Foundation</strong> works to improve the security of software through its community-led open source software projects, over 270 local chapters worldwide, tens of thousands of members, and by hosting local and global conferences.</p>
+  {% include owasp-about.html %}
   <div>
   <h3>Recent News & Opinions</h3>
   <ul>
   {% for post in site.posts | offset: 1 | limit: 20 %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>	
   {% endfor %}	
-  </ul>	
+  </ul>	  
   </div>
+  {% include owasp-global-events.html %}
 </div>
