@@ -24,11 +24,8 @@
 </script>
 <link rel="stylesheet" href="{{site_base_url}}assets/css/styles.css">
 <link rel="shortcut icon" type="images/x-icon" href="{{site_base_url}}favicon.ico">
-{% if site.url contains 'owasp' %}
-<link rel="canonical" href="https://owasp.org{{ page.url }}" />
-{% else %}
-<link rel="canonical" href="https://owasp.org/{{site.github.url}}{{ page.url }}" />
-{% endif %}
+
+<link rel="canonical" href="{{site.github.url | replace: 'www2.', ''}}{{page.url}}" />
 
 <script src="{{site_base_url}}assets/js/jquery-3.4.1.min.js"></script>
 <script src="{{site_base_url}}assets/js/util.js"></script>
