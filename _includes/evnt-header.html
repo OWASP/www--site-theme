@@ -11,11 +11,31 @@
         <div id="overlay" class="remove-el"></div>
         <!-- jekyll mobile menu stuff -->
         <ul class='mobile-menu hide-el' role='navigation' aria-label='mobile primary navigation'>
-        <ul class='mobile-menu hide-el' role='navigation' aria-label='mobile primary navigation'>
           <li><a href='#' class='menu-toggler' aria-hidden='true'><i class='fa fa-times'></i></a></li><li><input type='search' class='search-bar' placeholder='Search OWASP.org' required='true'></li>
         {% for menu in site.data.evntmenu %}
-          <li><a href="{{ menu.url }}">{{ menu.title }}</a></li>
+            {% if menu.items.size <= 0 %}
+              <li><a href="{{ menu.url }}">{{ menu.title }}</a>
+            {% else %}
+                  <li class='accordion'> {{ menu.title }}</li>
+                  <div class='panel'>
+                  <ul>
+                   {% for item in menu.items %}
+                      {% if item.separator %}
+                      <li class='separator'>
+                      {% else %}
+                          {% if item.opentab %}
+                          <li><a href="{{ item.url }} target='_blank' rel='noopener'">{{ item.title }}</a></li>
+                          {% else %}
+                            <li><a href='{{ item.url }}'>{{ item.title }}</a></li>
+                          {% endif %}
+                      {% endif %}
+                   {% endfor %}
+                  </ul>  
+                  </div>
+                {% endif %}
+          </li>
         {% endfor %}
+        <li><a href='/www--site-theme/event-example'>REGISTER</a></li>
         </ul>
       </nav>
       
@@ -29,7 +49,7 @@
             {% for menu in site.data.evntmenu %}
             <li><a href='{{ menu.url }}'>{{ menu.title }}</a>
                 {% if menu.items %}
-                <ul class='dropdown-menu hide-el'>
+                <ul class='dropdown-menu'>
                    {% for item in menu.items %}
                       {% if item.separator %}
                       <li class='separator'>
@@ -53,12 +73,28 @@
                 <!--<span id="search-icon" tabindex="0"><i class="fa fa-search"></i></span>-->
             </button>  
           </form>
-          <div class="nav-button" aria-label="donate to or join OWASP">
-            <a href="{{ page.registration_url }}" class="cta-button black">Register</a>
-            <a href="#" class="cta-button">Join</a>
+          <div class="nav-button" aria-label="register for event">
+            <a href="{{ page.registration_url }}" class="cta-button red">Register</a>
           </div>
         </div>
       </nav>
     </div>
+
+    <script type="text/javascript">
+      $(function(){
+              $(".accordion").click(function () {
+                  $(this).toggleClass("active");
+                  if($(this).next('.panel').css('display') == 'block'){
+                    $(this).next('.panel').css('display', 'none');
+                  }
+                  else {
+                    $(this).next('.panel').css('display', 'block');
+                  }
+                });
+                $(".menu-toggler").click(function() {
+                  $(".mobile-menu").toggleClass('hide-el');
+                });
+        });
+      </script>
   </header>
   

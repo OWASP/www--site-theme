@@ -4,9 +4,30 @@
 	background-repeat: repeat-y, no-repeat;
 	background-size: cover, cover;
 	width: 100%;
-	padding: .5em;
 	font-size: 100%;
- 	justify-content: space-around;
+	justify-content: space-around;
+	background-color: $dark;
+	margin-bottom: 0px;
+}
+
+.event {
+	.desktop-logo, .alt-logo {
+		img {
+			filter: invert(100%);
+		}
+	}
+	.top-nav, .alt-nav {
+		a {
+			color: white;
+
+			&:hover{
+				color: lightblue;
+			}
+			img {
+				filter: invert(100%);
+			}
+		}
+	}
 }
 
 /*
@@ -49,7 +70,6 @@
 	list-style-type: none;
 	
 	li {
-		float: left;
 		padding-left: 16px;
 	}
 }

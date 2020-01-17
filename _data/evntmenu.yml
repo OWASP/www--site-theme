@@ -1,22 +1,22 @@
 - title: HOME
   url: /
-- title: SUBMIT
+- title: PROGRAM
   items:
-    - title: Call for Papers
+    - title: Schedule
       url : /www--site-theme/event-example
-    - title: Call For Training
+    - title: Keynotes
       url : /www--site-theme/event-example
-- title: SPONSOR
-  items:
-    - title: Opportunities
-      url  : /www--site-theme/event-example
-- title: VENUE
-  items:
-    - title: About
-      url  : /www--site-theme/event-example
+    - title: Training
+      url : /www-site-theme/event-example
+    - title: Call or Speakers/Trainers
+      url : /www-site-theme/event-example
 - title: ABOUT
   items:
-    - title: Team
+    - title: Sponsors & Exhibitors
       url  : /www--site-theme/event-example
-    - title: Code of Conduct
+    - title: Volunteer
+      url  : /www--site-theme/event-example
+    - title: Venue, Travel, & Lodging
+      url  : /www--site-theme/event-example
+    - title: Progam Team
       url  : /www--site-theme/event-example
