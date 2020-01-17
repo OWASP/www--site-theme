@@ -23,10 +23,10 @@ pitch: "Global AppSec - Example is coming January 1-5, 2055 to the OWASP Foundat
 
 <ul>
 {% for price in site.data.evntpricing %}
-<li class='evnt-price-title'>{{ price.title }}</li><li class='evnt-price'>{{ price.price }}</li><br>
+<li class='evnt-price-title'>{{ price.title }}</li><li class='evnt-price'>{{ price.price }}</li>
 {% for subitem in price.items %}
 {% if forloop.first %}<ul>{% endif %}
-<li class='evnt-price-title'>{{ subitem.title }}</li><li class='evnt-price'>{{ subitem.price }}</li><br>
+<li class='evnt-price-title'>{{ subitem.title }}</li><li class='evnt-price'>{{ subitem.price }}</li>
 {% if forloop.last %}</ul>{% endif %}
 {% endfor %}
 {% endfor %}
