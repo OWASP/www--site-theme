@@ -11,6 +11,7 @@
 <meta property="og:description" content="{{ page.pitch | default: default_desc }}">
 <meta propery="og:title" content="{{ page.title }}{% unless page.title contains 'OWASP' %} | OWASP{% endunless %}">
 <meta property="og:url" content="{{site.github.url | replace: 'www2.', ''}}{{page.url}}">
+<meta property="og:locale" content="en_US">
 
 <!-- should probably look at using article at some point for www-community at least -->
 <meta property="og:type" content="website" />
