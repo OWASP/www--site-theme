@@ -21,3 +21,9 @@ For more videos see the links on the wiki videos page.
 
 Interested in a ZAP talk or training event? See the talks tab. Not one near you? Contact a Zap Evangelist to arrange one! 
 
+<h1>An H1 Tag</h1>
+<h2>An H2 Tag</h2>
+<h3>An H3 Tag</h3>
+<h4>An H4 Tag</h4>
+<h5>An H5 Tag</h5>
+<h6>An H6 Tag</h6>
