@@ -87,11 +87,6 @@
 				"url": "https://sf.globalappsec.org/?utm_source=owasp-web&utm_medium=main-menu&utm_campaign=none",
 				"opentab": "true"
 			},{
-				"title": "AppSec California, January 21-24, 2020",
-				"url": "https://2020.appseccalifornia.org/?utm_source=owasp-web&utm_medium=main-menu&utm_campaign=none",
-				"separator": "true",
-				"opentab": "true"
-			},{
 				"title": "OWASP Projects Summit - Winter, February 27-29, 2020",
 				"url": "/www-staff/projects/202002-Projects-Summit-Q1?utm_source=owasp-web&utm_medium=main-menu&utm_campaign=none",
 				"opentab": "true"
