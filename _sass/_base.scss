@@ -61,10 +61,10 @@ a {
 .main-wrapper,
 .member-wrapper,
 .footer-wrapper {
-  max-width: $grid-val * 43; // 30 * 43 = 1290px
+  max-width: $grid-val * 44; // 30 * 45 = 1320px
   width: 100%;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0;
   & > * {
     margin-left: 15px;
     margin-right: 15px;

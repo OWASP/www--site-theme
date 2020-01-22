@@ -141,7 +141,10 @@
 			}, {
 				"title": "Careers",
 				"url": "/careers"
-			}, {
+			},{
+				"title": "Committees",
+				"url"  : "/committees/" 
+			},{
 				"title": "Contact Us",
 				"url": "/contact"
 			}, {
