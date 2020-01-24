@@ -1,13 +1,13 @@
 {
 	"menus": [{
 			"title": "PROJECTS",
-			"url": "/projects",
+			"url": "/projects/",
 			"items": [{
 				"title": "Browse All Projects...",
-				"url": "/projects"
+				"url": "/projects/"
 			}, {
 				"title": "OWASP Top Ten",
-				"url": "/www-project-top-ten",
+				"url": "/www-project-top-ten/",
 				"separator": "true"
 			}, {
 				"title": "Cheat Sheets",
@@ -35,7 +35,7 @@
 				"url": "/www-project-web-security-testing-guide/"
 			}, {
 				"title": "Zed Attack Proxy",
-				"url": "/www-project-zap"
+				"url": "/www-project-zap/"
 			},{
 				"title": "Start a New Project...",
 				"url": "https://owasporg.atlassian.net/servicedesk/customer/portal/7/create/70?src=-1419759666",
@@ -45,29 +45,29 @@
 		},
 		{
 			"title": "CHAPTERS",
-			"url": "/chapters",
+			"url": "/chapters/",
 			"items": [{
 				"title": "Find a Local Chapter...",
-				"url": "/chapters"
+				"url": "/chapters/"
 			}, {
 				"title": "Africa",
-				"url": "/chapters#Africa",
+				"url": "/chapters/#Africa",
 				"separator": "true"
 			}, {
 				"title": "Asia",
-				"url": "/chapters#Asia"
+				"url": "/chapters/#Asia"
 			}, {
 				"title": "Oceania",
-				"url": "/chapters#Oceania"
+				"url": "/chapters/#Oceania"
 			}, {
 				"title": "Europe",
-				"url": "/chapters#Europe"
+				"url": "/chapters/#Europe"
 			}, {
 				"title": "North America",
-				"url": "/chapters#NorthAmerica"
+				"url": "/chapters/#NorthAmerica"
 			}, {
 				"title": "South America",
-				"url": "/chapters#SouthAmerica"
+				"url": "/chapters/#SouthAmerica"
 			}, {
 				"title": "Start a Local Chapter...",
 				"url": "https://owasporg.atlassian.net/servicedesk/customer/portal/7/create/73?src=-1419759666",
@@ -77,7 +77,7 @@
 		},
 		{
 			"title": "EVENTS",
-			"url": "/events",
+			"url": "/events/",
 			"items": [{
 				"title": "Global AppSec - Dublin, June 15-19, 2020",
 				"url": "https://dublin.globalappsec.org/?utm_source=owasp-web&utm_medium=main-menu&utm_campaign=none",
@@ -119,56 +119,56 @@
 				"opentab": "true"
 			},{
 				"title": "Browse All Events...",
-				"url": "/events",
+				"url": "/events/",
 				"separator": "true"
 			}
 			]
 		},
 		{
 			"title": "ABOUT",
-			"url": "/about",
+			"url": "/about/",
 			"items": [{
 				"title": "About OWASP",
-				"url": "/about"
+				"url": "/about/"
 			}, {
 				"title": "Board & Staff",
-				"url": "/corporate"
+				"url": "/corporate/"
 			}, {
 				"title": "Careers",
-				"url": "/careers"
+				"url": "/careers/"
 			},{
 				"title": "Committees",
 				"url"  : "/committees/" 
 			},{
 				"title": "Contact Us",
-				"url": "/contact"
+				"url": "/contact/"
 			}, {
 				"title": "Contributed Content",
 				"url": "/www-community"
 			},{
 				"title": "Donate",
-				"url": "/donate"
+				"url": "/donate/"
 			}, {
 				"title": "Finance",
-				"url": "/finance"
+				"url": "/finance/"
 			}, {
 				"title": "Governance",
-				"url": "/governance"
+				"url": "/governance/"
 			}, {
 				"title": "Membership",
-				"url": "/membership"
+				"url": "/membership/"
 			}, {
 				"title": "Opinions & News",
-				"url": "/news"
+				"url": "/news/"
 			}, {
 				"title": "Policies & Procedures",
-				"url": "/www-policy"
+				"url": "/www-policy/"
 			}, {
 				"title": "Staff Projects",
-				"url": "/www-staff"
+				"url": "/www-staff/"
 			}, {
 				"title": "Supporters",
-				"url": "/supporters"
+				"url": "/supporters/"
 			}, {
 				"title": "Video",
 				"url": "https://www.youtube.com/user/OWASPGLOBAL/videos",
