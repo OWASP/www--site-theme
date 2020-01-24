@@ -15,7 +15,9 @@
     {% assign has_leaders = true %}
   {% endif %}
 {% endfor %}
+  
   {% include owasp-about.html %}
+
   {% if project_info %}
   {% capture my_include %}{% include_relative /info.md %}{% endcapture %}
   {{ my_include | markdownify }}

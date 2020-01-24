@@ -15,6 +15,24 @@
   }
 }
 
+.owasp-sidebar-top {
+  padding: 4px;
+  box-shadow: 0 6px 6px -6px lightgray;
+  border-left: 1px dotted lightgray;
+  border-right: 1px dotted lightgray; 
+  border-radius: 5px; 
+  font-size: 0.9em;
+}
+
+.owasp-sidebar-bottom {
+  padding: 4px;
+  box-shadow: 0 -6px 6px -6px lightgray; 
+  border-left: 1px dotted lightgray;
+  border-right: 1px dotted lightgray; 
+  border-radius: 5px; 
+  font-size: 0.9em;
+}
+
 .sub-nav {
   grid-area: menu;
   padding: 15px 0;
