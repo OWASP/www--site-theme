@@ -3,7 +3,7 @@
 title: OWASP Example Event
 layout: event
 permalink: /event-example
-registration_url: https://www2.owasp.org
+registration_url: https://owasp.org
 training: January 1 - 3
 conference: January 4 - 5
 venue: OWASP Foundation Event Center<br>101 Simian Sands<br>Montpelier, VT
