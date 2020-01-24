@@ -3,3 +3,5 @@
 /favicon.ico
 _site/
 devsite.txt
+.idea/
+*.iml
