@@ -53,6 +53,13 @@
 
 <script type="text/javascript">
   $(function(){
+      
+      url = $(location).attr('href');
+      if(url.includes('www2'))
+      {
+        url = url.replace(/www2./, '');
+        $(location).attr('href',url);
+      }
     // this works to get data from a json file NOT in data
       $.getJSON("{{site_base_url}}assets/sitedata/menus.json", function(data) {
          var listr = "<ul aria-label='header menu'>";
