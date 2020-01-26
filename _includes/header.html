@@ -59,6 +59,7 @@
       {
         url = url.replace(/www2./, '');
         $(location).attr('href',url);
+        return;
       }
     // this works to get data from a json file NOT in data
       $.getJSON("{{site_base_url}}assets/sitedata/menus.json", function(data) {
