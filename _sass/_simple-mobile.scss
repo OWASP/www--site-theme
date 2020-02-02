@@ -1,0 +1,16 @@
+@media only screen and (min-width: 420px) {
+  .desktop {
+    display:inline;
+  }
+  .mobile {
+    display:none !important;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .mobile {
+      display:inline;
+  }
+  .desktop {
+      display:none !important;
+  }
+}
