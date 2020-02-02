@@ -14,3 +14,20 @@
       display:none !important;
   }
 }
+
+@media only screen and (min-width: 420px) {
+  .desktop-cell {
+    display:table-cell;
+  }
+  .mobile-cell {
+    display:none !important;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .mobile-cell {
+      display:table-cell;
+  }
+  .desktop-cell {
+      display:none !important;
+  }
+}
