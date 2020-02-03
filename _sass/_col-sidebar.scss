@@ -17,20 +17,16 @@
 
 .owasp-sidebar-top {
   padding: 4px;
-  box-shadow: 0 6px 6px -6px lightgray;
-  border-left: 1px dotted lightgray;
-  border-right: 1px dotted lightgray; 
-  border-radius: 5px; 
-  font-size: 0.9em;
+  box-shadow: 0 3px 3px -3px gray; 
+  padding-bottom: 25px;
+  font-size: .95em;
 }
 
 .owasp-sidebar-bottom {
   padding: 4px;
-  box-shadow: 0 -6px 6px -6px lightgray; 
-  border-left: 1px dotted lightgray;
-  border-right: 1px dotted lightgray; 
-  border-radius: 5px; 
-  font-size: 0.9em;
+  box-shadow: 0 -3px 3px -3px gray; 
+  padding-top: 25px;
+  font-size: .95em;
 }
 
 .sub-nav {
