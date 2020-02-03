@@ -46,7 +46,7 @@
         <!--<h1>{{ page.title }}</h1>-->
         <!-- jekyll menu stuff -->
         <ul aria-label='header menu'>
-            {% for menu in site.data.evntmenu %}
+            {% for menu in site.data.menu %}
             <li><a href='{{ menu.url }}'>{{ menu.title }}</a>
                 {% if menu.items %}
                 <ul class='dropdown-menu'>
