@@ -1,0 +1,39 @@
+// Support for specific views on mobile and desktop
+@media only screen and (min-width: 420px) {
+  .desktop {
+    display:inline;
+  }
+  .mobile {
+    display:none !important;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .mobile {
+      display:inline;
+  }
+  .desktop {
+      display:none !important;
+  }
+}
+
+// Simple table representation
+.cell {
+  display:table-cell;
+}
+// Support for specific views on mobile and desktop
+@media only screen and (min-width: 420px) {
+  .desktop-cell {
+    display:table-cell;
+  }
+  .mobile-cell {
+    display:none !important;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .mobile-cell {
+      display:table-cell;
+  }
+  .desktop-cell {
+      display:none !important;
+  }
+}
