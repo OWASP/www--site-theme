@@ -118,6 +118,10 @@
 				"url": "https://lascon.org/?utm_source=owasp-web&utm_medium=main-menu&utm_campaign=none",
 				"opentab": "true"
 			},{
+				"title": "OWASP New Zealand Day 2020, February 19-21, 2020",
+				"url": "https://wiki.owasp.org/index.php/OWASP_New_Zealand_Day_2020?utm_source=owasp-web&utm_medium=main-menu&utm_campaign=none",
+				"opentab": "true"
+			},{
 				"title": "Browse All Events...",
 				"url": "/events/",
 				"separator": "true"
