@@ -11,7 +11,7 @@
         <div id="overlay" class="remove-el"></div>
         <!-- jekyll mobile menu stuff -->
         <ul class='mobile-menu hide-el' role='navigation' aria-label='mobile primary navigation'>
-          <li><a href='#' class='menu-toggler' aria-hidden='true'><i class='fa fa-times'></i></a></li><li><input type='search' class='search-bar' placeholder='Search OWASP.org' required='true'></li>
+          <li><a href='#' class='menu-toggler' aria-hidden='true'><i class='fa fa-times'></i></a></li>
         {% for menu in site.data.evntmenu %}
             {% if menu.items.size <= 0 %}
               <li><a href="{{ menu.url }}">{{ menu.title }}</a>
