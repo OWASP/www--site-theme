@@ -29,20 +29,22 @@
         
       </div>
       <div class="main-wrapper event-wrapper">
+          <div style="float:left;">
           {{ content }}
-      </div>
-      <div class="event-pricing">
-        <h3>Conference Pricing</h3>
-        <ul>
-          {% for price in site.data.pricing %}
-          <li class='evnt-price-title'>{{ price.title }}</li><li class='evnt-price'>{{ price.price }}</li>
-          {% for subitem in price.items %}
-          {% if forloop.first %}<ul>{% endif %}
-          <li class='evnt-price-title'>{{ subitem.title }}</li><li class='evnt-price'>{{ subitem.price }}</li>
-          {% if forloop.last %}</ul>{% endif %}
-          {% endfor %}
-          {% endfor %}
-        </ul>
+          </div>
+          <div class="event-pricing">
+            <h3>Conference Pricing</h3>
+            <ul>
+              {% for price in site.data.pricing %}
+              <li class='evnt-price-title'>{{ price.title }}</li><li class='evnt-price'>{{ price.price }}</li>
+              {% for subitem in price.items %}
+              {% if forloop.first %}<ul>{% endif %}
+              <li class='evnt-price-title'>{{ subitem.title }}</li><li class='evnt-price'>{{ subitem.price }}</li>
+              {% if forloop.last %}</ul>{% endif %}
+              {% endfor %}
+              {% endfor %}
+            </ul>
+          </div>
       </div>
     </main>
 
