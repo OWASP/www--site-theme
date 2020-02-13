@@ -58,12 +58,20 @@
 	max-height: 300px;
 	background-color: gray;
 	text-align:center;
-	
 	hr {
 		max-width: 33%;
 		margin-left: 33%;
 	}
   }
+
+.event-cover {
+	position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(to right, lightgray, transparent 99%);
+}
 
 .event-header-info {
 	color: white;
