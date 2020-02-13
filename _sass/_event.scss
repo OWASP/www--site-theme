@@ -50,8 +50,12 @@
 	}
 }
 
-.event .dropdownmenu .li {
-	background-color: gray;
+.event {
+	.dropdownmenu {
+		 .li {
+			  background-color: gray;
+		 }
+	}
 }
 /*
 .event-image-container {
