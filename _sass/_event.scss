@@ -69,14 +69,14 @@
     top: 80px;
     left: 0;
     width: 100%;
-    height: 300px;
-    background: linear-gradient(to right, lightgray, transparent 99%);
+    height: 288px;
+    background: linear-gradient(to right,$bg-grey, $bg-grey, transparent 78%);
 }
 
 .event-header-info {
 	position: absolute;
-	top: 80px;
-	left: 24px;
+	top: 128px;
+	left: 168px;
 	width: 100%;
 	height: 300px;
 	text-align:left;
