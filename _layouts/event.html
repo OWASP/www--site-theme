@@ -36,16 +36,18 @@
               <div class="nav-button" aria-label="register for event">
                 <a href="{{ page.registration_url }}" class="cta-button red">Register</a>
             </div>
-            <ul>
-              {% for price in site.data.pricing %}
-              <li class='evnt-price-title'>{{ price.title }}:{{ price.price }}</li>
-              {% for subitem in price.items %}
-              {% if forloop.first %}<ul>{% endif %}
-              <li class='evnt-price-title'>{{ subitem.title }}:{{ subitem.price }}</li>
-              {% if forloop.last %}</ul>{% endif %}
-              {% endfor %}
-              {% endfor %}
-            </ul>
+            <div class='full-width'>
+              <ul>
+                {% for price in site.data.pricing %}
+                <li class='evnt-price-title'>{{ price.title }}:{{ price.price }}</li>
+                {% for subitem in price.items %}
+                {% if forloop.first %}<ul>{% endif %}
+                <li class='evnt-price-title'>{{ subitem.title }}:{{ subitem.price }}</li>
+                {% if forloop.last %}</ul>{% endif %}
+                {% endfor %}
+                {% endfor %}
+              </ul>
+            </div>
             </div>
           </div>
       </div>
