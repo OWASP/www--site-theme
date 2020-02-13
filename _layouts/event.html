@@ -39,10 +39,10 @@
             <div class='full-width'>
               <ul>
                 {% for price in site.data.pricing %}
-                <li class='evnt-price-title'>{{ price.title }}:<div class='event-price'>{{ price.price }}</div></li>
+                <li class='event-price-title'>{{ price.title }}:<div class='event-price'>{{ price.price }}</div></li>
                 {% for subitem in price.items %}
                 {% if forloop.first %}<ul>{% endif %}
-                <li class='evnt-price-title'>{{ subitem.title }}:<div class='event-price'>{{ subitem.price }}</div></li>
+                <li class='event-price-title'>{{ subitem.title }}:<div class='event-price'>{{ subitem.price }}</div></li>
                 {% if forloop.last %}</ul>{% endif %}
                 {% endfor %}
                 {% endfor %}
