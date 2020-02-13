@@ -45,6 +45,9 @@
 		margin: auto;
 		max-width: $grid-val * 44; // 30 * 45 = 1320px
 	}
+	h1,h2,h3,h4 {
+		margin-left: 16px;
+	}
 }
 
 /*
@@ -104,7 +107,7 @@
 
 section.keynotes-front {
 	margin: 0em;
-	padding: 1em 0em 0em 0em;
+	padding: 0;
 	h2 {
 		display: flex;
 		justify-content: center;
