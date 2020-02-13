@@ -56,9 +56,9 @@
 	justify-content: space-around;
 	max-width: 100%;
 	max-height: 300px;
-	background-color:gray;
+	background-color: linear-gradient(to left, &$bg-grey, transparent 90%);
 	text-align:center;
-	background: linear-gradient(to left, &$bg-grey, transparent 90%);
+	
 	hr {
 		max-width: 33%;
 		margin-left: 33%;
