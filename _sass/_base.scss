@@ -85,6 +85,10 @@ main {
   grid-template-areas: "header" "body" "footer";
 }
 
+.full-width {
+  width: 100%;
+}
+
 header {
   grid-area: header;
 }
