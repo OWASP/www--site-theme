@@ -32,17 +32,17 @@
           </div>
           <div class="event-pricing">
             <h3>Conference Pricing</h3>
-            <div class="interactive-wrapper full-width">
+            <div class="full-width">
               <div class="nav-button" aria-label="register for event">
                 <a href="{{ page.registration_url }}" class="cta-button red">Register</a>
             </div>
             <div class='full-width'>
               <ul>
                 {% for price in site.data.pricing %}
-                <li class='evnt-price-title'>{{ price.title }}:{{ price.price }}</li>
+                <li class='evnt-price-title'>{{ price.title }}:<div class='event-price'>{{ price.price }}</div></li>
                 {% for subitem in price.items %}
                 {% if forloop.first %}<ul>{% endif %}
-                <li class='evnt-price-title'>{{ subitem.title }}:{{ subitem.price }}</li>
+                <li class='evnt-price-title'>{{ subitem.title }}:<div class='event-price'>{{ subitem.price }}</div></li>
                 {% if forloop.last %}</ul>{% endif %}
                 {% endfor %}
                 {% endfor %}
