@@ -54,7 +54,26 @@
 	.dropdown-menu {
 		 li {
 			  background-color: gray;
-		 }
+			  color: black;
+			  
+			  &:hover {
+				background-color: lighten(gray, 10%);
+			  }
+			  &:active {
+				background-color: darken(gray, 5%);
+			  }
+			  &.separator {
+				border-top: 3px solid lighten(gray, 15%);
+			  }
+			  a, a:active, a:focus, a:hover, a:visited {
+				color:white;
+				text-decoration: none;
+			  }
+			}
+			// pseudo class for triangle shape tip
+			&:after {
+			 border-bottom: 20px solid gray;
+			}
 	}
 }
 /*
@@ -109,7 +128,7 @@
 	height: 300px;
 	text-align:left;
 	color: black;
-	z-index: 99;
+	z-index: 9;
 }
 
 section.keynotes-front {
