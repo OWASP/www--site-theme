@@ -30,9 +30,6 @@
           <div style="float:left;max-width:70%;">
           {{ content }}
           </div>
-          <div style="float:left;width:100%">
-          {% include keynotes.html %}
-          </div>
           <div class="event-pricing">
             <h3>Conference Pricing</h3>
             <ul>
@@ -45,11 +42,14 @@
               {% endfor %}
               {% endfor %}
             </ul>
-            <div class="interactive-wrapper">
-              <div class="nav-button" aria-label="register for event">
-              <a href="{{ page.registration_url }}" class="cta-button red">Register</a>
+              <div class="interactive-wrapper">
+                <div class="nav-button" aria-label="register for event">
+                  <a href="{{ page.registration_url }}" class="cta-button red">Register</a>
+              </div>
             </div>
           </div>
+          <div style="float:left;width:100%">
+            {% include keynotes.html %}
           </div>
       </div>
     </main>
