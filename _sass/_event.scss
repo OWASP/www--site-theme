@@ -40,6 +40,11 @@
 			}
 		}
 	}
+
+	section {
+		margin: auto;
+		max-width: $grid-val * 44; // 30 * 45 = 1320px
+	}
 }
 
 /*
@@ -74,6 +79,8 @@
 .keynote-wrapper {
 	display: inline-block;
 }
+
+
 .event-cover {
 	position: absolute;
     top: 80px;
