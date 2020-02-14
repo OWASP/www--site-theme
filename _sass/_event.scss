@@ -50,6 +50,42 @@
 	}
 }
 
+.event {
+	.dropdown-menu {
+		 li {
+			  background-color: gray;
+			  color: black;
+			  
+			  &:hover {
+				background-color: lighten(gray, 10%);
+			  }
+			  &:active {
+				background-color: darken(gray, 5%);
+			  }
+			  &.separator {
+				border-top: 3px solid lighten(gray, 15%);
+			  }
+			  a, a:active, a:focus, a:hover, a:visited {
+				color:white;
+				text-decoration: none;
+			  }
+			}
+			// pseudo class for triangle shape tip
+			&:after {
+				position: absolute;
+				left: 40px;
+				margin-left: -20px;
+				top: 0px;
+				width: 0;
+				height: 0;
+				content:'';
+				z-index: -1;
+				border-left: 20px solid transparent;
+				border-right: 20px solid transparent;
+			    border-bottom: 20px solid gray;
+			}
+	}
+}
 /*
 .event-image-container {
 	background-position: center center;
@@ -106,7 +142,7 @@
 	height: 300px;
 	text-align:left;
 	color: black;
-	z-index: 99;
+	z-index: 9;
 }
 
 section.keynotes-front {
