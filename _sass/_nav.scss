@@ -99,10 +99,14 @@ header {
   z-index: 99;
 
   li {
-    padding: 5px 20px;
     display: block;
     background-color: $bg-blue;
     color: white;
+    a {
+      display: block;    
+      padding: 5px 20px;
+    }
+
     &:first-child {
       margin-top: 10px;
     }
