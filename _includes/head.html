@@ -38,10 +38,16 @@
   ga('send', 'pageview');
 
   function handleOutboundLinkClicks(event) {
+    var toref = event.target.href;
+    toref = toref.replace('https://','')
+    toref = toref.replace('http://', '')
+    if(toref == '')
+      toref = 'empty href'
+
   ga('send', 'event', {
     eventCategory: 'Outbound Link',
     eventAction: 'click',
-    eventLabel: event.target.href,
+    eventLabel: toref,
     transport: 'beacon'
   });
 }
