@@ -123,6 +123,10 @@ header {
       color:white;
       text-decoration: none;
     }
+    a {
+      display: block;    
+      padding: 5px 20px;
+    }
   }
   // pseudo class for triangle shape tip
   &:after {
@@ -199,7 +203,7 @@ header {
   background-color: $bg-blue;
   box-shadow: 2px 0 10px #000000;
   li {
-    padding: 12px 15px;
+    display: block;
     font-size: 14px;
     &.separator {
       border-top: 3px solid lighten($bg-blue, 15%);
@@ -209,6 +213,8 @@ header {
     width: 100%;
   }
   a {
+    padding: 12px 15px;
+    display: block;
     color: white;
     text-decoration: none;
   }
