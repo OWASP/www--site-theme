@@ -1,5 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+  {% assign pathparts = page.path | split: '/' %}
+
+    {% assign cleanpath = '' %}
+    {% for parts in pathparts %}
+        {% if parts.size == 1 or forloop.last == false %}{% assign cleanpath = cleanpath | append: parts | append: '/' %}{% endif %}
+    {% endfor %}
+    {% assign cleanpath = cleanpath | strip %}   
+{% assign reasonspath = cleanpath | append: 'reasons.md' %}
+{% for static_file in site.static_files %}
+  {% if static_file.path contains reasonspath %}
+    {% assign reason_info = true %}
+  {% endif %}
+{% endfor %}
   <head>
     {% include head.html %}
     <script type="text/javascript">
@@ -57,8 +70,7 @@
             {% include keynotes.md %}
             </section>
           {% endif %}
-          {% assign rsize = site.data.reasons | size %}
-          {% if rsize > 0 %}
+          {% if reason_info %}
             <section class='reasons-front'>
             {% include reasons.md %}
             </section>
