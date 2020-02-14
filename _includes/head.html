@@ -24,13 +24,30 @@
 
 <link rel="canonical" href="{{site.github.url | replace: 'www2.', ''}}{{page.url | replace: '.html', ''}}" />
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-4531126-1"></script>
-<script>
+<!-- <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'UA-4531126-1');
+</script> -->
+<!-- Google Analytics -->
+<script>
+  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+  ga('create', 'UA-4531126-1', 'auto');
+  ga('send', 'pageview');
+
+  function handleOutboundLinkClicks(event) {
+  ga('send', 'event', {
+    eventCategory: 'Outbound Link',
+    eventAction: 'click',
+    eventLabel: event.target.href,
+    transport: 'beacon'
+  });
+}
 </script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
 <link rel="stylesheet" href="{{site_base_url}}assets/css/styles.css">
 <link rel="shortcut icon" type="images/x-icon" href="{{site_base_url}}favicon.ico">
 
