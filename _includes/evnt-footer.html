@@ -5,7 +5,7 @@
                     <h2>Event Sponsors</h2>
                     <div id="corp_member_div">
 {% for member in site.data.sponsors %}
-  <a href="{{member.url}}" class="member-logo" rel="sponsored" onclick='handleOutboundLinkClicks();'><img src="{{member.logo}}" alt="image"/></a>
+  <a href="{{member.url}}" class="member-logo" rel="sponsored" onclick='handleOutboundLinkClicks();' target="_blank"><img src="{{member.logo}}" alt="image"/></a>
 {% endfor %}
                     </div>
                     <div class="member-cta">
