@@ -50,8 +50,20 @@
             </div>
             </div>
           </div>
-          {% include keynotes.md %}
-          {% include reasons.md %}
+          {% assign ksize = site.data.keynotespeakers | size %}
+          {% if ksize > 0 %}
+          <div class='alt-wrapper'>
+            <section class="keynotes-front">
+            {% include keynotes.md %}
+            </section>
+          {% endif %}
+          {% assign rsize = site.data.reasons | size %}
+          {% if rsize > 0 %}
+            <section class='reasons-front'>
+            {% include reasons.md %}
+            </section>
+          </div>
+          {% endif %}
       </div>
     </main>
     

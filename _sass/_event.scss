@@ -115,14 +115,14 @@
 		margin-left: 33%;
 	}
   }
+
 .alt-wrapper {
 	display: inline-block;
 	background-color:ghostwhite;
 }
 
-.wh-wrapper {
-	display: inline-block;
-	background-color: white;
+.alt-wrapper:nth-child(even) {
+	background-color:white;
 }
 
 .event-cover {
