@@ -141,6 +141,11 @@ footer {
   code {
     max-width:88%;
   }
+  
+}
+
+// add some left padding when the screen becomes the width of the content
+@media screen and (max-width: $grid-val * 44) {
   .main-wrapper,
   .alt-wrapper,
   .member-wrapper,
