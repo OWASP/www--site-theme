@@ -141,4 +141,12 @@ footer {
   code {
     max-width:88%;
   }
+  .main-wrapper,
+  .alt-wrapper,
+  .member-wrapper,
+  .footer-wrapper,
+  .header-wrapper,
+  .event-header-wrapper {
+    padding-left: 1em;
+  }
 }
