@@ -72,7 +72,6 @@ a {
   }
 }
 
-
 main {
   img {
     max-width: 100%;
@@ -100,6 +99,18 @@ main {
 
 footer {
   grid-area: footer;
+  margin-left: 1em;
+}
+
+.social {
+  float: right;
+  a {
+    color: black;
+    text-decoration: none;
+    &:hover {
+      color: $bg-blue;
+    }
+  }
 }
 
 // blocker div for resolving am unintended jQuery behavior

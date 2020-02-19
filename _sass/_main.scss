@@ -3,7 +3,10 @@
 // 3rd-party support files
 @import "sanitize";
 @import "fontawesome/fontawesome";
+@import "fontawesome/v4-shims.scss";
 @import "fontawesome/solid";
+@import "fontawesome/regular";
+@import "fontawesome/brands";
 
 // partial SCSS files
 @import "base";
