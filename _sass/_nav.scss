@@ -38,6 +38,7 @@ header {
   border: 2px solid #dddddd;
   padding: 6px;
   border-radius: 0;
+  padding-right: 25px;
   &:focus {
     border-color: $cta-blue;
   }
@@ -53,6 +54,9 @@ header {
   font-size:1em;
   padding-right:16px;
   padding-left:0px;
+  position: fixed;
+  margin-left: -22px;
+  margin-top: 6px;
   &:hover {
     color: lighten($cta-blue, 10%);
   }
