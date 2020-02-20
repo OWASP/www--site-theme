@@ -54,9 +54,8 @@ header {
   font-size:1em;
   padding-right:16px;
   padding-left:0px;
-  position: fixed;
-  margin-left: -22px;
-  margin-top: 6px;
+  margin-left: -25px;
+  margin-top: 12px;
   &:hover {
     color: lighten($cta-blue, 10%);
   }
