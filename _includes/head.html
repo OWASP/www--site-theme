@@ -38,10 +38,16 @@
   ga('send', 'pageview');
 
   function handleOutboundLinkClicks(event) {
+    var href = '';
+    if(event.target.href == undefined)
+      href = event.target.parentElement.href;
+    else
+      href = event.target.href
+    
   ga('send', 'event', {
     eventCategory: 'Outbound Link',
     eventAction: 'click',
-    eventLabel: event.target.href,
+    eventLabel: href,
     transport: 'beacon'
   });
 }
