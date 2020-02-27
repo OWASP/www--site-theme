@@ -250,11 +250,13 @@ site-wide reusable components styling
   }
   &.white {
      background-color: white;
-     color: black;
+     color: black !important;
      &:hover {
+       color:black !important;
       background-color: darken(white, 2.5%);
     }
     &:active {
+      color:black !important;
       background-color: lighten(white, 5%);
     }
   }
