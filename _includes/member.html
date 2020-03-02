@@ -9,7 +9,7 @@
     var members = [];
     $(function() {
       
-      corp_members = YAML.load('https://owasp.github.io/assets/sitedata/corp_members.yml');
+      corp_members = YAML.load('{{site_base_url}}/assets/sitedata/corp_members.yml');
       $.each(corp_members, function (index) {
         members.push(this);
         });
