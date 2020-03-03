@@ -248,6 +248,18 @@ site-wide reusable components styling
       background-color: darken(red, 5%);
     }
   }
+  &.white {
+     background-color: white;
+     color: black !important;
+     &:hover {
+       color:black !important;
+      background-color: darken(white, 2.5%);
+    }
+    &:active {
+      color:black !important;
+      background-color: lighten(white, 5%);
+    }
+  }
 }
 
 // table component styling
