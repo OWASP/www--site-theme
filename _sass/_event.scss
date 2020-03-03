@@ -257,7 +257,13 @@ section.keynotes-front {
 	}
 
 	.event-cover {
-		top: 110px;
-		height: 252px;
+		top: 108px;
+		height: 254px;
+	}
+
+	.event-header-info {
+		div {
+			top:110px;
+		}
 	}
 }
