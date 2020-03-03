@@ -86,21 +86,15 @@
 			}
 	}
 }
-/*
-.event-image-container {
-	background-position: center center;
-	background-repeat: repeat-y, no-repeat;
-	background-size: cover, cover;
-	padding: 16em 16em 4em 16em;
-	justify-content: space-around;
-	max-width: 45%;
-	height: 100%;
-	background-color:gray;
-	float:right;
-	margin-right: 13%;
-  }*/
 
-  .event-image-container {
+.event-wrapper {
+	.left-70 {
+		width: 70%;
+		float: left;
+	}
+}
+
+.event-image-container {
 	background-position: center center;
 	background-repeat: repeat-y, no-repeat;
 	background-size: cover, cover;
@@ -238,6 +232,11 @@ section.keynotes-front {
 		float: left;
 		width: 100%;
 		max-width: 100%;
+	}
+	.event-wrapper {
+		.left-70 {
+			width: 100%;
+		}
 	}
 }
 
