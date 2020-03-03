@@ -16,6 +16,11 @@
 		margin-left: 0;
 	  }
 	  
+	  .content-wrapper {
+		  float: left;
+		  max-width: 70%;
+	  }
+
 	  .event-information {
 		margin-bottom: 40px;
 	  }
@@ -419,13 +424,16 @@ section.keynotes-front {
 		}
 	}
 
+	.event {
+		.content-wrapper {
+			max-width:100%;
+			float:none;
+		}
+	}
 	.registration-container, registration-form {
 		max-width: 100%;
 	  }
-}
 
-
-@media (max-width: 500px) {
 	.event header {
 		padding: 1em 1em 1em 1em;
 		font-size: 80%;
