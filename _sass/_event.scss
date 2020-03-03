@@ -459,11 +459,14 @@ section.keynotes-front {
 			max-width:100%;
 			float:none;
 		}
+
+		.registration-container, 
+		.registration-form {
+			max-width: 100%;
+		  }
 	}
 	
-	.registration-container, .registration-form {
-		max-width: 100%;
-	  }
+	
 
 	.event header {
 		padding: 1em 1em 1em 1em;
