@@ -11,184 +11,214 @@
 	z-index: 42;
 }
 
+// ----------------------------------------
 .event {
-	.h1, .h2, .h3 {
-		margin-left: 0;
-	  }
-	  
-	  .content-wrapper {
-		  float: left;
-		  max-width: 70%;
-	  }
+  h1, h2, h3 {
+	margin-left: 0;
+  }
+  
+  .content-wrapper {
+	float: left;
+	max-width: 70%;
+  }
 
-	  .event-information {
-		margin-bottom: 40px;
-	  }
-	  
-	  .ticket-option {
-		margin-bottom: 32px;
-		padding-bottom: 32px;
-		display: flex;
-		border-bottom: 1px solid #d3d3d3;
-	  }
-	  
-	  .ticket-option:last-child {
-		border-bottom: 0;
-		margin-bottom: 0;
-		padding-bottom: 0;
-	  }
-	  
-	  .ticket-buy-button {
-		min-width: 110px;
-		text-align: right;
-	  }
-	  
-	  .ticket-option-information {
-		flex: 1;
-	  }
-	  
-	  .ticket-option-title {
-		font-weight: bold;
-		font-size: 105%;
-		margin-bottom: 6px;
-		cursor: pointer;
-	  }
-	  
-	  .ticket-option-description {
-		font-size: 85%;
-	  }
-	  
-	  .ticket-listing {
-		padding-bottom: 40px;
-		margin-bottom: 50px;
-		border-bottom: 1px solid #000000;
-	  }
-	  
-	  .registration-container {
-		margin-top: 40px;
-		max-width: 70%;
-	  }
-	  
-	  .pad-field {
-		margin-bottom: 10px;
-	  }
-	  
-	  .extra-pad {
-		margin-bottom: 25px;
-	  }
-	  
-	  .registration-form {
-		max-width: 70%;
-	  }
-	  
-	  .registration-form input {
-		width: 100%;
-		border: 1px solid #000000;
-		padding: 8px;
-		font: inherit;
-	  }
-	  
-	  .checkbox-container {
-		display: block;
-		position: relative;
-		padding-left: 35px;
-		margin-bottom: 12px;
-		cursor: pointer;
-		-webkit-user-select: none;
-		-moz-user-select: none;
-		-ms-user-select: none;
-		user-select: none;
-	  }
-	  
-	  .checkbox-container input {
-		position: absolute;
-		opacity: 0;
-		cursor: pointer;
-		height: 0;
-		width: 0;
-	  }
-	  
-	  .checkbox-container .checkmark {
-		position: absolute;
-		top: 0;
-		left: 0;
-		height: 25px;
-		width: 25px;
-		background-color: #eee;
-	  }
-	  
-	  .checkbox-container:hover input ~ .checkmark {
-		background-color: #ccc;
-	  }
-	  
-	  .checkbox-container input:checked ~ .checkmark {
-		background-color: #ff0000;
-	  }
-	  
-	  .checkbox-container .checkmark:after {
-		content: "";
-		position: absolute;
-		display: none;
-	  }
-	  
-	  .checkbox-container input:checked ~ .checkmark:after {
-		display: block;
-	  }
-	  
-	  .checkbox-container .checkmark:after {
-		left: 9px;
-		top: 5px;
-		width: 5px;
-		height: 10px;
-		border: solid white;
-		border-width: 0 3px 3px 0;
-		-webkit-transform: rotate(45deg);
-		-ms-transform: rotate(45deg);
-		transform: rotate(45deg);
-	  }
-	  
-	  .multiselect__option--highlight {
-		background: #ff0000 !important;
-	  }
-	  
-	  .multiselect__tags {
-		border-radius: 0px !important;
-		border: 1px solid #000000 !important;
-	  }
-	  
-	  .multiselect__tag, .multiselect__tag:hover, .multiselect__tag-icon:hover, .multiselect__tag-icon:after {
-		background: #ff0000 !important;
-		color: #ffffff !important;
-	  }
-	  
-	  .error-text {
-		color: #ff0000;
-		font-size: 75%;
-		margin-top: 4px !important;
-	  }
-	  
-	  .event ul {
-		padding-inline-start: 0;
-	  }
-	  
-	  .button-discount-code-container {
-		display: flex;
-		margin-bottom: 40px;
-	  }
-	  
-	  .purchase-button {
-		background-color: #ff0000;
-		color: #ffffff;
-	  }
-	  
-	  .purchase-button:hover {
-		background-color: #8B0000;
-	  }
-	  
-	  .help-text {
-		font-size: 70%;
-	  }
+  .event-information {
+	margin-bottom: 40px;
+  }
+  
+  .ticket-option {
+	margin-bottom: 32px;
+	padding-bottom: 32px;
+	display: flex;
+	border-bottom: 1px solid #d3d3d3;
+  }
+  
+  .ticket-option:last-child {
+	border-bottom: 0;
+	margin-bottom: 0;
+	padding-bottom: 0;
+  }
+  
+  .ticket-buy-button {
+	width: 110px;
+	text-align: right;
+  }
+
+  .ticket-button {
+	border: 1px solid #d3d3d3;
+	font-size: 85%;
+	padding: 10px;
+	background-color: #ffffff;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	cursor: pointer;
+	display: inline-block;
+	text-align: center;
+  }
+  
+  .ticket-button:hover {
+	background-color: #000000 !important;
+	color: #ffffff;
+  }
+  
+  .ticket-button.selected {
+	background-color: #ff0000;
+	color: #ffffff;
+  }
+  
+  .ticket-button .product-notice {
+	font-size: 50%;
+  }
+  
+  .ticket-option-information {
+	flex: 1;
+  }
+  
+  .ticket-option-title {
+	font-weight: bold;
+	font-size: 105%;
+	margin-bottom: 6px;
+	cursor: pointer;
+  }
+  
+  .ticket-option-description {
+	font-size: 85%;
+  }
+  
+  .ticket-listing {
+	padding-bottom: 40px;
+	margin-bottom: 50px;
+	border-bottom: 1px solid #000000;
+  }
+  
+  .registration-container {
+	margin-top: 40px;
+	max-width: 70%;
+  }
+  
+  .pad-field {
+	margin-bottom: 10px;
+  }
+  
+  .extra-pad {
+	margin-bottom: 25px;
+  }
+  
+  .registration-form {
+	max-width: 70%;
+  }
+  
+  .registration-form input {
+	width: 100%;
+	border: 1px solid #000000;
+	padding: 8px;
+	font: inherit;
+  }
+  
+  .checkbox-container {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+  }
+  
+  .checkbox-container input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+  }
+  
+  .checkbox-container .checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: #eee;
+  }
+  
+  .checkbox-container:hover input ~ .checkmark {
+	background-color: #ccc;
+  }
+  
+  .checkbox-container input:checked ~ .checkmark {
+	background-color: #ff0000;
+  }
+  
+  .checkbox-container .checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+  }
+  
+  .checkbox-container input:checked ~ .checkmark:after {
+	display: block;
+  }
+  
+  .checkbox-container .checkmark:after {
+	left: 9px;
+	top: 5px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+  }
+  
+  .multiselect__option--highlight {
+	background: #ff0000 !important;
+  }
+  
+  .multiselect__tags {
+	border-radius: 0px !important;
+	border: 1px solid #000000 !important;
+  }
+  
+  .multiselect__tag, .multiselect__tag:hover, .multiselect__tag-icon:hover, .multiselect__tag-icon:after {
+	background: #ff0000 !important;
+	color: #ffffff !important;
+  }
+  
+  .error-text {
+	color: #ff0000;
+	font-size: 75%;
+	margin-top: 4px !important;
+  }
+  
+  .event ul {
+	padding-inline-start: 0;
+  }
+  
+  .button-discount-code-container {
+	display: flex;
+	margin-bottom: 40px;
+  }
+  
+  .purchase-button {
+	background-color: #ff0000;
+	color: #ffffff;
+  }
+  
+  .purchase-button:hover {
+	background-color: #8B0000;
+  }
+  
+  .help-text {
+	font-size: 70%;
+  }
 }
+// ----------------------------------------
+
 
 .info-h3 {
 	float: left;
