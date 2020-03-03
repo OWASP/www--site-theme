@@ -39,7 +39,7 @@
 	  }
 	  
 	  .ticket-buy-button {
-		width: 280px;
+		min-width: 110px;
 		text-align: right;
 	  }
 	  
@@ -430,7 +430,8 @@ section.keynotes-front {
 			float:none;
 		}
 	}
-	.registration-container, registration-form {
+	
+	.registration-container, .registration-form {
 		max-width: 100%;
 	  }
 
