@@ -260,6 +260,13 @@ site-wide reusable components styling
       background-color: lighten(white, 5%);
     }
   }
+
+  &.select {
+    .cta-button.selected, .cta-button.selected:hover {
+      background-color: #ff0000;
+      color: #ffffff;
+    }
+  }
 }
 
 // table component styling
