@@ -136,13 +136,18 @@
 
 .event-header-info {
 	position: absolute;
-	top: 128px;
-	left: 168px;
+	top: 0px;
+	left: 0px;
 	width: 100%;
 	height: 300px;
 	text-align:left;
 	color: black;
 	z-index: 9;
+
+	div {
+		margin-top:10%;
+		margin-left: 10%;
+	}
 }
 
 section.keynotes-front {
