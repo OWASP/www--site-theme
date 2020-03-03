@@ -261,12 +261,15 @@ site-wide reusable components styling
     }
   }
 
-  &.select {
-    .cta-button.selected, .cta-button.selected:hover {
+  &.selected {
       background-color: #ff0000;
       color: #ffffff;
+
+      &:hover {
+        background-color: #ff0000;
+        color: #ffffff;    
+      }
     }
-  }
 }
 
 // table component styling
