@@ -21,13 +21,14 @@
           <div class="content-wrapper">
           {{ content }}
           </div>
+          {% if page.pricing %}
           <div class="event-pricing">
             <h3>Conference Pricing</h3>
             <div class="full-width">
               <div class="nav-button" aria-label="register for event">
                 <a href="{{ page.registration_url }}" class="cta-button red">Register</a>
             </div>
-            {% if page.pricing %}
+            
             <div class='full-width'>
               <ul>
                 {% for price in site.data.pricing %}
@@ -40,9 +41,9 @@
                 {% endfor %}
               </ul>
             </div>
-            {% endif %}
             </div>
           </div>
+          {% endif %}
       </div>
     </main>
     
