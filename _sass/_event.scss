@@ -223,6 +223,10 @@ section.keynotes-front {
 	font-weight: bold;
 }
 
+.nav-button-event {
+	margin-left: 24px;
+}
+
 @media (max-width: 500px) {
 
 
@@ -235,5 +239,9 @@ section.keynotes-front {
 		max-height: 600px;
 		line-height: 1.25;
 		padding: 16em 4em 16em 4em;
+	}
+
+	.event-pricing {
+		float: left;
 	}
 }
