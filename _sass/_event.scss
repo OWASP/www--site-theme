@@ -227,21 +227,29 @@ section.keynotes-front {
 	margin-left: 24px;
 }
 
+
+@media (max-width: 1130px) {
+	.event-pricing {
+		float: left;
+		width: 100%;
+		max-width: 100%;
+	}
+}
+
 @media (max-width: 500px) {
-
-
 	.event header {
 		padding: 1em 1em 1em 1em;
 		font-size: 80%;
 		}
 
 	.event-image-container {
-		max-height: 600px;
+		max-height: 300px;
 		line-height: 1.25;
-		padding: 16em 4em 16em 4em;
+		padding: 4em 1em 10em 1em;
 	}
 
-	.event-pricing {
-		float: left;
+	.event-cover {
+		top: 110px;
+		height: 252px;
 	}
 }
