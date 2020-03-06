@@ -469,6 +469,43 @@ div.keynote-full {
 	margin-left: 24px;
 }
 
+section.team-list {
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		list-style: none;
+		padding: 1em 0em;
+		justify-content: space-between;
+
+
+		&:after {
+			content: "";
+			flex: auto;
+		}
+
+		> li {
+			max-width: 50%;
+			width: 200px;
+			text-align: center;
+			padding-bottom: 1em;
+			list-style: none;
+
+			div {
+				margin: 0 auto;
+				width: 150px;
+				height: 150px;
+				border-radius: 50%;
+				background-position: center center;
+				background-size:cover;
+			}
+
+			span {
+				display: block;
+			}
+		}
+	}
+}
+
 @media (max-width: 500px) {
 	section.keynotes-front {
 		ul {
