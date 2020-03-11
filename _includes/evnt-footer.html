@@ -4,9 +4,55 @@
                   <section class="member-list">
                     <h2>Event Sponsors</h2>
                     <div id="corp_member_div">
-{% for member in site.data.sponsors %}
+{% assign diamondmembers = site.data.sponsors | where: 'type', 'Diamond' %}
+{% assign platinummembers = site.data.sponsors | where: 'type', 'Platinum' %}
+{% assign goldmembers = site.data.sponsors | where: 'type', 'Gold' %}
+{% assign silvermembers = site.data.sponsors | where: 'type', 'Silver' %}
+{% assign sapphiremembers = site.data.sponsors | where: 'type', 'Sapphire' %}
+{% assign rubymembers = site.data.sponsors | where: 'type', 'Ruby' %}
+{% assign lanyardmembers = site.data.sponsors | where: 'type', 'Lanyard' %}
+{% if diamondmembers.size > 0 %}
+<h3>Diamond Corporate Sponsors</h3>
+{% for member in diamondmembers %}
   <a href="{{member.url}}" class="member-logo" rel="sponsored" onclick='handleOutboundLinkClicks(event);' target="_blank"><img src="{{member.logo}}" alt="image"/></a>
 {% endfor %}
+{% endif %}
+{% if platinummembers.size > 0 %}
+<h3>Platinum Corporate Sponsors</h3>
+{% for member in platinummembers %}
+  <a href="{{member.url}}" class="member-logo" rel="sponsored" onclick='handleOutboundLinkClicks(event);' target="_blank"><img src="{{member.logo}}" alt="image"/></a>
+{% endfor %}
+{% endif %}
+{% if goldmembers.size > 0 %}
+<h3>Gold Corporate Sponsors</h3>
+{% for member in goldmembers %}
+  <a href="{{member.url}}" class="member-logo" rel="sponsored" onclick='handleOutboundLinkClicks(event);' target="_blank"><img src="{{member.logo}}" alt="image"/></a>
+{% endfor %}
+{% endif %}
+{% if silvermembers.size > 0 %}
+<h3>Silver Corporate Sponsors</h3>
+{% for member in silvermembers %}
+  <a href="{{member.url}}" class="member-logo" rel="sponsored" onclick='handleOutboundLinkClicks(event);' target="_blank"><img src="{{member.logo}}" alt="image"/></a>
+{% endfor %}
+{% endif %}
+{% if sapphiremembers.size > 0 %}
+<h3>Sapphire Event Sponsors</h3>
+{% for member in sapphiremembers %}
+  <a href="{{member.url}}" class="member-logo" rel="sponsored" onclick='handleOutboundLinkClicks(event);' target="_blank"><img src="{{member.logo}}" alt="image"/></a>
+{% endfor %}
+{% endif %}
+{% if rubymembers.size > 0 %}
+<h3>Ruby Event Sponsors</h3>
+{% for member in rubymembers %}
+  <a href="{{member.url}}" class="member-logo" rel="sponsored" onclick='handleOutboundLinkClicks(event);' target="_blank"><img src="{{member.logo}}" alt="image"/></a>
+{% endfor %}
+{% endif %}
+{% if lanyardmembers.size > 0 %}
+<h3>Landyard Sponsors</h3>
+{% for member in lanyardmembers %}
+  <a href="{{member.url}}" class="member-logo" rel="sponsored" onclick='handleOutboundLinkClicks(event);' target="_blank"><img src="{{member.logo}}" alt="image"/></a>
+{% endfor %}
+{% endif %}
                     </div>
                   </section>
                 </div>
