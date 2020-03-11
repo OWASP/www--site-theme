@@ -313,7 +313,8 @@
 .event {
 	.member-list {
 		div {
-			display: block;
+			display: flex;
+			flex-wrap: wrap;
 		}
 		a {
 			opacity: 1;
@@ -323,7 +324,6 @@
 		}
 	}
 }
-
 .event-image-container {
 	background-position: center center;
 	background-repeat: repeat-y, no-repeat;
