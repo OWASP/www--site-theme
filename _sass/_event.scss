@@ -428,7 +428,9 @@ div.keynote-full {
 	img {
 		width: 200px; 
 		height: 200px; 
-		border-radius: 50%;
+		border-radius: 4px;
+		border-style: solid;
+		border-color: gray;
 		float: left;
 		background-size: cover;
 		margin-left:-240px;
