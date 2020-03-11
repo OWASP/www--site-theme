@@ -310,6 +310,20 @@
 	}
 }
 
+.event {
+	.member-list {
+		div {
+			display: block;
+		}
+		a {
+			opacity: 1;
+			&:hover {
+			opacity: 0.7;
+			}
+		}
+	}
+}
+
 .event-image-container {
 	background-position: center center;
 	background-repeat: repeat-y, no-repeat;
