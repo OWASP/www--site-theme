@@ -496,7 +496,9 @@ section.team-list {
 				margin: 0 auto;
 				width: 150px;
 				height: 150px;
-				border-radius: 50%;
+				border-radius: 4px;
+				border-style: solid;
+				border-color: gray;
 				background-position: center center;
 				background-size:cover;
 			}
