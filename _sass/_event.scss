@@ -15,6 +15,8 @@
 .event {
   h1, h2, h3 {
 	margin-left: 0;
+	margin-block-start: 0;
+    margin-block-end: 0;
   }
   
   .content-wrapper {
