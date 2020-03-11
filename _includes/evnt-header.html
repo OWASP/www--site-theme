@@ -13,7 +13,7 @@
         <ul class='mobile-menu hide-el' role='navigation' aria-label='mobile primary navigation'>
           <li><a href='#' class='menu-toggler' aria-hidden='true'><i class='fa fa-times'></i></a></li>
         {% for menu in site.data.menu %}
-            {% if menu.items.size < 1 %}
+            {% if not menu.items or menu.items.size < 1 %}
               <li><a href="{{ menu.url }}">{{ menu.title }}</a>
             {% else %}
                   <button class='accordion'> {{ menu.title }}</button>
