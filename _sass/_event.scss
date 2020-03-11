@@ -456,6 +456,9 @@ div.keynote-full {
 	background-color: $bg-grey;
 	box-shadow: 0 2px 3px #d8d8d8;
 	border-radius: 4px;
+	h3 {
+		margin-top: 16px;
+	}
 }
 
 .event-price {
