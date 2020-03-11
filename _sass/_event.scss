@@ -310,20 +310,6 @@
 	}
 }
 
-.event {
-	.member-list {
-		div {
-			display: flex;
-			flex-wrap: wrap;
-		}
-		a {
-			opacity: 1;
-			&:hover {
-			opacity: 0.7;
-			}
-		}
-	}
-}
 .event-image-container {
 	background-position: center center;
 	background-repeat: repeat-y, no-repeat;
@@ -523,6 +509,15 @@ section.team-list {
 			}
 		}
 	}
+}
+
+@media screen and (min-width: $content-bp) { // 840px
+	.event {
+		.member-wrapper { // grid for member section
+		display: grid;
+		grid-template-columns: 1fr;
+		}
+  	}
 }
 
 @media (max-width: 500px) {
