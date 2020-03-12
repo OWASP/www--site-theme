@@ -3,17 +3,16 @@
                 <div class="member-wrapper">
                   <section class="member-list">
                     <h2>Event Sponsors</h2>
-                    <div id="corp_member_div">
-{% assign diamondmembers = site.data.sponsors | where: 'type', 'Diamond' %}
-{% assign platinummembers = site.data.sponsors | where: 'type', 'Platinum' %}
-{% assign goldmembers = site.data.sponsors | where: 'type', 'Gold' %}
-{% assign silvermembers = site.data.sponsors | where: 'type', 'Silver' %}
-{% assign sapphiremembers = site.data.sponsors | where: 'type', 'Sapphire' %}
-{% assign rubymembers = site.data.sponsors | where: 'type', 'Ruby' %}
-{% assign lanyardmembers = site.data.sponsors | where: 'type', 'Lanyard' %}
-
-<div>
+                    
+{% assign diamondmembers = site.data.sponsors | where: 'type', 'Diamond' | sort: 'name' %}
+{% assign platinummembers = site.data.sponsors | where: 'type', 'Platinum' | sort: 'name' %}
+{% assign goldmembers = site.data.sponsors | where: 'type', 'Gold' | sort: 'name' %}
+{% assign silvermembers = site.data.sponsors | where: 'type', 'Silver' | sort: 'name' %}
+{% assign sapphiremembers = site.data.sponsors | where: 'type', 'Sapphire' | sort: 'name' %}
+{% assign rubymembers = site.data.sponsors | where: 'type', 'Ruby' | sort: 'name' %}
+{% assign lanyardmembers = site.data.sponsors | where: 'type', 'Lanyard' | sort: 'name' %}
   <h3>Corporate Sponsors</h3>
+  <div id="corp_member_div">
   {% for member in diamondmembers %}
   <a href="{{member.url}}" class="member-logo" rel="sponsored" onclick='handleOutboundLinkClicks(event);' target="_blank"><img src="{{member.logo}}" alt="image"/></a>
 {% endfor %}
@@ -26,9 +25,9 @@
 {% for member in silvermembers %}
   <a href="{{member.url}}" class="member-logo" rel="sponsored" onclick='handleOutboundLinkClicks(event);' target="_blank"><img src="{{member.logo}}" alt="image"/></a>
 {% endfor %}
-</div>
-<div>
+  </div>
 <h3>Event Sponsors</h3><br/>
+<div id="corp_member_div">
 {% for member in sapphiremembers %}
   <a href="{{member.url}}" class="member-logo" rel="sponsored" onclick='handleOutboundLinkClicks(event);' target="_blank"><img src="{{member.logo}}" alt="image"/></a>
 {% endfor %}
@@ -39,7 +38,6 @@
   <a href="{{member.url}}" class="member-logo" rel="sponsored" onclick='handleOutboundLinkClicks(event);' target="_blank"><img src="{{member.logo}}" alt="image"/></a>
 {% endfor %}
 </div>  
-                    </div>
                   </section>
                 </div>
               </section>
