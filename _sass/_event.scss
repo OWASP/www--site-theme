@@ -573,31 +573,31 @@ section.team-list {
 }
 
 @media (max-width: 800px) {
-	section.keynotes-front {
-		ul {
-			display: block;
-			li {
-				width: 100%;
-				max-width: 100%;
-				height: 250px;
-				background-position: center center;
-			}
-		}
-	}
-	div.keynote-full {
-		ul {
-			padding: 0 0 0 0;
+	// section.keynotes-front {
+	// 	ul {
+	// 		display: block;
+	// 		li {
+	// 			width: 100%;
+	// 			max-width: 100%;
+	// 			height: 250px;
+	// 			background-position: center center;
+	// 		}
+	// 	}
+	// }
+	// div.keynote-full {
+	// 	ul {
+	// 		padding: 0 0 0 0;
 			
-			li {
-				padding-left: 0px;
-			}
-			img {
-				float: none;
-				margin-left: 0px;
-				margin: 0 auto;
-			}
-		}
-	}
+	// 		li {
+	// 			padding-left: 0px;
+	// 		}
+	// 		img {
+	// 			float: none;
+	// 			margin-left: 0px;
+	// 			margin: 0 auto;
+	// 		}
+	// 	}
+	// }
 	.event-header-info {
 		div {
 			margin-top:20%;
@@ -606,6 +606,6 @@ section.team-list {
 	}
 
 	.event-image-container {
-		background-image: none;
+		background-image: none !important;
 	}
 }
