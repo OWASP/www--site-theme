@@ -523,44 +523,6 @@ section.team-list {
   	}
 }
 
-@media (max-width: 800px) {
-	section.keynotes-front {
-		ul {
-			display: block;
-			li {
-				width: 100%;
-				max-width: 100%;
-				height: 250px;
-				background-position: center center;
-			}
-		}
-	}
-	div.keynote-full {
-		ul {
-			padding: 0 0 0 0;
-			
-			li {
-				padding-left: 0px;
-			}
-			img {
-				float: none;
-				margin-left: 0px;
-				margin: 0 auto;
-			}
-		}
-	}
-	.event-header-info {
-		div {
-			margin-top:20%;
-			margin-left: 4px;
-		}
-	}
-
-	.event-image-container {
-		background-image: none;
-	}
-}
-
 @media (max-width: 1000px) {
 	.event-pricing {
 		float: left;
@@ -607,5 +569,43 @@ section.team-list {
 			margin-top:33%;
 			margin-left: 0;
 		}
+	}
+}
+
+@media (max-width: 800px) {
+	section.keynotes-front {
+		ul {
+			display: block;
+			li {
+				width: 100%;
+				max-width: 100%;
+				height: 250px;
+				background-position: center center;
+			}
+		}
+	}
+	div.keynote-full {
+		ul {
+			padding: 0 0 0 0;
+			
+			li {
+				padding-left: 0px;
+			}
+			img {
+				float: none;
+				margin-left: 0px;
+				margin: 0 auto;
+			}
+		}
+	}
+	.event-header-info {
+		div {
+			margin-top:20%;
+			margin-left: 4px;
+		}
+	}
+
+	.event-image-container {
+		background-image: none;
 	}
 }
