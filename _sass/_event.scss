@@ -230,6 +230,10 @@
 	float: left;
 	margin-left: 8px;
 	margin-top: -.5em;
+
+	&.italic {
+		font-style: italic;
+	}
 }
 
 .event-wrapper {
