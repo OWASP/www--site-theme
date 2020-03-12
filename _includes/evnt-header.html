@@ -13,10 +13,10 @@
         <ul class='mobile-menu hide-el' role='navigation' aria-label='mobile primary navigation'>
           <li><a href='#' class='menu-toggler' aria-hidden='true'><i class='fa fa-times'></i></a></li>
         {% for menu in site.data.menu %}
-            {% if !menu.items or menu.items.size < 1 %}
+            {% if menu.items == nil or menu.items.size < 1 %}
               <li><a href="{{ menu.url }}">{{ menu.title }}</a>
             {% else %}
-                  <button class='accordion'> <li><a href="{{ menu.url }}">{{ menu.title }}</a></button>
+                  <button class='accordion'> <li>{{ menu.title }}</button>
                   <div class='panel'>
                   <ul>
                    {% for item in menu.items %}
@@ -35,7 +35,7 @@
                 {% endif %}
           </li>
         {% endfor %}
-        <li><a href='{{ site.github.url }}/register/'>REGISTER</a></li>
+        <li><a href='{{ site.github.url | replace: "www2","" }}/register/'>REGISTER</a></li>
         </ul>
       </nav>
       
