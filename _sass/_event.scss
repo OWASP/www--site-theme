@@ -523,7 +523,7 @@ section.team-list {
   	}
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
 	section.keynotes-front {
 		ul {
 			display: block;
@@ -548,6 +548,16 @@ section.team-list {
 				margin: 0 auto;
 			}
 		}
+	}
+	.event-header-info {
+		div {
+			margin-top:20%;
+			margin-left: 4px;
+		}
+	}
+
+	.event-image-container {
+		display: none;
 	}
 }
 
