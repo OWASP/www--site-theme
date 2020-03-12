@@ -525,6 +525,10 @@ section.team-list {
 }
 
 @media (max-width: 1000px) {
+	body {
+		margin-left: 1em;
+		margin-right: 1em;
+	}
 	.event-pricing {
 		float: left;
 		width: 100%;
