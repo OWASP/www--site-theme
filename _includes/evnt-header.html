@@ -16,7 +16,7 @@
             {% if !menu.items or menu.items.size < 1 %}
               <li><a href="{{ menu.url }}">{{ menu.title }}</a>
             {% else %}
-                  <button class='accordion'> {{ menu.title }}</button>
+                  <button class='accordion'> <li><a href="{{ menu.url }}">{{ menu.title }}</a></button>
                   <div class='panel'>
                   <ul>
                    {% for item in menu.items %}
