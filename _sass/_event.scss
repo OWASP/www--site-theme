@@ -21,7 +21,7 @@
   
   .content-wrapper {
 	float: left;
-	max-width: 70%;
+	max-width: 65%;
   }
 
   .event-information {
@@ -305,7 +305,7 @@
 
 .event-wrapper {
 	.left-70 {
-		width: 70%;
+		width: 65%;
 		float: left;
 	}
 }
@@ -524,7 +524,7 @@ section.team-list {
   	}
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
 	
 	.event-pricing {
 		float: left;
