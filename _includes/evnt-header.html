@@ -35,7 +35,7 @@
                 {% endif %}
           </li>
         {% endfor %}
-        <li><a href='{{ site.github.url | replace: "www2","" }}/register/'>REGISTER</a></li>
+        <li><a href='{{site.data.event-details.registration_url}}'>REGISTER</a></li>
         </ul>
       </nav>
       
@@ -68,7 +68,7 @@
             </ul>
         <div class="interactive-wrapper">
             <div class="nav-button" aria-label="register for event">
-            <a href="{{ page.registration_url }}" class="cta-button blue">Register</a>
+            <a href="{{ site.data.event-details.registration_url }}" class="cta-button blue">Register</a>
           </div>
         </div>
       </nav>
