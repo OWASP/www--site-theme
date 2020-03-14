@@ -603,13 +603,12 @@ section.team-list {
 	.event-cover {
 		top: 108px;
 		height: 254px;
-		background: linear-gradient(to right, #f3f4f6,#f3f4f6,#f3f4f6, #f3f4f6, #f3f4f6, #f3f4f6,transparent 100%);
 	}
 
 	.event-header-info {
 		div {
 			margin-top:20%;
-			margin-left: 0;
+			margin-left: 8px;
 		}
 	}
 }
@@ -632,6 +631,10 @@ section.team-list {
 
 	.event-banner {
 		display: grid;
+	}
+
+	.event-cover {
+		background: linear-gradient(to right, #f3f4f6,#f3f4f6,#f3f4f6, #f3f4f6, #f3f4f6, #f3f4f6,transparent 100%);
 	}
 }
 
