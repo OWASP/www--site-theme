@@ -14,9 +14,9 @@
     <div id="blocker"></div>
     {% include noscript.html %}
     {% include evnt-header.html %}
+    <div style="height:80px;width:100%;background-color:#{{ site.data.event-details.color }};color: white;text-align:center;line-height: 80px;"><strong>{{ site.data.event-details.title }}</strong></div>
     <main role="main">
       <div class="main-wrapper event-wrapper">
-        <div style="height:80px;width:100%;background-color:#{{ site.data.event-details.color }};color: white;text-align:center;line-height: 80px;"><strong>{{ site.data.event-details.title }}</strong></div>
           <div class="content-wrapper-full">
           {{ content }}
           </div>
