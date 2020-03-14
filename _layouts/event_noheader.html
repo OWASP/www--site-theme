@@ -10,11 +10,11 @@
       });
     </script>
   </head>
-  <body class="base-grid full-width event">
+  <body class="eventnoh-grid full-width event">
     <div id="blocker"></div>
     {% include noscript.html %}
     {% include evnt-header.html %}
-    <div style="height:45px;width:100%;grid-area:body;background-color:#{{ site.data.event-details.color }};color: white;text-align:center;line-height: 45px;"><strong>{{ site.data.event-details.title }}</strong></div>
+    <div class="event-banner" style="background-color:#{{ site.data.event-details.color }};" ><strong>{{ site.data.event-details.title }}</strong></div>
     <main role="main">
       <div class="main-wrapper event-wrapper">
           <div class="content-wrapper-full">

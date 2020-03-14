@@ -1,3 +1,9 @@
+.eventnoh-grid { // default to mobile grid of 1 column
+	display: grid;
+	grid-template-rows: repeat(4, auto);
+	grid-template-columns: 1fr;
+	grid-template-areas: "header" "banner" "body" "footer";
+  }
 
 .event header {
 	background-position: center center;
@@ -11,7 +17,15 @@
 	z-index: 42;
 }
 
-// ----------------------------------------
+.event-banner {
+	height:2.5em;
+	width:100%;
+	grid-area:banner;
+	color: white;
+	text-align:center;
+	line-height: 2.5em;
+}
+
 .event {
   h1, h2, h3 {
 	margin-left: 0;
