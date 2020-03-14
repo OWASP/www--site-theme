@@ -641,14 +641,7 @@ section.team-list {
 	}
 }
 
-@media (max-width: 320px) {
-	.event-header-info {
-		div {
-			margin-top:33%;
-			margin-left: 4px;
-		}
-	}
-
+@media (max-width: 375px) {
 	.event-banner {
 		font-size: x-small;
 	}
