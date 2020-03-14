@@ -32,8 +32,16 @@
             <h4 class = "info-h4 italic">@ {{ site.data.event-details.venue }}</h4>
           </div>
         </div> 
-        <div class='event-cover'></div>
       </div>
+      <div class="event-banner" style="background-color:#{{ site.data.event-details.color }};" >
+        <div>
+          <h1>{{ site.data.event-details.title }}</h3>
+            <br>
+            <h3 class="info-h3">{{ site.data.event-details.location }} |</h3><h4 class='info-h4'>Training: {{ site.data.event-details.training }}<br>
+              Conference: {{ site.data.event-details.conference }}</h4><br><br>
+            <h4 class = "info-h4 italic">@ {{ site.data.event-details.venue }}</h4>
+        </div>
+      </div> 
       <div class="main-wrapper event-wrapper">
           <div class="left-70">
           {{ content }}

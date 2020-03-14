@@ -1,8 +1,8 @@
-.eventnoh-grid { // default to mobile grid of 1 column
+.eventn-grid { // default to mobile grid of 1 column
 	display: grid;
 	grid-template-rows: repeat(4, auto);
 	grid-template-columns: 1fr;
-	grid-template-areas: "header" "banner" "body" "footer";
+	grid-template-areas: "header" "cover" "body" "footer";
   }
 
 .event header {
@@ -18,12 +18,27 @@
 }
 
 .event-banner {
-	height:2.5em;
+	display: none;
+	height: 4em;
+	width: 100%;
+	grid-area: cover;
+	color: white;
+	text-align: left;
+	line-height: 4em;
+	
+	div {
+		margin-left: 10%;
+		line-height: .6em;
+	}
+}
+
+.event-noh-banner {
+	height:1.5em;
 	width:100%;
-	grid-area:banner;
+	grid-area: cover;
 	color: white;
 	text-align:center;
-	line-height: 2.5em;
+	line-height: 1.5em;
 }
 
 .event {
@@ -608,7 +623,11 @@ section.team-list {
 	}
 
 	.event-image-container {
-		background-image: none !important;
+		display: none;
+	}
+
+	.event-banner {
+		display: grid;
 	}
 }
 
