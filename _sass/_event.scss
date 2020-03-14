@@ -1,4 +1,4 @@
-.eventn-grid { // default to mobile grid of 1 column
+.event-grid { // default to mobile grid of 1 column
 	display: grid;
 	grid-template-rows: repeat(4, auto);
 	grid-template-columns: 1fr;
@@ -19,16 +19,16 @@
 
 .event-banner {
 	display: none;
-	height: 4em;
+	height: 7.5em;
 	width: 100%;
 	grid-area: cover;
 	color: white;
 	text-align: left;
-	line-height: 4em;
 	
 	div {
 		margin-left: 10%;
-		line-height: .6em;
+		line-height: 1.25em;
+		margin-top: .75em;
 	}
 }
 
@@ -631,7 +631,13 @@ section.team-list {
 	}
 }
 
-@media (max-width: 420px) {
+@media (max-width: 500px) {
+	.event-banner {
+		font-size: small;
+	}
+}
+
+@media (max-width: 320px) {
 	.event-header-info {
 		div {
 			margin-top:33%;
@@ -639,7 +645,7 @@ section.team-list {
 		}
 	}
 
-	.event-image-container {
-		background-image: none !important;
+	.event-banner {
+		font-size: x-small;
 	}
 }
