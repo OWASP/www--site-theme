@@ -511,6 +511,12 @@ div.keynote-full {
 	font-weight: bold;
 }
 
+.nav-button {
+	&.right {
+		float:right;
+	}
+}
+
 .nav-button-event {
 	text-align:center;
 	margin-top: 8px;
