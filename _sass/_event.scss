@@ -259,6 +259,7 @@
 
 .info-h3 {
 	float: left;
+	line-height: 2em;
 }
 
 .info-h4 {
@@ -650,7 +651,7 @@ section.team-list {
 	}
 }
 
-@media (max-width: 375px) {
+@media (max-width: 401px) {
 	.event-banner {
 		font-size: x-small;
 	}
