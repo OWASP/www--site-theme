@@ -24,7 +24,7 @@
                       <li class='separator'>
                       {% else %}
                           {% if item.opentab %}
-                          <li><a href="{{ item.url }} target='_blank' rel='noopener'">{{ item.title }}</a></li>
+                          <li><a href="{{ item.url }} " target='_blank' rel='noopener'>{{ item.title }}</a></li>
                           {% else %}
                             <li><a href='{{ item.url }}'>{{ item.title }}</a></li>
                           {% endif %}
@@ -55,7 +55,7 @@
                       <li class='separator'>
                       {% else %}
                           {% if item.opentab %}
-                          <li><a href="{{ item.url }} target='_blank' rel='noopener'">{{ item.title }}</a></li>
+                          <li><a href="{{ item.url }}" target='_blank' rel='noopener'>{{ item.title }}</a></li>
                           {% else %}
                             <li><a href='{{ item.url }}'>{{ item.title }}</a></li>
                           {% endif %}
