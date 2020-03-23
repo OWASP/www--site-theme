@@ -32,9 +32,10 @@
   gtag('config', 'UA-4531126-1');
 </script> -->
 <!-- Google Analytics -->
+{% assign analytics = site.data.event-details.analytics | default: 'UA-4531126-1' %}
 <script>
   window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-  ga('create', 'UA-4531126-1', 'auto');
+  ga('create', '{{ analytics }}', 'auto');
   ga('send', 'pageview');
 
   function handleOutboundLinkClicks(event) {
