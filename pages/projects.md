@@ -7,6 +7,7 @@ id: main
 basepath: /pages/projects/
 tags: projects owasp main, example-tag
 auto-migrated: 1
+document: My Document
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 
 layout: col-sidebar
-title: Project Example Title
+title: Chapter Example Title
 id: main
 permalink: /chapters
 
