@@ -10,7 +10,7 @@
 {% assign sapphiremembers = site.data.sponsors | where: 'type', 'Sapphire' | sort: 'name' %}
 {% assign rubymembers = site.data.sponsors | where: 'type', 'Ruby' | sort: 'name' %}
 {% assign lanyardmembers = site.data.sponsors | where: 'type', 'Lanyard' | sort: 'name' %}
-  <h3>Corporate Sponsors</h3>
+  <h2>Corporate Sponsors</h2>
   <div id="corp_member_div">
   {% for member in diamondmembers %}
   <a href="{{member.url}}" class="member-logo" rel="sponsored" onclick='handleOutboundLinkClicks(event);' target="_blank"><img src="{{member.logo}}" alt="image"/></a>
@@ -25,7 +25,7 @@
   <a href="{{member.url}}" class="member-logo" rel="sponsored" onclick='handleOutboundLinkClicks(event);' target="_blank"><img src="{{member.logo}}" alt="image"/></a>
 {% endfor %}
   </div>
-<h3>Event Sponsors</h3><br/>
+<h2>Event Sponsors</h2><br/>
 <div id="corp_member_div">
 {% for member in sapphiremembers %}
   <a href="{{member.url}}" class="member-logo" rel="sponsored" onclick='handleOutboundLinkClicks(event);' target="_blank"><img src="{{member.logo}}" alt="image"/></a>
