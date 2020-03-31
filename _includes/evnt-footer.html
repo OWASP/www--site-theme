@@ -2,7 +2,7 @@
         <section class="member">
                 <div class="member-wrapper">
                   <section class="member-list">
-                    
+{% if site.data.sponsors.size > 0 %}                   
 {% assign diamondmembers = site.data.sponsors | where: 'type', 'Diamond' | sort: 'name' %}
 {% assign platinummembers = site.data.sponsors | where: 'type', 'Platinum' | sort: 'name' %}
 {% assign goldmembers = site.data.sponsors | where: 'type', 'Gold' | sort: 'name' %}
@@ -10,6 +10,7 @@
 {% assign sapphiremembers = site.data.sponsors | where: 'type', 'Sapphire' | sort: 'name' %}
 {% assign rubymembers = site.data.sponsors | where: 'type', 'Ruby' | sort: 'name' %}
 {% assign lanyardmembers = site.data.sponsors | where: 'type', 'Lanyard' | sort: 'name' %}
+{% endif %}
   <h2>Corporate Sponsors</h2>
   <div id="corp_member_div">
   {% for member in diamondmembers %}
