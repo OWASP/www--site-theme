@@ -48,10 +48,6 @@
     margin-block-end: 0;
   }
   
-  .event .footer-wrapper {
-	margin: 1 em;
-  }
-
   .content-wrapper {
 	float: left;
 	max-width: 65%;
@@ -309,6 +305,10 @@
 
 	footer {
 		margin: 0;
+	}
+
+	.footer-wrapper {
+		margin: 1em;
 	}
 }
 
