@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+{% for static_file in site.static_files %}
+  {% if static_file.path contains '_includes/reasons.md' %}
+    {% assign reason_info = true %}
+  {% endif %}
+{% endfor %}
   <head>
     {% include head.html %}
     <script type="text/javascript">
@@ -17,40 +22,46 @@
     {% include evnt-header.html %}
 
     <main role="main">
-      <div class='event-image-container' style="background-image: url(assets/images/{{page.background}});">
+      <div class='event-image-container' style="background-image: url(assets/images/{{site.data.event-details.background}});">
         <div class='event-header-info'>
-          <h1>{{ page.title }}</h3>
-          <br>
-          <h3 class="info-h3">{{ page.location }} |</h3><h4 class='info-h4'>Training: {{ page.training }}<br>
-             Conference: {{ page.conference }}</h4>
+          <div>
+            <h1>{{ site.data.event-details.title }}</h3>
+            <br>
+            <h3 class="info-h3"><a href="{{site.github.url | replace: 'www2.', ''}}/venue/about/">{{ site.data.event-details.venue }}</a> |</h3><h4 class='info-h4'>Training: {{ site.data.event-details.training }}<br>
+              Conference: {{ site.data.event-details.conference }}</h4><br><br>
+          </div>
         </div> 
-        <div class='event-cover'></div>
       </div>
+      <div class="event-cover"></div>
+      <div class="event-banner" style="background-color:#{{ site.data.event-details.color }};" >
+        <div>
+          <h1>{{ site.data.event-details.title }}</h3>
+            <br>
+            <h3 class="info-h3"><a href="{{site.github.url | replace: 'www2.', ''}}/venue/about/">{{ site.data.event-details.venue }}</a> |</h3><h4 class='info-h4'>Training: {{ site.data.event-details.training }}<br>
+              Conference: {{ site.data.event-details.conference }}</h4><br><br>
+            <div class="nav-button right" aria-label="register for event">
+              <a href="{{ site.data.event-details.registration_url }}" class="cta-button blue">Register</a>
+            </div>
+        </div>
+      </div> 
       <div class="main-wrapper event-wrapper">
-          <div style="float:left;max-width:70%;">
+          <div class="left-70">
           {{ content }}
           </div>
-          <div class="event-pricing">
-            <h3>Conference Pricing</h3>
-            <div class="full-width">
-              <div class="nav-button" aria-label="register for event">
-                <a href="{{ page.registration_url }}" class="cta-button red">Register</a>
-            </div>
-            <div class='full-width'>
-              <ul>
-                {% for price in site.data.pricing %}
-                <li class='event-price-title'>{{ price.title }}:<div class='event-price'>{{ price.price }}</div></li>
-                {% for subitem in price.items %}
-                {% if forloop.first %}<ul>{% endif %}
-                <li class='event-price-title'>{{ subitem.title }}:<div class='event-price'>{{ subitem.price }}</div></li>
-                {% if forloop.last %}</ul>{% endif %}
-                {% endfor %}
-                {% endfor %}
-              </ul>
-            </div>
-            </div>
+          {% include event-pricing.html %}
+          {% assign ksize = site.data.keynotespeakers | size %}
+          {% if ksize > 0 %}
+          <div class='alt-wrapper'>
+            <section class="keynotes-front">
+            {% include keynotes.md %}
+            </section>
+          {% endif %}
+          {% if reason_info %}
+            <section class='reasons-front'>
+            {% include reasons.md %}
+            </section>
           </div>
-          {% include keynotes.html %}
+          {% endif %}
       </div>
     </main>
     

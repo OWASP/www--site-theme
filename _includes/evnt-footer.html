@@ -2,33 +2,47 @@
         <section class="member">
                 <div class="member-wrapper">
                   <section class="member-list">
-                    <h2>Event Sponsors</h2>
-                    <div id="corp_member_div">
-{% for member in site.data.sponsors %}
-  <a href="{{member.url}}" class="member-logo" rel="sponsored"><img src="{{member.logo}}" alt="image"/></a>
+{% if site.data.sponsors.size > 0 %}                   
+{% assign diamondmembers = site.data.sponsors | where: 'type', 'Diamond' | sort: 'name' %}
+{% assign platinummembers = site.data.sponsors | where: 'type', 'Platinum' | sort: 'name' %}
+{% assign goldmembers = site.data.sponsors | where: 'type', 'Gold' | sort: 'name' %}
+{% assign silvermembers = site.data.sponsors | where: 'type', 'Silver' | sort: 'name' %}
+{% assign sapphiremembers = site.data.sponsors | where: 'type', 'Sapphire' | sort: 'name' %}
+{% assign rubymembers = site.data.sponsors | where: 'type', 'Ruby' | sort: 'name' %}
+{% assign othermembers = site.data.sponsors | where: 'type', 'other' | sort: 'name' %}
+{% endif %}
+  <h2>Corporate Sponsors</h2>
+  <div id="corp_member_div">
+  {% for member in diamondmembers %}
+  <a href="{{member.url}}" class="member-logo" rel="sponsored" onclick='handleOutboundLinkClicks(event);' target="_blank"><img src="{{member.logo}}" alt="image"/></a>
 {% endfor %}
-                    </div>
-                    <div class="member-cta">
-                      <a class="callout-link" href="/supporters/">See all corporate supporters</a>
-                      <a class="callout-link" href="">Become a corporate supporter</a>
-                    </div>
+{% for member in platinummembers %}
+  <a href="{{member.url}}" class="member-logo" rel="sponsored" onclick='handleOutboundLinkClicks(event);' target="_blank"><img src="{{member.logo}}" alt="image"/></a>
+{% endfor %}
+{% for member in goldmembers %}
+  <a href="{{member.url}}" class="member-logo" rel="sponsored" onclick='handleOutboundLinkClicks(event);' target="_blank"><img src="{{member.logo}}" alt="image"/></a>
+{% endfor %}
+{% for member in silvermembers %}
+  <a href="{{member.url}}" class="member-logo" rel="sponsored" onclick='handleOutboundLinkClicks(event);' target="_blank"><img src="{{member.logo}}" alt="image"/></a>
+{% endfor %}
+  </div>
+<h2>Event Sponsors</h2><br/>
+<div id="corp_member_div">
+{% for member in sapphiremembers %}
+  <a href="{{member.url}}" class="member-logo" rel="sponsored" onclick='handleOutboundLinkClicks(event);' target="_blank"><img src="{{member.logo}}" alt="image"/></a>
+{% endfor %}
+{% for member in rubymembers %}
+  <a href="{{member.url}}" class="member-logo" rel="sponsored" onclick='handleOutboundLinkClicks(event);' target="_blank"><img src="{{member.logo}}" alt="image"/></a>
+{% endfor %}
+{% for member in othermembers %}
+  <a href="{{member.url}}" class="member-logo" rel="sponsored" onclick='handleOutboundLinkClicks(event);' target="_blank"><img src="{{member.logo}}" alt="image"/></a>
+{% endfor %}
+</div>  
                   </section>
                 </div>
               </section>
               
         <section class="footer-wrapper">
-          <nav class="bot-nav" role="navigation" aria-label="secondary navigation">
-            <ul>
-              <li><a href="#">HOME</a></li>
-              <li><a href="#">PROJECTS</a></li>
-              <li><a href="#">CHAPTERS</a></li>
-              <li><a href="#">EVENTS</a></li>
-              <li><a href="#">ABOUT</a></li>
-              <li><a href="#">PRIVACY</a></li>
-              <li><a href="#">SITEMAP</a></li>
-              <li><a href="#">CONTACT</a></li>
-            </ul>
-          </nav>
           <p class="disclaimer">
               Open Web Application Security Project, OWASP, Global AppSec, AppSec Days, AppSec California, SnowFROC, LASCON, and the OWASP logo are trademarks of the OWASP Foundation.
           </p>

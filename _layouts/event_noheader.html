@@ -10,36 +10,15 @@
       });
     </script>
   </head>
-  <body class="base-grid full-width event">
+  <body class="eventnoh-grid full-width event">
     <div id="blocker"></div>
-
     {% include noscript.html %}
     {% include evnt-header.html %}
-
+    <div class="event-noh-banner" style="background-color:#{{ site.data.event-details.color }};" ><strong>{{ site.data.event-details.title }}</strong>- {{ site.data.event-details.dates }}</div>
     <main role="main">
       <div class="main-wrapper event-wrapper">
-          <div style="float:left;max-width:70%;">
+          <div class="content-wrapper-full">
           {{ content }}
-          </div>
-          <div class="event-pricing">
-            <h3>Conference Pricing</h3>
-            <div class="full-width">
-              <div class="nav-button" aria-label="register for event">
-                <a href="{{ page.registration_url }}" class="cta-button red">Register</a>
-            </div>
-            <div class='full-width'>
-              <ul>
-                {% for price in site.data.pricing %}
-                <li class='event-price-title'>{{ price.title }}:<div class='event-price'>{{ price.price }}</div></li>
-                {% for subitem in price.items %}
-                {% if forloop.first %}<ul>{% endif %}
-                <li class='event-price-title'>{{ subitem.title }}:<div class='event-price'>{{ subitem.price }}</div></li>
-                {% if forloop.last %}</ul>{% endif %}
-                {% endfor %}
-                {% endfor %}
-              </ul>
-            </div>
-            </div>
           </div>
       </div>
     </main>

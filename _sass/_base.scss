@@ -59,7 +59,7 @@ a {
 .header-wrapper,
 .event-header-wrapper,
 .main-wrapper,
-.keynote-wrapper,
+.alt-wrapper,
 .member-wrapper,
 .footer-wrapper {
   max-width: $grid-val * 44; // 30 * 45 = 1320px
@@ -71,7 +71,6 @@ a {
     margin-right: 15px;
   }
 }
-
 
 main {
   img {
@@ -100,6 +99,18 @@ main {
 
 footer {
   grid-area: footer;
+  margin-left: 1em;
+}
+
+.social {
+  float: right;
+  a {
+    color: black;
+    text-decoration: none;
+    &:hover {
+      color: $bg-blue;
+    }
+  }
 }
 
 // blocker div for resolving am unintended jQuery behavior
@@ -140,5 +151,18 @@ footer {
   // replace desktop nav with mobile nav
   code {
     max-width:88%;
+  }
+  
+}
+
+// add some left padding when the screen becomes the almost width of the content
+@media screen and (max-width: $grid-val * 45) {
+  .main-wrapper,
+  .alt-wrapper,
+  .member-wrapper,
+  .footer-wrapper,
+  .header-wrapper,
+  .event-header-wrapper {
+    padding-left: 1em;
   }
 }

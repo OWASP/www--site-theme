@@ -10,9 +10,6 @@
 				"url": "/www-project-top-ten/",
 				"separator": "true"
 			}, {
-				"title": "Cheat Sheets",
-				"url": "/www-project-cheat-sheets/"
-			},  {
 				"title": "Dependency Track",
 				"url": "/www-project-dependency-track/"
 			}, {
@@ -79,35 +76,8 @@
 			"title": "EVENTS",
 			"url": "/events/",
 			"items": [{
-				"title": "Global AppSec - Dublin, June 15-19, 2020",
-				"url": "https://dublin.globalappsec.org/?utm_source=owasp-web&utm_medium=main-menu&utm_campaign=none",
-				"opentab": "true"
-			}, {
 				"title": "Global AppSec - San Francisco, October 19-23, 2020",
 				"url": "https://sf.globalappsec.org/?utm_source=owasp-web&utm_medium=main-menu&utm_campaign=none",
-				"opentab": "true"
-			},{
-				"title": "OWASP Projects Summit - Winter, February 27-29, 2020",
-				"url": "/www-staff/projects/202002-Projects-Summit-Q1?utm_source=owasp-web&utm_medium=main-menu&utm_campaign=none",
-				"opentab": "true"
-			},{
-				"title": "OWASP Seaside, Panjim Goa, India, March 3-5, 2020",
-				"url": "https://www.owaspseasides.com/?utm_source=owasp-web&utm_medium=main-menu&utm_campaign=none",
-				"opentab": "true"
-			},{
-				"title": "OWASP SnowFROC, March 5, 2020",
-				"url": "https://www.snowfroc.com/?utm_source=owasp-web&utm_medium=main-menu&utm_campaign=none",
-				"opentab": "true"
-			},{
-				"title": "BlackHat Asia, March 31 - April 3, 2020",
-				"url": "https://www.blackhat.com/asia-20/?utm_source=owasp-web&utm_medium=main-menu&utm_campaign=none",
-				"opentab": "true"
-			},{
-				"title": "OWASP Projects Summit - Summer, July 30 - August 2, 2020",
-				"url": "/www-staff/projects/202007-Projects-Summit-Q3?utm_source=owasp-web&utm_medium=main-menu&utm_campaign=none"
-			},{
-				"title": "BlackHat, August 1-6, 2020",
-				"url": "https://www.blackhat.com/?utm_source=owasp-web&utm_medium=main-menu&utm_campaign=none",
 				"opentab": "true"
 			},{
 				"title": "DEFCON 28, August 6-9, 2020",
@@ -118,8 +88,8 @@
 				"url": "https://lascon.org/?utm_source=owasp-web&utm_medium=main-menu&utm_campaign=none",
 				"opentab": "true"
 			},{
-				"title": "OWASP New Zealand Day 2020, February 19-21, 2020",
-				"url": "https://wiki.owasp.org/index.php/OWASP_New_Zealand_Day_2020?utm_source=owasp-web&utm_medium=main-menu&utm_campaign=none",
+				"title": "Global AppSec - Dublin, February 15-19, 2021",
+				"url": "https://dublin.globalappsec.org/?utm_source=owasp-web&utm_medium=main-menu&utm_campaign=none",
 				"opentab": "true"
 			},{
 				"title": "Browse All Events...",
