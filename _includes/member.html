@@ -1,10 +1,5 @@
 <section class="member">
-{% assign dev_file = site.static_files | where: "name", "devsite.txt" %}
-{% if dev_file.size > 0 %}
 {% assign site_base_url = 'https://owasp.org' %}
-{% else %}
-{% assign site_base_url = '' %}
-{% endif %}
   <script type="text/javascript">
     var members = [];
     $(function() {
