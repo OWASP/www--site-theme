@@ -27,7 +27,7 @@
           <div>
             <h1>{{ site.data.event-details.title }}</h3>
             <br>
-            <h3 class="info-h3"><a href="{{site.github.url | replace: 'www2.', ''}}/venue/about/">{{ site.data.event-details.venue }}</a> |</h3><h4 class='info-h4'>Training: {{ site.data.event-details.training }}<br>
+            <h3 class="info-h3"><a href="{{site.github.url | replace: 'www2.', '' | replace: 'http://', 'https://'}}/venue/about/">{{ site.data.event-details.venue }}</a> |</h3><h4 class='info-h4'>Training: {{ site.data.event-details.training }}<br>
               Conference: {{ site.data.event-details.conference }}</h4><br><br>
           </div>
         </div> 
@@ -37,7 +37,7 @@
         <div>
           <h1>{{ site.data.event-details.title }}</h3>
             <br>
-            <h3 class="info-h3"><a href="{{site.github.url | replace: 'www2.', ''}}/venue/about/">{{ site.data.event-details.venue }}</a> |</h3><h4 class='info-h4'>Training: {{ site.data.event-details.training }}<br>
+            <h3 class="info-h3"><a href="{{site.github.url | replace: 'www2.', '' | replace: 'http://', 'https://'}}/venue/about/">{{ site.data.event-details.venue }}</a> |</h3><h4 class='info-h4'>Training: {{ site.data.event-details.training }}<br>
               Conference: {{ site.data.event-details.conference }}</h4><br><br>
             <div class="nav-button right" aria-label="register for event">
               <a href="{{ site.data.event-details.registration_url }}" class="cta-button blue">Register</a>
