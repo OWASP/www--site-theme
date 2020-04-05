@@ -24,7 +24,7 @@
               if (randomIndexUsed.indexOf(randomIndex) == "-1")
               {
                   counter++;
-                  htmlstring += '<a href="'+ members[randomIndex]["url"] + '" class="member-logo" rel="sponsored" target="_blank" onclick="handleOutboundLinkClicks(event);"><img src="https://owasp.github.io' + members[randomIndex]["image"] + '" alt="image"/></a>';
+                  htmlstring += '<a href="'+ members[randomIndex]["url"] + '" class="member-logo" rel="sponsored" target="_blank" onclick="handleOutboundLinkClicks(event);"><img src="https://owasp.org' + members[randomIndex]["image"] + '" alt="image"/></a>';
                   
                   randomIndexUsed.push(randomIndex);
               }
@@ -34,7 +34,7 @@
          
           var randi = Math.floor(Math.random() * members.length);
           htmlstring = '<h2>Spotlight: ' + members[randi]["name"] + '</h2>';
-          htmlstring += '<a href="'+ members[randi]["url"] + '" rel="sponsored" target="_blank" onclick="handleOutboundLinkClicks(event);"><img src="https://owasp.github.io' + members[randi]["image"] + '" alt="image" /></a>';
+          htmlstring += '<a href="'+ members[randi]["url"] + '" rel="sponsored" target="_blank" onclick="handleOutboundLinkClicks(event);"><img src="https://owasp.org' + members[randi]["image"] + '" alt="image" /></a>';
           htmlstring += '<p>' + members[randi]["description"] + '</p>';
           $(".member-spotlight").html(htmlstring);
         }
