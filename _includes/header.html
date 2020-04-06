@@ -71,8 +71,8 @@
           mlistr += "<li>";
           mlistr += "<form role='search' method='get' action='/search'>";   
           mlistr += "<div class='search-div'>";
-          mlistr += "<input id='searchString' name='searchString' class='search-bar' type='search' placeholder='Search OWASP.org' required='true'>";
-          mlistr += "<button id='search-button' type='submit' class='fa fa-search' style='padding-left: 8px;'></button></div></form>";
+          mlistr += "<input id='searchString' aria-label='search input' name='searchString' class='search-bar' type='search' placeholder='Search OWASP.org' required='true'>";
+          mlistr += "<button id='search-button' aria-label='search button' type='submit' class='fa fa-search' style='padding-left: 8px;'></button></div></form>";
           mlistr += "</li>";
           $.each(data.menus, function (ndx, menu){
               listr += "<li><a href='" + menu.url + "'>" + menu.title + "</a>";
