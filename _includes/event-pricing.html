@@ -11,6 +11,9 @@
         {% for subitem in price.items %}
         {% if forloop.first %}<ul>{% endif %}
         <li class='event-price-title'>{{ subitem.title }}:<div class='event-price'>{{ subitem.price }}</div></li>
+        {% if price.info %}
+        <li class="event-price-info">{{price.info}}</li>
+        {% endif %}
         {% if forloop.last %}</ul>{% endif %}
         {% endfor %}
         {% endfor %}
