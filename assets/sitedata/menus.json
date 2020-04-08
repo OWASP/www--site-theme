@@ -76,6 +76,10 @@
 			"title": "EVENTS",
 			"url": "/events/",
 			"items": [{
+				"title": "Virtual AppSec Days, April 28-29, 2020",
+				"url": "https://appsecdays.org/?utm_source=owasp-web&utm_medium=main-menu&utm_campaign=none",
+				"opentab": "true"
+			},{
 				"title": "Global AppSec - San Francisco, October 19-23, 2020",
 				"url": "https://sf.globalappsec.org/?utm_source=owasp-web&utm_medium=main-menu&utm_campaign=none",
 				"opentab": "true"
