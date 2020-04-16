@@ -44,8 +44,8 @@
       grid-template-columns: 1fr 8fr 1fr;
       grid-template-areas: 
               "title title  github"
-              "lside menu rside"
-              "lside body  rside";
+              "lside menu side"
+              "lside body  side";
     }
 }  
 @media screen and (max-width: $header-bp - 1) { // 1019px
