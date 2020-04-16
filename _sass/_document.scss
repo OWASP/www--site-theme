@@ -39,14 +39,13 @@
 .da-col-sidebar { // default layout on desktop
     .main-wrapper { // grid for main content area
       display: grid;
-      max-width: 100%;
       margin: 0 auto $grid-val auto;
       grid-template-rows: auto auto 1fr;
       grid-template-columns: 1fr 8fr 1fr;
       grid-template-areas: 
               "title title  github"
               "lside menu side"
-              "lside body  side";
+              "lside body side";
     }
 }  
 @media screen and (max-width: $header-bp - 1) { // 1019px
@@ -58,9 +57,27 @@
                     float: none;
                 }
             }
-        }
-
-    .docadv-base-grid {
-        grid-template-columns: 1fr;
     }
 }
+
+@media screen and (max-width: $content-bp - 1) { // 839px
+    .da-col-sidebar { 
+      // 1-column on mobile
+      .main-wrapper {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+                "title"
+                "github"
+                "menu"
+                "body"
+                "repo"
+                "side";
+      }
+      .sub-nav,
+      .github-buttons {
+        padding: 15px 0;
+      }
+    }
+  }
