@@ -5,7 +5,7 @@
 {% for chapter in document.chapters %}
 {% assign class = 'doc-chapter' %}
 {% if forloop.index == 0 %}
-  {%assign class = 'doc-chapter active-section' %}
+  {% assign class = 'doc-chapter active-section' %}
 {% endif %}
 <li class='{{class}}'><h2>{{ chapter.title }}</h2></li>
 <ul class='doc-page-ul'>
