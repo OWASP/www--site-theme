@@ -49,6 +49,22 @@
               "lside body side";
     }
 }  
+
+.doc-chapter-ul {
+
+}
+
+.doc-page-ul {
+    margin-left: 2em;
+}
+
+.active-section {
+    color: $bg-blue;
+    &:before {
+        content: ">";
+    }
+}
+
 @media screen and (max-width: $header-bp - 1) { // 1019px
     // replace desktop nav with mobile nav
     .document {
@@ -79,6 +95,10 @@
       .sub-nav,
       .github-buttons {
         padding: 15px 0;
+      }
+
+      .left-sidebar, .sidebar{
+        display: hidden;
       }
     }
   }
