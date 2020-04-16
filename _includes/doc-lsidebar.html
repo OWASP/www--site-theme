@@ -3,7 +3,7 @@
 <h1>{{ document.title }}</h1>
 <ul class='doc-chapter-ul'>  
 {% for chapter in document.chapters %}
-<li class='doc-chapter'><h2 class='active-section'>{{ chapter.title }}</h2></li>
+<li class='doc-chapter active-section'><h2>{{ chapter.title }}</h2></li>
 <ul class='doc-page-ul'>
   {% for page in chapter.pages %}
   <li class='doc-page'><h3>{{ page.title }}</h3></li>
