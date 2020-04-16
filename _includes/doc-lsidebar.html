@@ -1,8 +1,14 @@
 <div class="left-sidebar" role="complementary">
-<ul>  
 {% assign document = site.data.document | where: 'title', page.document | first %}
+
+<h2>{{ document.title }}</h2>
+<ul>  
 {% for chapter in document.chapters %}
-<li>{{ chapter.title }}</li>
+<li><h3>{{ chapter.title }}</h3></li>
+<ul>
+  {% for page in chapter.pages}
+  <li><h4>{{ page.title }}</h4></li>
+</ul>
 {% endfor %} 
 </ul>
 </div>
