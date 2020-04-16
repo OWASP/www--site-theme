@@ -32,13 +32,14 @@
 .da-base-grid { // default to mobile grid of 1 column
     display: grid;
     grid-template-rows: repeat(3, auto);
-    grid-template-columns: 15% 70% 15%;
+    grid-template-columns: 1fr;
     grid-template-areas: "header" "body" "footer";
   }
 
 .da-col-sidebar { // default layout on desktop
     .main-wrapper { // grid for main content area
       display: grid;
+      max-width:100%;
       margin: 0 auto $grid-val auto;
       grid-template-rows: auto auto 1fr;
       grid-template-columns: 1fr 8fr 1fr;
