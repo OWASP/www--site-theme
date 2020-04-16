@@ -17,11 +17,7 @@
     padding: 1em;
 }
 
-/* Do no display the count of search results */    
-// .gsc-result-info {
-//     display: none;
-// }
-// Show Google custom search metadata without compromising the sort by dropdown ;-)
+/* Show Google custom search metadata without compromising the sort by dropdown */
 .gsc-selected-option {
     min-width: 130% !important;
 }
