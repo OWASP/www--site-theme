@@ -6,7 +6,7 @@
 {% for chapter in document.chapters %}
 <li><h3>{{ chapter.title }}</h3></li>
 <ul>
-  {% for page in chapter.pages}
+  {% for page in chapter.pages %}
   <li><h4>{{ page.title }}</h4></li>
   {% endfor %}
 </ul>
