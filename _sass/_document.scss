@@ -55,14 +55,11 @@
 }
 
 .doc-page-ul {
-    margin-left: 2em !important;
+    margin-left: 1em !important;
 }
 
 .active-section {
     color: $bg-blue;
-    &:before {
-        content: ">";
-    }
 }
 
 @media screen and (max-width: $header-bp - 1) { // 1019px
