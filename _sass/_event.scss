@@ -473,8 +473,8 @@ div.keynote-full {
 	}
 
 	img {
-		width: 200px; 
-		height: 200px; 
+		width: 125px; 
+		height: 125px; 
 		border-radius: 4px;
 		border-style: solid;
 		border-color: gray;
@@ -485,6 +485,7 @@ div.keynote-full {
 
 	p {
 		margin: 0px;
+		min-height: 85px;
 		text-indent:20px;
 		padding:0px;
 	}
