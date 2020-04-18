@@ -460,36 +460,28 @@ section.keynotes-front {
 	}
 }
 
- 
 div.keynote-full {
-	ul {
-		list-style: none;
-	}
-	li {
-		padding-left: 210px;
-		padding-bottom:40px;
-		list-style-type: none !important;
-		clear: both;
-	}
+	display: grid;
+	grid-template-columns: 20% 80%;
+	grid-template-areas: 
+			"img txt"
+			"img txt"
+			"img txt";
 
-	img {
+	a img {
 		width: 200px; 
 		height: 200px; 
 		border-radius: 4px;
 		border-style: solid;
 		border-color: gray;
-		float: left;
 		background-size: cover;
-		margin-left:-240px;
+		margin-left: 0;
 	}
 
-	p {
-		margin: 0px;
-		min-height: 120px;
-		text-indent:20px;
-		padding:0px;
+	.keynote-info{
+		min-height: 220px;
 	}
-}
+} 
 
 .event ul {
 	list-style-type: none;
