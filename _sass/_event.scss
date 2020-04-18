@@ -578,6 +578,7 @@ section.team-list {
 
 @media (max-width: 1131px) {
 	div.keynote-full {
+		grid-template-columns: 1fr;
 		grid-template-areas: 
 			"img"
 			"img"
