@@ -10,7 +10,7 @@
 <h2>Corporate Supporters</h2>
 <div id="corp_member_div">
   {% for member in corpsupporters %}
-  <a href="{{member.url}}" class="member-logo" rel="sponsored" onclick='handleOutboundLinkClicks(event);' target="_blank"><img src="{{member.logo}}" alt="image"/></a>
+  <a href="{{member.url}}" class="member-logo" onclick='handleOutboundLinkClicks(event);' target="_blank" rel="sponsored noopener noreferrer"><img src="{{member.logo}}" alt="image"/></a>
   {% endfor %}
 </div>
 {% endif %}
@@ -18,7 +18,7 @@
 <h2>Event Supporters</h2><br/>
 <div id="event_member_div">
 {% for member in eventsupporters %}
-  <a href="{{member.url}}" class="member-logo" rel="sponsored" onclick='handleOutboundLinkClicks(event);' target="_blank"><img src="{{member.logo}}" alt="image"/></a>
+  <a href="{{member.url}}" class="member-logo" onclick='handleOutboundLinkClicks(event);' target="_blank" rel="sponsored noopener noreferrer"><img src="{{member.logo}}" alt="image"/></a>
 {% endfor %}
 </div> 
 {% endif %} 
