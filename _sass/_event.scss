@@ -577,12 +577,12 @@ section.team-list {
 }
 
 @media (max-width: 1131px) {
-	// div.keynote-full {
-	// 	grid-template-areas: 
-	// 		"img"
-	// 		"img"
-	// 		"img";
-	// }
+	div.keynote-full {
+		grid-template-areas: 
+			"img"
+			"img"
+			"img";
+	}
 	.event-pricing {
 		float: left;
 		width: 100%;
