@@ -61,7 +61,8 @@ a {
 .main-wrapper,
 .alt-wrapper,
 .member-wrapper,
-.footer-wrapper {
+.footer-wrapper,
+.alt-member-wrapper {
   max-width: $grid-val * 44; // 30 * 45 = 1320px
   width: 100%;
   margin: 0 auto;
@@ -160,6 +161,7 @@ footer {
   .main-wrapper,
   .alt-wrapper,
   .member-wrapper,
+  .alt-member-wrapper,
   .footer-wrapper,
   .header-wrapper,
   .event-header-wrapper {

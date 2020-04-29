@@ -1,5 +1,9 @@
 <footer>
+  {% if page.altfooter %}
+  {% include altmember.html %}
+  {% else %}
   {% include member.html %}
+  {% endif %}
   <section class="footer-wrapper">
     {% include social.html %}
     <nav class="bot-nav" role="navigation" aria-label="secondary navigation">

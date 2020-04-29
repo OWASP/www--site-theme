@@ -4,8 +4,8 @@ site-wide reusable components styling
 
 // member section by the footer
 .member {
-  margin: 30px 0;
-  padding: 15px 0;
+  margin: 0;
+  padding: 0;
   background-color: $bg-grey;
 }
 
@@ -22,11 +22,30 @@ site-wide reusable components styling
   }
 }
 
+.alt-member-logo {
+  display: flex;
+  align-items: center;
+  max-width: 130px;
+  height: 90px;
+  margin: 0;
+  text-align: center;
+  filter: grayscale(100%);
+  img {
+    max-width: 70%;
+    margin: 0 auto;
+   
+  }
+
+  &:hover {
+      filter: none;
+  }
+}
+
 .member-logo {
   display: flex;
   align-items: center;
   max-width: 150px;
-  height: 120px;
+  height: 90px;
   margin: 0 15px;
   text-align: center;
   filter: grayscale(100%);
@@ -44,7 +63,11 @@ site-wide reusable components styling
 .member-spotlight {
   img {
     max-width: 200px;
-    margin: 30px auto;
+    margin: 10px auto;
+  }
+
+  p {
+    font-size: 16px;
   }
 }
 
@@ -53,27 +76,6 @@ site-wide reusable components styling
   flex-direction: row;
   justify-content:space-between;
 }
-
-@media screen and (min-width: $content-bp) { // 840px
-  .member-wrapper { // grid for member section
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  .member-list {
-    div {
-      justify-content: center;
-    }
-  }
-  .member-logo {
-    max-width: 180px;
-    height: 144px;
-  }
-}
-
-
 
 // news and events list
 .news-events {
@@ -305,6 +307,12 @@ table {
   }
 }
 
+.featured-proj-image {
+  float: left;
+  max-height: 205px;
+  padding-right: 15px;
+}
+
 // site-wide announcement banner styling
 #banner {
   font-size: 1em;
@@ -345,16 +353,6 @@ table {
   }
 }
 
-// sitemap 
-
-@media screen and (min-width: $content-bp) {
-  .sitemap {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: $grid-val;
-  }
-}
-
 .sitemap {
   h2 {
     color: $dark;
@@ -363,4 +361,54 @@ table {
   ul {
     @include no-bullet-list;
   }
+}
+
+@media screen and (min-width: $content-bp) { // 840px
+  .member-wrapper { // grid for member section
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .alt-member-wrapper { // grid for member section
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .sitemap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: $grid-val;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .member-list {
+    div {
+      justify-content: center;
+    }
+  }
+  .member-logo {
+    max-width: 80px;
+    height: 144px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .member-list {
+    div {
+      justify-content: center;
+    }
+  }
+  .member-logo {
+    max-width: 80px;
+    height: 144px;
+  }
+}
+
+@media screen and (max-width: 840) {
+  .featured-proj-image {
+    float:none;
+    padding-right: 0;
+  }
+
 }
