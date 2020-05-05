@@ -7,10 +7,10 @@
 {% if forloop.first == true %}
   {% assign class = 'doc-chapter active-section' %}
 {% endif %}
-<li class='{{class}}'><h2>{{ chapter.title }}</h2></li>
+<li class='{{class}}'>{% if chapter.url %}<a href='{{ chapter.url }}'>{% endif %}<h2>{{ chapter.title }}</h2>{% if chapter.url %}</a>{% endif %}</li>
 <ul class='doc-page-ul'>
   {% for page in chapter.pages %}
-  <li class='doc-page'><h3>{{ page.title }}</h3></li>
+  <li class='doc-page'>{% if page.url %}<a href='{{ page.url }}'>{% endif %}<h3>{{ page.title }}</h3>{% if page.url %}</a>{% endif %}</li>
   {% endfor %}
 </ul>
 {% endfor %} 
