@@ -112,6 +112,17 @@
   }
 }
 
+.foreword {
+  padding-left: 24px;
+  padding-right: 24px;
+  font-size: smaller;
+  font-style: italic;
+
+  img {
+    float: right;
+  }
+}
+
 .left-sidebar {
   grid-area: lside;
   padding: 15px 15px;
