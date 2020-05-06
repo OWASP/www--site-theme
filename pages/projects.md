@@ -18,7 +18,7 @@ The OWASP Zed Attack Proxy (ZAP) is one of the world’s most popular free secur
 For more videos see the links on the wiki videos page.
 
 <div class="video-container">
-  <iframe src="//www.youtube.com/embed/ztfgip-UhWw?" allowfullscreen="true" width="640" height="360" frameborder="0"></iframe>
+  <iframe src="https://www.youtube.com/embed/ztfgip-UhWw?" allowfullscreen width="640" height="360" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;" ></iframe>
 </div>
 
 ![Flagship Project](/assets/images/common/owasp_level_flagship_2.svg){:width='45px' }

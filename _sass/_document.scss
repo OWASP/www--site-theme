@@ -27,6 +27,10 @@
         text-transform: capitalize;
         color: $mid-grey;
     }
+
+    blockquote {
+        font-style: italic;
+    }
 }
 
 .da-base-grid { // default to mobile grid of 1 column
