@@ -146,9 +146,9 @@ site-wide reusable components styling
     border-left: 10px solid lighten(grey, 40%);
     border-radius: 15px;
   }
+
   &.small {
-    font-size: $font-size*.75;
-    line-height: .75;
+    font-size: 20px;
   }
 }
 
