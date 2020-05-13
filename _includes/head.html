@@ -28,7 +28,9 @@
 <meta propery="og:title" content="{{ title }}">
 <meta property="og:url" content="{{site.github.url | replace: 'www2.', '' | replace: 'http://', 'https://'}}{{page.url}}">
 <meta property="og:locale" content="en_US">
-
+{% if page.url contains 'projectchapter-example' %}
+<meta name="robots" content="noindex" />
+{% endif %}
 <!-- should probably look at using article at some point for www-community at least -->
 <meta property="og:type" content="website" />
 <meta property="og:image" content="{{site_base_url}}favicon.ico" />
