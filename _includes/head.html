@@ -23,6 +23,7 @@
 {% elsif page.url contains '-committee-' %}
   {% assign title = title | append: ' Committees' %}
 {% endif %}
+
 <meta name="description" content="{{ page.pitch | default: default_desc }}">
 <meta property="og:description" content="{{ page.pitch | default: default_desc }}">
 <meta propery="og:title" content="{{ title }}">

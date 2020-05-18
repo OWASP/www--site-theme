@@ -24,65 +24,12 @@ $(function() {
     Cookies.set('banner-seen', 'true', { expires: 7 });
   });
 
-  // show and focus on search bar
-  // $("#search-icon").click(function() {
-  //   $(".search-bar").animate({
-  //     width: 'show'
-  //   }, 200);
-  //   $(".search-bar").focus();
-  // });
-
-  // $(".search-bar").focusout(function() {
-  //   $(".search-bar").animate({
-  //     width: 'hide'
-  //   }, 200);
-  // });
-
-  // toggle mobile menu display
-  // $(".menu-toggler").click(function() {
-  //   $(".mobile-menu").toggleClass(hideEl);
-  //   $("#overlay").toggleClass(removeEl);
-  // });
-
-  // give first tab in sub-menu a current class by default
-  //$(".sub-nav li:first-child>a").addClass("current");
-
-  // detect hash ID and load corresponding tab
-  /*
-  if (window.location.hash != "") {
-    var pageTab = window.location.hash;
-    $(".tab-link").removeClass("current");
-    $(pageTab+"-link").addClass("current");
-    //$(".sub-nav").siblings(".tab").addClass(removeEl);
-    //$(pageTab).toggleClass(removeEl);
-    //$(window).one('scroll', function() {
-    //    window.scrollTo(0, 0);
-    //})
+  alert($(location).attr('href'));
+  
+  if($(location).attr('href').indexOf('owaps.org') >= 0)
+  {
+    $(location).attr('href','https://owasp.org/');
   }
-  */
- 
-  // show and hide tabs based on sub-menu item clicked
-  /*
-    $(".tab-link").click(function(e) {
-    
-    var x = window.pageXOffset,
-        y = window.pageYOffset;
-    $(".tab-link").removeClass("current");
-    $("#"+this.id).addClass("current");
-    //$(".sub-nav").siblings(".tab").addClass(removeEl);
-    //$("#" + (this.id.replace("-link",""))).toggleClass(removeEl);
-    window.location.hash = $(this).attr("id").replace("-link","");
-    //$(window).one('scroll', function() {
-    //    window.scrollTo(x, y);
-    //})
-  });
-  */
-  // show dropdown
-  /*$(".top-nav > ul li").hover(function() {
-  
-    $(this).children(".dropdown-menu").toggleClass(hideEl);
-  });*/
-  
 });
 
 // browser version checker and notifier
