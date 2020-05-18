@@ -24,8 +24,7 @@ $(function() {
     Cookies.set('banner-seen', 'true', { expires: 7 });
   });
 
-  alert($(location).attr('href'));
-  
+
   if($(location).attr('href').indexOf('owaps.org') >= 0)
   {
     $(location).attr('href','https://owasp.org/');
