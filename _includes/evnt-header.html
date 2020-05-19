@@ -5,7 +5,7 @@
         <a href="#" class="menu-toggler" aria-hidden="true">
           <i class="fa fa-bars"></i>
         </a>
-        <a href="/" class="alt-logo" aria-label="go to event homepage" target="_blank" rel="noopener">
+        <a href="{{ site.data.event-details.logo_url | default: '/' }}" class="alt-logo" aria-label="go to event homepage" target="_blank" rel="noopener">
             <img src="/assets/images/logo.png" alt="OWASP logo">
         </a>
         <div id="overlay" class="remove-el"></div>
@@ -40,7 +40,7 @@
       </nav>
       
       <nav class="top-nav" role="navigation" aria-label="primary navigation">
-        <a href="/" class="desktop-logo" aria-label="go to event homepage">
+        <a href="{{ site.data.event-details.logo_url | default: '/' }}" class="desktop-logo" aria-label="go to event homepage">
           <img src="/assets/images/logo.png" alt="">
         </a>
         <!--<h1>{{ page.title }}</h1>-->
