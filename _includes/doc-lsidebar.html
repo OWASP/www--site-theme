@@ -4,7 +4,7 @@
 <ul class='doc-chapter-ul'>  
 {% for chapter in document.chapters %}
 {% assign class = 'doc-chapter' %}
-{% if forloop.first == true %}
+{% if page.title in chapter.title %}
   {% assign class = 'doc-chapter active-section' %}
 {% endif %}
 <li class='{{class}}'>{% if chapter.url %}<a href='{{ chapter.url }}'>{% endif %}<h2>{{ chapter.title }}</h2>{% if chapter.url %}</a>{% endif %}</li>
