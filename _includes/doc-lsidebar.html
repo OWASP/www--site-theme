@@ -3,14 +3,15 @@
 <h1>{{ document.title }}</h1>
 <ul class='doc-chapter-ul'>  
 {% for chapter in document.chapters %}
-{% assign class = 'doc-chapter' %}
-{% if page.title in chapter.title %}
-  {% assign class = 'doc-chapter active-section' %}
-{% endif %}
-<li class='{{class}}'>{% if chapter.url %}<a href='{{ chapter.url }}'>{% endif %}<h2>{{ chapter.title }}</h2>{% if chapter.url %}</a>{% endif %}</li>
+
+<li class='doc-chapter'>{% if chapter.url %}<a href='{{ chapter.url }}'>{% endif %}<h2>{{ chapter.title }}</h2>{% if chapter.url %}</a>{% endif %}</li>
 <ul class='doc-page-ul'>
-  {% for page in chapter.pages %}
-  <li class='doc-page'>{% if page.url %}<a href='{{ page.url }}'>{% endif %}<h3>{{ page.title }}</h3>{% if page.url %}</a>{% endif %}</li>
+  {% for pg in chapter.pages %}
+  {% assign class = 'doc-page' %}
+  {% if page.title in pg.title %}
+    {% assign class = 'doc-page active-section' %}
+  {% endif %}
+  <li class='{{class}}'>{% if pg.url %}<a href='{{ pg.url }}'>{% endif %}<h3>{{ pg.title }}</h3>{% if pg.url %}</a>{% endif %}</li>
   {% endfor %}
 </ul>
 {% endfor %} 
