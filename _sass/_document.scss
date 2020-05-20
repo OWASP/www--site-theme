@@ -58,12 +58,18 @@
 
 }
 
-.doc-page-ul {
-    margin-left: 1em !important;
+.doc-page {
+    
 }
 
 .active-section {
-    font-size: large;
+    h3:before {
+        content: "*";
+    }
+}
+
+.doc-page-ul {
+    margin-left: 1em !important;
 }
 
 @media screen and (max-width: $header-bp - 1) { // 1019px
