@@ -45,18 +45,21 @@
   $(function() {
      if(window.location.href.indexOf('#') != -1)
      {
-        $('.tab-link').each(function () {
-          divid = '#sec-' + $(this).attr('id').toLowerCase().replace('-link', '');
-          $(divid).addClass('tab-hidden'); 
-          $(this).removeClass('current');
-        });
-
         divid = window.location.href.substring(window.location.href.indexOf('#'))
-        divid = divid.replace('div-', 'sec-');
-        $(divid).removeClass('tab-hidden');
-        linkstr = divid.substring(divid.indexOf('-') + 1);
-        linkstr += "-link";
-        $('#' + linkstr).addClass('current'); // adding to div-main, for instance, but should be the 
+        if(divid.indexOf('div-') >= 0)
+        {
+          $('.tab-link').each(function () {
+            divid = '#sec-' + $(this).attr('id').toLowerCase().replace('-link', '');
+            $(divid).addClass('tab-hidden'); 
+            $(this).removeClass('current');
+          });
+          divid = divid.replace('div-', 'sec-');
+          $(divid).removeClass('tab-hidden');
+          linkstr = divid.substring(divid.indexOf('-') + 1);
+          linkstr += "-link";
+          $('#' + linkstr).addClass('current'); // adding to div-main, for instance, but should be the 
+        }
+        
      }
   });
 
