@@ -76,16 +76,16 @@
 			"title": "EVENTS",
 			"url": "/events/",
 			"items": [{
+				"title": "OWASP Chapters All Day, June 6-7",
+				"url": "/www-community/social/chapters_all_day/",
+				"opentab": "true"
+			},{
+				"title": "Virtual AppSec Days - Summer of Security, June | July | August",
+				"url": "https://appsecdays.org/?utm_source=owasp-web&utm_medium=main-menu&utm_campaign=none",
+				"opentab": "true"
+			},{
 				"title": "Global AppSec - San Francisco, October 19-23, 2020",
 				"url": "https://sf.globalappsec.org/?utm_source=owasp-web&utm_medium=main-menu&utm_campaign=none",
-				"opentab": "true"
-			},{
-				"title": "LATAM@home, May 4-8, 2020",
-				"url": "https://owasp.org/www-event-2020-latam-at-home/?utm_source=owasp-web&utm_medium=main-menu&utm_campaign=none",
-				"opentab": "true"
-			},{
-				"title": "DEFCON 28, August 6-9, 2020",
-				"url": "https://defcon.org/?utm_source=owasp-web&utm_medium=main-menu&utm_campaign=none",
 				"opentab": "true"
 			},{
 				"title": "LASCON 2020, October 28-29, 2020",
