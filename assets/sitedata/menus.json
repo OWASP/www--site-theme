@@ -76,10 +76,6 @@
 			"title": "EVENTS",
 			"url": "/events/",
 			"items": [{
-				"title": "OWASP Chapters All Day, June 6-7",
-				"url": "/www-community/social/chapters_all_day/",
-				"opentab": "true"
-			},{
 				"title": "Virtual AppSec Days - Summer of Security, June | July | August",
 				"url": "https://appsecdays.org/?utm_source=owasp-web&utm_medium=main-menu&utm_campaign=none",
 				"opentab": "true"
