@@ -150,6 +150,10 @@
 				"title": "Video",
 				"url": "https://www.youtube.com/user/OWASPGLOBAL/videos",
 				"opentab": "true"
+			}, {
+				"title": "Get the OWASP Connector",
+				"url": "http://eepurl.com/dpDj_z"
+				"opentab": "true"
 			}]
 		}
 	]
