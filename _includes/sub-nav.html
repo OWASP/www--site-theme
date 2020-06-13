@@ -43,9 +43,10 @@
 </nav>
 <script type='text/javascript'>
   $(function() {
-     if(window.location.href.indexOf('#') != -1)
+    if(window.location.href.indexOf('#') != -1)
      {
         divid = window.location.href.substring(window.location.href.indexOf('#'))
+        secid = divid;
         if(divid.indexOf('div-') >= 0)
         {
           $('.tab-link').each(function () {
@@ -53,11 +54,12 @@
             $(divid).addClass('tab-hidden'); 
             $(this).removeClass('current');
           });
-          divid = divid.replace('div-', 'sec-');
-          $(divid).removeClass('tab-hidden');
-          linkstr = divid.substring(divid.indexOf('-') + 1);
-          linkstr += "-link";
-          $('#' + linkstr).addClass('current'); // adding to div-main, for instance, but should be the 
+
+          secid = secid.replace('div-', 'sec-');
+          $(secid).removeClass('tab-hidden');
+          linkid = "#" + secid.substring(secid.indexOf('-') + 1) + "-link";
+          $(linkid).addClass('current'); 
+          
         }
         
      }
