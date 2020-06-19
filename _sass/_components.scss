@@ -277,6 +277,14 @@ site-wide reusable components styling
         color: #ffffff;    
       }
     }
+   &.disabled {
+     background-color: $grey;
+     color: $dark;
+     &:active {
+       background-color: $grey;
+       color: $dark;
+     }
+   }
 }
 
 // table component styling
