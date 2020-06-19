@@ -195,76 +195,72 @@ site-wide reusable components styling
   background-color: $cta-blue;
   font-family: 'ubuntu', sans-serif;
   text-decoration: none !important;
-  &:not(.disable):hover {
+  &:hover {
     color: white;
     background-color: lighten($cta-blue, 5%);
   }
-  &:not(.disable):active {
+  &:active {
     color: white;
     background-color: darken($cta-blue, 5%);
   }
   &:visited {
     color: white;
   }
-  &:disabled {
-    color: $dark;
-    background-color: $grey;
-  }
 
   &.dark {
     background-color: $dark;
-    &:not(.disable):hover {
+    &:hover {
       background-color: lighten($dark, 5%);
     }
-    &:not(.disable):active {
+    &:active {
       background-color: darken($dark, 5%);
     }
   }
   &.green {
     background-color: $success;
-    &:not(.disable):hover {
+    &:hover {
       background-color: lighten($success, 2.5%);
     }
-    &:not(.disable):active {
+    &:active {
       background-color: darken($success, 5%);
     }
   }
   &.grey {
     background-color: $grey;
     color: $dark;
-    &:not(.disable):hover {
+    &:hover {
       background-color: lighten($grey, 2.5%);
     }
-    &:not(.disable):active {
+    &:active {
       background-color: darken($grey, 5%);
     }
   }
   &.black {
     background-color: black;
-    &:not(.disable):hover {
+    &:hover {
       background-color: lighten(black, 2.5%);
     }
-    &:not(.disable):active {
+    &:active {
       background-color: darken(black, 5%);
     }
   }
   &.red {
      background-color: red;
-     &:not(.disable):hover {
+     &:hover {
       background-color: lighten(red, 2.5%);
     }
-    &:not(.disable):active {
+    &:active {
       background-color: darken(red, 5%);
     }
   }
   &.white {
      background-color: white;
      color: black !important;
-     &:not(.disable):hover {
+     &:hover {
        color:black !important;
       background-color: darken(white, 2.5%);
     }
-    &:not(.disable):active {
+    &:active {
       color:black !important;
       background-color: lighten(white, 5%);
     }
@@ -275,10 +271,22 @@ site-wide reusable components styling
       background-color: #ff0000;
       color: #ffffff;
 
-      &:not(.disable):hover {
+      &:hover {
         background-color: #ff0000;
         color: #ffffff;    
       }
+    }
+}
+.cta-button[disabled=true] {
+    color: $dark;
+    background-color: $grey;
+    &:active {
+      color: $dark;
+      background-color: $grey;
+    }
+    &:hover {
+      color: $dark;
+      background-color: $grey;
     }
 }
 
