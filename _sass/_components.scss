@@ -206,6 +206,11 @@ site-wide reusable components styling
   &:visited {
     color: white;
   }
+  &:disabled {
+    color: $dark;
+    background-color: $grey;
+  }
+
   &.dark {
     background-color: $dark;
     &:hover {
@@ -236,7 +241,6 @@ site-wide reusable components styling
   }
   &.black {
     background-color: black;
-    color: white;
     &:hover {
       background-color: lighten(black, 2.5%);
     }
@@ -246,7 +250,6 @@ site-wide reusable components styling
   }
   &.red {
      background-color: red;
-     color: white;
      &:hover {
       background-color: lighten(red, 2.5%);
     }
@@ -277,14 +280,6 @@ site-wide reusable components styling
         color: #ffffff;    
       }
     }
-   &.disabled {
-     background-color: $grey;
-     color: $dark;
-     &:active {
-       background-color: $grey;
-       color: $dark;
-     }
-   }
 }
 
 // table component styling
