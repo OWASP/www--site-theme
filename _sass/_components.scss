@@ -195,11 +195,11 @@ site-wide reusable components styling
   background-color: $cta-blue;
   font-family: 'ubuntu', sans-serif;
   text-decoration: none !important;
-  &:hover {
+  &:not(.disable):hover {
     color: white;
     background-color: lighten($cta-blue, 5%);
   }
-  &:active {
+  &:not(.disable):active {
     color: white;
     background-color: darken($cta-blue, 5%);
   }
@@ -213,58 +213,58 @@ site-wide reusable components styling
 
   &.dark {
     background-color: $dark;
-    &:hover {
+    &:not(.disable):hover {
       background-color: lighten($dark, 5%);
     }
-    &:active {
+    &:not(.disable):active {
       background-color: darken($dark, 5%);
     }
   }
   &.green {
     background-color: $success;
-    &:hover {
+    &:not(.disable):hover {
       background-color: lighten($success, 2.5%);
     }
-    &:active {
+    &:not(.disable):active {
       background-color: darken($success, 5%);
     }
   }
   &.grey {
     background-color: $grey;
     color: $dark;
-    &:hover {
+    &:not(.disable):hover {
       background-color: lighten($grey, 2.5%);
     }
-    &:active {
+    &:not(.disable):active {
       background-color: darken($grey, 5%);
     }
   }
   &.black {
     background-color: black;
-    &:hover {
+    &:not(.disable):hover {
       background-color: lighten(black, 2.5%);
     }
-    &:active {
+    &:not(.disable):active {
       background-color: darken(black, 5%);
     }
   }
   &.red {
      background-color: red;
-     &:hover {
+     &:not(.disable):hover {
       background-color: lighten(red, 2.5%);
     }
-    &:active {
+    &:not(.disable):active {
       background-color: darken(red, 5%);
     }
   }
   &.white {
      background-color: white;
      color: black !important;
-     &:hover {
+     &:not(.disable):hover {
        color:black !important;
       background-color: darken(white, 2.5%);
     }
-    &:active {
+    &:not(.disable):active {
       color:black !important;
       background-color: lighten(white, 5%);
     }
@@ -275,7 +275,7 @@ site-wide reusable components styling
       background-color: #ff0000;
       color: #ffffff;
 
-      &:hover {
+      &:not(.disable):hover {
         background-color: #ff0000;
         color: #ffffff;    
       }
