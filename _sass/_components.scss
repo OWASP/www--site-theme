@@ -195,7 +195,7 @@ site-wide reusable components styling
   background-color: $cta-blue;
   font-family: 'ubuntu', sans-serif;
   text-decoration: none !important;
-  &:hover {
+  &:not([disabled]):hover {
     color: white;
     background-color: lighten($cta-blue, 5%);
   }
@@ -209,7 +209,7 @@ site-wide reusable components styling
 
   &.dark {
     background-color: $dark;
-    &:hover {
+    &:not([disabled]):hover {
       background-color: lighten($dark, 5%);
     }
     &:active {
@@ -218,7 +218,7 @@ site-wide reusable components styling
   }
   &.green {
     background-color: $success;
-    &:hover {
+    &:not([disabled]):hover {
       background-color: lighten($success, 2.5%);
     }
     &:active {
@@ -228,7 +228,7 @@ site-wide reusable components styling
   &.grey {
     background-color: $grey;
     color: $dark;
-    &:hover {
+    &:not([disabled]):hover {
       background-color: lighten($grey, 2.5%);
     }
     &:active {
@@ -237,7 +237,7 @@ site-wide reusable components styling
   }
   &.black {
     background-color: black;
-    &:hover {
+    &:not([disabled]):hover {
       background-color: lighten(black, 2.5%);
     }
     &:active {
@@ -246,7 +246,7 @@ site-wide reusable components styling
   }
   &.red {
      background-color: red;
-     &:hover {
+     &:not([disabled]):hover {
       background-color: lighten(red, 2.5%);
     }
     &:active {
@@ -256,7 +256,7 @@ site-wide reusable components styling
   &.white {
      background-color: white;
      color: black !important;
-     &:hover {
+     &:not([disabled]):hover {
        color:black !important;
       background-color: darken(white, 2.5%);
     }
@@ -280,14 +280,6 @@ site-wide reusable components styling
 .cta-button[disabled=true] {
     color: $dark;
     background-color: $grey;
-    &:active {
-      color: $dark;
-      background-color: $grey;
-    }
-    &:hover {
-      color: $dark;
-      background-color: $grey;
-    }
 }
 
 // table component styling
