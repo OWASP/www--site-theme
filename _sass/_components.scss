@@ -401,7 +401,7 @@ table {
 }
 
 #close-disclaimer {
-  background-color: rgba(20,20,20,0.8);
+  background-color: rgba(20,20,20,0.0);
   float: right;
   cursor: pointer;
   font-weight: bold;
@@ -521,7 +521,7 @@ table {
   #disclaimer {
     display:block;
   }
-  
+
   .disclaimer-content {
     word-wrap: break-word;
   }
