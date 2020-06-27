@@ -21,9 +21,29 @@ $(function() {
   // close announcement banner
   $("#close-banner").click(function() {
     $(this).closest("#banner").remove();
-    Cookies.set('banner-seen', 'true', { expires: 7 });
+      Cookies.set('banner-seen', 'true', { expires: 7 });
   });
 
+  if( Cookies.get('cookies-ok') == 'true')
+  {
+      $("#disclaimer-container").hide();
+  }
+  else{
+    $("#disclaimer-container").attr('display', 'flex');
+  }
+  
+  // close announcement banner
+  $("#close-disclaimer").click(function() {
+    $(this).closest("#disclaimer-container").remove();
+  });
+
+  $(".disclaimerOK").click(function () {
+    $(this).closest("#disclaimer-container").remove();
+    Cookies.set('cookies-ok', 'true', { expires: 1 });
+    // does ga still exist here?
+    ga('send', 'pageview');
+
+  });
 
   if($(location).attr('href').indexOf('owaps.org') >= 0)
   {

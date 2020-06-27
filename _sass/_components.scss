@@ -360,33 +360,63 @@ table {
   }
 }
 
+#disclaimer-container {
+  display: hidden;
+}
+
+.disclaimer-content {
+  background-color: rgba(20,20,20,0.8);
+  min-height: 26px;
+  color: #ccc;
+  font-size: .85em;
+  display: hidden;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 15px 45px;
+  & > *,
+  & > * > * {
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+}
+
 #disclaimer {
   background-color: rgba(20,20,20,0.8);
   min-height: 26px;
-  font-size: 14px;
   color: #ccc;
-  line-height: 26px;
-  padding: 8px 0 8px 30px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: none;
-  z-index: 9999;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 45px;
+  & > *,
+  & > * > * {
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
 }
-#disclaimer a {
-  color: #4B8EE7;
-  text-decoration: none;
-}
+
 #close-disclaimer {
+  background-color: rgba(20,20,20,0.8);
   float: right;
-  display: inline-block;
   cursor: pointer;
-  height: 20px;
-  width: 20px;
-  margin: -15px 0 0 0;
   font-weight: bold;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 45px;
+  & > *,
+  & > * > * {
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
 }
+
 #close-disclaimer:hover {
   color: #FFF;
 }
