@@ -460,6 +460,15 @@ table {
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: $grid-val;
   }
+
+
+  #disclaimerOK {
+    float:none;
+  }
+
+  .disclaimer-content {
+    word-wrap: break-word;
+  }
 }
 
 @media screen and (max-width: 840px) {
