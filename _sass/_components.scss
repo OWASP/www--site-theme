@@ -461,9 +461,12 @@ table {
     grid-column-gap: $grid-val;
   }
 
-
   #disclaimerOK {
     float:none;
+  }
+  
+  #disclaimer {
+    display:block;
   }
 
   .disclaimer-content {
@@ -481,6 +484,24 @@ table {
     max-width: 80px;
     height: 144px;
   }
+
+  #disclaimerOK {
+    float:none;
+  }
+
+  #disclaimer {
+    display:block;
+  }
+
+  .disclaimer-content {
+    word-wrap: break-word;
+  }
+
+
+  .featured-proj-image {
+    float:none;
+    padding-right: 0;
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -493,12 +514,15 @@ table {
     max-width: 80px;
     height: 144px;
   }
-}
-
-@media screen and (max-width: 840) {
-  .featured-proj-image {
+  #disclaimerOK {
     float:none;
-    padding-right: 0;
   }
 
+  #disclaimer {
+    display:block;
+  }
+  
+  .disclaimer-content {
+    word-wrap: break-word;
+  }
 }
