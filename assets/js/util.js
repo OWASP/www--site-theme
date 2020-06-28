@@ -39,7 +39,7 @@ $(function() {
 
   $(".disclaimerOK").click(function () {
     $(this).closest("#disclaimer-container").remove();
-    Cookies.set('cookies-ok', 'true', { expires: 1 });
+    Cookies.set('cookies-ok', 'true', { expires: 30 });
     // does ga still exist here?
     ga('send', 'pageview');
 
