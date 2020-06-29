@@ -12,7 +12,6 @@ $(function() {
   // use removeEl for hiding elements from EVERYONE
   var hideEl = "hide-el",
       removeEl = "remove-el";
-
   if( Cookies.get('banner-seen') == 'true')
   {
       $("#banner").hide();
@@ -23,7 +22,7 @@ $(function() {
     $(this).closest("#banner").remove();
       Cookies.set('banner-seen', 'true', { expires: 7 });
   });
-
+  /*
   if( Cookies.get('cookies-ok') == 'true')
   {
       $("#disclaimer-container").hide();
@@ -44,7 +43,7 @@ $(function() {
     ga('send', 'pageview');
 
   });
-
+  */
   if($(location).attr('href').indexOf('owaps.org') >= 0)
   {
     $(location).attr('href','https://owasp.org/');
