@@ -25,10 +25,10 @@ $(function() {
 
   if( Cookies.get('cookies-ok') == 'true')
   {
-      $("#disclaimer-container").hide();
+      $("#disclaimer-container").remove();
   }
   else{
-    $("#disclaimer-container").attr('display', 'flex');
+    $("#disclaimer-container").css('opacity', '1');
   }
   
   // close announcement banner

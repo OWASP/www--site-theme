@@ -361,7 +361,8 @@ table {
 }
 
 #disclaimer-container {
-  display: hidden;
+  display: block;
+  opacity: 0;
   background-color: rgba(20,20,20,0.8);
   position: fixed;
   bottom: 0;
