@@ -362,10 +362,16 @@ table {
 
 #disclaimer-container {
   display: hidden;
+  background-color: rgba(20,20,20,0.8);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  width:100%;
 }
 
 .disclaimer-content {
-  background-color: rgba(20,20,20,0.8);
   min-height: 26px;
   color: #ccc;
   font-size: .85em;
@@ -384,7 +390,6 @@ table {
 }
 
 #disclaimer {
-  background-color: rgba(20,20,20,0.8);
   min-height: 26px;
   color: #ccc;
   font-size: 1em;
@@ -401,7 +406,6 @@ table {
 }
 
 #close-disclaimer {
-  background-color: rgba(20,20,20,0.8);
   float: right;
   cursor: pointer;
   font-weight: bold;
@@ -429,6 +433,7 @@ table {
   cursor: pointer;
   float: right;
   margin: 0 60px 0 10px;
+  min-width: 100px;
 }
 #disclaimer a.disclaimerOK:hover {
   background-color: #E0C91F;
@@ -461,17 +466,6 @@ table {
     grid-column-gap: $grid-val;
   }
 
-  #disclaimerOK {
-    float:none;
-  }
-  
-  #disclaimer {
-    display:flex;
-  }
-
-  .disclaimer-content {
-    word-wrap: break-word;
-  }
 }
 
 @media screen and (max-width: 840px) {
@@ -484,19 +478,6 @@ table {
     max-width: 80px;
     height: 144px;
   }
-
-  #disclaimerOK {
-    float:none;
-  }
-
-  #disclaimer {
-    display:block;
-  }
-
-  .disclaimer-content {
-    word-wrap: break-word;
-  }
-
 
   .featured-proj-image {
     float:none;
@@ -513,16 +494,5 @@ table {
   .member-logo {
     max-width: 80px;
     height: 144px;
-  }
-  #disclaimerOK {
-    float:none;
-  }
-
-  #disclaimer {
-    display:block;
-  }
-
-  .disclaimer-content {
-    word-wrap: break-word;
   }
 }

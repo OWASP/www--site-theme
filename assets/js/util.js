@@ -22,7 +22,7 @@ $(function() {
     $(this).closest("#banner").remove();
       Cookies.set('banner-seen', 'true', { expires: 7 });
   });
-  /*
+
   if( Cookies.get('cookies-ok') == 'true')
   {
       $("#disclaimer-container").hide();
@@ -38,12 +38,12 @@ $(function() {
 
   $(".disclaimerOK").click(function () {
     $(this).closest("#disclaimer-container").remove();
-    Cookies.set('cookies-ok', 'true', { expires: 30 });
+    Cookies.set('cookies-ok', 'true', { expires: 365 });
     // does ga still exist here?
     ga('send', 'pageview');
 
   });
-  */
+
   if($(location).attr('href').indexOf('owaps.org') >= 0)
   {
     $(location).attr('href','https://owasp.org/');
