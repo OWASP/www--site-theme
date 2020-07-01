@@ -11,7 +11,7 @@
   {% if pg.title contains page.title %}
     {% assign class = 'doc-page active-section' %}
   {% endif %}
-  <li class='{{class}}'>{% if pg.url %}<a href='{{ pg.url }}'>{% endif %}<h3>{{ pg.title }}</h3>{% if pg.url %}</a>{% endif %}</li>
+  <li class='{{class}}'>{% if pg.url %}<a href='{{ chapter.url}}{{pg.url }}'>{% endif %}<h3>{{ pg.title }}</h3>{% if pg.url %}</a>{% endif %}</li>
   {% endfor %}
 </ul>
 {% endfor %} 
