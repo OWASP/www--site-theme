@@ -3,7 +3,7 @@
 {% if dev_file.size > 0 %}
 {% assign site_base_url = '/' %}
 {% else %}
-{% assign site_base_url = '{{site.url}}' %}
+{% assign site_base_url = '{{site.github.url}}' %}
 {% endif %}
 {% assign document = site.data.document | where: 'title', page.document | first %}
 <h1>{{ document.title }}</h1>
