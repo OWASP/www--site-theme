@@ -8,7 +8,7 @@
 <ul class='doc-page-ul'>
   {% for pg in chapter.pages %}
   {% assign class = 'doc-page' %}
-  {% if page.title in pg.title %}
+  {% if pg.title contains page.title %}
     {% assign class = 'doc-page active-section' %}
   {% endif %}
   <li class='{{class}}'>{% if pg.url %}<a href='{{ pg.url }}'>{% endif %}<h3>{{ pg.title }}</h3>{% if pg.url %}</a>{% endif %}</li>
