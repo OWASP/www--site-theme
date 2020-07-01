@@ -361,14 +361,14 @@ table {
 }
 
 #disclaimer-container {
-  display: block;
+  display: flex;
   opacity: 0;
   background-color: rgba(20,20,20,0.8);
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 100px;
+  min-height: 100px;
   width:100%;
 }
 
