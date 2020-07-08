@@ -40,8 +40,9 @@ $(function() {
     $(this).closest("#disclaimer-container").remove();
     Cookies.set('cookies-ok', 'true', { expires: 365 });
     // does ga still exist here?
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', '{{ analytics }}', 'auto');
     ga('send', 'pageview');
-
   });
 
   if($(location).attr('href').indexOf('owaps.org') >= 0)
