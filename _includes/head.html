@@ -54,10 +54,14 @@
 
 <script src="{{site_base_url}}assets/js/js.cookie.js"></script>
 <script>
-  
-  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-  ga('create', '{{ analytics }}', 'auto');
-  if(Cookies.get('cookies-ok') == 'true'){
+  if(Cookies.get('cookies-ok') == 'true' && window.ga === undefined)
+  {
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', '{{ analytics }}', 'auto');
+    ga('send', 'pageview');
+  }
+  else if (Cookies.get('cookies-ok') == 'true')
+  {
     ga('send', 'pageview');
   }
 
