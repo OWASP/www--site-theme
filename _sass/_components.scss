@@ -370,6 +370,8 @@ table {
   right: 0;
   min-height: 100px;
   width:100%;
+//   To keep the container on top of everything, especially to avoid the search results being displayed on top of the disclaimer
+  z-index: 1;
 }
 
 .disclaimer-content {
