@@ -14,6 +14,9 @@ altfooter: true
 
 <!-- Build 03 -->
 
+* **ESAPI for Java**: Work for ESAPI 3.0 is still in the early planning stages and ESAPI 2.x is in maintenance / bug-fix mode (i.e., no new features will be added). Unless you are legacy project that is already using ESAPI, you are highly encouraged to read the <a href="#div-exampletwo" onclick="location.hash='div-exampletwo'; location.reload();">"Should I Use ESAPI"</a>&nbsp;tab.
+* **ESAPI for JavaScript**: Okay to use, but need to update the 'bower' dependency to a version later than 1.8.8. GitHub issue #28 has been created to try to get this resolved.
+
 The OWASP Zed Attack Proxy (ZAP) is one of the world’s most popular free security tools and is actively maintained by hundreds of international volunteers*. It can help you automatically find security vulnerabilities in your web applications while you are developing and testing your applications. Its also a great tool for experienced pentesters to use for manual security testing. 
 For more videos see the links on the wiki videos page.
 
