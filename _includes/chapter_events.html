@@ -7,8 +7,8 @@
       // stuff here to load chapter events
       var groupname = '{{ include.group }}';
       $.get("https://owaspadmin.azurewebsites.net/api/GetMeetupEvents?code=7OIbdfrvam1q5dbaZyN5JTZodrtWRHtnzBTtRB8ed1HT2Stax0iLNw==&groupname=" + groupname), function(data) {
-        $("#ch_events_div").html(data);
-        alert('done');
+        
+        $("#ch_events_div").html('Yes, it worked.');
       }  
     });
 
