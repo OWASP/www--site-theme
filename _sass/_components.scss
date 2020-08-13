@@ -295,6 +295,10 @@ site-wide reusable components styling
     tr:nth-child(odd) {
       background-color: $bg-grey;
     }
+    tr.even td:first-child p {
+      text-align: center;
+      min-width: 35px;
+    }
   }
 }
 
