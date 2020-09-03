@@ -76,10 +76,6 @@
 			"title": "EVENTS",
 			"url": "/events/",
 			"items": [{
-				"title": "Virtual AppSec Days - Summer of Security, July | August",
-				"url": "https://appsecdays.org/?utm_source=owasp-web&utm_medium=main-menu&utm_campaign=none",
-				"opentab": "true"
-			},{
 				"title": "Global AppSec 2020 - Virtual",
 				"url": "https://virtual.globalappsec.org/?utm_source=owasp-web&utm_medium=main-menu&utm_campaign=none",
 				"opentab": "true"
