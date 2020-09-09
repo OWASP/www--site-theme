@@ -8,13 +8,13 @@
 {% assign site_base_url = 'https://owasp.org/www--site-theme/' %}
 {% endif %}
 {% if page.document %}
-{% assign title = page.document | append: '| ' %}
+{% assign title = page.document | append: ' | ' %}
 {% assign title = title | append: page.title %}
 {% endif %}
 {% if title %}
-  {% assign title = title | append: '| OWASP Foundation' %}
+  {% assign title = title | append: ' | OWASP Foundation' %}
 {% else %}
-  {% assign title = page.title | append: '| OWASP Foundation' %}
+  {% assign title = page.title | append: ' | OWASP Foundation' %}
 {% endif %}
 {% if page.url contains '-project-' %}
   {% assign title = title | append: ' Projects' %}
