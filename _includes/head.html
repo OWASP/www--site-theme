@@ -27,7 +27,7 @@
 <meta name="description" content="{{ page.pitch | default: default_desc }}">
 <meta property="og:description" content="{{ page.pitch | default: default_desc }}">
 <meta propery="og:title" content="{{ title }}">
-<meta property="og:url" content="{{site.github.url | replace: 'www2.', '' | replace: 'http://', 'https://'}}{{page.url}}">
+<meta property="og:url" content="{{site.github.url | replace: 'www2.', '' | replace: 'http://', 'https://' | replace: 'owasp.github.io', 'owasp.org'}}{{page.url}}">
 <meta property="og:locale" content="en_US">
 {% if site.github.url contains 'projectchapter-example' %}
 <meta name="robots" content="noindex" />
