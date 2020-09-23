@@ -79,11 +79,7 @@
 				"title": "Global AppSec 2020 - Virtual",
 				"url": "https://virtual.globalappsec.org/?utm_source=owasp-web&utm_medium=main-menu&utm_campaign=none",
 				"opentab": "true"
-			}, {
-				"title": "Global AppSec - Dublin, February 15-19, 2021",
-				"url": "https://dublin.globalappsec.org/?utm_source=owasp-web&utm_medium=main-menu&utm_campaign=none",
-				"opentab": "true"
-			}, {
+			},{
 				"title": "Upcoming Chapter Events",
 				"url": "https://owasp.org/chapters/events/",
 				"opentab": "true"
