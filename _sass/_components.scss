@@ -264,6 +264,12 @@ site-wide reusable components styling
       color:black !important;
       background-color: lighten(white, 5%);
     }
+   &.small {
+    background-color: purple;
+    padding: 4px 8px;
+    border-radius: 2.25px;
+    font-size: $font-size*.5;
+    }
   }
 
    //below is select state button like on event registration form 
