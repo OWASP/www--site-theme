@@ -375,6 +375,10 @@ site-wide reusable components styling
     background-color: $grey;
 }
 
+.cta-button-small[disabled=true] {
+  color: $dark;
+  background-color: $grey;
+}
 // table component styling
 .table {
   thead {
