@@ -265,10 +265,9 @@ site-wide reusable components styling
       background-color: lighten(white, 5%);
     }
    &.small {
-    background-color: purple;
     padding: 4px 8px;
     border-radius: 2.25px;
-    font-size: $font-size*.5;
+    font-size: $font-size * 0.5;
     }
   }
 
