@@ -265,9 +265,9 @@ site-wide reusable components styling
       background-color: lighten(white, 5%);
     }
    &.small {
-    padding: 4px 8px;
-    border-radius: 2.25px;
-    font-size: $font-size * 0.85;
+    padding: 4px 8px !important;
+    border-radius: 2.25px !important;
+    font-size: $font-size * 0.85 !important;
     }
   }
 
