@@ -186,6 +186,99 @@ site-wide reusable components styling
 }
 
 // call-to-action buttons
+.cta-button-small {
+  padding: 4px 8px;
+  border-width: 0;
+  border-radius: 3px;
+  font-size: $font-size * 0.85;
+  color: white;
+  background-color: $cta-blue;
+  font-family: 'ubuntu', sans-serif;
+  text-decoration: none !important;
+  &:not([disabled]):hover {
+    color: white;
+    background-color: lighten($cta-blue, 5%);
+  }
+  &:active {
+    color: white;
+    background-color: darken($cta-blue, 5%);
+  }
+  &:visited {
+    color: white;
+  }
+
+  &.dark {
+    background-color: $dark;
+    &:not([disabled]):hover {
+      background-color: lighten($dark, 5%);
+    }
+    &:active {
+      background-color: darken($dark, 5%);
+    }
+  }
+  &.green {
+    background-color: $success;
+    &:not([disabled]):hover {
+      background-color: lighten($success, 2.5%);
+    }
+    &:active {
+      background-color: darken($success, 5%);
+    }
+  }
+  &.grey {
+    background-color: $grey;
+    color: $dark;
+    &:not([disabled]):hover {
+      background-color: lighten($grey, 2.5%);
+    }
+    &:active {
+      background-color: darken($grey, 5%);
+    }
+  }
+  &.black {
+    background-color: black;
+    &:not([disabled]):hover {
+      background-color: lighten(black, 2.5%);
+    }
+    &:active {
+      background-color: darken(black, 5%);
+    }
+  }
+  &.red {
+     background-color: red;
+     &:not([disabled]):hover {
+      background-color: lighten(red, 2.5%);
+    }
+    &:active {
+      background-color: darken(red, 5%);
+    }
+  }
+  &.white {
+     background-color: white;
+     color: black !important;
+     &:not([disabled]):hover {
+       color:black !important;
+      background-color: darken(white, 2.5%);
+    }
+    &:active {
+      color:black !important;
+      background-color: lighten(white, 5%);
+    }
+  }
+
+   //below is select state button like on event registration form 
+  &.selected {
+      background-color: #ff0000;
+      color: #ffffff;
+
+      &:hover {
+        background-color: #ff0000;
+        color: #ffffff;    
+      }
+    }
+}
+
+// call-to-action buttons
 .cta-button {
   padding: 9px 15px;
   border-width: 0;
@@ -263,11 +356,6 @@ site-wide reusable components styling
     &:active {
       color:black !important;
       background-color: lighten(white, 5%);
-    }
-   &.small {
-    padding: 4px 8px !important;
-    border-radius: 2.25px !important;
-    font-size: $font-size * 0.85 !important;
     }
   }
 
