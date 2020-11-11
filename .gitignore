@@ -1,5 +1,18 @@
-/Gemfile
 /Gemfile.lock
 /favicon.ico
 _site/
 devsite.txt
+
+# Eclipse
+# -------
+.project
+.settings
+
+# VS Code
+# -------
+.vscode
+.history
+
+# IDEA
+# ----
+.idea
