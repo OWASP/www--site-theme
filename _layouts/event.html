@@ -27,7 +27,7 @@
           <div>
             <h1>{{ site.data.event-details.title }}</h3>
             <br>
-            <h3 class="info-h3"><a href="{{site.github.url | replace: 'www2.', '' | replace: 'http://', 'https://'}}/venue/about/">{{ site.data.event-details.venue }}</a> |</h3><h4 class='info-h4'>{%if not site.data.event-details.training and not site.data.event-details.conference%}{{ site.data.event-details.dates }}{%endif%}{% if site.data.event-details.training %}Training: {{ site.data.event-details.training }}{% endif %}{% if site.data.event-details.conference %}<br>
+            <h3 class="info-h3"><a href="{{site.github.url | replace: 'www2.', '' | replace: 'http://', 'https://'}}/venue/about/">{{ site.data.event-details.venue }}</a> |</h3><h4 class='info-h4'>{%if site.data.event-details.training == nil and site.data.event-details.conference == nil%}{{ site.data.event-details.dates }}{%endif%}{% if site.data.event-details.training %}Training: {{ site.data.event-details.training }}{% endif %}{% if site.data.event-details.conference %}<br>
               Conference: {{ site.data.event-details.conference }}{%endif%}</h4><br><br>
           </div>
         </div> 
