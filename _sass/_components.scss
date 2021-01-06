@@ -318,14 +318,17 @@ site-wide reusable components styling
       background-color: darken($success, 5%);
     }
   }
+
   &.grey {
     background-color: $grey;
     color: $dark;
     &:not([disabled]):hover {
-      background-color: lighten($grey, 2.5%);
+      background-color: darken($grey, 2.5%);
+      color: #fff;
     }
     &:active {
       background-color: darken($grey, 5%);
+      color: #fff;
     }
   }
   &.black {
