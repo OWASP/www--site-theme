@@ -1,14 +1,12 @@
 <div id="banner" class="notice" aria-label="announcement">
-  <!--
-	<p>Consider <a href="/membership">becoming a Member</a> of the OWASP Foundation. It's affordable and your contributions make a difference.</p>
-  -->
- 
-	<p>Call for Training for ALL 2021 <a href="https://training.owasp.org/">AppSecDays Training Events</a> is open. <a href="https://owasp.submittable.com/submit/181232/2021-virtual-appsec-days-training-events">Apply Now!</a></p>
-	
-	<a href="#" id="close-banner" aria-label="close announcement">
-          <i class="fa fa-times"></i>
-       </a>	  
 </div>
+
+{% assign dev_file = site.static_files | where: "name", "devsite.txt" %}
+{% if dev_file.size > 0 %}
+{% assign site_base_url = '/' %}
+{% else %}
+{% assign site_base_url = 'https://owasp.org/www--site-theme/' %}
+{% endif %}
 
 <style>
   #banner img {
@@ -39,3 +37,56 @@
   }
 }
 </style>
+
+<script type="text/javascript">
+$(function() {
+  var bannerdata = [];
+  banneryaml = YAML.load('{{site_base_url}}assets/sitedata/banner-data.yml');
+  $.each(banneryaml, function (index) {
+        bannerdata.push(this);
+  });
+
+  if(bannerdata.length > 0)
+  {
+      var htmlstring = "";
+      var usebanner = null;
+      var defbanner = null;
+      var checkdate = new Date(); //local time but who cares about the time?
+      bannerdata.forEach( data => {
+          if(data.start)
+          {
+            var start = data.start;
+            
+            if(data.start <= checkdate)
+            {
+              if(data.end)
+              {
+                
+                var end = data.end;
+                if(checkdate < end){
+                  usebanner = data;
+                }
+              }
+              else
+                usebanner = data;
+            }
+          }
+          else {
+            defbanner = data;
+          }
+      });
+      
+      if(defbanner && !usebanner)
+          usebanner = defbanner;
+      if(usebanner)
+      {
+        htmlstring = usebanner.text;
+        htmlstring += "<a href='#' id='close-banner' aria-label='close announcement'><i class='fa fa-times'></i></a>";
+
+        $("#banner").html(htmlstring);
+        $("#banner").removeClass("notice");
+        $("#banner").addClass(usebanner.type);
+      }
+  }
+});
+</script>
