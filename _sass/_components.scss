@@ -430,7 +430,7 @@ table {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 15px 45px;
+  padding: 15px 15px;
   & > *,
   & > * > * {
     margin: 0;
@@ -441,8 +441,10 @@ table {
     text-decoration: underline;
   }
   a#close-banner {
-    position: absolute;
-    right: 15px;
+    //position: absolute;
+    //right: 15px;
+    float:right;
+    padding-left:15px;
     top: 10px;
     font-size: $font-size*1.5; // 27px
     color: currentColor;
