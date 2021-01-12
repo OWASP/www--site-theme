@@ -81,6 +81,11 @@
         $("#banner").html(htmlstring);
         $("#banner").removeClass("notice");
         $("#banner").addClass(usebanner.type);
+
+        $("#close-banner").click(function() {
+          $(this).closest("#banner").remove();
+            Cookies.set('banner-seen', 'true', { expires: 7 });
+        });
       }
     }
   });
