@@ -1,11 +1,9 @@
 <div class='owasp-sidebar-bottom'>
 <h3>Upcoming Global Events</h3>
    {% assign category = site.data.events | where: 'category', 'Global' | first %}
-   {% if category and category.events | size > 0 %}
    <ul>
       {% for event in category.events %}
       <li><a href="{{event.url}}" target="_blank" rel="noopener">{{event.name}}</a></li>
       {% endfor %}
    </ul>
-   {% endif %}
 </div>
