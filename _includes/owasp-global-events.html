@@ -1,6 +1,7 @@
 <div class='owasp-sidebar-bottom'>
 <h3>Upcoming Global Events</h3>
-   {% assign category = site.data.events | where: 'category', 'Global' | first %}
+   <!-- This will not work because site.data.events won't exist across repositories.  Will have to update this file based on events.yml in the owasp.github.io repo -->
+   {% assign category = site.data.events | where: "category", "Global" | first %}
    <ul>
       {% for event in category.events %}
       <li><a href="{{event.url}}" target="_blank" rel="noopener">{{event.name}}</a></li>
