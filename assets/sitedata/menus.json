@@ -75,7 +75,20 @@
 		{
 			"title": "EVENTS",
 			"url": "/events/",
-			"items": [{
+			"items": [
+				{ "title": "Summer of Security Top 6 Re-Run",
+				  "url": "https://training.owasp.org/",
+				 "opentab": "true"
+				},
+				{ "title": "Brain Break",
+				  "url": "https://brainbreak.owasp.org/",
+				 "opentab": "true"
+				},
+				{ "title": "Call to Battle",
+				  "url": "https://calltobattle.owasp.org/",
+				 "opentab": "true"
+				},
+				{
 				"title": "Upcoming Chapter Events",
 				"url": "https://owasp.org/chapters/events/",
 				"opentab": "true"
