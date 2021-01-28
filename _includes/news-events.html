@@ -7,7 +7,8 @@
   </ul>	
   <h3>Upcoming Conferences</h3>
   <ul>
-  {% assign eventlistlower = site.data.events | sort: 'start-date' %}
+  {% assign category = site.data.events | where: 'category', 'Global' | first %}
+  {% assign eventlistlower = category.events | sort: 'start-date' %}
   {% for event in eventlistlower | limit: 4 %}
   <li><a href='{{ event.url }}' target='_blank' rel="noopener noreferrer">{{ event.name }}</a><span style="color:#7C7C7C">, {{ event.dates }}</span></li>
   {% endfor %}  
