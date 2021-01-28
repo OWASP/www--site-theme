@@ -36,3 +36,5 @@ Interested in a ZAP talk or training event? See the talks tab. Not one near you?
 <section id="jumpdiv">
 This is a jump to section
 </section>
+
+{% include news-events.html %}

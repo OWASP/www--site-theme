@@ -8,9 +8,9 @@
   <h3>Upcoming Conferences</h3>
   <ul>
   {% assign category = site.data.events | where: 'category', 'Global' | first %}
-  {% assign eventlistlower = category.events | sort: 'start-date' %}
-  {% for event in eventlistlower | limit: 4 %}
+  {% assign eventlistlower = category.events %}
+  {% for event in eventlistlower | sort: 'start-date' | limit: 4 %}
   <li><a href='{{ event.url }}' target='_blank' rel="noopener noreferrer">{{ event.name }}</a><span style="color:#7C7C7C">, {{ event.dates }}</span></li>
-  {% endfor %}  
+  {% endfor %}
  </ul>
 </section>
