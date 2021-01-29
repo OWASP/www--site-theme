@@ -76,8 +76,12 @@
 			"title": "EVENTS",
 			"url": "/events/",
 			"items": [
-				{ "title": "Summer of Security Top 6 Re-Run",
+				{ "title": "OWASP Virtual Trainings",
 				  "url": "https://training.owasp.org/",
+				 "opentab": "true"
+				},
+				{ "title": "Lightning Conference",
+				  "url": "https://lightning.owasp.org/",
 				 "opentab": "true"
 				},
 				{ "title": "Brain Break",
