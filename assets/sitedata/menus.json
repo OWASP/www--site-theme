@@ -36,13 +36,10 @@
 			},{
 				"title": "Start a New Project...",
 				"url": "https://owasporg.atlassian.net/servicedesk/customer/portal/7/create/70?src=-1419759666",
-				"separator": "true",
-				"opentab": "true"
+				"separator": "true"
 			},{
 				"title": "Google Summer of Code 2021",
-				"url": "https://owasp.org/gsoc/gsoc2021",
-				"separator": "true",
-				"opentab": "true"
+				"url": "https://owasp.org/gsoc/gsoc2021"
 			}]
 		},
 		{
@@ -99,8 +96,7 @@
 				},
 				{
 				"title": "Upcoming Chapter Events",
-				"url": "https://owasp.org/chapters/events/",
-				"opentab": "true"
+				"url": "https://owasp.org/chapters/events/"
 			}, {
 				"title": "Browse All Events...",
 				"url": "/events/",
