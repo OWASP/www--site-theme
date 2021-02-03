@@ -38,6 +38,11 @@
 				"url": "https://owasporg.atlassian.net/servicedesk/customer/portal/7/create/70?src=-1419759666",
 				"separator": "true",
 				"opentab": "true"
+			},{
+				"title": "Google Summer of Code 2021",
+				"url": "https://owasp.org/gsoc/gsoc2021",
+				"separator": "true",
+				"opentab": "true"
 			}]
 		},
 		{
