@@ -78,6 +78,10 @@
 			"title": "EVENTS",
 			"url": "/events/",
 			"items": [
+				{ "title": "OWASP 20th Anniversary",
+				  "url": "https://20thanniversary.owasp.org/",
+				 "opentab": "true"
+				},
 				{ "title": "OWASP Virtual Trainings",
 				  "url": "https://training.owasp.org/",
 				 "opentab": "true"
