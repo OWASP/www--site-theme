@@ -1,0 +1,32 @@
+<footer class="footer-two">
+    <section class="member">
+            <div class="member-wrapper">
+              <section class="member-list">
+{% if site.data.sponsors.size > 0 %}                   
+{% assign corpsupporters = site.data.sponsors | where: 'type', 'corporate' | sort: 'name' %}
+{% assign eventsupporters = site.data.sponsors | where_exp: 'sponsor', 'sponsor.type != "corporate"' | sort: 'name' %}
+{% endif %}
+{% if corpsupporters.size > 0 %}
+<h2>Corporate Supporters</h2>
+<div id="corp_member_div">
+{% for member in corpsupporters %}
+<a href="{{member.url}}" class="member-logo" onclick='handleOutboundLinkClicks(event);' target="_blank" rel="sponsored noopener noreferrer"><img src="{{member.logo}}" alt="image"/></a>
+{% endfor %}
+</div>
+{% endif %}
+{% if eventsupporters.size > 0 %}
+<h2>Event Supporters</h2><br/>
+<div id="event_member_div">
+{% for member in eventsupporters %}
+<a href="{{member.url}}" class="member-logo" onclick='handleOutboundLinkClicks(event);' target="_blank" rel="sponsored noopener noreferrer"><img src="{{member.logo}}" alt="image"/></a>
+{% endfor %}
+</div> 
+{% endif %} 
+              </section>
+            </div>
+          </section>
+          
+    <section class="footer-wrapper">
+      <p class="disclaimer">OWASP, Open Web Application Security Project and Global AppSec are registered trademarks and AppSec Days, AppSec California, SnowFROC, LASCON, and the OWASP logo are trademarks of the OWASP Foundation, Inc. Unless otherwise specified, all content on the site is Creative Commons Attribution-ShareAlike v4.0 and provided without warranty of service or accuracy. For more information, please refer to our <a href="/www-policy/operational/general-disclaimer.html">General Disclaimer</a>. OWASP does not endorse or recommend commercial products or services, allowing our community to remain vendor neutral with the collective wisdom of the best minds in software security worldwide. Copyright {{ "now" | date: "%Y" }}, OWASP Foundation, Inc.</p>
+    </section>
+  </footer>
