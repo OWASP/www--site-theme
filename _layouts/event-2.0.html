@@ -5,6 +5,14 @@
     {% assign reason_info = true %}
   {% endif %}
 {% endfor %}
+
+{% assign dev_file = site.static_files | where: "name", "devsite.txt" %}
+{% if dev_file.size > 0 %}
+{% assign baseurl = '/' %}
+{% else %}
+{% assign baseurl = '' %}
+{% endif %}
+
   <head>
     {% include head.html %}
     <!-- Repo is not used in events but keeping it in case we decide to add it back -->
@@ -27,10 +35,10 @@
     {% assign bigclass = ' big' %}
     {% endif %}
     <main role="main" class="main">
-      <div class='event-image-container{{bigclass}}' style="background-image: url(assets/images/{{site.data.event-details.background}});">
-        <div class='event-header-info-two{{bigclass}}' style="height={{site.data.event-details.event_logo_h | plus: site.data.event-details.event_logo_h}}px !important;">
+      <div class='event-image-container{{bigclass}}' style="background-image: url({{baseurl}}assets/images/{{site.data.event-details.background}});">
+        <div class='event-header-info-two{{bigclass}}'>
           <div>
-            <div style="background-image: url(assets/images/{{site.data.event-details.event_logo}}); background-repeat: no-repeat; background-size: contain;width:{{site.data.event-details.event_logo_w}}px;height:{{site.data.event-details.event_logo_h}}px;margin:auto;"></div>
+            <div style="background-image: url({{baseurl}}assets/images/{{site.data.event-details.event_logo}}); background-repeat: no-repeat; background-size: contain;width:{{site.data.event-details.event_logo_w}}px;height:{{site.data.event-details.event_logo_h}}px;margin:auto;"></div>
               <h1>{{ site.data.event-details.title }}</h3>
               <br>
               <h3 class="info-h3"><a href="{{site.github.url | replace: 'www2.', '' | replace: 'http://', 'https://'}}/venue/about/">{{ site.data.event-details.venue }}</a> |</h3><h4 class='info-h4'>{%if site.data.event-details.training == nil and site.data.event-details.conference == nil%}{{ site.data.event-details.dates }}{%endif%}{% if site.data.event-details.training %}Training: {{ site.data.event-details.training }}{% endif %}{% if site.data.event-details.conference %}<br>

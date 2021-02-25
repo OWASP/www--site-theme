@@ -1,7 +1,7 @@
 ---
 
 title: Theme Test Event
-layout: event
+layout: event-2.0
 permalink: /event-example/
 
 ---
