@@ -7,13 +7,14 @@ logo_url: https://owasp.org/
 venue: Virtual On-line Event
 location: Virtual On-line Event
 background: example-event.jpg
-event_logo: OWASP_20th_Anniversary.svg
+event_logo: OWASP_20th_Anniversary_close.png
 event_logo_x: 0
 event_logo_y: -65
 event_logo_w: 300
 event_logo_h: 300
 color: BBFFBB
 bodycolor: fff
+bigheader: true
 #analytics: 
 #registration_open: true
 pitch: "2021 marks the 20th Anniversary of the OWASP Foundation. 

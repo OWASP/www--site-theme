@@ -385,6 +385,12 @@
 	}
   }
 
+.event-image-container.big{
+	max-height: 600px;
+	height: 600px;
+	padding: inherit;
+}
+
 .alt-wrapper {
 	display: inline-block;
 	background-color:ghostwhite;
@@ -410,6 +416,10 @@
     width: 100%;
     height: 288px;
     background: linear-gradient(to right,$bg-grey, $bg-grey, transparent 78%);
+}
+
+.event-cover.big {
+	height:600px;
 }
 
 .event-header-info {
@@ -441,6 +451,11 @@
 	div {
 		margin-top: 2em;
 	}
+}
+
+.event-header-info-two.big {
+	height: 600px;
+	margin-left: 80px;
 }
 
 section.keynotes-front {

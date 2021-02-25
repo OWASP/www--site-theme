@@ -3,6 +3,9 @@
 _site/
 devsite.txt
 
+# MacOS
+.DS_Store
+
 # Eclipse
 # -------
 .project
