@@ -10,8 +10,8 @@ background: example-event.jpg
 event_logo: OWASP_20th_Anniversary_close.png
 event_logo_x: 0
 event_logo_y: -65
-event_logo_w: 300
-event_logo_h: 300
+event_logo_w: 500
+event_logo_h: 500
 color: BBFFBB
 bodycolor: fff
 bigheader: true
