@@ -662,12 +662,6 @@ section.team-list {
 			margin-left: 8px;
 		}
 	}
-	
-	.event-header-info-two.big {
-		height: 200px;
-		margin-left: 8px;
-	}
-	
 }
 
 @media (max-width: 800px) {
@@ -790,6 +784,14 @@ section.team-list {
 		}
 		.event-site-details {
 			margin-top:20px;
+		}
+
+		.event-header-info-two.big {
+			height: 200px;
+			margin-left: 8px;
+		}
+		.event-cover.big {
+			height: 200px;
 		}
 	}
 }
