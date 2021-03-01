@@ -430,7 +430,6 @@
 
 .event-header-info-two.big {
 	height: 600px;
-	margin-left: 80px;
 }
 
 section.keynotes-front {
@@ -710,11 +709,18 @@ section.team-list {
 
 // Event 2.0 below
 .event {
+	.event-site-details {
+		margin-top:200px;
+		float: left;
+	}
+
 	.event-logo-div {
 		float: left;
 		background-repeat: no-repeat; 
 		background-size: contain;
 		margin: auto;
+		width: 500px;
+		height: 500px;
 	}
 
 	.event-image-container.big{
@@ -780,6 +786,41 @@ section.team-list {
 		.event-logo-div{
 			width: 200px;
 			height: 200px;
+			float: left;
+		}
+		.event-site-details {
+			margin-top:20px;
+		}
+	}
+}
+
+@media (max-width: 1332px) {
+	//todo: event logo smaller, change margin-top on text
+	.event{	
+		.footer-two {
+			min-width: 500px;
+		}
+		.event-header-info-two {
+			min-width: 500px;
+		}
+	}
+}
+
+@media (max-width: 1305px) {
+	//todo: event logo smaller, change margin-top on text
+	.event{	
+		.event-pricing-two {
+			float: none;
+		}
+	}
+}
+
+
+@media (max-width: 1132px) {
+	//todo: event logo smaller, change margin-top on text
+	.event{	
+		.event-header-info-two{
+			top: 140px;
 		}
 	}
 }
