@@ -307,19 +307,6 @@
 	footer {
 		margin: 0;	
 	}
-
-	.footer-two {
-		margin: auto;
-		min-width: 1280px;
-		max-width: 1280px;
-	}
-
-	.main-two {
-		margin: auto;
-		min-width: 1280px;
-		max-width: 1280px;
-	}
-
 	.footer-wrapper {
 		margin: 1em;
 	}
@@ -385,11 +372,7 @@
 	}
   }
 
-.event-image-container.big{
-	max-height: 600px;
-	height: 600px;
-	padding: inherit;
-}
+
 
 .alt-wrapper {
 	display: inline-block;
@@ -400,14 +383,6 @@
 	background-color:white;
 }
 
-.alt-wrapper-two {
-	display: inline-block;
-	background-color:ghostwhite;
-}
-
-.alt-wrapper-two:nth-child(even) {
-	background-color:inherit;
-}
 
 .event-cover {
 	position: absolute;
@@ -552,17 +527,7 @@ div.keynote-full {
 	}
 }
 
-.event-pricing-two {
-	float: right;
-	max-width: 40%;
-	padding: 12px;
-	background-color: inherit;
-	box-shadow: 0 2px 3px #d8d8d8;
-	border-radius: 4px;
-	h3 {
-		margin-top: 16px;
-	}
-}
+
 
 .event-price {
 	float:right;
@@ -698,6 +663,12 @@ section.team-list {
 			margin-left: 8px;
 		}
 	}
+	
+	.event-header-info-two.big {
+		height: 200px;
+		margin-left: 8px;
+	}
+	
 }
 
 @media (max-width: 800px) {
@@ -734,5 +705,76 @@ section.team-list {
 @media (max-width: 450px) {
 	.event-banner {
 		font-size: x-small;
+	}
+}
+
+// Event 2.0 below
+.event {
+	.event-logo-div {
+		float: left;
+		background-repeat: no-repeat; 
+		background-size: contain;
+		margin: auto;
+	}
+
+	.event-image-container.big{
+		max-height: 600px;
+		height: 600px;
+		padding: inherit;
+	}
+
+	.alt-wrapper-two {
+		display: inline-block;
+		background-color:ghostwhite;
+	}
+
+	.alt-wrapper-two:nth-child(even) {
+		background-color:inherit;
+	}
+
+	.event-pricing-two {
+		float: right;
+		max-width: 40%;
+		padding: 12px;
+		background-color: inherit;
+		box-shadow: 0 2px 3px #d8d8d8;
+		border-radius: 4px;
+		h3 {
+			margin-top: 16px;
+		}
+	}
+
+	.event-header-info-two {
+		div {
+			margin-top: 8px;
+		}
+	}
+
+	.footer-two {
+		margin: auto;
+		min-width: 1280px;
+		max-width: 1280px;
+	}
+
+	.main-two {
+		margin: auto;
+		min-width: 1280px;
+		max-width: 1280px;
+	}
+
+}
+
+@media (max-width: 2075px) {
+	//todo: event logo smaller, change margin-top on text
+	.event{	
+		.event-image-container.big{
+			max-height: 300px;
+			height: 300px;
+			padding: inherit;
+		}
+		.event-logo-div{
+			width: 200px;
+			height: 200px;
+		}
 	}
 }
