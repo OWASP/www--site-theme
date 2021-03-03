@@ -435,7 +435,6 @@ table {
   & > * > * {
     margin: 0;
     padding: 0;
-    color: white;
   }
   a {
     text-decoration: underline;
@@ -457,12 +456,19 @@ table {
   }
   &.notice {
     background-color: $bg-blue;
+    color: white;
+  }
+  &.alert {
+    background-color: $alert;
+    color: black !important;
   }
   &.warning {
     background-color: $warning;
+    color: white;
   }
   &.success {
     background-color: $success;
+    color: white;
   }
 }
 
