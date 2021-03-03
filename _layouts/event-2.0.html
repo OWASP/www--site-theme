@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+{% assign reason_info = false %}
 {% for static_file in site.static_files %}
   {% if static_file.path contains '_includes/reasons.md' %}
     {% assign reason_info = true %}
@@ -40,7 +41,7 @@
           <div style="width:50%; margin:auto;">
             <div class="event-logo-div" style="background-image: url({{baseurl}}assets/images/{{site.data.event-details.event_logo}});"></div>
 
-            <div class='event-site-details;'>
+            <div class='event-site-details'>
               <h1>{{ site.data.event-details.title }}</h1>
               <br>
               <h3><a href="{{site.github.url | replace: 'www2.', '' | replace: 'http://', 'https://'}}/venue/about/">{{ site.data.event-details.venue }}</a> |</h3><h4>{%if site.data.event-details.training == nil and site.data.event-details.conference == nil%}{{ site.data.event-details.dates }}{%endif%}{% if site.data.event-details.training %}Training: {{ site.data.event-details.training }}{% endif %}{% if site.data.event-details.conference %}<br>

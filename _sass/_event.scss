@@ -704,8 +704,10 @@ section.team-list {
 // Event 2.0 below
 .event {
 	.event-site-details {
-		margin-top:200px;
-		float: left;
+		background-color: rgba(255,255,255,0.5);
+		padding: 24px;
+		border-radius: 16px;
+		height: 524px;
 	}
 
 	.event-logo-div {
@@ -782,8 +784,9 @@ section.team-list {
 			height: 200px;
 			float: left;
 		}
-		.event-site-details {
-			margin-top:20px;
+
+		.event-site-details{
+			height: 244px;
 		}
 
 		.event-header-info-two.big {
