@@ -13,3 +13,5 @@ And other things
 | Time to Test Tables | Yep Yep |
 |:---|:---|
 | Hello | Howdy |
+
+Rebuild
