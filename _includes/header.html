@@ -5,8 +5,8 @@
       <a href="#" class="menu-toggler" aria-hidden="true">
         <i class="fa fa-bars"></i>
       </a>
-      <a href="/" class="alt-logo" aria-label="go to homepage">
-          <img src="/assets/images/logo.png" alt="OWASP logo">
+      <a href="https://owasp.org/" class="alt-logo" aria-label="go to homepage">
+          <img src="https://owasp.org/assets/images/logo.png" alt="OWASP logo">
       </a>
       <div id="overlay" class="remove-el">
 
@@ -15,13 +15,13 @@
     </nav>
     
     <nav class="top-nav" role="navigation" aria-label="primary navigation">
-      <a href="/" class="desktop-logo" aria-label="go to homepage">
-        <img src="/assets/images/logo.png" alt="">
+      <a href="https://owasp.org/" class="desktop-logo" aria-label="go to homepage">
+        <img src="https://owasp.org/assets/images/logo.png" alt="">
       </a>
       <!-- jekyll menu stuff -->
       
       <div class="interactive-wrapper">
-        <form role="search" method="get" action="/search">   
+        <form role="search" method="get" action="https://owasp.org/search">   
           <div class='search-div'>
             <input id="searchString" name="searchString" class="search-bar" type="search" placeholder="Search OWASP.org" required="true">
             <button id="search-button" type="submit" class="fa fa-search">
@@ -44,8 +44,8 @@
     {% include cookie-disclaimer.html %}
   </div>
   <div class="mobile" style="width:100%;margin:auto;">
-    <div style="float:left;width:50%;margin:auto;padding-left:25%;"><a href="/donate?reponame={{ site.github.repository_name }}{{ pagetitle }}" class="cta-button green">Donate</a></div>
-    <div style="float:right;width:50%;margin:auto;padding-right:25%"><a href="/membership" class="cta-button">Join</a></div>
+    <div style="float:left;width:50%;margin:auto;padding-left:25%;"><a href="https://owasp.org/donate?reponame={{ site.github.repository_name }}{{ pagetitle }}" class="cta-button green">Donate</a></div>
+    <div style="float:right;width:50%;margin:auto;padding-right:25%"><a href="https://owasp.org/membership" class="cta-button">Join</a></div>
   </div>
 {% assign dev_file = site.static_files | where: "name", "devsite.txt" %}
 {% if dev_file.size > 0 %}
@@ -72,7 +72,7 @@
 
           mlistr += "<li><a href='#' class='menu-toggler' aria-hidden='true'><i class='fa fa-times'></i></a></li>";
           mlistr += "<li>";
-          mlistr += "<form role='search' method='get' action='/search'>";   
+          mlistr += "<form role='search' method='get' action='https://owasp.org/search'>";   
           mlistr += "<div class='search-div'>";
           mlistr += "<input id='searchString' aria-label='search input' name='searchString' class='search-bar' type='search' placeholder='Search OWASP.org' required='true'>";
           mlistr += "<button id='search-button' aria-label='search button' type='submit' class='fa fa-search' style='padding-left: 8px;'></button></div></form>";
@@ -122,9 +122,9 @@
               mlistr += "</li>";
           });
           listr += "</ul>";
-          mlistr += "<li><a href='/donate'>MAKE A DONATION</a></li>";
-          mlistr += "<li><a href='/membership'>BECOME A MEMBER</a></li>";
-          mlistr += "<li><a href='/sitemap'>SITEMAP</a></li>";
+          mlistr += "<li><a href='https://owasp.org/donate'>MAKE A DONATION</a></li>";
+          mlistr += "<li><a href='https://owasp.org/membership'>BECOME A MEMBER</a></li>";
+          mlistr += "<li><a href='https://owasp.org/sitemap'>SITEMAP</a></li>";
           mlistr += "</ul>";
           
           $('.desktop-logo').after(listr);
