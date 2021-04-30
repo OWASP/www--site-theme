@@ -15,8 +15,12 @@
 {% endif %}
 {% assign register-text = 'Register' %}
 {% if site.data.event-details.registertext %}
-{% assign register-text = site.data.event-details.registertext %}
-{% endif %} 
+    {% if page.lang %}
+        {% assign register-text = site.data.event-details.registertext.[page.lang] %}
+    {% else %}
+        {% assign register-text = site.data.event-details.registertext %}
+    {% endif %}
+{% endif %}
   <head>
     {% include head.html %}
     <!-- Repo is not used in events but keeping it in case we decide to add it back -->
@@ -48,11 +52,11 @@
               <h1>{{ site.data.event-details.title }}</h1>
               <br>
               <h3><a href="{{site.github.url | replace: 'www2.', '' | replace: 'http://', 'https://'}}/venue/about/">{{ site.data.event-details.venue }}</a>&nbsp;</h3><h4>{%if site.data.event-details.training == nil and site.data.event-details.conference == nil%}{{ site.data.event-details.dates }}{%endif%}{% if site.data.event-details.training %}Training: {{ site.data.event-details.training }}{% endif %}{% if site.data.event-details.conference %}<br>
-                Conference: {{ site.data.event-details.conference }}{%endif%}</h4><br><br>     
-            </div>  
-            
+                Conference: {{ site.data.event-details.conference }}{%endif%}</h4><br><br>
+            </div>
+
           </div>
-        </div> 
+        </div>
       </div>
       <!--<div class="event-cover{{bigclass}}" style="background: linear-gradient(to right,#{{site.data.event-details.bodycolor}}, transparent 78%, #{{site.data.event-details.bodycolor}});"></div>-->
       <div class="event-banner" style="background-color:#{{ site.data.event-details.color }};" >
@@ -65,7 +69,7 @@
               <a href="{{ site.data.event-details.registration_url }}" class="cta-button blue">{{ register-text }}</a>
             </div>
         </div>
-      </div> 
+      </div>
       <div class="main-wrapper event-wrapper">
           <div class="left-70">
           {{ content }}
@@ -86,10 +90,10 @@
           {% endif %}
       </div>
     </main>
-    
-    
+
+
 
     {% include evnt-footer-2.0.html %}
-    
+
   </body>
 </html>

@@ -1,7 +1,11 @@
 {% if site.data.pricing.size > 0 %}
 {% assign register-text = 'Register' %}
 {% if site.data.event-details.registertext %}
-{% assign register-text = site.data.event-details.registertext %}
+    {% if page.lang %}
+        {% assign register-text = site.data.event-details.registertext.[page.lang] %}
+    {% else %}
+        {% assign register-text = site.data.event-details.registertext %}
+    {% endif %}
 {% endif %}
 <div class="event-pricing">
     <div class="full-width">

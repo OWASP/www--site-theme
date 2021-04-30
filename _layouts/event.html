@@ -7,8 +7,12 @@
 {% endfor %}
 {% assign register-text = 'Register' %}
 {% if site.data.event-details.registertext %}
-{% assign register-text = site.data.event-details.registertext %}
-{% endif %} 
+    {% if page.lang %}
+        {% assign register-text = site.data.event-details.registertext.[page.lang] %}
+    {% else %}
+        {% assign register-text = site.data.event-details.registertext %}
+    {% endif %}
+{% endif %}
   <head>
     {% include head.html %}
     <script type="text/javascript">
@@ -34,7 +38,7 @@
             <h3 class="info-h3"><a href="{{site.github.url | replace: 'www2.', '' | replace: 'http://', 'https://'}}/venue/about/">{{ site.data.event-details.venue }}</a> |</h3><h4 class='info-h4'>{%if site.data.event-details.training == nil and site.data.event-details.conference == nil%}{{ site.data.event-details.dates }}{%endif%}{% if site.data.event-details.training %}Training: {{ site.data.event-details.training }}{% endif %}{% if site.data.event-details.conference %}<br>
               Conference: {{ site.data.event-details.conference }}{%endif%}</h4><br><br>
           </div>
-        </div> 
+        </div>
       </div>
       <div class="event-cover"></div>
       <div class="event-banner" style="background-color:#{{ site.data.event-details.color }};" >
@@ -47,7 +51,7 @@
               <a href="{{ site.data.event-details.registration_url }}" class="cta-button blue">{{ register-text }}</a>
             </div>
         </div>
-      </div> 
+      </div>
       <div class="main-wrapper event-wrapper">
           <div class="left-70">
           {{ content }}
@@ -68,10 +72,10 @@
           {% endif %}
       </div>
     </main>
-    
-    
+
+
 
     {% include evnt-footer.html %}
-    
+
   </body>
 </html>

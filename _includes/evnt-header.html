@@ -76,19 +76,9 @@
             </ul>
         <div class="interactive-wrapper">
             <div class="nav-button" aria-label="register for event">
-            <a href="{{ site.data.event-details.registration_url }}" class="cta-button blue">{{ register-text }}</a>
-
-            {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
-            {% if pages.size > 0 %}
-            <ul style="text-align: right;">
-                {% for page in pages %}
-                <li style="display:inline;">
-                    <a id="{{ page.lang }}-site" href="{{ page.url | relative_url }}">{{ page.lang }}</a>
-                </li>
-                {% endfor %}
-            </ul>
-            {% endif %}
-          </div>
+                <a href="{{ site.data.event-details.registration_url }}" class="cta-button blue">{{ register-text }}</a>
+            </div>
+            Z
         </div>
       </nav>
     </div>
