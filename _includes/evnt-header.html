@@ -1,10 +1,14 @@
 <header role="banner">
-  {% assign register-text = 'Register' %}
-        {% if site.data.event-details.registertext %}
-        {% assign register-text = site.data.event-details.registertext %}
-        {% endif %} 
+    {% assign register-text = 'Register' %}
+    {% if site.data.event-details.registertext %}
+        {% if page.lang %}
+            {% assign register-text = site.data.event-details.registertext.[page.lang] %}
+        {% else %}
+            {% assign register-text = site.data.event-details.registertext %}
+        {% endif %}
+    {% endif %}
     <div class="event-header-wrapper" aria-label="main navigation">
-  
+
       <nav class="alt-nav">
         <a href="#" class="menu-toggler" aria-hidden="true">
           <i class="fa fa-bars"></i>
@@ -34,7 +38,7 @@
                           {% endif %}
                       {% endif %}
                    {% endfor %}
-                  </ul>  
+                  </ul>
                   </div>
                 {% endif %}
           </li>
@@ -42,7 +46,7 @@
         <li><a href='{{site.data.event-details.registration_url}}'>{{register-text}}</a></li>
         </ul>
       </nav>
-      
+
       <nav class="top-nav" role="navigation" aria-label="primary navigation">
         <a href="{{ site.data.event-details.logo_url | default: '/' }}" class="desktop-logo" aria-label="go to event homepage">
           <img src="/assets/images/logo.png" alt="">
@@ -65,7 +69,7 @@
                           {% endif %}
                       {% endif %}
                    {% endfor %}
-                </ul>  
+                </ul>
                 {% endif %}
               </li>
             {% endfor %}
@@ -73,6 +77,17 @@
         <div class="interactive-wrapper">
             <div class="nav-button" aria-label="register for event">
             <a href="{{ site.data.event-details.registration_url }}" class="cta-button blue">{{ register-text }}</a>
+
+            {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+            {% if pages.size > 0 %}
+            <ul style="text-align: right;">
+                {% for page in pages %}
+                <li style="display:inline;">
+                    <a id="{{ page.lang }}-site" href="{{ page.url | relative_url }}">{{ page.lang }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+            {% endif %}
           </div>
         </div>
       </nav>
@@ -95,4 +110,4 @@
         });
       </script>
   </header>
-  
+
