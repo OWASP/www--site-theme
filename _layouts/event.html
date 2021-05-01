@@ -7,8 +7,12 @@
 {% endfor %}
 {% assign register-text = 'Register' %}
 {% if site.data.event-details.registertext %}
-{% assign register-text = site.data.event-details.registertext %}
-{% endif %} 
+    {% if page.lang %}
+        {% assign register-text = site.data.event-details.registertext[page.lang] %}
+    {% else %}
+        {% assign register-text = site.data.event-details.registertext %}
+    {% endif %}
+{% endif %}
   <head>
     {% include head.html %}
     <script type="text/javascript">
@@ -29,25 +33,85 @@
       <div class='event-image-container' style="background-image: url(assets/images/{{site.data.event-details.background}});">
         <div class='event-header-info'>
           <div>
-            <h1>{{ site.data.event-details.title }}</h3>
+            <h1>{{ site.data.event-details.title }}</h1>
             <br>
-            <h3 class="info-h3"><a href="{{site.github.url | replace: 'www2.', '' | replace: 'http://', 'https://'}}/venue/about/">{{ site.data.event-details.venue }}</a> |</h3><h4 class='info-h4'>{%if site.data.event-details.training == nil and site.data.event-details.conference == nil%}{{ site.data.event-details.dates }}{%endif%}{% if site.data.event-details.training %}Training: {{ site.data.event-details.training }}{% endif %}{% if site.data.event-details.conference %}<br>
-              Conference: {{ site.data.event-details.conference }}{%endif%}</h4><br><br>
+            <h3 class="info-h3">
+              <a href="{{site.github.url | replace: 'www2.', '' | replace: 'http://', 'https://'}}/venue/about/">
+                {% if page.lang %}
+                  {{ site.data.event-details.venue[page.lang] }}
+                {% else %}
+                  {{ site.data.event-details.venue }}
+                {% endif %}
+              </a> |
+            </h3>
+            <h4 class='info-h4'>
+              {%if site.data.event-details.training == nil and site.data.event-details.conference == nil%}
+                {% if page.lang %}
+                  {{ site.data.event-details.dates[page.lang] }}
+                {% else %}
+                  {{ site.data.event-details.dates }}
+                {% endif %}
+              {%endif%}
+              {% if site.data.event-details.training %}
+                {% if page.lang %}
+                  {{site.data.translations[page.lang].training}}: {{ site.data.event-details.training[page.lang] }}
+                {% else %}
+                  Training: {{ site.data.event-details.training }}
+                {% endif %}
+              {% endif %}
+              {% if site.data.event-details.conference %}<br>
+                {% if page.lang %}
+                  {{site.data.translations[page.lang].conference}}: {{ site.data.event-details.conference[page.lang] }}
+                {% else %}
+                  Conference: {{ site.data.event-details.conference }}
+                {% endif %}
+              {%endif%}
+            </h4><br><br>
           </div>
-        </div> 
+        </div>
       </div>
       <div class="event-cover"></div>
       <div class="event-banner" style="background-color:#{{ site.data.event-details.color }};" >
         <div>
-          <h1>{{ site.data.event-details.title }}</h3>
+          <h1>{{ site.data.event-details.title }}</h1>
             <br>
-            <h3 class="info-h3"><a href="{{site.github.url | replace: 'www2.', '' | replace: 'http://', 'https://'}}/venue/about/">{{ site.data.event-details.venue }}</a> |</h3><h4 class='info-h4'>Training: {{ site.data.event-details.training }}{%if site.data.event-details.conference %}<br>
-              Conference: {{ site.data.event-details.conference }}{%endif%}</h4><br><br>
+            <h3 class="info-h3">
+              <a href="{{site.github.url | replace: 'www2.', '' | replace: 'http://', 'https://'}}/venue/about/">
+                {% if page.lang %}
+                  {{ site.data.event-details.venue[page.lang] }}
+                {% else %}
+                  {{ site.data.event-details.venue }}
+                {% endif %}
+              </a> |
+            </h3>
+            <h4 class='info-h4'>
+              {%if site.data.event-details.training == nil and site.data.event-details.conference == nil%}
+                {% if page.lang %}
+                  {{ site.data.event-details.dates[page.lang] }}
+                {% else %}
+                  {{ site.data.event-details.dates }}
+                {% endif %}
+              {%endif%}
+              {% if site.data.event-details.training %}
+                {% if page.lang %}
+                  {{site.data.translations[page.lang].training}}: {{ site.data.event-details.training[page.lang] }}
+                {% else %}
+                  Training: {{ site.data.event-details.training }}
+                {% endif %}
+              {% endif %}
+              {% if site.data.event-details.conference %}<br>
+                {% if page.lang %}
+                  {{site.data.translations[page.lang].conference}}: {{ site.data.event-details.conference[page.lang] }}
+                {% else %}
+                  Conference: {{ site.data.event-details.conference }}
+                {% endif %}
+              {%endif%}
+            </h4><br><br>
             <div class="nav-button right" aria-label="register for event">
               <a href="{{ site.data.event-details.registration_url }}" class="cta-button blue">{{ register-text }}</a>
             </div>
         </div>
-      </div> 
+      </div>
       <div class="main-wrapper event-wrapper">
           <div class="left-70">
           {{ content }}
@@ -68,10 +132,7 @@
           {% endif %}
       </div>
     </main>
-    
-    
 
     {% include evnt-footer.html %}
-    
   </body>
 </html>

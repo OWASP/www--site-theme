@@ -1,98 +1,123 @@
 <header role="banner">
-  {% assign register-text = 'Register' %}
-        {% if site.data.event-details.registertext %}
-        {% assign register-text = site.data.event-details.registertext %}
-        {% endif %} 
-    <div class="event-header-wrapper" aria-label="main navigation">
-  
-      <nav class="alt-nav">
-        <a href="#" class="menu-toggler" aria-hidden="true">
-          <i class="fa fa-bars"></i>
-        </a>
-        <a href="{{ site.data.event-details.logo_url | default: '/' }}" class="alt-logo" aria-label="go to event homepage" target="_blank" rel="noopener">
-            <img src="/assets/images/logo.png" alt="OWASP logo">
-        </a>
-        <div id="overlay" class="remove-el"></div>
-        <!-- jekyll mobile menu stuff -->
-        <ul class='mobile-menu hide-el' role='navigation' aria-label='mobile primary navigation'>
-          <li><a href='#' class='menu-toggler' aria-hidden='true'><i class='fa fa-times'></i></a></li>
-        {% for menu in site.data.menu %}
-            {% if menu.items == nil or menu.items.size < 1 %}
-              <li><a href="{{ menu.url }}">{{ menu.title }}</a>
-            {% else %}
-                  <button class='accordion'> <li>{{ menu.title }}</button>
-                  <div class='panel'>
-                  <ul>
-                   {% for item in menu.items %}
-                      {% if item.separator %}
-                      <li class='separator'>
-                      {% else %}
-                          {% if item.opentab %}
-                          <li><a href="{{ item.url }} " target='_blank' rel='noopener'>{{ item.title }}</a></li>
-                          {% else %}
-                            <li><a href='{{ item.url }}'>{{ item.title }}</a></li>
-                          {% endif %}
-                      {% endif %}
-                   {% endfor %}
-                  </ul>  
-                  </div>
-                {% endif %}
-          </li>
-        {% endfor %}
-        <li><a href='{{site.data.event-details.registration_url}}'>{{register-text}}</a></li>
-        </ul>
-      </nav>
-      
-      <nav class="top-nav" role="navigation" aria-label="primary navigation">
-        <a href="{{ site.data.event-details.logo_url | default: '/' }}" class="desktop-logo" aria-label="go to event homepage">
-          <img src="/assets/images/logo.png" alt="">
-        </a>
-        <!--<h1>{{ page.title }}</h1>-->
-        <!-- jekyll menu stuff -->
-        <ul aria-label='header menu'>
-            {% for menu in site.data.menu %}
-            <li><a href='{{ menu.url }}'>{{ menu.title }}</a>
-                {% if menu.items %}
-                <ul class='dropdown-menu'>
-                   {% for item in menu.items %}
-                      {% if item.separator %}
-                      <li class='separator'>
-                      {% else %}
-                          {% if item.opentab %}
-                          <li><a href="{{ item.url }}" target='_blank' rel='noopener'>{{ item.title }}</a></li>
-                          {% else %}
-                            <li><a href='{{ item.url }}'>{{ item.title }}</a></li>
-                          {% endif %}
-                      {% endif %}
-                   {% endfor %}
-                </ul>  
-                {% endif %}
-              </li>
-            {% endfor %}
-            </ul>
-        <div class="interactive-wrapper">
-            <div class="nav-button" aria-label="register for event">
-            <a href="{{ site.data.event-details.registration_url }}" class="cta-button blue">{{ register-text }}</a>
-          </div>
-        </div>
-      </nav>
-    </div>
-    <script type="text/javascript">
-      $(function(){
-              $(".accordion").click(function () {
-                  $(this).toggleClass("active");
-                  if($(this).next('.panel').css('display') == 'block'){
-                    $(this).next('.panel').css('display', 'none');
-                  }
-                  else {
-                    $(this).next('.panel').css('display', 'block');
-                  }
-                });
+    {% assign register-text = 'Register' %}
+    {% if site.data.event-details.registertext %}
+        {% if page.lang %}
+            {% assign register-text = site.data.event-details.registertext[page.lang] %}
+        {% else %}
+            {% assign register-text = site.data.event-details.registertext %}
+        {% endif %}
+    {% endif %}
 
-                $(".menu-toggler").click(function() {
-                  $(".mobile-menu").toggleClass('hide-el');
-                });
-        });
-      </script>
-  </header>
-  
+    {% if page.lang %}
+        {% assign menuitems = site.data.menu | where: 'lang', page.lang %}
+    {% else %}
+        {% assign menuitems = site.data.menu %}
+    {% endif %}
+
+    <div class="event-header-wrapper" aria-label="main navigation">
+        <nav class="alt-nav">
+            <a href="#" class="menu-toggler" aria-hidden="true">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="{{ site.data.event-details.logo_url | default: '/' }}" class="alt-logo"
+               aria-label="go to event homepage" target="_blank" rel="noopener">
+                <img src="/assets/images/logo.png" alt="OWASP logo">
+            </a>
+            <div id="overlay" class="remove-el"></div>
+
+            <!-- jekyll mobile menu stuff -->
+            <ul class='mobile-menu hide-el' role='navigation' aria-label='mobile primary navigation'>
+                <li><a href='#' class='menu-toggler' aria-hidden='true'><i class='fa fa-times'></i></a></li>
+                {% for menu in menuitems %}
+                    {% if menu.items == nil or menu.items.size < 1 %}
+                        <li><a href="{{ menu.url }}">{{ menu.title }}</a>
+                    {% else %}
+                        <li><button class='accordion'>{{ menu.title }}</button>
+                            <div class='panel'>
+                                <ul>
+                                    {% for item in menu.items %}
+                                        {% if item.separator %}
+                                            <li class='separator'>
+                                        {% else %}
+                                            {% if item.opentab %}
+                                                <li><a href="{{ item.url }} " target='_blank' rel='noopener'>{{ item.title }}</a></li>
+                                            {% else %}
+                                                <li><a href='{{ item.url }}'>{{ item.title }}</a></li>
+                                            {% endif %}
+                                        {% endif %}
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+                <li><a href='{{site.data.event-details.registration_url}}'>{{register-text}}</a></li>
+            </ul>
+        </nav>
+
+        <nav class="top-nav" role="navigation" aria-label="primary navigation">
+            <a href="{{ site.data.event-details.logo_url | default: '/' }}" class="desktop-logo"
+               aria-label="go to event homepage">
+                <img src="/assets/images/logo.png" alt="">
+            </a>
+
+            <!-- jekyll menu stuff -->
+            <ul aria-label='header menu'>
+                {% for menu in menuitems %}
+                    <li><a href='{{ menu.url }}'>{{ menu.title }}</a>
+                        {% if menu.items %}
+                            <ul class='dropdown-menu'>
+                                {% for item in menu.items %}
+                                    {% if item.separator %}
+                                        <li class='separator'>
+                                    {% else %}
+                                        {% if item.opentab %}
+                                            <li><a href="{{ item.url }}" target='_blank' rel='noopener'>{{ item.title }}</a></li>
+                                        {% else %}
+                                            <li><a href='{{ item.url }}'>{{ item.title }}</a></li>
+                                        {% endif %}
+                                    {% endif %}
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    </li>
+                {% endfor %}
+            </ul>
+
+            <div class="interactive-wrapper">
+                <div class="nav-button" aria-label="register for event">
+                    <a href="{{ site.data.event-details.registration_url }}" class="cta-button blue">{{ register-text }}</a>
+                </div>
+                {% if page.lang != nil %}
+                    {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+                    {% if pages.size > 0 %}
+                        <ul style="text-align: right;">
+                            {% for page in pages %}
+                                <li style="display:inline;">
+                                    <a id="{{ page.lang }}-site" href="{{ page.url | relative_url }}">{{ page.lang }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                {% endif %}
+            </div>
+        </nav>
+    </div>
+
+    <script type="text/javascript">
+      $(function () {
+        $('.accordion').click(function () {
+          $(this).toggleClass('active')
+          if ($(this).next('.panel').css('display') == 'block') {
+            $(this).next('.panel').css('display', 'none')
+          } else {
+            $(this).next('.panel').css('display', 'block')
+          }
+        })
+
+        $('.menu-toggler').click(function () {
+          $('.mobile-menu').toggleClass('hide-el')
+        })
+      })
+    </script>
+</header>
