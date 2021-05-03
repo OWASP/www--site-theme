@@ -19,7 +19,7 @@
 
 /* Show Google custom search metadata without compromising the sort by dropdown */
 .gsc-selected-option {
-    min-width: 130% !important;
+    width: max-content !important;
 }
 
 /* Hide the Google branding in search results */

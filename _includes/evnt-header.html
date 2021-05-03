@@ -1,4 +1,8 @@
 <header role="banner">
+  {% assign register-text = 'Register' %}
+        {% if site.data.event-details.registertext %}
+        {% assign register-text = site.data.event-details.registertext %}
+        {% endif %} 
     <div class="event-header-wrapper" aria-label="main navigation">
   
       <nav class="alt-nav">
@@ -35,7 +39,7 @@
                 {% endif %}
           </li>
         {% endfor %}
-        <li><a href='{{site.data.event-details.registration_url}}'>JOIN US</a></li>
+        <li><a href='{{site.data.event-details.registration_url}}'>{{register-text}}</a></li>
         </ul>
       </nav>
       
@@ -68,7 +72,7 @@
             </ul>
         <div class="interactive-wrapper">
             <div class="nav-button" aria-label="register for event">
-            <a href="{{ site.data.event-details.registration_url }}" class="cta-button blue">Join Us</a>
+            <a href="{{ site.data.event-details.registration_url }}" class="cta-button blue">{{ register-text }}</a>
           </div>
         </div>
       </nav>

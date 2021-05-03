@@ -1,0 +1,22 @@
+- title: HOME
+  url: /
+- title: PROGRAM MENU LONG TITLE
+  items:
+    - title: Schedule
+      url : /www--site-theme/event-example
+    - title: Keynotes
+      url : /www--site-theme/event-example
+    - title: Training
+      url : /www-site-theme/event-example
+    - title: Call for Speakers/Trainers
+      url : /www-site-theme/event-example
+- title: ABOUT
+  items:
+    - title: Sponsors & Exhibitors
+      url  : /www--site-theme/event-example
+    - title: Volunteer
+      url  : /www--site-theme/event-example
+    - title: Venue, Travel, & Lodging
+      url  : /www--site-theme/event-example
+    - title: Progam Team
+      url  : /www--site-theme/event-example
