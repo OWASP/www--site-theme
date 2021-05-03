@@ -15,7 +15,7 @@
 </div>
 {% endif %}
 {% if eventsupporters.size > 0 %}
-<h2>Event Supporters</h2><br/>
+<h2>Event Sponsors</h2><br/>
 <div id="event_member_div">
 {% for member in eventsupporters %}
   <a href="{{member.url}}" class="member-logo" onclick='handleOutboundLinkClicks(event);' target="_blank" rel="sponsored noopener noreferrer"><img src="{{member.logo}}" alt="image"/></a>
