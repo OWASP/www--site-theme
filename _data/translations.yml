@@ -2,9 +2,12 @@ t:
   EN:
     training: Training
     conference: Conference
+    language: Language
   ES:
     training: Entrenamiento
     conference: Conferencias
+    language: Idioma
   PT:
     training: Treinamento
     conference: Conferência
+    language: Idioma

@@ -53,7 +53,7 @@
                 {% endfor %}
                 <li><a href='{{site.data.event-details.registration_url}}'>{{register-text}}</a></li>
                 <br/><br/>
-                <a>Language:</a>
+                <a>{{site.data.translations[page.lang].language}}</a>
                 {% if page.lang != nil %}
                   {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
                   {% if pages.size > 0 %}
