@@ -51,15 +51,17 @@
             <div class='event-site-details'>
               <h1>{{ site.data.event-details.title }}</h1>
               <br>
-              <h3>
-                <a href="{{site.github.url | replace: 'www2.', '' | replace: 'http://', 'https://'}}/venue/about/">
-                  {% if page.lang %}
-                    {{ site.data.event-details.venue[page.lang] }}
-                  {% else %}
-                    {{ site.data.event-details.venue }}
-                  {% endif %}
-                </a>&nbsp;
-              </h3>
+              {% if site.data.event-details.venue includes "off" %}
+                <h3>
+                  <a href="{{site.github.url | replace: 'www2.', '' | replace: 'http://', 'https://'}}/venue/about/">
+                    {% if page.lang %}
+                      {{ site.data.event-details.venue[page.lang] }}
+                    {% else %}
+                      {{ site.data.event-details.venue }}
+                    {% endif %}
+                  </a>
+                </h3>
+              {% endif %}
               <h4>
                 {%if site.data.event-details.training == nil and site.data.event-details.conference == nil%}
                   {% if page.lang %}
@@ -93,15 +95,17 @@
         <div>
           <h1>{{ site.data.event-details.title }}</h1>
             <br>
-            <h3 class="info-h3">
-              <a href="{{site.github.url | replace: 'www2.', '' | replace: 'http://', 'https://'}}/venue/about/">
-                {% if page.lang %}
-                  {{ site.data.event-details.venue[page.lang] }}
-                {% else %}
-                  {{ site.data.event-details.venue }}
-                {% endif %}
-              </a> |
-            </h3>
+            {% if site.data.event-details.venue includes "off" %}
+              <h3 class="info-h3">
+                <a href="{{site.github.url | replace: 'www2.', '' | replace: 'http://', 'https://'}}/venue/about/">
+                  {% if page.lang %}
+                    {{ site.data.event-details.venue[page.lang] }}
+                  {% else %}
+                    {{ site.data.event-details.venue }}
+                  {% endif %}
+                </a> |
+              </h3>
+            {% endif %}
             <h4 class='info-h4'>
               {%if site.data.event-details.training == nil and site.data.event-details.conference == nil%}
                 {% if page.lang %}
