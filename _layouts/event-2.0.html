@@ -72,14 +72,14 @@
                 {%endif%}
                 {% if site.data.event-details.training %}
                   {% if page.lang %}
-                    {{site.data.translations.t.[page.lang].training}}: {{ site.data.event-details.training[page.lang] }}
+                    {{site.data.translations.t[page.lang].training}}: {{ site.data.event-details.training[page.lang] }}
                   {% else %}
                     Training: {{ site.data.event-details.training }}
                   {% endif %}
                 {% endif %}
                 {% if site.data.event-details.conference %}<br>
                   {% if page.lang %}
-                    {{site.data.translations.t.[page.lang].conference}}: {{ site.data.event-details.conference[page.lang] }}
+                    {{site.data.translations.t[page.lang].conference}}: {{ site.data.event-details.conference[page.lang] }}
                   {% else %}
                     Conference: {{ site.data.event-details.conference }}
                   {% endif %}
@@ -116,14 +116,14 @@
               {%endif%}
               {% if site.data.event-details.training %}
                 {% if page.lang %}
-                  {{site.data.translations.t.[page.lang].training}}: {{ site.data.event-details.training[page.lang] }}
+                  {{site.data.translations.t[page.lang].training}}: {{ site.data.event-details.training[page.lang] }}
                 {% else %}
                   Training: {{ site.data.event-details.training }}
                 {% endif %}
               {% endif %}
               {% if site.data.event-details.conference %}<br>
                 {% if page.lang %}
-                  {{site.data.translations.t.[page.lang].conference}}: {{ site.data.event-details.conference[page.lang] }}
+                  {{site.data.translations.t[page.lang].conference}}: {{ site.data.event-details.conference[page.lang] }}
                 {% else %}
                   Conference: {{ site.data.event-details.conference }}
                 {% endif %}
