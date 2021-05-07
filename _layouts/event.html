@@ -35,8 +35,8 @@
           <div>
             <h1>{{ site.data.event-details.title }}</h1>
             <br>
-            <h3 class="info-h3">
-              {% if site.data.event-details.venue != "off" %}
+            {% if site.data.event-details.venue != "off" %}
+              <h3 class="info-h3">
                 <a href="{{site.github.url | replace: 'www2.', '' | replace: 'http://', 'https://'}}/venue/about/">
                   {% if page.lang %}
                     {{ site.data.event-details.venue[page.lang] }}
@@ -44,8 +44,8 @@
                     {{ site.data.event-details.venue }}
                   {% endif %}
                 </a> |
-              {% endif %}
-            </h3>
+              </h3>
+            {% endif %}
             <h4 class='info-h4'>
               {%if site.data.event-details.training == nil and site.data.event-details.conference == nil%}
                 {% if page.lang %}
@@ -77,8 +77,8 @@
         <div>
           <h1>{{ site.data.event-details.title }}</h1>
             <br>
-            <h3 class="info-h3">
-              {% if site.data.event-details.venue != "off" %}
+            {% if site.data.event-details.venue != "off" %}
+              <h3 class="info-h3">
                 <a href="{{site.github.url | replace: 'www2.', '' | replace: 'http://', 'https://'}}/venue/about/">
                   {% if page.lang %}
                     {{ site.data.event-details.venue[page.lang] }}
@@ -86,8 +86,8 @@
                     {{ site.data.event-details.venue }}
                   {% endif %}
                 </a> |
-              {% endif %}
-            </h3>
+              </h3>
+            {% endif %}
             <h4 class='info-h4'>
               {%if site.data.event-details.training == nil and site.data.event-details.conference == nil%}
                 {% if page.lang %}

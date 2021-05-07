@@ -52,10 +52,12 @@
                     {% endif %}
                 {% endfor %}
                 <li><a href='{{site.data.event-details.registration_url}}'>{{register-text}}</a></li>
+                <br/><br/>
+                <a>Language:</a>
                 {% if page.lang != nil %}
                   {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
                   {% if pages.size > 0 %}
-                    <ul style="text-align: right;">
+                    <ul>
                       {% for page in pages %}
                       <li>
                         <a id="{{ page.lang }}-site" href="{{ page.url | relative_url }}">{{ page.lang }}</a>
