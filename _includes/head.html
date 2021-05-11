@@ -52,6 +52,8 @@
 <!-- Google Analytics -->
 {% assign analytics = site.data.event-details.analytics | default: 'UA-4531126-1' %}
 
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "81a8976f7b24463d8ac6c1bebb62b07a"}'></script><!-- End Cloudflare Web Analytics -->
+
 <script src="{{site_base_url}}assets/js/js.cookie.js"></script>
 <script>
   if(Cookies.get('cookies-ok') == 'true' && window.ga === undefined)
