@@ -11,6 +11,11 @@
 	margin: .5em;
 }
 
+.training-desc li {
+    list-style-type: disc;       /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type     */
+    list-style-position: inside;
+}
+
 .training-container{
 	height:90px;
 	width: 100%;
