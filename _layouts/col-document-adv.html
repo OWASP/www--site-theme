@@ -63,7 +63,7 @@
           </nav>
           
           <section id='div-main' class='page-body tab'>
-          {{ content }}
+          {% include anchor_headings.html html=content anchorBody="#" anchorClass="anchor_heading" %}
           </section>
           {% assign pathparts = page.path | split: '/' %}
 

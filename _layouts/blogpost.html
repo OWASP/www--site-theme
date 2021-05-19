@@ -22,7 +22,7 @@
          <section class="homepage-blog">
             <a><img src="{{ page.author_image }}" alt="image"></a>
             <p class="author"><a>{{ page.author }}</a></p>
-            <p>{{ page.date | date: "%A, %B %e, %Y" }} {{ content }}</p>
+            <p>{{ page.date | date: "%A, %B %e, %Y" }} {% include anchor_headings.html html=content anchorBody="#" anchorClass="anchor_heading" %}</p>
           </section>
        </div>
 

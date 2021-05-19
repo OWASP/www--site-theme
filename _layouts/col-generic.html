@@ -35,7 +35,7 @@
          
          <p hidden>This is an example of a Project or Chapter Page.</p>
           {% endif %}
-          {{ content }}
+          {% include anchor_headings.html html=content anchorBody="#" anchorClass="anchor_heading" %}
         </div>
        <hr>
        <div class="repo">

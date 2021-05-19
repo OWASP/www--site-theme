@@ -18,7 +18,7 @@
     <main role="main">
       <div class="main-wrapper event-wrapper">
           <div class="content-wrapper-full">
-          {{ content }}
+          {% include anchor_headings.html html=content anchorBody="#" anchorClass="anchor_heading" %}
           </div>
       </div>
     </main>

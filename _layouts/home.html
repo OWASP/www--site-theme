@@ -19,7 +19,7 @@
     
     <main role="main">
       <div class="main-wrapper">
-        {{ content }}
+        {% include anchor_headings.html html=content anchorBody="#" anchorClass="anchor_heading" %}
         <hr>
         <div class="repo"></div>
       </div>

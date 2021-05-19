@@ -50,7 +50,7 @@
       </div> 
       <div class="main-wrapper event-wrapper">
           <div class="left-70">
-          {{ content }}
+          {% include anchor_headings.html html=content anchorBody="#" anchorClass="anchor_heading" %}
           </div>
           {% include event-pricing.html %}
           {% assign ksize = site.data.keynotespeakers | size %}
