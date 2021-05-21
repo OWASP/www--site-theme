@@ -1,10 +1,37 @@
 <div class='owasp-sidebar-bottom'>
 <h3>Upcoming Global Events</h3>
-   <!-- This will not work because site.data.events won't exist across repositories.  Will have to update this file based on events.yml in the owasp.github.io repo -->
-   {% assign category = site.data.events | where: "category", "Global" | first %}
-   <ul>
-      {% for event in category.events %}
-      <li><a href="{{event.url}}" target="_blank" rel="noopener">{{event.name}}</a></li>
-      {% endfor %}
-   </ul>
+<div id='global-event-div'>
+
 </div>
+
+{% assign site_base_url = 'https://owasp.org' %}
+<script type="text/javascript">
+   var events = [];
+   $(function() {
+     eventsyml = YAML.load('{{ site_base_url }}/assets/sitedata/events.yml');
+ 
+     $.each(eventsyml, function (index) {
+        if(this.category == 'Global'){
+               for(e in this.events){
+                 events.push(this.events[e]);
+               }
+           }
+       });
+   
+       if(events.length > 0){
+          var htmlstring = "<ul>";
+          for(evnt in events){
+            if(events[evnt].url)
+               htmlstring += '<li><a href="'+ events[evnt].url 
+             else
+               htmlstring += '<li><a href="https://owasp.org/events/'
+               
+             htmlstring += '" target="_blank rel="noopener">' + events[evnt].name + '</a></li>';
+          }         
+          htmlstring += "</ul>";
+ 
+          $("#global-event-div").html(htmlstring);
+       }
+    });
+ </script>
+   
