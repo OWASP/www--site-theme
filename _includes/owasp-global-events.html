@@ -26,7 +26,8 @@
              else
                htmlstring += '<li><a href="https://owasp.org/events/'
                
-             htmlstring += '" target="_blank rel="noopener">' + events[evnt].name + '</a></li>';
+            htmlstring += '" target="_blank rel="noopener">' + events[evnt].name + '</a>';
+            htmlstring += "<ul><li>" + events[evnt].dates + "</li></ul></li>";
           }         
           htmlstring += "</ul>";
  
