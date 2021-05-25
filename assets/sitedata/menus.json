@@ -136,6 +136,9 @@
 				"title": "Finance",
 				"url": "https://owasp.org/finance/"
 			}, {
+				"title": "Get OWASP Gear",
+				"url": "https://owasp.org/store"
+			},{
 				"title": "Global Board",
 				"url": "https://owasp.org/www-board/"
 			}, {
@@ -154,9 +157,6 @@
 				"title": "Staff Projects",
 				"url": "https://owasp.org/www-staff/"
 			}, {
-				"title": "OWASP Gear",
-				"url": "https://owasp.org/store"
-			},{
 				"title": "Supporters",
 				"url": "https://owasp.org/supporters/"
 			}, {
