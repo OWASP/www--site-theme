@@ -369,9 +369,12 @@ site-wide reusable components styling
 
       &:hover {
         background-color: #ff0000;
-        color: #ffffff;    
+        color: #ffffff;     
       }
     }
+  &.inset {
+    border: 1px inset black;
+  }
 }
 .cta-button[disabled=true] {
     color: $dark;
