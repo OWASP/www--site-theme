@@ -45,7 +45,9 @@ site-wide reusable components styling
   display: flex;
   align-items: center;
   max-width: 150px;
-  height: 90px;
+  min-width: 150px;
+  max-height: 150px;
+  min-height: 150px;
   margin: 0 15px;
   text-align: center;
   filter: grayscale(100%);
