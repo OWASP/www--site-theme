@@ -60,15 +60,27 @@ site-wide reusable components styling
   &:hover {
       filter: none;
   }
-
-  &.large {
-    max-width: 220px;
-    min-width: 220px;
-    max-height: 220px;
-    min-height: 220px;
-  }
 }
 
+.supporter-logo {
+  display: flex;
+  align-items: center;
+  max-width: 360px;
+  max-height: 180px;
+  min-height: 180px;
+  margin: 0 15px;
+  text-align: center;
+  filter: grayscale(100%);
+  img {
+    max-width: 80%;
+    margin: 0 auto;
+   
+  }
+
+  &:hover {
+      filter: none;
+  }
+}
 
 .member-spotlight {
   img {
@@ -611,6 +623,11 @@ table {
     height: 144px;
   }
 
+  .supporter-logo {
+    max-width: 120px;
+    height: 120px;
+  }
+
   .featured-proj-image {
     float:none;
     padding-right: 0;
@@ -626,6 +643,10 @@ table {
   .member-logo {
     max-width: 80px;
     height: 144px;
+  }
+  .supporter-logo {
+    max-width: 120px;
+    height: 120px;
   }
 
   #disclaimer a.disclaimerOK {
