@@ -60,14 +60,15 @@ site-wide reusable components styling
   &:hover {
       filter: none;
   }
+
+  &.large {
+    max-width: 220px;
+    min-width: 220px;
+    max-height: 220px;
+    min-height: 220px;
+  }
 }
 
-.member-logo .large {
-  max-width: 220px;
-  min-width: 220px;
-  max-height: 220px;
-  min-height: 220px;
-}
 
 .member-spotlight {
   img {
