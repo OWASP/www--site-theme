@@ -63,8 +63,10 @@ site-wide reusable components styling
 }
 
 .member-logo .large {
-max-width: 220px;
-height: 150px;
+  max-width: 220px;
+  min-width: 220px;
+  max-height: 220px;
+  min-height: 220px;
 }
 
 .member-spotlight {
