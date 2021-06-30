@@ -29,7 +29,7 @@ site-wide reusable components styling
   height: 90px;
   margin: 0;
   text-align: center;
-  filter: grayscale(100%);
+  /*filter: grayscale(100%);*/
   img {
     max-width: 70%;
     margin: 0 auto;
@@ -37,7 +37,7 @@ site-wide reusable components styling
   }
 
   &:hover {
-      filter: none;
+      scale: 1.2;
   }
 }
 
@@ -50,7 +50,7 @@ site-wide reusable components styling
   min-height: 150px;
   margin: 0 15px;
   text-align: center;
-  filter: grayscale(100%);
+  /*filter: grayscale(100%);*/
   img {
     max-width: 70%;
     margin: 0 auto;
@@ -58,7 +58,7 @@ site-wide reusable components styling
   }
 
   &:hover {
-      filter: none;
+      scale: 1.2;
   }
 }
 
@@ -70,7 +70,7 @@ site-wide reusable components styling
   min-height: 180px;
   margin: 0 24px;
   text-align: center;
-  filter: grayscale(100%);
+  /*filter: grayscale(100%);*/
   img {
     max-width: 80%;
     margin: 0 auto;
@@ -78,7 +78,7 @@ site-wide reusable components styling
   }
 
   &:hover {
-      filter: none;
+      scale: 1.2;
   }
 }
 
