@@ -22,13 +22,11 @@
 	padding-left: 2em;
 }
 
-.training-container-2{
-	height:90px;
-	width: 100%;
-}
 
 .trainer-container {
-	min-height:90px;line-height:90px;display:table-cell;
+	min-height:90px;
+	line-height:90px;
+	display:table-cell;
 }
 
 .trainer-container-mobile {
@@ -84,9 +82,6 @@
 	}
 
 	.training-container {
-		height: 145px;
-	}
-	.training-container-2 {
 		height: 145px;
 	}
 }
