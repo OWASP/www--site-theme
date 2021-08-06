@@ -38,7 +38,7 @@
     {% if site.data.event-details.bigheader %}
     {% assign bigclass = ' big' %}
     {% endif %}
-    <main role="main" class="main">
+    <main role="main">
       <div class='event-image-container{{bigclass}}' style="background-image: url({{baseurl}}assets/images/{{site.data.event-details.background}});">
         <div class='event-header-info-two{{bigclass}}'>
           <div style="width:50%; margin:auto;">
@@ -86,8 +86,6 @@
           {% endif %}
       </div>
     </main>
-    
-    
 
     {% include evnt-footer-2.0.html %}
     

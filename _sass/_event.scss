@@ -383,6 +383,14 @@
 	background-color:white;
 }
 
+.alt-wrapper-two {
+	display: inline-block;
+	background-color:ghostwhite;
+}
+
+.alt-wrapper-two:nth-child(even) {
+	background-color:inherit;
+}
 
 .event-cover {
 	position: absolute;
@@ -723,15 +731,6 @@ section.team-list {
 		max-height: 600px;
 		height: 600px;
 		padding: inherit;
-	}
-
-	.alt-wrapper-two {
-		display: inline-block;
-		background-color:ghostwhite;
-	}
-
-	.alt-wrapper-two:nth-child(even) {
-		background-color:inherit;
 	}
 
 	.event-pricing-two {
