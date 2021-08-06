@@ -1,0 +1,95 @@
+.training-header {
+
+}
+
+.trainer-header{
+	line-height:.75em;
+	margin-left:.25em;
+}
+
+.training-desc {
+	margin: .5em;
+}
+
+.training-desc li {
+    list-style-type: disc;       /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type     */
+    list-style-position: inside;
+}
+
+.training-container{
+	height:90px;
+	width: 100%;
+	padding-left: 2em;
+}
+
+
+.trainer-container {
+	min-height:90px;
+	line-height:90px;
+	display:table-cell;
+}
+
+.trainer-container-mobile {
+	display:none;
+}
+
+.trainer-section:nth-child(even){
+	background-color: #f3f4f6;
+}
+
+.info-container{
+	padding-left:.5em;
+	line-height:1.25em;
+}
+
+.bio-container {
+	margin-left: 1em;
+}
+
+.no-margin {
+	margin-left: 0;
+}
+
+.training-image {
+	width: 90px;
+	height: 90px;
+	border: 1px solid #cecece;
+	border-radius: 8px;
+	margin-right: .5em;
+	float:left;
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position:center;
+}
+
+
+@media (max-width: 1024px) {
+	
+}
+
+@media (max-width: 800px) {
+	.trainer-container {
+		display:none;
+	}
+
+	.trainer-container-mobile {
+		display:block;
+	}
+
+	.trainer-header{
+		line-height:1.2em;
+		margin-left:1.2em;
+	}
+
+	.training-container {
+		height: 145px;
+	}
+}
+
+@media (max-width: 550px) {
+	
+}
+
+@media (max-width: 401px) {
+	
+}

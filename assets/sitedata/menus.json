@@ -56,18 +56,30 @@
 				"title": "Asia",
 				"url": "https://owasp.org/chapters/#Asia"
 			}, {
-				"title": "Oceania",
-				"url": "https://owasp.org/chapters/#Oceania"
-			}, {
-				"title": "Europe",
-				"url": "https://owasp.org/chapters/#Europe"
-			}, {
+				"title": "Central America",
+				"url": "https://owasp.org/chapters/#CentralAmerica"
+			},{
+				"title": "Eastern Europe",
+				"url": "https://owasp.org/chapters/#EasternEurope"
+			},{
+				"title": "European Union",
+				"url": "https://owasp.org/chapters/#EuropeanUnion"
+			},{
+				"title": "Middle East",
+				"url": "https://owasp.org/chapters/#MiddleEast"
+			},{
 				"title": "North America",
 				"url": "https://owasp.org/chapters/#NorthAmerica"
-			}, {
+			},{
+				"title": "Oceania",
+				"url": "https://owasp.org/chapters/#Oceania"
+			},{
 				"title": "South America",
 				"url": "https://owasp.org/chapters/#SouthAmerica"
-			}, {
+			},{
+				"title": "The Caribbean",
+				"url": "https://owasp.org/chapters/#TheCarribean"
+			},{
 				"title": "Start a Local Chapter...",
 				"url": "https://owasporg.atlassian.net/servicedesk/customer/portal/7/create/73?src=-1419759666",
 				"separator": "true",
@@ -136,6 +148,9 @@
 				"title": "Finance",
 				"url": "https://owasp.org/finance/"
 			}, {
+				"title": "Get OWASP Gear",
+				"url": "https://owasp.org/store"
+			},{
 				"title": "Global Board",
 				"url": "https://owasp.org/www-board/"
 			}, {
@@ -148,21 +163,20 @@
 				"title": "Opinions & News",
 				"url": "https://owasp.org/news/"
 			}, {
-				"title": "Policies & Procedures",
+				"title": "Policies",
 				"url": "https://owasp.org/www-policy/"
 			}, {
-				"title": "Staff Projects",
+				"title": "Staff Projects & Procedures",
 				"url": "https://owasp.org/www-staff/"
 			}, {
-				"title": "Supporters",
+				"title": "Corporate Membership",
 				"url": "https://owasp.org/supporters/"
+			}, {
+				"title": "Corporate Event Sponsorship",
+				"url": "https://owasp.org/corporate-sponsorships"
 			}, {
 				"title": "Video",
 				"url": "https://www.youtube.com/user/OWASPGLOBAL/videos",
-				"opentab": "true"
-			}, {
-				"title": "Get the OWASP Connector",
-				"url": "http://eepurl.com/dpDj_z",
 				"opentab": "true"
 			}]
 		}

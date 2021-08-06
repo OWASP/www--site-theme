@@ -36,6 +36,7 @@
         {% else %}
         {% assign pagetitle = '' %}
         {% endif %}
+          <a href="https://owasp.org/store" class="cta-button white inset"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Store</a>
           <a href="https://owasp.org/donate?reponame={{ site.github.repository_name }}{{ pagetitle }}" class="cta-button green">Donate</a>
           <a href="https://owasp.org/membership" class="cta-button">Join</a>
         </div>
@@ -43,9 +44,10 @@
     </nav>
     {% include cookie-disclaimer.html %}
   </div>
-  <div class="mobile" style="width:100%;margin:auto;">
-    <div style="float:left;width:50%;margin:auto;padding-left:25%;"><a href="https://owasp.org/donate?reponame={{ site.github.repository_name }}{{ pagetitle }}" class="cta-button green">Donate</a></div>
-    <div style="float:right;width:50%;margin:auto;padding-right:25%"><a href="https://owasp.org/membership" class="cta-button">Join</a></div>
+  <div class="mobile" style="width:100%;margin:auto;justify-content: space-between;">
+    <div style="float:left;margin:auto;padding-right:10%;"><a href="https://owasp.org/store" class="cta-button white inset"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Store</a></div>
+    <div style="float:left;margin:auto;padding-right:10%;"><a href="https://owasp.org/donate?reponame={{ site.github.repository_name }}{{ pagetitle }}" class="cta-button green">Donate</a></div>
+    <div style="float:left;margin:auto;"><a href="https://owasp.org/membership" class="cta-button">Join</a></div>
   </div>
 {% assign dev_file = site.static_files | where: "name", "devsite.txt" %}
 {% if dev_file.size > 0 %}

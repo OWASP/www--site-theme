@@ -92,6 +92,7 @@ header {
   .nav-button > * + * {
     margin-left: 10px;
   }
+  
 }
 
 .dropdown-menu {
@@ -141,6 +142,10 @@ header {
     border-right: 20px solid transparent;
     border-bottom: 20px solid $bg-blue;
   }
+}
+
+.top-nav ul {
+  font-size: 15px;
 }
 
 /* Hide Dropdowns by Default */

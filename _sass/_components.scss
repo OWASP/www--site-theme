@@ -4,9 +4,8 @@ site-wide reusable components styling
 
 // member section by the footer
 .member {
-  margin: 0;
+  margin-top: 24px;
   padding: 0;
-  background-color: $bg-grey;
 }
 
 .member-list {
@@ -29,7 +28,7 @@ site-wide reusable components styling
   height: 90px;
   margin: 0;
   text-align: center;
-  filter: grayscale(100%);
+  /*filter: grayscale(100%);*/
   img {
     max-width: 70%;
     margin: 0 auto;
@@ -37,7 +36,7 @@ site-wide reusable components styling
   }
 
   &:hover {
-      filter: none;
+      scale: 1.2;
   }
 }
 
@@ -45,10 +44,12 @@ site-wide reusable components styling
   display: flex;
   align-items: center;
   max-width: 150px;
-  height: 90px;
+  min-width: 150px;
+  max-height: 150px;
+  min-height: 150px;
   margin: 0 15px;
   text-align: center;
-  filter: grayscale(100%);
+  /*filter: grayscale(100%);*/
   img {
     max-width: 70%;
     margin: 0 auto;
@@ -56,7 +57,27 @@ site-wide reusable components styling
   }
 
   &:hover {
-      filter: none;
+      scale: 1.2;
+  }
+}
+
+.supporter-logo {
+  display: flex;
+  align-items: center;
+  max-width: 360px;
+  max-height: 180px;
+  min-height: 180px;
+  margin: 0 24px;
+  text-align: center;
+  /*filter: grayscale(100%);*/
+  img {
+    max-width: 80%;
+    margin: 0 auto;
+   
+  }
+
+  &:hover {
+      scale: 1.2;
   }
 }
 
@@ -369,9 +390,12 @@ site-wide reusable components styling
 
       &:hover {
         background-color: #ff0000;
-        color: #ffffff;    
+        color: #ffffff;     
       }
     }
+  &.inset {
+    border: 1px inset black;
+  }
 }
 .cta-button[disabled=true] {
     color: $dark;
@@ -598,6 +622,11 @@ table {
     height: 144px;
   }
 
+  .supporter-logo {
+    max-width: 120px;
+    height: 120px;
+  }
+
   .featured-proj-image {
     float:none;
     padding-right: 0;
@@ -613,6 +642,10 @@ table {
   .member-logo {
     max-width: 80px;
     height: 144px;
+  }
+  .supporter-logo {
+    max-width: 120px;
+    height: 120px;
   }
 
   #disclaimer a.disclaimerOK {
