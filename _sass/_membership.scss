@@ -1,0 +1,114 @@
+#membership-app input:focus, #membership-app select:focus {
+    outline: none;
+  }
+  
+  .legal-text {
+    font-size: 75%;
+    color: #808080;
+  }
+  
+  .form-container {
+    margin: 40px 0px;
+    max-width: 100%;
+  }
+
+  .form-container input, .form-container select {
+    width: 100%;
+    border: 1px solid #000000;
+    padding: 8px;
+  }
+  
+  .form-container select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #ffffff;
+    border-radius: 0px;
+    font-size: 18px;
+    padding: 9px;
+  }
+  
+  .form-row {
+    margin-bottom: 20px;
+  }
+  
+  .membership-option {
+    text-align: center;
+    background-color: #D3D3D3;
+    color: #000000;
+    padding: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .membership-option.selected {
+    background-color: #233e81;
+    color: #ffffff;
+  }
+  
+  .membership-fields {
+    margin-bottom: 40px;
+  }
+  
+  .membership-fields div {
+    margin: 14px 0px;
+  }
+  
+  .membership-button {
+    border: 0;
+    padding: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #233e81;
+    text-transform: uppercase;
+    font-size: 110%;
+    min-width: 185px;
+    min-height:65px;
+  }
+  
+  @media (min-width: 768px) {
+    .form-container {
+      max-width: 70%;
+    }
+  
+    .form-row {
+      display: flex;
+    }
+  
+    .form-row div:not(:last-child) {
+      margin-right: 10px;
+    }
+  
+    .membership-option {
+      flex: 1;
+      flex-basis: 0;
+    }
+  
+    .quarter {
+      flex: 1;
+      flex-basis: 25%;
+    }
+  
+    .three-fourths {
+      flex: 1;
+      flex-basis: 75%;
+    }
+  }
+  
+  @keyframes spinner {
+      0% {
+          transform: translate3d(-50%, -50%, 0) rotate(0deg);
+      }
+      100% {
+           transform: translate3d(-50%, -50%, 0) rotate(360deg);
+      }
+  }
+  
+  @keyframes inner-spinner {
+      0% {
+          transform: translate3d(-50%, -50%, 0) rotate(0deg);
+      }
+      100% {
+           transform: translate3d(-50%, -50%, 0) rotate(-360deg);
+      }
+  }
