@@ -160,6 +160,9 @@
 				"title": "Membership",
 				"url": "https://owasp.org/membership/"
 			}, {
+				"title": "Membership Portal",
+				"url": "https://members.owasp.org/"
+			},{
 				"title": "Opinions & News",
 				"url": "https://owasp.org/news/"
 			}, {
