@@ -6,11 +6,8 @@
     $(function() {
       // stuff here to load chapter events
       var groupname = '{{ include.group }}';
-      var past = false;
+      var past = '{% if include.past %}{{ include.past }}{% else %}false{% endif %}';
       
-      {% if include.past %}
-      past = '{{ include.past }}';
-      {% endif %}
 
       var status = 'upcoming';
 
