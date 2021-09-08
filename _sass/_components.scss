@@ -652,6 +652,13 @@ table {
 	transform: rotate(45deg);
   }
 
+  .error-text {
+    color: #ff0000;
+    font-size: 75%;
+    margin-top: 4px !important;
+    background-color: gray;
+  }
+
 @media screen and (min-width: $content-bp) { // 840px
   .member-wrapper { // grid for member section
     display: grid;
