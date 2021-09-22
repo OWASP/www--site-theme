@@ -92,7 +92,7 @@
     }
 
     $(function() {  
-      var corp_members = YAML.load('https://owasp.org/assets/sitedata/corp_members.yml');//'{{site_base_url}}/assets/sitedata/corp_members.yml');
+      var corp_members = YAML.load('{{site_base_url}}/assets/sitedata/corp_members.yml');
       $.each(corp_members, function (index) {
           index = members.push(this) - 1;  
           if(this.member && this.membertype == 3)
