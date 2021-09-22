@@ -2,41 +2,137 @@
 {% assign site_base_url = 'https://owasp.org' %}
   <script type="text/javascript">
     var members = [];
-    $(function() {
-      
-      corp_members = YAML.load('{{site_base_url}}/assets/sitedata/corp_members.yml');
+    var plat_indices = [];
+    var gold_indices = [];
+    var other_indices = [];
+
+    function get_next_member(members, indexUsed){
+      // random 6
+      // 0 to 2 = Platinum (.2 > Other)
+      // 3 to 4 = Gold (.1 > Other)
+      // 5 = Other  
+      member = null;
+      chosenIndex = -1;
+      var pick = Math.floor(Math.random() * 100);      
+      var randomIndex = -1;
+      if(pick < 44){
+        // pick a platinum member
+        randomIndex = Math.floor(Math.random() * plat_indices.length);
+        pIndex = plat_indices[randomIndex];            
+        cycleIndex = randomIndex
+        while(chosenIndex == -1)
+        {
+          randomIndex++;
+          if(indexUsed.indexOf(pIndex)== -1){
+            chosenIndex = pIndex;
+            
+          }else if(randomIndex >= plat_indices.length){
+            randomIndex = 0;
+            
+          }
+          if (randomIndex == cycleIndex){ // we could not find a plat member not already in the list....            
+            break;
+          }
+        }
+      }
+      if (chosenIndex == -1 && pick < 77) {
+        // pick a gold member
+        randomIndex = Math.floor(Math.random() * gold_indices.length);
+        pIndex = gold_indices[randomIndex];            
+        cycleIndex = randomIndex
+        while(chosenIndex == -1)
+        {
+          randomIndex++;
+          if(indexUsed.indexOf(pIndex)== -1){
+            chosenIndex = pIndex;
+            
+          }else if(randomIndex >= gold_indices.length){
+            randomIndex = 0;
+            
+          }
+          if (randomIndex == cycleIndex){ // we could not find a plat member not already in the list....            
+            break;
+          }
+        }
+      }
+      if (chosenIndex == -1){
+        // pick an other member
+        randomIndex = Math.floor(Math.random() * other_indices.length);
+        pIndex = other_indices[randomIndex];            
+        cycleIndex = randomIndex
+        while(chosenIndex == -1)
+        {
+          randomIndex++;
+          if(indexUsed.indexOf(pIndex)== -1){
+            chosenIndex = pIndex;
+            
+          }else if(randomIndex >= other_indices.length){
+            randomIndex = 0;
+            
+          }
+          if (randomIndex == cycleIndex){ // we could not find a plat member not already in the list....            
+            break;
+          }
+        }
+      }    
+      if(chosenIndex >= 0){          
+        member = members[chosenIndex];
+        indexUsed.push(chosenIndex);
+        var membertype = 'not a member';
+        if(member.member && (member.membertype == 1 || !member.membertype))
+          membertype = 'silver member';
+        else if(member.member && member.membertype == 2)
+          membertype = 'platinum member';
+        else if(member.member && member.membertype == 3)
+          membertype = 'gold member';
+        else if(member.member && member.membertype)
+          membertype = member.membertype;        
+      }
+      return member;      
+    }
+
+    $(function() {  
+      var corp_members = YAML.load('https://owasp.org/assets/sitedata/corp_members.yml');//'{{site_base_url}}/assets/sitedata/corp_members.yml');
       $.each(corp_members, function (index) {
-        members.push(this);
+          index = members.push(this) - 1;  
+          if(this.member && this.membertype == 3)
+            gold_indices.push(index);
+          else if (this.member && this.membertype == 2)
+            plat_indices.push(index);
+          else
+            other_indices.push(index);        
         });
-        var randomIndexUsed = [];
+        
+        //alert(plat_indices.length); 6
+        //alert(gold_indices.length); 2
+        //alert(other_indices.length); 89
+
+        var indexUsed = [];
+
         var counter = 0;
         var numberOfImages = 9;
+        var member = get_next_member(members, indexUsed);
+        htmlstring = '<h2>Spotlight: ' + member["name"] + '</h2>';
+        htmlstring += '<a href="'+ member["url"] + '" rel="sponsored nopener noreferrer" target="_blank" onclick="handleOutboundLinkClicks(event);"><img src="https://owasp.org' + member["image"] + '" alt="image" /></a>';
+        htmlstring += '<p>' + member["description"] + '</p>';
+        $(".member-spotlight").html(htmlstring);
+
         if(members.length > 0)
         {
           var htmlstring = "";
           while (counter < numberOfImages)
           {
-              var randomIndex;
-              var img;
-
-              randomIndex = Math.floor(Math.random() * members.length);
-
-              if (randomIndexUsed.indexOf(randomIndex) == "-1")
-              {
-                  counter++;
-                  htmlstring += '<a href="'+ members[randomIndex]["url"] + '" class="member-logo" rel="sponsored noopener noreferrer" target="_blank" onclick="handleOutboundLinkClicks(event);"><img src="https://owasp.org' + members[randomIndex]["image"] + '" alt="image"/></a>';
-                  
-                  randomIndexUsed.push(randomIndex);
-              }
+            member = get_next_member(members, indexUsed)
+            if (member)
+            {
+                counter++;
+                htmlstring += '<a href="'+ member["url"] + '" class="member-logo" rel="sponsored noopener noreferrer" target="_blank" onclick="handleOutboundLinkClicks(event);"><img src="https://owasp.org' + member["image"] + '" alt="image"/></a>';                                
+            }
           }
 
           $("#corp_member_div").html(htmlstring);
          
-          var randi = Math.floor(Math.random() * members.length);
-          htmlstring = '<h2>Spotlight: ' + members[randi]["name"] + '</h2>';
-          htmlstring += '<a href="'+ members[randi]["url"] + '" rel="sponsored nopener noreferrer" target="_blank" onclick="handleOutboundLinkClicks(event);"><img src="https://owasp.org' + members[randi]["image"] + '" alt="image" /></a>';
-          htmlstring += '<p>' + members[randi]["description"] + '</p>';
-          $(".member-spotlight").html(htmlstring);
+          
         }
     });
   </script>
