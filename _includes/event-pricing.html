@@ -3,12 +3,17 @@
 {% if site.data.event-details.registertext %}
 {% assign register-text = site.data.event-details.registertext %}
 {% endif %}
+{% if site.data.pricing.title %}
+{% assign pricing-title = site.data.pricing.title %}
+{% else %}
+{% assign pricing-title = 'Conference Pricing' %}
+{% endif %}
 <div class="event-pricing">
     <div class="full-width">
       <div class="nav-button nav-button-event" aria-label="register for event">
         <a href="{{ site.data.event-details.registration_url }}" class="cta-button blue">{{ register-text }}</a>
     </div>
-    <h3>Conference Pricing</h3>
+    <h3>{{pricing-title}}</h3>
     <div class='full-width'>
       <ul>
         {% for price in site.data.pricing %}
