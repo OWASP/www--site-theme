@@ -17,10 +17,20 @@ $(function() {
       $("#banner").hide();
   }
   
+  if( Cookies.get('popup-seen')=='true')
+  {
+    $("#popup").hide();
+  }
+
   // close announcement banner
   $("#close-banner").click(function() {
     $(this).closest("#banner").remove();
       Cookies.set('banner-seen', 'true', { expires: 7 });
+  });
+  
+  $("#close-popup").click(function() {
+    $(this).closest("#popup").remove();
+      Cookies.set('popup-seen', 'true', { expires: 7 });
   });
 
   if( Cookies.get('cookies-ok') == 'true')

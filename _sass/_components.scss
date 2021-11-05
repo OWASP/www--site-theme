@@ -496,6 +496,59 @@ table {
   }
 }
 
+#popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  font-size: 1em;
+  align-items: center;
+  justify-content: center;
+  border: solid black 2px;
+  border-radius: 16px;
+  padding: 15px 15px;
+  & > *,
+  & > * > * {
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    text-decoration: underline;
+  }
+  a#close-popup {
+    //position: absolute;
+    //right: 15px;
+    float:right;
+    padding-left:15px;
+    top: 10px;
+    font-size: $font-size*1.5; // 27px
+    color: currentColor;
+    opacity: 0.2;
+    line-height: 0;
+    &:hover,
+    &:active {
+      opacity: 0.5;
+    }
+  }
+  &.notice {
+    background-color: $bg-blue;
+    color: white;
+  }
+  &.alert {
+    background-color: $alert;
+    color: black !important;
+  }
+  &.warning {
+    background-color: $warning;
+    color: white;
+  }
+  &.success {
+    background-color: $success;
+    color: white;
+  }
+}
+
 #disclaimer-container {
   display: flex;
   opacity: 0;

@@ -1,0 +1,95 @@
+<div id="popup" class="notice" aria-label="announcement">
+   
+</div>
+
+{% assign dev_file = site.static_files | where: "name", "devsite.txt" %}
+{% if dev_file.size > 0 %}
+{% assign site_base_url = '' %}
+{% else %}
+{% assign site_base_url = site.github.url | replace: 'owasp.github.io','owasp.org' | replace: 'http://', 'https://' %}
+{% endif %}
+
+<style>
+  #banner img {
+    max-width: 30em;
+  }
+
+  @media (max-width: 1131px) {
+    #banner img {
+      max-width: 30em;
+    }
+  }
+
+  @media (max-width: 800px) {
+    #banner img {
+      max-width: 20em;
+    }
+  }
+
+  @media (max-width: 600px) {
+    #banner img {
+      max-width: 20em;
+    }
+  }
+
+  @media (max-width: 450px) {
+    #banner img {
+      max-width: 250px;
+    }
+  }
+</style>
+
+<script type="text/javascript">
+  $(function () {
+    var popdata = [];
+    $("#popup").hide();
+    popyaml = YAML.load('{{site_base_url}}/assets/sitedata/popup-data.yml');
+    $.each(popyaml, function (index) {
+      popdata.push(this);
+    });
+
+    if (popdata.length > 0) {
+      var htmlstring = "";
+      var usepop = null;
+      var defpop = null;
+      var checkdate = new Date(); //local time but who cares about the time?
+      popdata.forEach(data => {
+        if (data.start) {
+          var start = data.start;
+
+          if (data.start <= checkdate) {
+            if (data.end) {
+
+              var end = data.end;
+              if (checkdate < end) {
+                usepop = data;
+              }
+            }
+            else
+              usepop = data;
+          }
+        }
+        else {
+          defpop = data;
+        }
+      });
+
+      if (defpop && !usepop)
+        usepop = defpop;
+      if (usepop) {
+        htmlstring = usepop.text;
+        htmlstring += "<a href='#' id='close-popup' aria-label='close announcement' style='float:right;'><i class='fa fa-times'></i></a>";
+
+        $("#popup").html(htmlstring);
+        $("#popup").removeClass("notice");
+        $("#popup").addClass(usepop.type);
+        $("#popup").show();
+
+        $("#close-popup").click(function() {
+          $(this).closest("#popup").remove();
+            Cookies.set('popup-seen', 'true', { expires: 7 });
+        });
+      }
+    }
+  });
+</script>
