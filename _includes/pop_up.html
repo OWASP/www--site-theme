@@ -83,7 +83,11 @@
         $("#popup").html(htmlstring);
         $("#popup").removeClass("notice");
         $("#popup").addClass(usepop.type);
-        $("#popup").show();
+        
+        if( Cookies.get('popup-seen')!='true')
+        {
+          $("#popup").show();
+        }
 
         $("#close-popup").click(function() {
           $(this).closest("#popup").remove();
