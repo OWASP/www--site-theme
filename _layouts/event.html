@@ -29,15 +29,6 @@
       {% if site.data.event-details.banner-style != 'fixed' %}      
       <div class='event-image-container' style="background-image: url(assets/images/{{site.data.event-details.background}});">
       {% else %}
-      background-position: center center;
-	background-repeat: repeat-y, no-repeat;
-	background-size: cover, cover;
-	padding: 8em 4em 8em 4em;
-	justify-content: space-around;
-	max-width: 100%;
-	max-height: 300px;
-	background-color: gray;
-	text-align:center;
       <div class='' style="background-image: url(assets/images/{{site.data.event-details.background}});background-size:cover, cover;background-repeat: repeat-y, no-repeat;width: {{site.data.event-details.background-width}};height: {{site.data.event-details.background-height}};">
       {% endif %}
         <div class='event-header-info'>
