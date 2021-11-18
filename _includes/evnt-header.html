@@ -1,4 +1,8 @@
+{% if site.data.event-details.menu-header-color %}
+<header role="banner" style="background-color:{{site.data.event-details.menu-header-color}};">
+{% else %}
 <header role="banner">
+{% endif %}
   {% assign register-text = 'Register' %}
         {% if site.data.event-details.registertext %}
         {% assign register-text = site.data.event-details.registertext %}
