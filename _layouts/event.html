@@ -36,7 +36,9 @@
           </div>
         </div> 
       </div>
+      {% if site.data.event-details.overlay != 'none' %}
       <div class="event-cover"></div>
+      {% endif %}
       <div class="event-banner" style="background-color:#{{ site.data.event-details.color }};" >
         <div>
           <h1>{{ site.data.event-details.title }}</h3>
