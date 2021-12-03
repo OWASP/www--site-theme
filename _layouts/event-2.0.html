@@ -70,8 +70,8 @@
           <div class="left-70">
           {{ content }}
           </div>
-          {% if page.pricing != 'false' %}
-            {% include event-pricing-2.0.html %}
+          {% if page.pricing == nil or page.pricing == true %}
+              {% include event-pricing-2.0.html %}
           {% endif %}
           {% assign ksize = site.data.keynotespeakers | size %}
           {% if ksize > 0 %}
