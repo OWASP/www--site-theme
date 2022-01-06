@@ -15,22 +15,27 @@
         status = 'past';
       
       $.get("https://owaspadmin.azurewebsites.net/api/GetMeetupEvents?code=7OIbdfrvam1q5dbaZyN5JTZodrtWRHtnzBTtRB8ed1HT2Stax0iLNw==&group=" + groupname + "&status=" + status, function(data) {
-        var edata = jQuery.parseJSON(data);
-        if(edata.length > 0)
+        var edata = JSON.parse(data);
+        if('data' in edata && 'proNetworkByUrlname' in edata['data'] && 'eventsSearch' in edata['data']['proNetworkByUrlname'] && 'edges' in edata['data']['proNetworkByUrlname']['eventsSearch'] )
         {
-          for(let i in edata)
+          var events = edata['data']['proNetworkByUrlname']['eventsSearch']['edges']
+          if(events.length > 0)
           {
-            dstr = "<hr>";
-            dstr += "<section style='background-color:#f3f4f6;'>";
-            dstr += "<strong>Event: " + edata[i].name + "</strong><br>";
-            dstr += "<strong>Date: " + edata[i].local_date + "</strong><br>";
-            dstr += "<strong>Time: " + edata[i].local_time + " (" + edata[i].group.timezone + ") </strong><br>";
-            dstr += "<strong>Link: <a href='" + edata[i].link + "'>" + edata[i].link + "</a></strong><br>";
-            dstr += "<strong>Description:</strong></section>" + edata[i].description;
-            
-            $("#ch_events_div").html(dstr);
+            //alert(events[0]["node"]["title"]);
+            for(let i in events)
+            {
+              dstr = "<hr>";
+              dstr += "<section style='background-color:#f3f4f6;'>";
+              dstr += "<strong>Event: " + events[i]['node']['title'] + "</strong><br>";
+              dstr += "<strong>Date: " + (events[i]['node']['dateTime']).substring(0,10) + "</strong><br>";
+              dstr += "<strong>Time: " + (events[i]['node']['dateTime']).substring(11, 16) + " (" + events[i]['node']['timezone'] + ") </strong><br>";
+              dstr += "<strong>Link: <a href='" + events[i]['node']['eventUrl'] + "'>" + events[i]['node']['eventUrl'] + "</a></strong><br>";
+              dstr += "<strong>Description:</strong></section>" + events[i]['node']['description'];
+              
+              $("#ch_events_div").html(dstr);
+            }
           }
-        }        
+        }      
       });
 
     }); 
