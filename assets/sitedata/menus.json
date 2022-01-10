@@ -90,24 +90,24 @@
 			"title": "EVENTS",
 			"url": "/events/",
 			"items": [
-				{ "title": "OWASP 20th Anniversary",
-				  "url": "https://20thanniversary.owasp.org/",
+				{ "title": "OWASP January Webinar",
+				  "url": "https://www.eventbrite.com/e/owasp-january-webinar-tickets-221608546127?utm_campaign=none&utm_medium=event-page&utm_source=owasp-web",
 				 "opentab": "true"
 				},
-				{ "title": "OWASP Virtual Trainings",
+				{ "title": "OWASP Career Fair",
 				  "url": "https://training.owasp.org/",
 				 "opentab": "true"
 				},
-				{ "title": "Lightning Conference",
-				  "url": "https://lightning.owasp.org/",
+				{ "title": "OWASP March Webinars",
+				  "url": "https://www.eventbrite.com/e/owasp-march-webinars-tickets-225237991897?utm_campaign=none&utm_medium=event-page&utm_source=owasp-web",
 				 "opentab": "true"
 				},
-				{ "title": "Brain Break",
-				  "url": "https://brainbreak.owasp.org/",
+				{ "title": "OWASP April Webinar",
+				  "url": "https://owasp.org/events/",
 				 "opentab": "true"
 				},
-				{ "title": "Call to Battle",
-				  "url": "https://calltobattle.owasp.org/",
+				{ "title": "OWASP 2022 Global AppSec Europe Virtual Event",
+				  "url": "https://dublin.globalappsec.org/",
 				 "opentab": "true"
 				},
 				{
