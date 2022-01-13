@@ -1,187 +1,240 @@
 {
-	"menus": [{
+	"menus": [
+		{
 			"title": "PROJECTS",
 			"url": "https://owasp.org/projects/",
-			"items": [{
-				"title": "Browse All Projects...",
-				"url": "https://owasp.org/projects/"
-			}, {
-				"title": "OWASP Top Ten",
-				"url": "https://owasp.org/www-project-top-ten/",
-				"separator": "true"
-			}, {
-				"title": "Dependency Track",
-				"url": "https://owasp.org/www-project-dependency-track/"
-			}, {
-				"title": "Juice Shop",
-				"url": "https://owasp.org/www-project-juice-shop/"
-			}, {
-				"title": "Mobile Security Testing Guide",
-				"url": "https://owasp.org/www-project-mobile-security-testing-guide/"
-			}, {
-				"title": "ModSecurity Core Rule Set",
-				"url": "https://owasp.org/www-project-modsecurity-core-rule-set/"
-			}, {
-				"title": "Software Assurance Maturity Model (SAMM)",
-				"url": "https://owasp.org/www-project-samm/"
-			}, {
-				"title": "Security Knowledge Framework",
-				"url": "https://owasp.org/www-project-security-knowledge-framework/"
-			}, {
-				"title": "Web Security Testing Guide",
-				"url": "https://owasp.org/www-project-web-security-testing-guide/"
-			}, {
-				"title": "Zed Attack Proxy",
-				"url": "https://owasp.org/www-project-zap/"
-			},{
-				"title": "Start a New Project...",
-				"url": "https://owasporg.atlassian.net/servicedesk/customer/portal/7/create/70?src=-1419759666",
-				"separator": "true"
-			},{
-				"title": "Google Summer of Code 2021",
-				"url": "https://owasp.org/gsoc/gsoc2021"
-			}]
+			"items": [
+				{
+					"title": "Browse All Projects...",
+					"url": "https://owasp.org/projects/"
+				},
+				{
+					"title": "OWASP Top Ten",
+					"url": "https://owasp.org/www-project-top-ten/",
+					"separator": "true"
+				},
+				{
+					"title": "Dependency Track",
+					"url": "https://owasp.org/www-project-dependency-track/"
+				},
+				{
+					"title": "Juice Shop",
+					"url": "https://owasp.org/www-project-juice-shop/"
+				},
+				{
+					"title": "Mobile Security Testing Guide",
+					"url": "https://owasp.org/www-project-mobile-security-testing-guide/"
+				},
+				{
+					"title": "ModSecurity Core Rule Set",
+					"url": "https://owasp.org/www-project-modsecurity-core-rule-set/"
+				},
+				{
+					"title": "Software Assurance Maturity Model (SAMM)",
+					"url": "https://owasp.org/www-project-samm/"
+				},
+				{
+					"title": "Security Knowledge Framework",
+					"url": "https://owasp.org/www-project-security-knowledge-framework/"
+				},
+				{
+					"title": "Web Security Testing Guide",
+					"url": "https://owasp.org/www-project-web-security-testing-guide/"
+				},
+				{
+					"title": "Zed Attack Proxy",
+					"url": "https://owasp.org/www-project-zap/"
+				},
+				{
+					"title": "Start a New Project...",
+					"url": "https://owasporg.atlassian.net/servicedesk/customer/portal/7/create/70?src=-1419759666",
+					"separator": "true"
+				},
+				{
+					"title": "Google Summer of Code 2021",
+					"url": "https://owasp.org/gsoc/gsoc2021"
+				}
+			]
 		},
 		{
 			"title": "CHAPTERS",
 			"url": "https://owasp.org/chapters/",
-			"items": [{
-				"title": "Find a Local Chapter...",
-				"url": "https://owasp.org/chapters/"
-			}, {
-				"title": "Africa",
-				"url": "https://owasp.org/chapters/#Africa",
-				"separator": "true"
-			}, {
-				"title": "Asia",
-				"url": "https://owasp.org/chapters/#Asia"
-			}, {
-				"title": "Central America",
-				"url": "https://owasp.org/chapters/#CentralAmerica"
-			},{
-				"title": "Eastern Europe",
-				"url": "https://owasp.org/chapters/#EasternEurope"
-			},{
-				"title": "European Union",
-				"url": "https://owasp.org/chapters/#EuropeanUnion"
-			},{
-				"title": "Middle East",
-				"url": "https://owasp.org/chapters/#MiddleEast"
-			},{
-				"title": "North America",
-				"url": "https://owasp.org/chapters/#NorthAmerica"
-			},{
-				"title": "Oceania",
-				"url": "https://owasp.org/chapters/#Oceania"
-			},{
-				"title": "South America",
-				"url": "https://owasp.org/chapters/#SouthAmerica"
-			},{
-				"title": "The Caribbean",
-				"url": "https://owasp.org/chapters/#TheCarribean"
-			},{
-				"title": "Start a Local Chapter...",
-				"url": "https://owasporg.atlassian.net/servicedesk/customer/portal/7/create/73?src=-1419759666",
-				"separator": "true",
-				"opentab": "true"
-			}]
+			"items": [
+				{
+					"title": "Find a Local Chapter...",
+					"url": "https://owasp.org/chapters/"
+				},
+				{
+					"title": "Africa",
+					"url": "https://owasp.org/chapters/#Africa",
+					"separator": "true"
+				},
+				{
+					"title": "Asia",
+					"url": "https://owasp.org/chapters/#Asia"
+				},
+				{
+					"title": "Central America",
+					"url": "https://owasp.org/chapters/#CentralAmerica"
+				},
+				{
+					"title": "Eastern Europe",
+					"url": "https://owasp.org/chapters/#EasternEurope"
+				},
+				{
+					"title": "European Union",
+					"url": "https://owasp.org/chapters/#EuropeanUnion"
+				},
+				{
+					"title": "Middle East",
+					"url": "https://owasp.org/chapters/#MiddleEast"
+				},
+				{
+					"title": "North America",
+					"url": "https://owasp.org/chapters/#NorthAmerica"
+				},
+				{
+					"title": "Oceania",
+					"url": "https://owasp.org/chapters/#Oceania"
+				},
+				{
+					"title": "South America",
+					"url": "https://owasp.org/chapters/#SouthAmerica"
+				},
+				{
+					"title": "The Caribbean",
+					"url": "https://owasp.org/chapters/#TheCarribean"
+				},
+				{
+					"title": "Start a Local Chapter...",
+					"url": "https://owasporg.atlassian.net/servicedesk/customer/portal/7/create/73?src=-1419759666",
+					"separator": "true",
+					"opentab": "true"
+				}
+			]
 		},
 		{
 			"title": "EVENTS",
 			"url": "/events/",
 			"items": [
-				{ "title": "OWASP January Webinar",
-				  "url": "https://www.eventbrite.com/e/owasp-january-webinar-tickets-221608546127?utm_campaign=none&utm_medium=event-page&utm_source=owasp-web",
-				 "opentab": "true"
-				},
-				{ "title": "OWASP Career Fair",
-				  "url": "https://owaspcareerfair.vfairs.com/",
-				 "opentab": "true"
-				},
-				{ "title": "OWASP March Webinars",
-				  "url": "https://www.eventbrite.com/e/owasp-march-webinars-tickets-225237991897?utm_campaign=none&utm_medium=event-page&utm_source=owasp-web",
-				 "opentab": "true"
-				},
-				{ "title": "OWASP April Webinar",
-				  "url": "https://owasp.org/events/",
-				 "opentab": "true"
-				},
-				{ "title": "OWASP 2022 Global AppSec Europe Virtual Event",
-				  "url": "https://dublin.globalappsec.org/",
-				 "opentab": "true"
+				{
+					"title": "OWASP January Webinar",
+					"url": "https://www.eventbrite.com/e/owasp-january-webinar-tickets-221608546127?utm_campaign=none&utm_medium=event-page&utm_source=owasp-web",
+					"opentab": "true"
 				},
 				{
-				"title": "Upcoming Chapter Events",
-				"url": "https://owasp.org/chapters/events/"
-			}, {
-				"title": "Browse All Events...",
-				"url": "https://owasp.org/events/",
-				"separator": "true"
-			}
+					"title": "OWASP Career Fair",
+					"url": "https://owaspcareerfair.vfairs.com/",
+					"opentab": "true"
+				},
+				{
+					"title": "OWASP March Webinars",
+					"url": "https://www.eventbrite.com/e/owasp-march-webinars-tickets-225237991897?utm_campaign=none&utm_medium=event-page&utm_source=owasp-web",
+					"opentab": "true"
+				},
+				{
+					"title": "OWASP April Webinar",
+					"url": "https://owasp.org/events/",
+					"opentab": "true"
+				},
+				{
+					"title": "OWASP 2022 Global AppSec Europe Virtual Event",
+					"url": "https://dublin.globalappsec.org/",
+					"opentab": "true"
+				},
+				{
+					"title": "Upcoming Chapter Events",
+					"url": "https://owasp.org/chapters/events/"
+				},
+				{
+					"title": "Browse All Events...",
+					"url": "https://owasp.org/events/",
+					"separator": "true"
+				}
 			]
 		},
 		{
 			"title": "ABOUT",
 			"url": "https://owasp.org/about/",
-			"items": [{
-				"title": "About OWASP",
-				"url": "https://owasp.org/about/"
-			}, {
-				"title": "Board & Staff",
-				"url": "https://owasp.org/corporate/"
-			}, {
-				"title": "Careers",
-				"url": "https://owasp.org/careers/"
-			},{
-				"title": "Committees",
-				"url"  : "https://owasp.org/committees/" 
-			},{
-				"title": "Contact Us",
-				"url": "https://owasp.org/contact/"
-			}, {
-				"title": "Contributed Content",
-				"url": "https://owasp.org/www-community"
-			},{
-				"title": "Donate",
-				"url": "https://owasp.org/donate/"
-			}, {
-				"title": "Finance",
-				"url": "https://owasp.org/finance/"
-			}, {
-				"title": "Get OWASP Gear",
-				"url": "https://owasp.org/store"
-			},{
-				"title": "Global Board",
-				"url": "https://owasp.org/www-board/"
-			}, {
-				"title": "Governance",
-				"url": "https://owasp.org/governance/"
-			}, {
-				"title": "Membership",
-				"url": "https://owasp.org/membership/"
-			}, {
-				"title": "Membership Portal",
-				"url": "https://members.owasp.org/"
-			},{
-				"title": "Opinions & News",
-				"url": "https://owasp.org/news/"
-			}, {
-				"title": "Policies",
-				"url": "https://owasp.org/www-policy/"
-			}, {
-				"title": "Staff Projects & Procedures",
-				"url": "https://owasp.org/www-staff/"
-			}, {
-				"title": "Corporate Membership",
-				"url": "https://owasp.org/supporters/"
-			}, {
-				"title": "Corporate Event Sponsorship",
-				"url": "https://owasp.org/corporate-sponsorships"
-			}, {
-				"title": "Video",
-				"url": "https://www.youtube.com/user/OWASPGLOBAL/videos",
-				"opentab": "true"
-			}]
+			"items": [
+				{
+					"title": "About OWASP",
+					"url": "https://owasp.org/about/"
+				},
+				{
+					"title": "Careers",
+					"url": "https://owasp.org/careers/"
+				},
+				{
+					"title": "Committees",
+					"url": "https://owasp.org/committees/"
+				},
+				{
+					"title": "Contact Us",
+					"url": "https://owasp.org/contact/"
+				},
+				{
+					"title": "Contributed Content",
+					"url": "https://owasp.org/www-community"
+				},
+				{
+					"title": "Corporate Membership",
+					"url": "https://owasp.org/supporters/"
+				},
+				{
+					"title": "Donate",
+					"url": "https://owasp.org/donate/"
+				},
+				{
+					"title": "Event Sponsorship",
+					"url": "https://owasp.org/corporate-sponsorships"
+				},
+				{
+					"title": "Finance",
+					"url": "https://owasp.org/finance/"
+				},
+				{
+					"title": "Get OWASP Gear",
+					"url": "https://owasp.org/store"
+				},
+				{
+					"title": "Global Board",
+					"url": "https://owasp.org/www-board/"
+				},
+				{
+					"title": "Governance",
+					"url": "https://owasp.org/governance/"
+				},
+				{
+					"title": "Membership",
+					"url": "https://owasp.org/membership/"
+				},
+				{
+					"title": "Membership Portal",
+					"url": "https://members.owasp.org/"
+				},
+				{
+					"title": "Opinions & News",
+					"url": "https://owasp.org/news/"
+				},
+				{
+					"title": "Policies",
+					"url": "https://owasp.org/www-policy/"
+				},
+				{
+					"title": "Staff",
+					"url": "https://owasp.org/corporate/"
+				},
+				{
+					"title": "Staff Projects & Procedures",
+					"url": "https://owasp.org/www-staff/"
+				},
+				{
+					"title": "Video",
+					"url": "https://www.youtube.com/user/OWASPGLOBAL/videos",
+					"opentab": "true"
+				}
+			]
 		}
 	]
 }
