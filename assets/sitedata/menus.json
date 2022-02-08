@@ -74,20 +74,16 @@
 					"url": "https://owasp.org/chapters/#Asia"
 				},
 				{
+					"title": "Caribbean",
+					"url": "https://owasp.org/chapters/#TheCarribean"
+				},
+				{
 					"title": "Central America",
 					"url": "https://owasp.org/chapters/#CentralAmerica"
 				},
 				{
-					"title": "Eastern Europe",
-					"url": "https://owasp.org/chapters/#EasternEurope"
-				},
-				{
-					"title": "European Union",
-					"url": "https://owasp.org/chapters/#EuropeanUnion"
-				},
-				{
-					"title": "Middle East",
-					"url": "https://owasp.org/chapters/#MiddleEast"
+					"title": "Europe",
+					"url": "https://owasp.org/chapters/#Europe"
 				},
 				{
 					"title": "North America",
@@ -100,10 +96,6 @@
 				{
 					"title": "South America",
 					"url": "https://owasp.org/chapters/#SouthAmerica"
-				},
-				{
-					"title": "The Caribbean",
-					"url": "https://owasp.org/chapters/#TheCarribean"
 				},
 				{
 					"title": "Start a Local Chapter...",
