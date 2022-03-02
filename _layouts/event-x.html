@@ -36,7 +36,11 @@
     {% include evnt-header.html %}
 
     <main role="main">
-      <div class='event-image-container-x' >
+    {% assign bg-style = "linear-gradient(#fff 90%, #fff)" %}
+    {% if site.data.event-details.background-style %}
+    {% assign bg-style = site.data.event-details.background-style %}
+    {% endif %}
+      <div class='event-image-container-x' style="{{bg-style}}" >
         <img src="{{baseurl}}assets/images/{{site.data.event-details.background}}" />
       
       </div>
