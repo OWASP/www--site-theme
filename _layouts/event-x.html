@@ -40,7 +40,11 @@
     {% if site.data.event-details.background-style %}
     {% assign bg-style = site.data.event-details.background-style %}
     {% endif %}
-      <div class='event-image-container-x' style="background:{{bg-style}}" >
+    {% assign bg-padding = "0em 2em 4em 2em"}
+    {% if site.data.event-details.background-padding %}
+    {% assign bg-padding = site.data.event-details.background-padding %}
+    {% endif %}
+      <div class='event-image-container-x' style="background:{{bg-style}};{{bg-padding}};" >
         <img src="{{baseurl}}assets/images/{{site.data.event-details.background}}" />
       
       </div>
