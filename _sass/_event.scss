@@ -312,7 +312,20 @@
 	}
   }
 
-
+  .event-image-container-x {
+	background-position: center center;
+	background-repeat: repeat-y, no-repeat;
+	background-size: cover, cover;
+	padding: 0em 2em 4em 2em;
+	justify-content: space-around;
+	max-width: 100%;
+	background: linear-gradient(#000 90%, #fff);
+	text-align:center;
+	hr {
+		max-width: 33%;
+		margin-left: 33%;
+	}
+  }
 
 .alt-wrapper {
 	display: inline-block;
