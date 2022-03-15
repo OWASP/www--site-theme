@@ -59,7 +59,10 @@
           {% assign ksize = site.data.keynotespeakers | size %}
           {% if ksize > 0 %}
           <div class='alt-wrapper'>
-            <section class="keynotes-front" style="background-color:#{{ site.data.event-details.color }};">
+          {% assign ktextcolor = 'fff' %}
+          {% if site.data.event-details.keynotestextcolor %}
+          {% assign ktextcolor = site.data.event-details.keynotestextcolor %}
+          <section class="keynotes-front" style="background-color:#{{ site.data.event-details.color }};color:#{{ ktextcolor }};">
             {% include keynotes.md %}
             </section>
           {% endif %}
