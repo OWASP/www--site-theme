@@ -62,6 +62,7 @@
           {% assign ktextcolor = '000' %}
           {% if site.data.event-details.keynotestextcolor %}
           {% assign ktextcolor = site.data.event-details.keynotestextcolor %}
+          {% endif %}
           <section class="keynotes-front" style="background-color:#{{ site.data.event-details.color }};color:#{{ ktextcolor }};">
             {% include keynotes.md %}
             </section>
