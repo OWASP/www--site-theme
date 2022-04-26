@@ -7,6 +7,7 @@ permalink: /chapters
 
 ---
 
+<!-- Rebuild -->
 
 Test Chapter Page
 
