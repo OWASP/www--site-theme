@@ -2,44 +2,41 @@
 - category: Global
   description: Our premier events bringing together our multifaceted communities to engage in a variety of education events, trainings, and entertainment based gatherings to enhance your skills, increase your connections, and bring balance to your daily AppSec world.
   events:
-      #- name: Lightning Conference 
-       # optional-text: Fast, furious, and informative. Our Lightning Conference will feature an industry thought-leader and Sponsor Discovery Demos all in a fast paced 90 minutes.
-       # start-date: 2021-1-20
-       # dates: January 20, 2021
-       # url: 
-      - name: Summer of Security Top 7 Re-Run 
-        optional-text: We're bringing back our hottest virtual training courses from 2020 to kick-off your New Year! If you missed these this summer, now is your chance to upskill.
-        start-date: 2021-1-26
-        dates: January 26, 2021
-        url: https://training.owasp.org
-      - name: Brain Break
-        optional-text: Turn off the learning, find some balance, and show up for the networking and fun. Join us for this short entertainment program and let us provide some laughter and levity in your life.
-        start-date: 2021-2-18
-        dates: February 18, April 20, June 23, August 18, October 20, and December 16.
-        url: https://brainbreak.owasp.org
-      - name: Call to Battle
-        optional-text: Calling all gamers, challenge champs, and fun-nerds this event is just for you. Submit your idea to host a virtual game challenge and we'll invite the community for the ultimate global game-a-thon. 
-        start-date: 2021-2-26
-        dates: February 26, April 9, August 27, and December 7.
-        url: https://calltobattle.owasp.org
-      - name: OWASP Virtual Training Courses
-        optional-text: Offering new topics and skills, our OWASP Training Course line-up kicks off with these offerings this March. Don't miss out on these multi-day virtual trainings to retool and level-up.
-        start-date: 2021-3-9
-        dates: March 9, May 25, June 15, July 13, September 7, and November 3.
-        url: 
-      - name: Lightning Conference
-        optional-text: Fast, furious, and informative. Our Lightning Conference will feature an industry thought-leader and insights from sponsors all in a fast paced 90 minutes.
-        start-date: 2021-3-15
-        dates: March 15, May 12, July 20, September 28, and November 16.
-        url: https://lightning.owasp.org
-      - name: OWASP Global AppSec Dublin
-        start-date: 2022-6-6
-        dates: June 6-10, 2022
-        optional-text: Due to COVID 19 and the desire to put on the best AppSec events possible, Global AppSec Dublin and Global AppSec San Francisco have been postponed until 2022.
-      - name: OWASP Global AppSec San Francisco
-        start-date: 2022-11-19
-        dates: September 19-23, 2022
-        optional-text: Due to COVID 19 and the desire to put on the best AppSec events possible, Global AppSec Dublin and Global AppSec San Francisco have been postponed until 2022.
+     - name: OWASP New Zealand Day 2022
+       start-date: 2022-07-05
+       dates: July 5-8, 2022 GMT+12
+       url: https://appsec.org.nz/conference
+       optional-text: <strong>5-6 July - Pre-conference training, 7-8 Main Conference. Register today!</strong>
+     - name: OWASP 2022 Global AppSec AsiaPac Virtual Event
+       optional-text: <strong>Call for Papers and Call for Trainers are now OPEN including a track that will be held in Japanese. Exhibitor and Sponsorship Opportunities - NOW available! Call for Moderators - now accepting applications for individuals fluent in both English and Japanese. Discounted rates for OWASP Members.<strong>
+       start-date: 2022-08-29
+       dates: August 29 - September 1, 2022 Singapore Time (SGT)
+       url: https://whova.com/web/S01MAxzRa49H60XWA6U3vkikTxPUTwLpY4t6Ro00Hx0%3D/
+     - name: OWASP September Webinar
+       optional-text: Designed for the software developer, this 2-day webinar will further educate developers to write more secure code using the OWASP Top 10 as a guide. The webinar will include a mix of lectures, demonstrations, and labs. Join us for a fun, relaxed, virtual environment to level-up your skills. <strong>Registration closes September 20.<strong>
+       start-date: 2022-09-22
+       dates: September 22-23, 2022 Eastern Daylight Time (EDT)
+       url: https://www.eventbrite.com/e/247416939727
+     - name: OWASP October Webinar
+       optional-text: Designed for the software developer, this 2-day webinar will further educate developers to write more secure code using the OWASP Top 10 as a guide. The webinar will include a mix of lectures, demonstrations, and labs. Join us for a fun, relaxed, virtual environment to level-up your skills. <strong>Registration closes October 7.<strong>
+       start-date: 2022-10-11
+       dates: October 11-12, 2022 Australian Western Standard Time (AWST)
+       url: https://www.eventbrite.com/e/247450760887
+     - name: OWASP 2022 Global AppSec San Francisco
+       start-date: 2022-11-14
+       dates: November 14-18, 2022 Pacific Standard Time (PST)
+       url: https://sf.globalappsec.org/
+       optional-text: Join us in-person in San Francisco for three days of training followed by two conference days with multiple tracks. <strong>Call for Papers and Call for Trainers will open in early June.<strong> Additional details including Exhibitor opportunities will be coming soon!
+     - name: Happy Holidays Training
+       optional-text: OWASP is pleased to bring you our Happy Holiday's Training. Don't miss this multi-day virtual developer training to retool and level-up. More details coming soon!
+       start-date: 2022-12-12
+       dates: December 12-13, 2022 Eastern Standard Time (EST)
+       url:
+     - name: 2023 Global AppSec Dublin
+       start-date: 2023-02-13
+       dates: February 13-16, 2023
+       #url:
+       optional-text: Join us in-person in Dublin for two days of training followed by two conference days with multiple tracks.
 - category: Regional
   description: Ranging from single day to week long events, local OWASP volunteers organize and host conferences around the world. 
   events:

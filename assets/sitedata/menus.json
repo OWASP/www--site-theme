@@ -110,27 +110,32 @@
 			"url": "/events/",
 			"items": [
 				{
-					"title": "OWASP January Webinar",
-					"url": "https://www.eventbrite.com/e/owasp-january-webinar-tickets-221608546127?utm_campaign=none&utm_medium=event-page&utm_source=owasp-web",
+					"title": "OWASP AppSec NZ",
+					"url": "https://appsec.org.nz/conference",
 					"opentab": "true"
 				},
 				{
-					"title": "OWASP Career Fair",
-					"url": "https://owaspcareerfair.vfairs.com/",
+					"title": "OWASP Global AppSec AsiaPac Virtual 2022",
+					"url": "https://whova.com/web/S01MAxzRa49H60XWA6U3vkikTxPUTwLpY4t6Ro00Hx0%3D/",
 					"opentab": "true"
 				},
 				{
-					"title": "OWASP March Webinars",
-					"url": "https://www.eventbrite.com/e/owasp-march-webinars-tickets-225237991897?utm_campaign=none&utm_medium=event-page&utm_source=owasp-web",
+					"title": "OWASP September Webinar",
+					"url": "https://www.eventbrite.com/e/247416939727",
 					"opentab": "true"
 				},
 				{
-					"title": "OWASP April Webinar",
-					"url": "https://owasp.org/events/",
+					"title": "OWASP October Webinar",
+					"url": "https://www.eventbrite.com/e/247450760887",
 					"opentab": "true"
 				},
 				{
-					"title": "OWASP 2022 Global AppSec Europe Virtual Event",
+					"title": "OWASP Global AppSec San Francisco 2022",
+					"url": "https://sf.globalappsec.org/",
+					"opentab": "true"
+				},
+				{
+					"title": "OWASP 2023 Global AppSec Dublin 2023",
 					"url": "https://dublin.globalappsec.org/",
 					"opentab": "true"
 				},
