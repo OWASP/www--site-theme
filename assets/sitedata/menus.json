@@ -22,8 +22,8 @@
 					"url": "https://owasp.org/www-project-juice-shop/"
 				},
 				{
-					"title": "Mobile Security Testing Guide",
-					"url": "https://owasp.org/www-project-mobile-security-testing-guide/"
+					"title": "Mobile Application Security",
+					"url": "https://owasp.org/mas/"
 				},
 				{
 					"title": "ModSecurity Core Rule Set",
