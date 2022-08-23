@@ -24,9 +24,9 @@
 
 {% assign dev_file = site.static_files | where: "name", "devsite.txt" %}
 {% if dev_file.size > 0 %}
-{% assign base_url = '/' %}
+{% assign local_base_url = '/' %}
 {% else %}
-{% assign base_url = site.github.url | replace: 'owasp.github.io','owasp.org' | replace: 'http://', 'https://' %}
+{% assign local_base_url = site.github.url | replace: 'owasp.github.io','owasp.org' | replace: 'http://', 'https://' %}
 {% endif %}
 
 {% assign spages = site.pages | where_exp: "page", "page.tags contains page.document" | sort: "order" %}
@@ -55,13 +55,13 @@
           <nav role="navigation" aria-label="navigate page">
               <ol>
               {% if previous %}
-                {% assign href = base_url | append: previous.url | replace: "www2.", "" | replace: ".html", "" | replace: 'http://', 'https://' %}
+                {% assign href = local_base_url | append: previous.url | replace: "www2.", "" | replace: ".html", "" | replace: 'http://', 'https://' %}
                 <li class='page previous'><a href="{{ href }}"><span style="font-size: 3em; color: lightgray; vertical-align:middle;">
                     <i class="fas fa-angle-left"></i>
                   </span>{{ previous.title }}</a></li>
               {% endif %}
               {% if next %}
-                {% assign href = base_url | append: next.url | replace: "www2.", ""  | replace: ".html", "" | replace: 'http://', 'https://' %}
+                {% assign href = local_base_url | append: next.url | replace: "www2.", ""  | replace: ".html", "" | replace: 'http://', 'https://' %}
                 <li class='page next'><a href="{{ href }}">{{ next.title }}<span style="font-size: 3em; color: lightgray; vertical-align:middle;">
                     <i class="fas fa-angle-right"></i>
                   </span></a></li>
@@ -103,13 +103,13 @@
           <nav role="navigation" aria-label="navigate page">
             <ol>
             {% if previous %}
-            {% assign href = site.github.url | append: previous.url | replace: "www2.", "" | replace: ".html", "" | replace: 'http://', 'https://' %}
+            {% assign href = local_base_url | append: previous.url | replace: "www2.", "" | replace: ".html", "" | replace: 'http://', 'https://' %}
               <li class='page previous'><a href="{{ href }}"><span style="font-size: 3em; color: lightgray; vertical-align:middle;">
                   <i class="fas fa-angle-left"></i>
                 </span>{{ previous.title }}</a></li>
             {% endif %}
             {% if next %}
-            {% assign href = site.github.url | append: next.url | replace: "www2.", ""  | replace: ".html", "" | replace: 'http://', 'https://' %}
+            {% assign href = local_base_url | append: next.url | replace: "www2.", ""  | replace: ".html", "" | replace: 'http://', 'https://' %}
               <li class='page next'><a href="{{ href }}">{{ next.title }}<span style="font-size: 3em; color: lightgray; vertical-align:middle;">
                   <i class="fas fa-angle-right"></i>
                 </span></a></li>
