@@ -54,6 +54,7 @@
                 {% assign href = site.github.url | append: previous.url | replace: "www2.", "" | replace: ".html", "" | replace: 'http://', 'https://' %}
                 {% else %}
                 {% assign href = previous.url %}
+                {% endif %}
                 <li class='page previous'><a href="{{ href }}"><span style="font-size: 3em; color: lightgray; vertical-align:middle;">
                     <i class="fas fa-angle-left"></i>
                   </span>{{ previous.title }}</a></li>
@@ -109,6 +110,7 @@
               {% assign href = site.github.url | append: previous.url | replace: "www2.", "" | replace: ".html", "" | replace: 'http://', 'https://' %}
               {% else %}
               {% assign href = previous.url %}
+              {% endif %}
               <li class='page previous'><a href="{{ href }}"><span style="font-size: 3em; color: lightgray; vertical-align:middle;">
                   <i class="fas fa-angle-left"></i>
                 </span>{{ previous.title }}</a></li>
