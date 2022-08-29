@@ -17,7 +17,16 @@
 {% if eventsupporters.size > 0 %}
 <h2>Event Sponsors</h2><br/>
 <div id="event_member_div">
-{% for member in eventsupporters %}
+  {% assign previous_name = '' %}
+  {% assign unique_supporters = '' | split: ',' %}
+  {% for sponsor in eventsupporters %}
+  {% unless sponsor.name == previous_name %}
+  {% assign unique_supporters = unique_supporters | push: sponsor %}
+  {% endunless %}
+  {% assign previous_name = sponsor.name %}
+  {% endfor %}
+  
+{% for member in unique_supporters %}
   <a href="{{member.url}}" class="member-logo" onclick='handleOutboundLinkClicks(event);' target="_blank" rel="sponsored noopener noreferrer"><img src="{{member.logo}}" alt="image"/></a>
 {% endfor %}
 </div> 
