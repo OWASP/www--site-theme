@@ -143,6 +143,11 @@
 					"title": "Upcoming Chapter Events",
 					"url": "https://owasp.org/chapters/events/"
 				},
+				,
+				{
+					"title": "Event Sponsorship",
+					"url": "https://owasp.org/corporate-sponsorships"
+				},
 				{
 					"title": "Browse All Events...",
 					"url": "https://owasp.org/events/",
@@ -181,10 +186,6 @@
 				{
 					"title": "Donate",
 					"url": "https://owasp.org/donate/"
-				},
-				{
-					"title": "Event Sponsorship",
-					"url": "https://owasp.org/corporate-sponsorships"
 				},
 				{
 					"title": "Finance",
