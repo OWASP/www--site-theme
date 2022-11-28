@@ -67,12 +67,12 @@
         </div>
       </div> 
       <div class="main-wrapper event-wrapper">
-          <div class="left-70">
-          {{ content }}
-          </div>
           {% if page.pricing == nil or page.pricing == true %}
               {% include event-pricing-2.0.html %}
           {% endif %}
+          <div class="left-70">
+          {{ content }}
+          </div>          
           {% assign ksize = site.data.keynotespeakers | size %}
           {% if ksize > 0 %}
           <div class='alt-wrapper'>
