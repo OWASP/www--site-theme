@@ -115,6 +115,11 @@
 			"url": "/events/",
 			"items": [
 				{
+					"title": "OWASP Global AppSec Singapore 2023",
+					"url": "https://singapore.globalappsec.org/",
+					"opentab": "true"
+				},
+				{
 					"title": "OWASP Global AppSec DC 2023",
 					"url": "https://dc.globalappsec.org/",
 					"opentab": "true"
