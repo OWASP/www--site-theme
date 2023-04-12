@@ -51,6 +51,11 @@
 					"separator": "true"
 				},
 				{
+					"title": "Community Contributions",
+					"utl": "https://owasp.org/www-community/",
+					"separator": "true"
+				},
+				{
 					"title": "Google Summer of Code 2023",
 					"url": "https://owasp.org/gsoc/gsoc2023"
 				}
