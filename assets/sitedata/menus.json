@@ -120,6 +120,11 @@
 					"opentab": "true"
 				},
 				{
+					"title": "OWASP Global AppSec Singapore 2023",
+					"url": "https://singapore.globalappsec.org/",
+					"opentab": "true"
+				},
+				{	
 					"title": "Upcoming Chapter Events",
 					"url": "https://owasp.org/chapters/events/"
 				},
