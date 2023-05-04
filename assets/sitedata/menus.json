@@ -216,6 +216,10 @@
 					"url": "https://owasp.org/www-staff/"
 				},
 				{
+					"title": "Subscribe to our Mailing List",
+					"url": "https://owasp.us17.list-manage.com/subscribe?u=a8012c9e2e384bf8ea8d7deb7&id=22be76c892"
+				},
+				{
 					"title": "Video",
 					"url": "https://www.youtube.com/user/OWASPGLOBAL/videos",
 					"opentab": "true"
