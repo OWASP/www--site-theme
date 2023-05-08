@@ -188,6 +188,10 @@
 					"url": "https://owasp.org/www-board/"
 				},
 				{
+					"title": "Global Board EU",
+					"url": "https://owasp.org/www-board-eu/"
+				},
+				{
 					"title": "Governance",
 					"url": "https://owasp.org/governance/"
 				},
