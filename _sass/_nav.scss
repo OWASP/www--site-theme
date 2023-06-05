@@ -32,13 +32,30 @@ header {
   align-items: center;
 }
 
-.search-bar {
-  width: 100%;
-  max-width: 180px;
+.mini-search-bar {
+  width: 15em;
   border: 2px solid #dddddd;
   padding: 6px;
   border-radius: 0;
   padding-right: 25px;
+  font-size: larger;
+
+  &:focus {
+    border-color: $cta-blue;
+  }
+  &:placeholder {
+    color: $bg-grey;
+  }
+}
+
+.search-bar {
+  width: 30em;
+  border: 2px solid #dddddd;
+  padding: 6px;
+  border-radius: 0;
+  padding-right: 25px;
+  font-size: larger;
+
   &:focus {
     border-color: $cta-blue;
   }

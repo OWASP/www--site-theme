@@ -147,6 +147,11 @@ footer {
   padding-left: 15px;
 }
 
+.bigheader {
+  font-size: 48pt;
+  max-width: 768px;
+  line-height:normal;
+}
 
 @media screen and (max-width: $header-bp - 1) { // 1019px
   // replace desktop nav with mobile nav

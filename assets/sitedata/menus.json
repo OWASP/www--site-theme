@@ -229,6 +229,16 @@
 					"opentab": "true"
 				}
 			]
+		},
+		{
+			"title": "<icon style='margin-left:50%;' class='fa fa-search'>",
+			"url" : "#",
+			"items": [
+				{
+				"title": "<form style='display:inline-block;' role='search' method='get' action='https://owasp.org/search'><div class='search-div'><input id='searchString' name='searchString' class='mini-search-bar' type='search' placeholder='Search OWASP.org' required='true'><button id='search-button' type='submit' class='fa fa-search'></button></div></form>",
+				"url": "#" 
+				}
+			]
 		}
 	]
 }

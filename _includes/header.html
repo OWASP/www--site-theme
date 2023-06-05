@@ -21,15 +21,7 @@
       </a>
       <!-- jekyll menu stuff -->
       
-      <div class="interactive-wrapper">
-        <form role="search" method="get" action="https://owasp.org/search">   
-          <div class='search-div'>
-            <input id="searchString" name="searchString" class="search-bar" type="search" placeholder="Search OWASP.org" required="true">
-            <button id="search-button" type="submit" class="fa fa-search">
-                <!--<span id="search-icon" tabindex="0"><i class="fa fa-search"></i></span>-->
-            </button>
-          </div>  
-        </form>
+      <div class="interactive-wrapper">                
         <div class="nav-button" aria-label="donate to or join OWASP">
         {% if site.github.repository_name contains 'project-' or site.github.repository_name contains 'chapter-' or site.github.repository_name contains 'committee-' %}
         {% assign ptitle = page.title | url_encode %}
@@ -82,47 +74,57 @@
           mlistr += "</li>";
           $.each(data.menus, function (ndx, menu){
               listr += "<li><a href='" + menu.url + "'>" + menu.title + "</a>";
-
-              if(!menu.items)
+              searchitem = issearch(menu.title);
+              if(!menu.items && !searchitem)
               {
                   mlistr += "<li><a href='" + menu.url + "'>" + menu.title + "</a>";
               }
               
               if(menu.items){
                   listr += "<ul class='dropdown-menu'>";
-                  mlistr += "<button class='accordion'>" + menu.title + "</button>";
-                  mlistr += "<div class='panel'>";
-                  mlistr += "<ul>";
+                  if(!searchitem) {
+                    mlistr += "<button class='accordion'>" + menu.title + "</button>";
+                    mlistr += "<div class='panel'>";
+                    mlistr += "<ul>";
+                  }
                 $.each(menu.items, function(ndx, item){
                 
                   if(item.separator)
                   {
                       listr += "<li class='separator'>";
-                      mlistr += "<li class='separator'>";
+                      if(!searchitem)
+                        mlistr += "<li class='separator'>";
                   }
                   else
                   {
                       listr += "<li>";
-                      mlistr += "<li>";
+                      if(!searchitem)
+                        mlistr += "<li>";
                   }
                   listr += "<a href='" + item.url + "'";
-                  mlistr += "<a href='" + item.url + "'";
+                  if(!searchitem)
+                    mlistr += "<a href='" + item.url + "'";
                   if(item.opentab)
                   {
                     listr += " target='_blank' rel='noopener noreferrer'";
-                    mlistr += " target='_blank' rel='noopener noreferrer'";
+                    if(!searchitem)
+                      mlistr += " target='_blank' rel='noopener noreferrer'";
                   }
 
                   listr += ">" + item.title + "</a></li>";
-                  mlistr += ">" + item.title + "</a></li>";
+                  if(!searchitem)
+                    mlistr += ">" + item.title + "</a></li>";
                 });
                 listr += "</ul>";
-                mlistr += "</ul>";
-                mlistr += "</div>"
+                if(!searchitem){
+                  mlistr += "</ul>";
+                  mlistr += "</div>";
+                }
               }
               
               listr += "</li>";
-              mlistr += "</li>";
+              if(!searchitem)
+                mlistr += "</li>";
           });
           listr += "</ul>";
           mlistr += "<li><a href='https://owasp.org/donate'>MAKE A DONATION</a></li>";
@@ -147,5 +149,9 @@
             });
       });
     });
+
+    function issearch(title) {
+      return title.indexOf('fa fa-search') > -1;
+    }
   </script>
 </header>
