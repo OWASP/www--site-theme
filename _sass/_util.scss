@@ -13,7 +13,7 @@ $site-font-italic: "roboto_italic";
 $site-font-bold-italic: "roboto_bolditalic";
 
 $bg-blue:  #233e81;
-$bg-grey:  #f3f4f6;
+$bg-grey:  #c9cad9;
 $cta-blue: #1d7bd7;
 
 $success: #369505;
@@ -60,7 +60,7 @@ $header-bp:  $grid-val*34; // 1020px, header changes
 @mixin nav-link {
   margin: 0 10px;
   text-decoration: none;
-  color: lighten(black, 40%);
+  color: black;
   &:hover {
     color: $bg-blue;
   }
