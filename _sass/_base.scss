@@ -63,12 +63,12 @@ a {
 .member-wrapper,
 .footer-wrapper,
 .alt-member-wrapper {
-  max-width: $grid-val * 44; // 30 * 45 = 1320px
+  max-width: $grid-val * 50; // 30 * 45 = 1320px
   width: 100%;
   margin: 0 auto;
   padding: 0;
   & > * {
-    margin-left: 0px;
+    margin-left: 0;
     margin-right: 30px;
   }
 }
