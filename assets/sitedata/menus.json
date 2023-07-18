@@ -129,10 +129,6 @@
 					"url": "https://owasp.org/chapters/events/"
 				},
 				{
-					"title": "Event Sponsorship",
-					"url": "https://owasp.org/corporate-sponsorships"
-				},
-				{
 					"title": "Browse All Events...",
 					"url": "https://owasp.org/events/",
 					"separator": "true"
