@@ -34,16 +34,8 @@
 					"url": "https://owasp.org/www-project-samm/"
 				},
 				{
-					"title": "Security Knowledge Framework",
-					"url": "https://owasp.org/www-project-security-knowledge-framework/"
-				},
-				{
 					"title": "Web Security Testing Guide",
 					"url": "https://owasp.org/www-project-web-security-testing-guide/"
-				},
-				{
-					"title": "Zed Attack Proxy",
-					"url": "https://owasp.org/www-project-zap/"
 				},
 				{
 					"title": "Start a New Project...",
