@@ -3,8 +3,8 @@
             <div class="member-wrapper">
               <section class="member-list">
 {% if site.data.sponsors.size > 0 %}                   
-{% assign corpsupporters = site.data.sponsors | where: 'type', 'corporate' | sort: 'name' %}
-{% assign eventsupporters = site.data.sponsors | where_exp: 'sponsor', 'sponsor.type != "corporate"' | sort: 'name' %}
+{% assign corpsupporters = site.data.sponsors | where: 'type', 'corporate' | sort_natural: 'name' %}
+{% assign eventsupporters = site.data.sponsors | where_exp: 'sponsor', 'sponsor.type != "corporate"' | sort_natural: 'name' %}
 {% endif %}
 {% if corpsupporters.size > 0 %}
 <h2>Corporate Supporters</h2>
