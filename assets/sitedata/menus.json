@@ -106,22 +106,8 @@
 			"title": "EVENTS",
 			"url": "/events/",
 			"items": [
-				{
-					"title": "OWASP Global AppSec DC 2023",
-					"url": "https://dc.globalappsec.org/",
-					"opentab": "true"
-				},
-				{
-					"title": "OWASP LASCON 2023",
-					"url": "https://lascon.org/",
-					"opentab": "true"				
-				},
-				{
-					"title": "OWASP BeNeLux2023",
-					"url": "https://owaspbenelux.eu/",
-					"opentab": "true" 
-				},
 				{	
+					
 					"title": "OWASP AppSec Days Pacific Northwest 2024",
 					"url": "https://appsecpnw.org/",
 					"opentab": "true" 
