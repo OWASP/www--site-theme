@@ -107,7 +107,6 @@
 			"url": "/events/",
 			"items": [
 				{	
-					
 					"title": "OWASP AppSec Days Pacific Northwest 2024",
 					"url": "https://appsecpnw.org/",
 					"opentab": "true" 
