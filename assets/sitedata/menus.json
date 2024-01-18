@@ -107,6 +107,16 @@
 			"url": "/events/",
 			"items": [
 				{	
+					"title": "OWASP SnowFROC 2024",
+					"url": "https://snowfroc.com/",
+					"opentab": "true" 
+				},
+				{	
+					"title": "OWASP Boston Application Security Conference 2024",
+					"url": "https://basconf.org.com/",
+					"opentab": "true" 
+				},
+				{	
 					"title": "OWASP AppSec Days Pacific Northwest 2024",
 					"url": "https://appsecpnw.org/",
 					"opentab": "true" 
@@ -114,6 +124,11 @@
 				{						
 					"title": "OWASP Global AppSec Lisbon 2024",
 					"url": "https://lisbon.globalappsec.org/",
+					"opentab": "true"
+				},
+				{						
+					"title": "OWASP LASCON 2024",
+					"url": "https://lascon.org.org/",
 					"opentab": "true"				
 				},
 				{
