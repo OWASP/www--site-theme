@@ -4,13 +4,13 @@ pre {
     overflow: auto;
     font-size: 85%;
     line-height: 1.45;
-    background-color: $bg-grey;
+    background-color: $code-grey;
     border-radius: 3px;
 }
 
 code {
     font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
-    background-color: $bg-grey;
+    background-color: $code-grey;
     white-space:pre-wrap;
     // not language specific...
     .kd {
