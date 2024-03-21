@@ -107,11 +107,6 @@
 			"url": "/events/",
 			"items": [
 				{	
-					"title": "OWASP SnowFROC 2024",
-					"url": "https://snowfroc.com/",
-					"opentab": "true" 
-				},
-				{	
 					"title": "OWASP Boston Application Security Conference 2024",
 					"url": "https://basconf.org/",
 					"opentab": "true" 
