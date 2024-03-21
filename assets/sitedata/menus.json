@@ -119,7 +119,8 @@
 				{	
 					"title": "OWASP Spring Virtual Training Days CfT",
 					"url": "https://owasp.submittable.com/submit/289409/2024-owasp-spring-virtual-training/",
-					"opentab": "true" 				},
+					"opentab": "true" 				
+				},
 				{	
 					"title": "OWASP AppSec Days Pacific Northwest 2024",
 					"url": "https://appsecpnw.org/",
@@ -129,6 +130,11 @@
 					"title": "OWASP Global AppSec Lisbon 2024",
 					"url": "https://lisbon.globalappsec.org/",
 					"opentab": "true"
+				},
+				{						
+					"title": "OWASP Global AppSec San Francisco 2024",
+					"url": "https://sf.globalappsec.org/",
+					"opentab": "true"				
 				},
 				{						
 					"title": "OWASP LASCON 2024",
