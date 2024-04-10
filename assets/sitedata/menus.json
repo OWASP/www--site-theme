@@ -134,6 +134,11 @@
 				{						
 					"title": "OWASP LASCON 2024",
 					"url": "https://lascon.org/",
+					"opentab": "true"	
+				},
+				{						
+					"title": "OWASP BeNeLux 2024",
+					"url": "https://www.owaspbenelux.eu/",
 					"opentab": "true"				
 				},
 				{
