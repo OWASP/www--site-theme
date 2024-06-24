@@ -107,21 +107,6 @@
 			"url": "/events/",
 			"items": [
 				{	
-					"title": "OWASP Boston Application Security Conference 2024",
-					"url": "https://basconf.org/",
-					"opentab": "true" 
-				},
-				{	
-					"title": "OWASP Spring Virtual Training Days",
-					"url": "https://www.eventbrite.com/e/848566494227?aff=oddtdtcreator",
-					"opentab": "true" 				
-				},
-				{	
-					"title": "OWASP AppSec Days Pacific Northwest 2024",
-					"url": "https://appsecpnw.org/",
-					"opentab": "true" 
-				},
-				{	
 					"title": "OWASP Italy Day 2024",
 					"url": "https://owasp.org/www-chapter-italy/",
 					"opentab": "true" 				
@@ -129,12 +114,17 @@
 				{						
 					"title": "OWASP Global AppSec Lisbon 2024",
 					"url": "https://lisbon.globalappsec.org/",
-					"opentab": "true"
+					"opentab": "true"			
 				},
 				{						
 					"title": "OWASP Global AppSec San Francisco 2024",
 					"url": "https://sf.globalappsec.org/",
-					"opentab": "true"				
+					"opentab": "true"	
+				},
+				{						
+					"title": "OWASP AppSec Days Singapore 2024",
+					"url": "https://singapore.appsecdays.org/?utm_source=owasp-web&utm_medium=event-page&utm_campaign=none",
+					"opentab": "true"					
 				},
 				{						
 					"title": "OWASP LASCON 2024",
