@@ -134,6 +134,11 @@
 				{						
 					"title": "OWASP Global AppSec San Francisco 2024",
 					"url": "https://sf.globalappsec.org/",
+					"opentab": "true"	
+				},
+				{						
+					"title": "OWASP AppSec Days Singapore 2024",
+					"url": "https://singapore.appsecdays.org/?utm_source=owasp-web&utm_medium=event-page&utm_campaign=none",
 					"opentab": "true"				
 				},
 				{						
