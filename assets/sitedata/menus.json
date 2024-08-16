@@ -124,6 +124,11 @@
 				{						
 					"title": "OWASP Developer Day San Francisco 2024",
 					"url": "https://developerdays.globalappsec.org/",
+					"opentab": "true"	
+				},
+				{						
+					"title": "OWASP AppSec Days Panama 2024",
+					"url": "https://panama.appsecdays.org/",
 					"opentab": "true"				
 				},
 				{						
