@@ -124,6 +124,11 @@
 				{						
 					"title": "OWASP Developer Day San Francisco 2024",
 					"url": "https://developerdays.globalappsec.org/",
+					"opentab": "true"
+				},
+				{						
+					"title": "OWASP AppSec Days Panama 2024",
+					"url": "https://panama.appsecdays.org/",
 					"opentab": "true"				
 				},
 				{						
@@ -136,8 +141,13 @@
 					"url": "https://lascon.org/",
 					"opentab": "true"	
 				},
-				{						
-					"title": "OWASP BeNeLux 2024",
+				{	
+					"title": "OWASP Virtual Appsec Days India 2024",
+					"url": "https://india.appsecdays.org/",
+					"opentab": "true"	
+				},
+				{					
+				        "title": "OWASP BeNelux 2024",
 					"url": "https://www.owaspbenelux.eu/",
 					"opentab": "true"				
 				},
