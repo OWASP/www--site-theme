@@ -106,16 +106,6 @@
 			"title": "EVENTS",
 			"url": "/events/",
 			"items": [
-				{	
-					"title": "OWASP Italy Day 2024",
-					"url": "https://owasp.org/www-chapter-italy/",
-					"opentab": "true" 				
-				},
-				{						
-					"title": "OWASP Global AppSec Lisbon 2024",
-					"url": "https://lisbon.globalappsec.org/",
-					"opentab": "true"			
-				},
 				{						
 					"title": "OWASP Global AppSec San Francisco 2024",
 					"url": "https://sf.globalappsec.org/",
