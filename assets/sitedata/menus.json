@@ -124,7 +124,12 @@
 				{						
 					"title": "OWASP LASCON 2024",
 					"url": "https://lascon.org/",
-					"opentab": "true"	
+					"opentab": "true"
+				},
+				{						
+					"title": "German OWASP Day 2024",
+					"url": "https://god.owasp.de/",
+					"opentab": "true"				
 				},
 				{	
 					"title": "OWASP Virtual Appsec Days India 2024",
