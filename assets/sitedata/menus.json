@@ -107,11 +107,6 @@
 			"url": "/events/",
 			"items": [
 				{						
-					"title": "OWASP AppSec Days Singapore 2024",
-					"url": "https://singapore.appsecdays.org/?utm_source=owasp-web&utm_medium=event-page&utm_campaign=none",
-					"opentab": "true"					
-				},
-				{						
 					"title": "OWASP LASCON 2024",
 					"url": "https://lascon.org/",
 					"opentab": "true"
