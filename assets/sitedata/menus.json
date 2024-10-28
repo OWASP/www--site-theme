@@ -106,12 +106,7 @@
 			"title": "EVENTS",
 			"url": "/events/",
 			"items": [
-				{						
-					"title": "OWASP LASCON 2024",
-					"url": "https://lascon.org/",
-					"opentab": "true"
-				},
-				{						
+				{											
 					"title": "German OWASP Day 2024",
 					"url": "https://god.owasp.de/",
 					"opentab": "true"				
@@ -125,6 +120,11 @@
 				        "title": "OWASP BeNelux 2024",
 					"url": "https://www.owaspbenelux.eu/",
 					"opentab": "true"				
+				},
+				{
+					"title": "OWASP LASCON 2025",
+					"url": "https://lascon.org/",
+					"opentab": "true"					
 				},
 				{
 					"title": "Upcoming Chapter Events",
