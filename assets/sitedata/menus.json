@@ -106,17 +106,7 @@
 			"title": "EVENTS",
 			"url": "/events/",
 			"items": [
-				{											
-					"title": "German OWASP Day 2024",
-					"url": "https://god.owasp.de/",
-					"opentab": "true"				
-				},
-				{	
-					"title": "OWASP Virtual Appsec Days India 2024",
-					"url": "https://india.appsecdays.org/",
-					"opentab": "true"	
-				},
-				{					
+				{															
 				        "title": "OWASP BeNelux 2024",
 					"url": "https://www.owaspbenelux.eu/",
 					"opentab": "true"				
