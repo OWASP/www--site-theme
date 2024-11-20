@@ -109,6 +109,11 @@
 				{															
 				        "title": "OWASP BeNelux 2024",
 					"url": "https://www.owaspbenelux.eu/",
+					"opentab": "true"
+				},
+				{
+					"title": "OWASP SnowFROC 2025",
+					"url": "https://snowfroc.com/",
 					"opentab": "true"				
 				},
 				{
