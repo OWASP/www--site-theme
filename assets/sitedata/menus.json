@@ -114,6 +114,11 @@
 				{
 					"title": "OWASP SnowFROC 2025",
 					"url": "https://snowfroc.com/",
+					"opentab": "true"	
+				},
+				{
+					"title": "OWASP Boston Application Security Conference 2025",
+					"url": "https://basconf.org/",
 					"opentab": "true"				
 				},
 				{
