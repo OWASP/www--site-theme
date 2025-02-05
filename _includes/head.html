@@ -34,7 +34,7 @@
 {% endif %}
 <!-- should probably look at using article at some point for www-community at least -->
 <meta property="og:type" content="website" />
-<meta property="og:image" content="{{site_base_url}}favicon.ico" />
+<meta property="og:image" content="{% if page.og_image %}https://owasp.org{{ page.og_image }}{% else %}{{ site_base_url }}favicon.ico{% endif %}" />
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
 <meta http-equiv="X-XSS-Protection" content="1; mode=block">
 
