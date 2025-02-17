@@ -28,7 +28,7 @@
 				{
 					"title": "OWASP CycloneDX Secure Bill of Materials Project",
 					"url": "https://cyclonedx.org/"
-				}
+				},
 				{
 					"title": "Dependency Track",
 					"url": "https://owasp.org/www-project-dependency-track/"
