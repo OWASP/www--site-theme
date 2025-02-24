@@ -156,7 +156,12 @@
 				{					
 					"title": "OWASP LASCON 2025",
 					"url": "https://lascon.org/",
-					"opentab": "true"					
+					"opentab": "true"
+				},
+				{					
+					"title": "OWASP BeNeLux 2025",
+					"url": "https://www.owaspbenelux.eu/",
+					"opentab": "true"				
 				},
 				{
 					"title": "Upcoming Chapter Events",
