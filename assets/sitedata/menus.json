@@ -136,19 +136,19 @@
 				{
 					"title": "OWASP SnowFROC 2025",
 					"url": "https://snowfroc.com/",
-					"opentab": "true"	
-				},
-				{
-					"title": "OWASP Boston Application Security Conference 2025",
-					"url": "https://basconf.org/",
-					"opentab": "true"				
+					"opentab": "true"										
 				},
 				{
 					"title": "OWASP AppSec Israel 2025",
 					"url": "https://appsecil.org/?utm_source=owasp-web&utm_medium=event-page&utm_campaign=none",
-					"opentab": "true"					
+					"opentab": "true"
 				},
 				{
+					"title": "OWASP Italy Day 2025",
+					"url": "https://owasp.org/www-chapter-italy/events/OWASPItalyDay2025-06-19",
+					"opentab": "true"				
+				},
+				{					
 					"title": "OWASP AppSec Days France 2025",
 					"url": "https://owaspappsecdays.fr/",
 					"opentab": "true"					
@@ -159,11 +159,6 @@
 					"opentab": "true"
 				},
 				{					
-					"title": "OWASP BeNeLux 2025",
-					"url": "https://www.owaspbenelux.eu/",
-					"opentab": "true"				
-				},
-				{
 					"title": "Upcoming Chapter Events",
 					"url": "https://owasp.org/chapters/events/"
 				},
