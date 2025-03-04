@@ -146,6 +146,11 @@
 				{
 					"title": "OWASP Italy Day 2025",
 					"url": "https://owasp.org/www-chapter-italy/events/OWASPItalyDay2025-06-19",
+					"opentab": "true"
+				},
+				{					
+					"title": "OWASP AppSec Days New Zealand 2025",
+					"url": "https://appsec.org.nz/conference/",
 					"opentab": "true"				
 				},
 				{					
