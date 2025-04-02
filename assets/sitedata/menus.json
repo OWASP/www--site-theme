@@ -22,7 +22,7 @@
 					"url": "https://owasp.org/www-project-application-security-verification-standard/"
 				},
 				{
-					"title": "OWASP Gen AI",
+					"title": "OWASP GenAI Security Project",
 					"url": "https://genai.owasp.org/"
 				},
 				{
@@ -34,27 +34,27 @@
 					"url": "https://cyclonedx.org/"
 				},
 				{
-					"title": "Dependency Track",
+					"title": "OWASP Dependency Track",
 					"url": "https://owasp.org/www-project-dependency-track/"
 				},
 				{
-					"title": "Juice Shop",
+					"title": "OWASP Juice Shop",
 					"url": "https://owasp.org/www-project-juice-shop/"
 				},
 				{
-					"title": "Mobile Application Security",
+					"title": "OWASP Mobile Application Security",
 					"url": "https://owasp.org/mas/"
 				},
 				{
-					"title": "ModSecurity Core Rule Set",
+					"title": "OWASP ModSecurity Core Rule Set",
 					"url": "https://owasp.org/www-project-modsecurity-core-rule-set/"
 				},
 				{
-					"title": "Software Assurance Maturity Model (SAMM)",
+					"title": "OWASP Software Assurance Maturity Model (SAMM)",
 					"url": "https://owasp.org/www-project-samm/"
 				},
 				{
-					"title": "Web Security Testing Guide",
+					"title": "OWASP Web Security Testing Guide",
 					"url": "https://owasp.org/www-project-web-security-testing-guide/"
 				},
 				{
