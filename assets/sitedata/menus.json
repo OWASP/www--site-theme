@@ -155,17 +155,17 @@
 				{					
 					"title": "OWASP AppSec Days Singapore 2025",
 					"url": "http://singapore.appsecdays.org/",
-					"opentab": "true"
-				},
-				{					
-					"title": "OWASP AppSec Day Bangalore 2025",
-					"url": "https://owasp.org/",
 					"opentab": "true"				
 				},
 				{					
 					"title": "OWASP AppSec Days France 2025",
 					"url": "https://owaspappsecdays.fr/",
-					"opentab": "true"					
+					"opentab": "true"	
+				},
+				{					
+					"title": "OWASP AppSec Day Bangalore 2025",
+					"url": "https://bangalore.appsecdays.org/",
+					"opentab": "true"				
 				},
 				{					
 					"title": "OWASP LASCON 2025",
