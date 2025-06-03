@@ -127,11 +127,6 @@
 			"title": "EVENTS",
 			"url": "/events/",
 			"items": [
-				{															
-				    "title": "OWASP Global AppSec EU 2025",
-					"url": "https://owasp.glueup.com/event/owasp-global-appsec-eu-2025-123983/",
-					"opentab": "true"
-				},
 				{
 					"title": "OWASP Global AppSec USA",
 					"url": "https://owasp.glueup.com/event/owasp-2025-global-appsec-usa-washington-dc-131624/",
