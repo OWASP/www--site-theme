@@ -165,6 +165,11 @@
 				{					
 					"title": "OWASP AppSec Days Uruguay 2025",
 					"url": "https://owasp-uruguay.github.io/",
+					"opentab": "true"
+				},
+				{					
+					"title": "OWASP BeNeLux 2025",
+					"url": "https://2025.owaspbenelux.eu/?utm_source=owasp-web&utm_medium=event-page&utm_campaign=none",
 					"opentab": "true"				
 				},
 				{					
