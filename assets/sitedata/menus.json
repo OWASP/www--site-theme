@@ -163,6 +163,11 @@
 					"opentab": "true"
 				},
 				{					
+					"title": "German OWASP Day 2025",
+					"url": "https://god.owasp.de/2025/index.html",
+					"opentab": "true"				
+				},
+				{					
 					"title": "OWASP BeNeLux 2025",
 					"url": "https://2025.owaspbenelux.eu/?utm_source=owasp-web&utm_medium=event-page&utm_campaign=none",
 					"opentab": "true"				
