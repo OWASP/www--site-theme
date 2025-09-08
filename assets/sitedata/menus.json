@@ -132,12 +132,7 @@
 					"url": "https://owasp.glueup.com/event/owasp-2025-global-appsec-usa-washington-dc-131624/",
 					"opentab": "true"				
 				},
-				{					
-					"title": "OWASP AppSec Days New Zealand 2025",
-					"url": "https://appsec.org.nz/conference/",
-					"opentab": "true"	
-				},
-				{					
+				{								
 					"title": "OWASP AppSec Days Singapore 2025",
 					"url": "http://singapore.appsecdays.org/",
 					"opentab": "true"				
@@ -265,3 +260,4 @@
 		}
 	]
 }
+
