@@ -305,6 +305,16 @@ header {
   .header-wrapper {
     max-height: 75px; 
   }
+  
+  .search-bar {
+    width: 90%;
+    max-width: 90%;
+  }
+  .mini-search-bar {
+    width: 70%;
+    max-width: 70%;
+  }
+  .mobile-menu .search-bar { margin-left: 5px; }
 }
 
 @media screen and (min-width: $content-bp) { // 840px
