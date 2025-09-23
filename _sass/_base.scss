@@ -102,6 +102,11 @@ footer {
   grid-area: footer;
   margin-left: 1em;
 }
+/* allow footer to center on mobile */
+@media (max-width: 839px) {
+  footer {
+  margin-left: 0;
+}
 
 .social {
   float: right;
@@ -202,5 +207,11 @@ font-size: 10vw;
 .bot-nav {
   justify-content: center;
   margin-right: 0; /* remove the "basic layout spec" margins added */
+}
+.disclaimer {
+  display: block;        
+  margin-left: auto;     
+  margin-right: auto;
+}
 }
 }
