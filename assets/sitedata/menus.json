@@ -132,12 +132,7 @@
 					"url": "https://owasp.glueup.com/event/owasp-2025-global-appsec-usa-washington-dc-131624/",
 					"opentab": "true"				
 				},
-				{												
-					"title": "OWASP AppSec Days France 2025",
-					"url": "https://owaspappsecdays.fr/",
-					"opentab": "true"	
-				},
-				{					
+				{																
 					"title": "OWASP AppSec Day Bangalore 2025",
 					"url": "https://bangalore.appsecdays.org/",
 					"opentab": "true"				
@@ -255,5 +250,6 @@
 		}
 	]
 }
+
 
 
