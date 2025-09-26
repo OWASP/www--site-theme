@@ -636,7 +636,7 @@ table {
   min-width:80%;
 }
 /* mobile responsive settings for disclaimer */
-@media (max-width: 839px) {
+@media screen and (max-width: $content-bp - 1) { 
 #disclaimer p {
   min-width: 0;
 }

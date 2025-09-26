@@ -66,7 +66,7 @@ a {
   max-width: $grid-val * 50; // 30 * 45 = 1320px
   width: 100%;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 0 0 15px;
   & > * {
     margin-left: 0;
     margin-right: 30px;
@@ -103,9 +103,10 @@ footer {
   margin-left: 1em;
 }
 /* allow footer to center on mobile */
-@media (max-width: 839px) {
+@media screen and (max-width: $content-bp - 1) {
   footer {
   margin-left: 0;
+}
 }
 
 .social {
@@ -158,7 +159,7 @@ footer {
   line-height:normal;
 }
 /* contain sizing on mobile */
-@media (max-width: 839px) {
+@media screen and (max-width: $content-bp - 1) {
 .bigheader {
 font-size: 10vw;
 }
@@ -184,34 +185,13 @@ font-size: 10vw;
     padding-left: 1em;
   }
 }
-@media (max-width: 839px) {
+@media screen and (max-width: $content-bp - 1) { 
   .footer-wrapper {
     display: flex;
-    flex-direction: column;       /* stack children vertically */
-    align-items: center;          /* center each child horizontally */
-    margin-left: auto;            /* center the whole wrapper if needed */
+    flex-direction: column;       
+    align-items: center;          
+    margin-left: auto;            
     margin-right: auto;
     padding: 0 1rem;              /* small side padding so text doesn’t hug edges */
   }
-
-  .social {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;      /* center its own content */
-    margin-left: auto;            /* auto margins keep them centered */
-    margin-right: auto;
-  justify-content: center;
-  gap: 2rem;  
-  margin-bottom: 1rem;
-}
-.bot-nav {
-  justify-content: center;
-  margin-right: 0; /* remove the "basic layout spec" margins added */
-}
-.disclaimer {
-  display: block;        
-  margin-left: auto;     
-  margin-right: auto;
-}
-}
 }
