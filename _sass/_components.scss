@@ -635,6 +635,23 @@ table {
 #disclaimer p {
   min-width:80%;
 }
+/* mobile responsive settings for disclaimer */
+@media screen and (max-width: $content-bp - 1) { 
+#disclaimer p {
+  min-width: 0;
+}
+#disclaimer a.disclaimerOK {
+  margin: 0 0 0 1rem;
+}
+#close-disclaimer {
+  float: none;
+  padding: 0;
+  margin-right: 20px;
+}
+#disclaimer {
+  padding: 15px 20px;
+}
+}
 
 .sitemap {
   h2 {

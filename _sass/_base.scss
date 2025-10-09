@@ -66,7 +66,7 @@ a {
   max-width: $grid-val * 50; // 30 * 45 = 1320px
   width: 100%;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 0 0 15px;
   & > * {
     margin-left: 0;
     margin-right: 30px;
@@ -101,6 +101,12 @@ main {
 footer {
   grid-area: footer;
   margin-left: 1em;
+}
+/* allow footer to center on mobile */
+@media screen and (max-width: $content-bp - 1) {
+  footer {
+  margin-left: 0;
+}
 }
 
 .social {
@@ -152,6 +158,12 @@ footer {
   max-width: 768px;
   line-height:normal;
 }
+/* contain sizing on mobile */
+@media screen and (max-width: $content-bp - 1) {
+.bigheader {
+font-size: 10vw;
+}
+}
 
 @media screen and (max-width: $header-bp - 1) { // 1019px
   // replace desktop nav with mobile nav
@@ -171,5 +183,15 @@ footer {
   .header-wrapper,
   .event-header-wrapper {
     padding-left: 1em;
+  }
+}
+@media screen and (max-width: $content-bp - 1) { 
+  .footer-wrapper {
+    display: flex;
+    flex-direction: column;       
+    align-items: center;          
+    margin-left: auto;            
+    margin-right: auto;
+    padding: 0 1rem;              /* small side padding so text doesn’t hug edges */
   }
 }
