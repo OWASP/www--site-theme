@@ -149,7 +149,7 @@
 				},
 				{					
 					"title": "OWASP LASCON 2026",
-					"url": "https://lascon.org/"
+					"url": "https://lascon.org/",
 					"opentab": "true"					
 				},
 				{					
@@ -245,6 +245,7 @@
 		}
 	]
 }
+
 
 
 
