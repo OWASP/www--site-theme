@@ -127,12 +127,7 @@
 			"title": "EVENTS",
 			"url": "/events/",
 			"items": [
-				{
-					"title": "OWASP Global AppSec USA",
-					"url": "https://owasp.glueup.com/event/owasp-2025-global-appsec-usa-washington-dc-131624/",
-					"opentab": "true"						
-				},
-				{									
+				{								
 					"title": "OWASP AppSec Days Uruguay 2025",
 					"url": "https://owasp-uruguay.github.io/",
 					"opentab": "true"
@@ -146,6 +141,16 @@
 					"title": "OWASP BeNeLux 2025",
 					"url": "https://2025.owaspbenelux.eu/?utm_source=owasp-web&utm_medium=event-page&utm_campaign=none",
 					"opentab": "true"
+				},
+				{					
+					"title": "OWASP BASC 2026",
+					"url": "https://basconf.org/",
+					"opentab": "true"		
+				},
+				{					
+					"title": "OWASP Italy Day 2026",
+					"url": "https://owasp.org/www-chapter-italy/events/OWASPItalyDay2026-06-18",
+					"opentab": "true"					
 				},
 				{					
 					"title": "OWASP LASCON 2026",
@@ -245,6 +250,7 @@
 		}
 	]
 }
+
 
 
 
