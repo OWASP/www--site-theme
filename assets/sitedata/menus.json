@@ -128,8 +128,8 @@
 			"url": "/events/",
 			"items": [
 				{								
-					"title": "OWASP AppSec Days Uruguay 2025",
-					"url": "https://owasp-uruguay.github.io/",
+					"title": "OWASP Global AppSec EU 2026",
+					"url": "https://owasp.glueup.com/event/owasp-global-appsec-eu-2026-vienna-austria-162243/",
 					"opentab": "true"
 				},
 				{					
@@ -250,6 +250,7 @@
 		}
 	]
 }
+
 
 
 
