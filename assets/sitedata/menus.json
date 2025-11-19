@@ -145,7 +145,12 @@
 				{					
 					"title": "OWASP BASC 2026",
 					"url": "https://basconf.org/",
-					"opentab": "true"		
+					"opentab": "true"	
+				},
+				{					
+					"title": "OWASP AppSec Israel 2026",
+					"url": "https://appsecil.org/",
+					"opentab": "true"				
 				},
 				{					
 					"title": "OWASP Italy Day 2026",
@@ -250,6 +255,7 @@
 		}
 	]
 }
+
 
 
 
