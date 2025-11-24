@@ -143,6 +143,11 @@
 					"opentab": "true"
 				},
 				{					
+					"title": "OWASP London Training Days 2026",
+					"url": "https://owasp.glueup.com/event/london-owasp-training-days-2026-162538/",
+					"opentab": "true"				
+				},
+				{					
 					"title": "OWASP BASC 2026",
 					"url": "https://basconf.org/",
 					"opentab": "true"	
@@ -255,6 +260,7 @@
 		}
 	]
 }
+
 
 
 
