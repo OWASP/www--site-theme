@@ -130,12 +130,7 @@
 				{								
 					"title": "OWASP Global AppSec EU 2026",
 					"url": "https://owasp.glueup.com/event/owasp-global-appsec-eu-2026-vienna-austria-162243/",
-					"opentab": "true"
-				},
-				{					
-					"title": "German OWASP Day 2025",
-					"url": "https://god.owasp.de/2025/index.html",
-					"opentab": "true"				
+					"opentab": "true"			
 				},
 				{					
 					"title": "OWASP BeNeLux 2025",
@@ -260,6 +255,7 @@
 		}
 	]
 }
+
 
 
 
