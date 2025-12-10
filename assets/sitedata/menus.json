@@ -138,6 +138,11 @@
 					"opentab": "true"
 				},
 				{					
+					"title": "OWASP 25th Anniversary Virtual Conference",
+					"url": "https://owasp.glueup.com/event/owasp-25th-anniversary-virtual-conference-164290/",
+					"opentab": "true"				
+				},
+				{					
 					"title": "OWASP London Training Days 2026",
 					"url": "https://owasp.glueup.com/event/london-owasp-training-days-2026-162538/",
 					"opentab": "true"				
@@ -255,6 +260,7 @@
 		}
 	]
 }
+
 
 
 
