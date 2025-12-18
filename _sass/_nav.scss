@@ -192,6 +192,13 @@ header {
   }
 }
 
+@media screen and (max-width: $content-bp - 1) { 
+.disclaimer {
+  display: block;        
+  margin-left: auto;     
+  margin-right: auto;
+}
+}
 
 @media screen and (min-width: $header-bp) { // 1020px
   .alt-nav {
@@ -305,6 +312,16 @@ header {
   .header-wrapper {
     max-height: 75px; 
   }
+  
+  .search-bar {
+    width: 90%;
+    max-width: 90%;
+  }
+  .mini-search-bar {
+    width: 70%;
+    max-width: 70%;
+  }
+  .mobile-menu .search-bar { margin-left: 5px; }
 }
 
 @media screen and (min-width: $content-bp) { // 840px
@@ -317,8 +334,21 @@ header {
 }
 
 @media screen and (max-width: $content-bp - 1) { // 839px
-  // restyling for ease of use on mobile
+  .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;      
+    margin-left: auto;            
+    margin-right: auto;
+    gap: 2rem;
+    margin-bottom: 1rem;
+  }
+
   .bot-nav {
+    justify-content: center;
+    margin-right: 0; /* remove the "basic layout spec" margins added */
+
+    // restyling for ease of use on mobile
     ul {
       display: flex;
       flex-direction: column;
@@ -326,11 +356,8 @@ header {
       margin: 5 auto;
     }
   }
-
-  .social {
-    float: none;
-  }
 }
+
 
 @media screen and (max-width: $content-bp) {
   .main-wrapper,

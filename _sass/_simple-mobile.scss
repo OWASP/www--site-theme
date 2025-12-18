@@ -37,17 +37,3 @@
       display:none !important;
   }
 }
-
-//mobile responsiveness for the bottom menu and media icons
-@media only screen and (max-width: 600px) {
-  .bot-nav{
-    justify-content: center;
-  }
-  .social{
-    display: flex;
-    justify-content: center;
-    a{
-      padding:20px;
-    }
-  }
-}
