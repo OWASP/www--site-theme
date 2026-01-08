@@ -153,6 +153,11 @@
 					"opentab": "true"	
 				},
 				{					
+					"title": "OWASP SnowFROC 2026",
+					"url": "https://snowfroc.com/",
+					"opentab": "true"					
+				},
+				{					
 					"title": "OWASP AppSec Israel 2026",
 					"url": "https://appsecil.org/",
 					"opentab": "true"				
@@ -260,6 +265,7 @@
 		}
 	]
 }
+
 
 
 
