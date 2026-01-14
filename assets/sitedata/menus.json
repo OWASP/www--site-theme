@@ -133,11 +133,6 @@
 					"opentab": "true"			
 				},
 				{					
-					"title": "So You Want to be an OWASP Speaker",
-					"url": "https://owasp.glueup.com/event/so-you-want-to-be-an-owasp-speaker-virtual-event-163522/",
-					"opentab": "true"
-				},
-				{					
 					"title": "OWASP 25th Anniversary Virtual Conference",
 					"url": "https://owasp.glueup.com/event/owasp-25th-anniversary-virtual-conference-164290/",
 					"opentab": "true"				
@@ -265,6 +260,7 @@
 		}
 	]
 }
+
 
 
 
