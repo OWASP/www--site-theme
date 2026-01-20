@@ -165,6 +165,11 @@
 				{					
 					"title": "OWASP Italy Day 2026",
 					"url": "https://owasp.org/www-chapter-italy/events/OWASPItalyDay2026-06-18",
+					"opentab": "true"	
+				},
+				{					
+					"title": "OWASP AppSec Days France 2026",
+					"url": "https://www.owaspappsecdays.fr/2026/index.html",
 					"opentab": "true"					
 				},
 				{					
@@ -265,6 +270,7 @@
 		}
 	]
 }
+
 
 
 
