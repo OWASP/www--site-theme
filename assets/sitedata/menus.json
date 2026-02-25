@@ -135,17 +135,7 @@
 				{					
 					"title": "OWASP Global AppSec USA 2026",
 					"url": "https://owasp.glueup.com/event/owasp-2026-global-appsec-usa-san-francisco-ca-167174/",
-					"opentab": "true"					
-				},
-				{					
-					"title": "OWASP 25th Anniversary Virtual Conference",
-					"url": "https://owasp.glueup.com/event/owasp-25th-anniversary-virtual-conference-164290/",
-					"opentab": "true"				
-				},
-				{					
-					"title": "OWASP London Training Days 2026",
-					"url": "https://owasp.glueup.com/event/london-owasp-training-days-2026-162538/",
-					"opentab": "true"				
+					"opentab": "true"										
 				},
 				{					
 					"title": "OWASP BASC 2026",
@@ -275,6 +265,7 @@
 		}
 	]
 }
+
 
 
 
