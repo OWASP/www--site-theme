@@ -170,6 +170,11 @@
 				{					
 					"title": "OWASP LASCON 2026",
 					"url": "https://lascon.org/",
+					"opentab": "true"	
+				},
+				{					
+					"title": "OWASP AppSec Days India 2026",
+					"url": "https://india.appsecdays.org/",
 					"opentab": "true"					
 				},
 				{					
