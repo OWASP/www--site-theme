@@ -162,7 +162,12 @@
 					"url": "https://appsecdays.pt/",
 					"opentab": "true"				
 				},
-				{					
+				{	
+					"title": "OWASP German OWASP Day 2026",
+					"url": "https://god.owasp.de/2026/",
+					"opentab": "true"				
+				},
+				{						
 					"title": "OWASP AppSec Days France 2026",
 					"url": "https://www.owaspappsecdays.fr/2026/index.html",
 					"opentab": "true"					
