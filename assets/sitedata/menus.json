@@ -135,7 +135,12 @@
 				{					
 					"title": "OWASP Global AppSec USA 2026",
 					"url": "https://owasp.glueup.com/event/owasp-2026-global-appsec-usa-san-francisco-ca-167174/",
-					"opentab": "true"														
+					"opentab": "true"										
+				},
+				{						
+					"title": "OWASP SnowFROC 2026",
+					"url": "https://snowfroc.com/",
+					"opentab": "true"													
 				},
 				{					
 					"title": "OWASP AppSec Israel 2026",
@@ -160,6 +165,11 @@
 				{						
 					"title": "OWASP AppSec Days France 2026",
 					"url": "https://www.owaspappsecdays.fr/2026/index.html",
+					"opentab": "true"	
+				},
+				{					
+					"title": "OWASP AppSec Israel 2026",
+					"url": "https://appsecil.org/",
 					"opentab": "true"					
 				},
 				{					
