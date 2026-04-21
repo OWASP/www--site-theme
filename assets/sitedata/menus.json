@@ -140,12 +140,7 @@
 				{						
 					"title": "OWASP SnowFROC 2026",
 					"url": "https://snowfroc.com/",
-					"opentab": "true"					
-				},
-				{					
-					"title": "OWASP AppSec Israel 2026",
-					"url": "https://appsecil.org/",
-					"opentab": "true"				
+					"opentab": "true"								
 				},
 				{					
 					"title": "OWASP Italy Day 2026",
@@ -165,6 +160,11 @@
 				{						
 					"title": "OWASP AppSec Days France 2026",
 					"url": "https://www.owaspappsecdays.fr/2026/index.html",
+					"opentab": "true"	
+				},
+				{					
+					"title": "OWASP AppSec Israel 2026",
+					"url": "https://appsecil.org/",
 					"opentab": "true"					
 				},
 				{					
