@@ -168,6 +168,11 @@
 					"opentab": "true"	
 				},
 				{					
+					"title": "OWASP BeNeLux 2026",
+					"url": "https://2026.owaspbenelux.eu/",
+					"opentab": "true"	
+				},
+				{					
 					"title": "OWASP BASC 2027",
 					"url": "https://basconf.org/",
 					"opentab": "true"				
