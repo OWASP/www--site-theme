@@ -135,7 +135,12 @@
 				{					
 					"title": "OWASP Global AppSec USA 2026",
 					"url": "https://owasp.glueup.com/event/owasp-2026-global-appsec-usa-san-francisco-ca-167174/",
-					"opentab": "true"																										
+					"opentab": "true"		
+				},
+				{					
+					"title": "OWASP Virtual 25th Anniversary Conference",
+					"url": "https://owasp.glueup.com/event/owasp-25th-anniversary-virtual-conference-176564/",
+					"opentab": "true"	
 				},
 				{									
 					"title": "OWASP AppSec Days Portugal 2026",
