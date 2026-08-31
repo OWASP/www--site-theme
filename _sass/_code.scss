@@ -14,46 +14,46 @@ code {
     white-space:pre-wrap;
     // not language specific...
     .kd {
-        color: mediumslateblue;
+        color: #6f42c1;
     }
     .kt {
         font-weight: bold;
     }
     .kt, .nc {
-        color: forestgreen;
+        color: #22863a;
     }
     .nf {
-        color: darkkhaki;
+        color: #795e26;
     }
     .n {
-        color: deepskyblue;
+        color: #005cc5;
     }
 
     .k {
-        color: crimson;
+        color: #d73a49;
     }
 }
 
 // java
-.language-java{ 
+.language-java{
     .kd {
-        color: mediumslateblue;
+        color: #6f42c1;
     }
     .kt {
         font-weight: bold;
     }
 
     .kt, .nc {
-        color: forestgreen;
+        color: #22863a;
     }
     .nf {
-        color: darkkhaki;
+        color: #795e26;
     }
     .n {
-        color: deepskyblue;
+        color: #005cc5;
     }
 
     .k {
-        color: crimson;
+        color: #d73a49;
     }
 }
