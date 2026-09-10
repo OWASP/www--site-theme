@@ -7,7 +7,6 @@
 {% else %}
 {% assign site_base_url = '/' %}
 {% endif %}
-{% assign script_base_url = "https://owasp.github.io/" %}
 {% if page.document %}
 {% assign title = page.document | append: ' | ' %}
 {% assign title = title | append: page.title %}
@@ -53,7 +52,7 @@
 <!-- Google Analytics -->
 {% assign analytics = site.data.event-details.analytics | default: 'UA-4531126-1' %}
 
-<script src="{{script_base_url}}assets/js/js.cookie.min.js"></script>
+<script src="{{site_base_url}}assets/js/js.cookie.min.js"></script>
 <script>
   if(Cookies.get('cookies-ok') == 'true' && window.ga === undefined)
   {
