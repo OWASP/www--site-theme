@@ -55,7 +55,7 @@ $(function() {
     ga('send', 'pageview');
   });
 
-  if($(location).attr('href').indexOf('owaps.org') >= 0)
+  if($(location).attr('href').indexOf('owasp.org') >= 0)
   {
     $(location).attr('href','https://owasp.org/');
   }
