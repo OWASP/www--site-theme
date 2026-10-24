@@ -43,3 +43,36 @@ div.projects-list{
         flex-direction: column;
     }
 }
+
+// Keep linked project badges in a wrapping row to prevent overlap when labels
+// or viewport widths change. Scope this to paragraphs containing badge images.
+.page-body > p:has(> a > img[src*="img.shields.io"], > a > img[src*="licensebuttons.net"]) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 0.65rem;
+    row-gap: 0.5rem;
+    margin-block: 0.75rem 1.25rem;
+
+    > a {
+        display: inline-flex;
+        align-items: center;
+        flex: 0 1 auto;
+        max-width: 100%;
+        line-height: 1.5;
+    }
+
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .page-body > p:has(> a > img[src*="img.shields.io"], > a > img[src*="licensebuttons.net"]) {
+        align-items: flex-start;
+        column-gap: 0.5rem;
+        row-gap: 0.5rem;
+    }
+}
